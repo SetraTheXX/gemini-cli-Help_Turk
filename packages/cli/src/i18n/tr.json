@@ -1,0 +1,12 @@
+{
+  "commands.extensions.describe": "Gemini CLI uzantılarını yönetin.",
+  "commands.extensions.demandCommand": "Devam etmeden önce en az bir komut gereklidir.",
+  "commands.extensions.list.describe": "Yüklü uzantıları listeler.",
+  "commands.extensions.list.none": "Yüklü uzantı yok.",
+  "commands.mcp.describe": "MCP sunucularını yönetin",
+  "tips.title": "Başlarken ipuçları:",
+  "tips.line1": "1. Sorular sorun, dosyaları düzenleyin veya komut çalıştırın.",
+  "tips.line2": "2. En iyi sonuç için net olun.",
+  "tips.createGemini": "Gemini ile etkileşimlerinizi özelleştirmek için GEMINI.md dosyaları oluşturun.",
+  "tips.help": "daha fazla bilgi için."
+}

@@ -547,6 +547,10 @@ export function loadEnvironment(settings: Settings): void {
     return;
   }
 
+  if (settings?.general?.locale && !process.env['GEMINI_CLI_LOCALE']) {
+    process.env['GEMINI_CLI_LOCALE'] = settings.general.locale;
+  }
+
   // Cloud Shell environment variable handling
   if (process.env['CLOUD_SHELL'] === 'true') {
     setUpCloudShellEnvironment(envFilePath);
