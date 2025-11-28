@@ -4,6 +4,7 @@
   "commands.extensions.list.describe": "Lists installed extensions.",
   "commands.extensions.list.none": "No extensions installed.",
   "commands.mcp.describe": "Manage MCP servers",
+  "i18n.fallback.sample": "English fallback value.",
   "tips.title": "Tips for getting started:",
   "tips.line1": "1. Ask questions, edit files, or run commands.",
   "tips.line2": "2. Be specific for the best results.",
