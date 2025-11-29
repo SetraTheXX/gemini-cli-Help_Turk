@@ -195,6 +195,13 @@ For Google Workspace accounts and other authentication methods, see the
 
 ## 🚀 Getting Started
 
+### Run the CLI in Turkish
+
+- Show localized help with `gemini --locale tr --help` (defaults to your system
+  locale when supported).
+- See [CLI localization](./docs/cli/localization.md) for defaults, environment
+  variables, and how to contribute new translations.
+
 ### Basic Usage
 
 #### Start in current directory
