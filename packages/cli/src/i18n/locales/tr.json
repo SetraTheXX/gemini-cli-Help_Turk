@@ -1,0 +1,6 @@
+{
+  "app.title": "Gemini CLI",
+  "app.description": "Gemini için komut satırı arayüzü.",
+  "app.welcome": "Gemini CLI'ya hoş geldiniz",
+  "errors.missingMessage": "Çeviri eksik"
+}
