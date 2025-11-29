@@ -179,6 +179,40 @@ describe('parseArguments', () => {
     mockConsoleError.mockRestore();
   });
 
+  it('should show Turkish help output when locale is set to tr', async () => {
+    process.argv = ['node', 'script.js', '--help', '--locale', 'tr'];
+
+    const mockExit = vi.spyOn(process, 'exit').mockImplementation(() => {
+      throw new Error('process.exit called');
+    });
+
+    const writes: string[] = [];
+    const mockStdout = vi
+      .spyOn(process.stdout, 'write')
+      .mockImplementation((chunk: string | Uint8Array) => {
+        writes.push(chunk.toString());
+        return true;
+      });
+    const mockConsoleLog = vi
+      .spyOn(console, 'log')
+      .mockImplementation((...args: unknown[]) => {
+        writes.push(args.join(' '));
+      });
+
+    await expect(parseArguments({} as Settings)).rejects.toThrow(
+      'process.exit called',
+    );
+
+    const helpOutput = writes.join('');
+    expect(helpOutput).toContain('Kullanım: gemini');
+    expect(helpOutput).toContain("Gemini CLI'yi başlat");
+    expect(helpOutput).toContain('Yardım ve komut açıklamaları için dil');
+
+    mockExit.mockRestore();
+    mockStdout.mockRestore();
+    mockConsoleLog.mockRestore();
+  });
+
   it('should throw an error when using short flags -p and -i together', async () => {
     process.argv = [
       'node',

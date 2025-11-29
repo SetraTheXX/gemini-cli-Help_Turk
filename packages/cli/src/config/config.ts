@@ -32,6 +32,12 @@ import {
   loadServerHierarchicalMemory,
 } from '@google/gemini-cli-core';
 import type { Settings } from './settings.js';
+import {
+  getCliTranslations,
+  resolveLocale,
+  SUPPORTED_LOCALES,
+  type SupportedLocale,
+} from './localization.js';
 
 import { getCliVersion } from '../utils/version.js';
 import { loadSandboxConfig } from './sandboxConfig.js';
@@ -71,77 +77,74 @@ export interface CliArgs {
   outputFormat: string | undefined;
   fakeResponses: string | undefined;
   recordResponses: string | undefined;
+  locale: SupportedLocale;
 }
 
 export async function parseArguments(settings: Settings): Promise<CliArgs> {
   const rawArgv = hideBin(process.argv);
+  const locale = resolveLocale(rawArgv);
+  const translations = getCliTranslations(locale);
   const yargsInstance = yargs(rawArgv)
-    .locale('en')
+    .locale(locale)
     .scriptName('gemini')
-    .usage(
-      'Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode',
-    )
+    .usage(translations.usage)
 
     .option('debug', {
       alias: 'd',
       type: 'boolean',
-      description: 'Run in debug mode?',
+      description: translations.options.debug,
       default: false,
     })
-    .command('$0 [query..]', 'Launch Gemini CLI', (yargsInstance) =>
+    .command('$0 [query..]', translations.commandDescription, (yargsInstance) =>
       yargsInstance
         .positional('query', {
-          description:
-            'Positional prompt. Defaults to one-shot; use -i/--prompt-interactive for interactive.',
+          description: translations.queryDescription,
         })
         .option('model', {
           alias: 'm',
           type: 'string',
           nargs: 1,
-          description: `Model`,
+          description: translations.options.model,
         })
         .option('prompt', {
           alias: 'p',
           type: 'string',
           nargs: 1,
-          description: 'Prompt. Appended to input on stdin (if any).',
+          description: translations.options.prompt,
         })
         .option('prompt-interactive', {
           alias: 'i',
           type: 'string',
           nargs: 1,
-          description:
-            'Execute the provided prompt and continue in interactive mode',
+          description: translations.options.promptInteractive,
         })
         .option('sandbox', {
           alias: 's',
           type: 'boolean',
-          description: 'Run in sandbox?',
+          description: translations.options.sandbox,
         })
 
         .option('yolo', {
           alias: 'y',
           type: 'boolean',
-          description:
-            'Automatically accept all actions (aka YOLO mode, see https://www.youtube.com/watch?v=xvFZjo5PgG0 for more details)?',
+          description: translations.options.yolo,
           default: false,
         })
         .option('approval-mode', {
           type: 'string',
           nargs: 1,
           choices: ['default', 'auto_edit', 'yolo'],
-          description:
-            'Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), yolo (auto-approve all tools)',
+          description: translations.options.approvalMode,
         })
         .option('experimental-acp', {
           type: 'boolean',
-          description: 'Starts the agent in ACP mode',
+          description: translations.options.experimentalAcp,
         })
         .option('allowed-mcp-server-names', {
           type: 'array',
           string: true,
           nargs: 1,
-          description: 'Allowed MCP server names',
+          description: translations.options.allowedMcpServerNames,
           coerce: (mcpServerNames: string[]) =>
             // Handle comma-separated values
             mcpServerNames.flatMap((mcpServerName) =>
@@ -152,7 +155,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
           type: 'array',
           string: true,
           nargs: 1,
-          description: 'Tools that are allowed to run without confirmation',
+          description: translations.options.allowedTools,
           coerce: (tools: string[]) =>
             // Handle comma-separated values
             tools.flatMap((tool) => tool.split(',').map((t) => t.trim())),
@@ -162,8 +165,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
           type: 'array',
           string: true,
           nargs: 1,
-          description:
-            'A list of extensions to use. If not provided, all extensions are used.',
+          description: translations.options.extensions,
           coerce: (extensions: string[]) =>
             // Handle comma-separated values
             extensions.flatMap((extension) =>
@@ -173,7 +175,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
         .option('list-extensions', {
           alias: 'l',
           type: 'boolean',
-          description: 'List all available extensions and exit.',
+          description: translations.options.listExtensions,
         })
         .option('resume', {
           alias: 'r',
@@ -181,8 +183,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
           // `skipValidation` so that we can distinguish between it being passed with a value, without
           // one, and not being passed at all.
           skipValidation: true,
-          description:
-            'Resume a previous session. Use "latest" for most recent or index number (e.g. --resume 5)',
+          description: translations.options.resume,
           coerce: (value: string): string => {
             // When --resume passed with a value (`gemini --resume 123`): value = "123" (string)
             // When --resume passed without a value (`gemini --resume`): value = "" (string)
@@ -196,44 +197,48 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
         })
         .option('list-sessions', {
           type: 'boolean',
-          description:
-            'List available sessions for the current project and exit.',
+          description: translations.options.listSessions,
         })
         .option('delete-session', {
           type: 'string',
-          description:
-            'Delete a session by index number (use --list-sessions to see available sessions).',
+          description: translations.options.deleteSession,
         })
         .option('include-directories', {
           type: 'array',
           string: true,
           nargs: 1,
-          description:
-            'Additional directories to include in the workspace (comma-separated or multiple --include-directories)',
+          description: translations.options.includeDirectories,
           coerce: (dirs: string[]) =>
             // Handle comma-separated values
             dirs.flatMap((dir) => dir.split(',').map((d) => d.trim())),
         })
         .option('screen-reader', {
           type: 'boolean',
-          description: 'Enable screen reader mode for accessibility.',
+          description: translations.options.screenReader,
         })
         .option('output-format', {
           alias: 'o',
           type: 'string',
           nargs: 1,
-          description: 'The format of the CLI output.',
+          description: translations.options.outputFormat,
           choices: ['text', 'json', 'stream-json'],
         })
         .option('fake-responses', {
           type: 'string',
-          description: 'Path to a file with fake model responses for testing.',
+          description: translations.options.fakeResponses,
           hidden: true,
         })
         .option('record-responses', {
           type: 'string',
-          description: 'Path to a file to record model responses for testing.',
+          description: translations.options.recordResponses,
           hidden: true,
+        })
+        .option('locale', {
+          alias: 'L',
+          type: 'string',
+          choices: SUPPORTED_LOCALES,
+          description: translations.options.locale,
+          default: locale,
         })
         .deprecateOption(
           'prompt',
