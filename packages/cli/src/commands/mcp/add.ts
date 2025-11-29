@@ -8,6 +8,7 @@
 import type { CommandModule } from 'yargs';
 import { loadSettings, SettingScope } from '../../config/settings.js';
 import { debugLogger, type MCPServerConfig } from '@google/gemini-cli-core';
+import { t } from '../../i18n/index.js';
 
 async function addMcpServer(
   name: string,
@@ -42,7 +43,7 @@ async function addMcpServer(
 
   if (scope === 'project' && inHome) {
     debugLogger.error(
-      'Error: Please use --scope user to edit settings in the home directory.',
+      t('commands.mcp.add.scopeHomeError'),
     );
     process.exit(1);
   }
@@ -117,7 +118,7 @@ async function addMcpServer(
   const isExistingServer = !!mcpServers[name];
   if (isExistingServer) {
     debugLogger.log(
-      `MCP server "${name}" is already configured within ${scope} settings.`,
+      t('commands.mcp.add.exists', { name, scope }),
     );
   }
 
@@ -126,51 +127,51 @@ async function addMcpServer(
   settings.setValue(settingsScope, 'mcpServers', mcpServers);
 
   if (isExistingServer) {
-    debugLogger.log(`MCP server "${name}" updated in ${scope} settings.`);
+    debugLogger.log(t('commands.mcp.add.updated', { name, scope }));
   } else {
     debugLogger.log(
-      `MCP server "${name}" added to ${scope} settings. (${transport})`,
+      t('commands.mcp.add.added', { name, scope, transport }),
     );
   }
 }
 
 export const addCommand: CommandModule = {
   command: 'add <name> <commandOrUrl> [args...]',
-  describe: 'Add a server',
+  describe: t('commands.mcp.add.describe'),
   builder: (yargs) =>
     yargs
-      .usage('Usage: gemini mcp add [options] <name> <commandOrUrl> [args...]')
+      .usage(t('commands.mcp.add.usage'))
       .parserConfiguration({
         'unknown-options-as-args': true, // Pass unknown options as server args
         'populate--': true, // Populate server args after -- separator
       })
       .positional('name', {
-        describe: 'Name of the server',
+        describe: t('commands.mcp.add.name'),
         type: 'string',
         demandOption: true,
       })
       .positional('commandOrUrl', {
-        describe: 'Command (stdio) or URL (sse, http)',
+        describe: t('commands.mcp.add.commandOrUrl'),
         type: 'string',
         demandOption: true,
       })
       .option('scope', {
         alias: 's',
-        describe: 'Configuration scope (user or project)',
+        describe: t('commands.mcp.add.scope'),
         type: 'string',
         default: 'project',
         choices: ['user', 'project'],
       })
       .option('transport', {
         alias: 't',
-        describe: 'Transport type (stdio, sse, http)',
+        describe: t('commands.mcp.add.transport'),
         type: 'string',
         default: 'stdio',
         choices: ['stdio', 'sse', 'http'],
       })
       .option('env', {
         alias: 'e',
-        describe: 'Set environment variables (e.g. -e KEY=value)',
+        describe: t('commands.mcp.add.env'),
         type: 'array',
         string: true,
         nargs: 1,
@@ -178,31 +179,30 @@ export const addCommand: CommandModule = {
       .option('header', {
         alias: 'H',
         describe:
-          'Set HTTP headers for SSE and HTTP transports (e.g. -H "X-Api-Key: abc123" -H "Authorization: Bearer abc123")',
+          t('commands.mcp.add.header'),
         type: 'array',
         string: true,
         nargs: 1,
       })
       .option('timeout', {
-        describe: 'Set connection timeout in milliseconds',
+        describe: t('commands.mcp.add.timeout'),
         type: 'number',
       })
       .option('trust', {
-        describe:
-          'Trust the server (bypass all tool call confirmation prompts)',
+        describe: t('commands.mcp.add.trust'),
         type: 'boolean',
       })
       .option('description', {
-        describe: 'Set the description for the server',
+        describe: t('commands.mcp.add.description'),
         type: 'string',
       })
       .option('include-tools', {
-        describe: 'A comma-separated list of tools to include',
+        describe: t('commands.mcp.add.includeTools'),
         type: 'array',
         string: true,
       })
       .option('exclude-tools', {
-        describe: 'A comma-separated list of tools to exclude',
+        describe: t('commands.mcp.add.excludeTools'),
         type: 'array',
         string: true,
       })

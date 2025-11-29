@@ -14,6 +14,7 @@ import {
   getErrorMessage,
 } from '@google/gemini-cli-core';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
+import { t } from '../../i18n/index.js';
 
 interface EnableArgs {
   name: string;
@@ -38,11 +39,14 @@ export async function handleEnable(args: EnableArgs) {
     }
     if (args.scope) {
       debugLogger.log(
-        `Extension "${args.name}" successfully enabled for scope "${args.scope}".`,
+        t('commands.extensions.enable.successScoped', {
+          name: args.name,
+          scope: args.scope,
+        }),
       );
     } else {
       debugLogger.log(
-        `Extension "${args.name}" successfully enabled in all scopes.`,
+        t('commands.extensions.enable.successAll', { name: args.name }),
       );
     }
   } catch (error) {
@@ -52,16 +56,15 @@ export async function handleEnable(args: EnableArgs) {
 
 export const enableCommand: CommandModule = {
   command: 'enable [--scope] <name>',
-  describe: 'Enables an extension.',
+  describe: t('commands.extensions.enable.describe'),
   builder: (yargs) =>
     yargs
       .positional('name', {
-        describe: 'The name of the extension to enable.',
+        describe: t('commands.extensions.enable.name'),
         type: 'string',
       })
       .option('scope', {
-        describe:
-          'The scope to enable the extension in. If not set, will be enabled in all scopes.',
+        describe: t('commands.extensions.enable.scope'),
         type: 'string',
       })
       .check((argv) => {
@@ -72,11 +75,12 @@ export const enableCommand: CommandModule = {
             .includes((argv.scope as string).toLowerCase())
         ) {
           throw new Error(
-            `Invalid scope: ${argv.scope}. Please use one of ${Object.values(
-              SettingScope,
-            )
-              .map((s) => s.toLowerCase())
-              .join(', ')}.`,
+            t('commands.extensions.enable.invalidScope', {
+              scope: String(argv.scope),
+              scopes: Object.values(SettingScope)
+                .map((s) => s.toLowerCase())
+                .join(', '),
+            }),
           );
         }
         return true;

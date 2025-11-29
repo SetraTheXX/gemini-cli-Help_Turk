@@ -10,6 +10,7 @@ import { USER_SETTINGS_PATH } from './config/settings.js';
 import { validateAuthMethod } from './config/auth.js';
 import { type LoadedSettings } from './config/settings.js';
 import { handleError } from './utils/errors.js';
+import { t } from './i18n/index.js';
 
 function getAuthTypeFromEnv(): AuthType | undefined {
   if (process.env['GOOGLE_GENAI_USE_GCA'] === 'true') {
@@ -36,13 +37,18 @@ export async function validateNonInteractiveAuth(
     const enforcedType = settings.merged.security?.auth?.enforcedType;
     if (enforcedType && effectiveAuthType !== enforcedType) {
       const message = effectiveAuthType
-        ? `The enforced authentication type is '${enforcedType}', but the current type is '${effectiveAuthType}'. Please re-authenticate with the correct type.`
-        : `The auth type '${enforcedType}' is enforced, but no authentication is configured.`;
+        ? t('nonInteractiveAuth.enforcedMismatch', {
+            enforcedType,
+            effectiveAuthType,
+          })
+        : t('nonInteractiveAuth.enforcedMissing', { enforcedType });
       throw new Error(message);
     }
 
     if (!effectiveAuthType) {
-      const message = `Please set an Auth method in your ${USER_SETTINGS_PATH} or specify one of the following environment variables before running: GEMINI_API_KEY, GOOGLE_GENAI_USE_VERTEXAI, GOOGLE_GENAI_USE_GCA`;
+      const message = t('nonInteractiveAuth.authMethodMissing', {
+        userSettingsPath: USER_SETTINGS_PATH,
+      });
       throw new Error(message);
     }
 

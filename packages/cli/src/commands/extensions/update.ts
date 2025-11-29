@@ -19,6 +19,7 @@ import { ExtensionManager } from '../../config/extension-manager.js';
 import { requestConsentNonInteractive } from '../../config/extensions/consent.js';
 import { loadSettings } from '../../config/settings.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
+import { t } from '../../i18n/index.js';
 
 interface UpdateArgs {
   name?: string;
@@ -26,7 +27,11 @@ interface UpdateArgs {
 }
 
 const updateOutput = (info: ExtensionUpdateInfo) =>
-  `Extension "${info.name}" successfully updated: ${info.originalVersion} → ${info.updatedVersion}.`;
+  t('commands.extensions.update.successWithVersions', {
+    name: info.name,
+    originalVersion: info.originalVersion,
+    updatedVersion: info.updatedVersion,
+  });
 
 export async function handleUpdate(args: UpdateArgs) {
   const workspaceDir = process.cwd();
@@ -45,12 +50,14 @@ export async function handleUpdate(args: UpdateArgs) {
         (extension) => extension.name === args.name,
       );
       if (!extension) {
-        debugLogger.log(`Extension "${args.name}" not found.`);
+        debugLogger.log(
+          t('commands.extensions.update.notFound', { name: args.name }),
+        );
         return;
       }
       if (!extension.installMetadata) {
         debugLogger.log(
-          `Unable to install extension "${args.name}" due to missing install metadata`,
+          t('commands.extensions.update.missingMetadata', { name: args.name }),
         );
         return;
       }
@@ -59,7 +66,9 @@ export async function handleUpdate(args: UpdateArgs) {
         extensionManager,
       );
       if (updateState !== ExtensionUpdateState.UPDATE_AVAILABLE) {
-        debugLogger.log(`Extension "${args.name}" is already up to date.`);
+        debugLogger.log(
+          t('commands.extensions.update.upToDate', { name: args.name }),
+        );
         return;
       }
       // TODO(chrstnb): we should list extensions if the requested extension is not installed.
@@ -75,10 +84,16 @@ export async function handleUpdate(args: UpdateArgs) {
         updatedExtensionInfo.updatedVersion
       ) {
         debugLogger.log(
-          `Extension "${args.name}" successfully updated: ${updatedExtensionInfo.originalVersion} → ${updatedExtensionInfo.updatedVersion}.`,
+          t('commands.extensions.update.successWithVersions', {
+            name: args.name,
+            originalVersion: updatedExtensionInfo.originalVersion,
+            updatedVersion: updatedExtensionInfo.updatedVersion,
+          }),
         );
       } else {
-        debugLogger.log(`Extension "${args.name}" is already up to date.`);
+        debugLogger.log(
+          t('commands.extensions.update.upToDate', { name: args.name }),
+        );
       }
     } catch (error) {
       debugLogger.error(getErrorMessage(error));
@@ -108,7 +123,7 @@ export async function handleUpdate(args: UpdateArgs) {
         (info) => info.originalVersion !== info.updatedVersion,
       );
       if (updateInfos.length === 0) {
-        debugLogger.log('No extensions to update.');
+        debugLogger.log(t('commands.extensions.update.none'));
         return;
       }
       debugLogger.log(updateInfos.map((info) => updateOutput(info)).join('\n'));
@@ -120,22 +135,21 @@ export async function handleUpdate(args: UpdateArgs) {
 
 export const updateCommand: CommandModule = {
   command: 'update [<name>] [--all]',
-  describe:
-    'Updates all extensions or a named extension to the latest version.',
+  describe: t('commands.extensions.update.describe'),
   builder: (yargs) =>
     yargs
       .positional('name', {
-        describe: 'The name of the extension to update.',
+        describe: t('commands.extensions.update.name'),
         type: 'string',
       })
       .option('all', {
-        describe: 'Update all extensions.',
+        describe: t('commands.extensions.update.all'),
         type: 'boolean',
       })
       .conflicts('name', 'all')
       .check((argv) => {
         if (!argv.all && !argv.name) {
-          throw new Error('Either an extension name or --all must be provided');
+          throw new Error(t('commands.extensions.update.missingSelection'));
         }
         return true;
       }),

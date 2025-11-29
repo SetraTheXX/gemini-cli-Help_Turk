@@ -15,6 +15,7 @@ import { ExtensionManager } from '../../config/extension-manager.js';
 import { requestConsentNonInteractive } from '../../config/extensions/consent.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
 import { loadSettings } from '../../config/settings.js';
+import { t } from '../../i18n/index.js';
 
 interface ValidateArgs {
   path: string;
@@ -23,7 +24,9 @@ interface ValidateArgs {
 export async function handleValidate(args: ValidateArgs) {
   try {
     await validateExtension(args);
-    debugLogger.log(`Extension ${args.path} has been successfully validated.`);
+    debugLogger.log(
+      t('commands.extensions.validate.success', { path: args.path }),
+    );
   } catch (error) {
     debugLogger.error(getErrorMessage(error));
     process.exit(1);
@@ -68,32 +71,34 @@ async function validateExtension(args: ValidateArgs) {
 
   if (!semver.valid(extensionConfig.version)) {
     warnings.push(
-      `Warning: Version '${extensionConfig.version}' does not appear to be standard semver (e.g., 1.0.0).`,
+      t('commands.extensions.validate.semverWarning', {
+        version: extensionConfig.version,
+      }),
     );
   }
 
   if (warnings.length > 0) {
-    debugLogger.warn('Validation warnings:');
+    debugLogger.warn(t('commands.extensions.validate.warningHeader'));
     for (const warning of warnings) {
       debugLogger.warn(`  - ${warning}`);
     }
   }
 
   if (errors.length > 0) {
-    debugLogger.error('Validation failed with the following errors:');
+    debugLogger.error(t('commands.extensions.validate.errorHeader'));
     for (const error of errors) {
       debugLogger.error(`  - ${error}`);
     }
-    throw new Error('Extension validation failed.');
+    throw new Error(t('commands.extensions.validate.failure'));
   }
 }
 
 export const validateCommand: CommandModule = {
   command: 'validate <path>',
-  describe: 'Validates an extension from a local path.',
+  describe: t('commands.extensions.validate.describe'),
   builder: (yargs) =>
     yargs.positional('path', {
-      describe: 'The path of the extension to validate.',
+      describe: t('commands.extensions.validate.path'),
       type: 'string',
       demandOption: true,
     }),

@@ -77,6 +77,7 @@ import { disableMouseEvents, enableMouseEvents } from './ui/utils/mouse.js';
 import { ScrollProvider } from './ui/contexts/ScrollProvider.js';
 import ansiEscapes from 'ansi-escapes';
 import { isAlternateBufferEnabled } from './ui/hooks/useAlternateBuffer.js';
+import { t } from './i18n/index.js';
 
 const SLOW_RENDER_MS = 200;
 
@@ -131,17 +132,14 @@ function getNodeMemoryArgs(isDebugMode: boolean): string[] {
 export function setupUnhandledRejectionHandler() {
   let unhandledRejectionOccurred = false;
   process.on('unhandledRejection', (reason, _promise) => {
-    const errorMessage = `=========================================
-This is an unexpected error. Please file a bug report using the /bug tool.
-CRITICAL: Unhandled Promise Rejection!
-=========================================
-Reason: ${reason}${
+    const stackInfo =
       reason instanceof Error && reason.stack
-        ? `
-Stack trace:
-${reason.stack}`
-        : ''
-    }`;
+        ? `\n${t('errors.unhandledRejectionStack')}${reason.stack}`
+        : '';
+    const errorMessage = t('errors.unhandledRejection', {
+      reason: String(reason),
+      stack: stackInfo,
+    });
     appEvents.emit(AppEvent.LogError, errorMessage);
     if (!unhandledRejectionOccurred) {
       unhandledRejectionOccurred = true;
@@ -267,7 +265,7 @@ export async function main() {
   // Check for invalid input combinations early to prevent crashes
   if (argv.promptInteractive && !process.stdin.isTTY) {
     debugLogger.error(
-      'Error: The --prompt-interactive flag cannot be used when input is piped from stdin.',
+      t('gemini.promptInteractiveStdinError'),
     );
     process.exit(1);
   }
@@ -309,7 +307,9 @@ export async function main() {
       // If the theme is not found during initial load, log a warning and continue.
       // The useThemeCommand hook in AppContainer.tsx will handle opening the dialog.
       debugLogger.warn(
-        `Warning: Theme "${settings.merged.ui?.theme}" not found.`,
+        t('gemini.themeNotFoundWarning', {
+          theme: String(settings.merged.ui?.theme),
+        }),
       );
     }
   }

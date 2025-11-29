@@ -14,11 +14,12 @@ import { enableCommand } from './extensions/enable.js';
 import { linkCommand } from './extensions/link.js';
 import { newCommand } from './extensions/new.js';
 import { validateCommand } from './extensions/validate.js';
+import { t } from '../i18n/index.js';
 
 export const extensionsCommand: CommandModule = {
   command: 'extensions <command>',
   aliases: ['extension'],
-  describe: 'Manage Gemini CLI extensions.',
+  describe: t('commands.extensions.describe'),
   builder: (yargs) =>
     yargs
       .command(installCommand)
@@ -30,7 +31,7 @@ export const extensionsCommand: CommandModule = {
       .command(linkCommand)
       .command(newCommand)
       .command(validateCommand)
-      .demandCommand(1, 'You need at least one command before continuing.')
+      .demandCommand(1, t('commands.common.needSubcommand'))
       .version(false),
   handler: () => {
     // This handler is not called when a subcommand is provided.
