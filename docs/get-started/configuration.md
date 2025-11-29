@@ -15,6 +15,12 @@ Gemini CLI offers several ways to configure its behavior, including environment
 variables, command-line arguments, and settings files. This document outlines
 the different configuration methods and available settings.
 
+## Locale selection
+
+Gemini CLI reads the `GEMINI_CLI_LANG` environment variable at startup to
+choose the locale for user-facing strings. Currently supported values are `en`
+(default) and `tr`. Unsupported or missing values fall back to English.
+
 ## Configuration layers
 
 Configuration is applied in the following order of precedence (lower numbers are
