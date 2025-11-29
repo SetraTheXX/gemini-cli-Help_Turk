@@ -72,6 +72,10 @@ function parseLocaleArg(argv: readonly string[]): string | undefined {
     if (arg.startsWith('--locale=')) {
       return arg.split('=')[1];
     }
+
+    if (arg.startsWith('-L') && arg.length > 2) {
+      return arg.slice(2);
+    }
   }
 
   return undefined;

@@ -182,6 +182,26 @@ describe('locale helpers', () => {
 
     expect(locale).toBe('fr-FR');
   });
+
+  it('supports compact short flag syntax for locale', () => {
+    const { locale } = resolveLocale({
+      argv: ['-Lpt_BR'],
+      settings: { general: { locale: 'es-ES' } } as Settings,
+      env: { LANG: 'tr_TR.UTF-8' } as NodeJS.ProcessEnv,
+    });
+
+    expect(locale).toBe('pt-BR');
+  });
+
+  it('prefers LC_ALL over other locale environment variables', () => {
+    const { locale } = resolveLocale({
+      argv: [],
+      settings: { general: {} } as Settings,
+      env: { LC_ALL: 'ja_JP.UTF-8', LANG: 'fr_FR' } as NodeJS.ProcessEnv,
+    });
+
+    expect(locale).toBe('ja-JP');
+  });
 });
 
 describe('parseArguments', () => {
