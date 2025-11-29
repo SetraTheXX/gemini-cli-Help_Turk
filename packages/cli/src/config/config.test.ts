@@ -18,6 +18,7 @@ import {
   type ExtensionLoader,
 } from '@google/gemini-cli-core';
 import { loadCliConfig, parseArguments, type CliArgs } from './config.js';
+import { DEFAULT_LOCALE, resolveLocale, validateLocale } from './locale.js';
 import type { Settings } from './settings.js';
 import * as ServerConfig from '@google/gemini-cli-core';
 import { isWorkspaceTrusted } from './trustedFolders.js';
@@ -83,10 +84,8 @@ vi.mock('read-package-up', () => ({
   ),
 }));
 
-vi.mock('@google/gemini-cli-core', async () => {
-  const actualServer = await vi.importActual<typeof ServerConfig>(
-    '@google/gemini-cli-core',
-  );
+vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+  const actualServer = await importOriginal<typeof ServerConfig>();
   return {
     ...actualServer,
     IdeClient: {
@@ -124,6 +123,13 @@ vi.mock('@google/gemini-cli-core', async () => {
       respectGitIgnore: true,
       respectGeminiIgnore: true,
     },
+    DEFAULT_GEMINI_MODEL:
+      (actualServer as any).DEFAULT_GEMINI_MODEL ?? 'gemini-2.5-pro',
+    DEFAULT_GEMINI_MODEL_AUTO:
+      (actualServer as any).DEFAULT_GEMINI_MODEL_AUTO ?? 'auto',
+    DEFAULT_GEMINI_EMBEDDING_MODEL:
+      (actualServer as any).DEFAULT_GEMINI_EMBEDDING_MODEL ??
+      'gemini-embedding-001',
   };
 });
 
@@ -132,9 +138,19 @@ vi.mock('./extension-manager.js');
 // Global setup to ensure clean environment for all tests in this file
 const originalArgv = process.argv;
 const originalGeminiModel = process.env['GEMINI_MODEL'];
+const DEFAULT_TEST_LANG = 'en_US.UTF-8';
+process.env['LANG'] ??= DEFAULT_TEST_LANG;
+const originalLocaleEnv = {
+  LANG: process.env['LANG'] ?? DEFAULT_TEST_LANG,
+  LC_ALL: process.env['LC_ALL'],
+  LC_MESSAGES: process.env['LC_MESSAGES'],
+};
 
 beforeEach(() => {
   delete process.env['GEMINI_MODEL'];
+  process.env['LANG'] = 'en_US.UTF-8';
+  delete process.env['LC_ALL'];
+  delete process.env['LC_MESSAGES'];
 });
 
 afterEach(() => {
@@ -144,6 +160,58 @@ afterEach(() => {
   } else {
     delete process.env['GEMINI_MODEL'];
   }
+
+  for (const key of Object.keys(originalLocaleEnv)) {
+    const envKey = key as keyof typeof originalLocaleEnv;
+    if (originalLocaleEnv[envKey] === undefined) {
+      delete process.env[envKey];
+    } else {
+      process.env[envKey] = originalLocaleEnv[envKey];
+    }
+  }
+});
+
+describe('locale helpers', () => {
+  it('normalizes locale casing and separators', () => {
+    expect(validateLocale('tr_tr')).toBe('tr-TR');
+    expect(validateLocale('en-us')).toBe('en-US');
+  });
+
+  it('throws a descriptive error for invalid locale values', () => {
+    expect(() => validateLocale('123')).toThrow(
+      'Invalid locale "123". Expected a two or three letter language code (e.g., en).',
+    );
+  });
+
+  it('prefers CLI locale over config and environment', () => {
+    const { locale } = resolveLocale({
+      argv: ['--locale', 'fr-fr'],
+      settings: { general: { locale: 'es-ES' } } as Settings,
+      env: { LANG: 'tr_TR.UTF-8' } as NodeJS.ProcessEnv,
+    });
+
+    expect(locale).toBe('fr-FR');
+  });
+
+  it('supports compact short flag syntax for locale', () => {
+    const { locale } = resolveLocale({
+      argv: ['-Lpt_BR'],
+      settings: { general: { locale: 'es-ES' } } as Settings,
+      env: { LANG: 'tr_TR.UTF-8' } as NodeJS.ProcessEnv,
+    });
+
+    expect(locale).toBe('pt-BR');
+  });
+
+  it('prefers LC_ALL over other locale environment variables', () => {
+    const { locale } = resolveLocale({
+      argv: [],
+      settings: { general: {} } as Settings,
+      env: { LC_ALL: 'ja_JP.UTF-8', LANG: 'fr_FR' } as NodeJS.ProcessEnv,
+    });
+
+    expect(locale).toBe('ja-JP');
+  });
 });
 
 describe('parseArguments', () => {
@@ -235,6 +303,75 @@ describe('parseArguments', () => {
     const argv = await parseArguments({} as Settings);
     expect(argv.promptInteractive).toBe('interactive prompt');
     expect(argv.prompt).toBeUndefined();
+  });
+
+  it('should default locale to en-US when no overrides are present', async () => {
+    delete process.env['LANG'];
+    delete process.env['LC_ALL'];
+    delete process.env['LC_MESSAGES'];
+    process.argv = ['node', 'script.js'];
+
+    const argv = await parseArguments({} as Settings);
+
+    expect(argv.locale).toBe(DEFAULT_LOCALE);
+  });
+
+  it('should read locale from environment when no flag or config is provided', async () => {
+    process.env['LANG'] = 'tr_TR.UTF-8';
+    process.argv = ['node', 'script.js'];
+
+    const argv = await parseArguments({} as Settings);
+
+    expect(argv.locale).toBe('tr-TR');
+  });
+
+  it('should read locale from config when provided', async () => {
+    process.argv = ['node', 'script.js'];
+
+    const argv = await parseArguments({
+      general: { locale: 'es-MX' },
+    } as Settings);
+
+    expect(argv.locale).toBe('es-MX');
+  });
+
+  it('should prefer CLI locale over config and environment', async () => {
+    process.env['LANG'] = 'tr_TR.UTF-8';
+    process.argv = ['node', 'script.js', '--locale', 'de-de'];
+
+    const argv = await parseArguments({
+      general: { locale: 'fr-FR' },
+    } as Settings);
+
+    expect(argv.locale).toBe('de-DE');
+  });
+
+  it('should mention locale support in help output', async () => {
+    process.argv = ['node', 'script.js', '--help'];
+    const mockExit = vi.spyOn(process, 'exit').mockImplementation(() => {
+      throw new Error('process.exit called');
+    });
+    const consoleLogMock = vi.spyOn(console, 'log').mockImplementation(() => {});
+    const consoleErrorMock = vi
+      .spyOn(console, 'error')
+      .mockImplementation(() => {});
+
+    await expect(parseArguments({} as Settings)).rejects.toThrow(
+      'process.exit called',
+    );
+
+    const helpOutput =
+      consoleLogMock.mock.calls.flat().join('\n') +
+      consoleErrorMock.mock.calls.flat().join('\n');
+
+    expect(helpOutput).toContain('--locale');
+    expect(helpOutput).toContain(
+      'Locale can be set via --locale/-L, config general.locale, or LANG/LC_* environment variables (default: en-US).',
+    );
+
+    consoleLogMock.mockRestore();
+    consoleErrorMock.mockRestore();
+    mockExit.mockRestore();
   });
 
   it('should convert positional query argument to prompt by default', async () => {

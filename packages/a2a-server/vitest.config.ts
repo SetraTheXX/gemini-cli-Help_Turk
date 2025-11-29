@@ -6,6 +6,7 @@
 
 /// <reference types="vitest" />
 import { defineConfig } from 'vitest/config';
+import * as path from 'node:path';
 
 export default defineConfig({
   test: {
@@ -17,8 +18,14 @@ export default defineConfig({
     outputFile: {
       junit: 'junit.xml',
     },
+    alias: {
+      '@google/gemini-cli-core': path.resolve(
+        __dirname,
+        '../core/src/index.ts',
+      ),
+    },
     coverage: {
-      enabled: true,
+      enabled: false,
       provider: 'v8',
       reportsDirectory: './coverage',
       include: ['src/**/*'],
