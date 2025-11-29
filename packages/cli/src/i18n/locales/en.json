@@ -1,0 +1,6 @@
+{
+  "app.title": "Gemini CLI",
+  "app.description": "Command-line interface for Gemini.",
+  "app.welcome": "Welcome to the Gemini CLI",
+  "errors.missingMessage": "Translation missing"
+}

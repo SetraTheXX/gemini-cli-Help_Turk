@@ -77,6 +77,7 @@ import { disableMouseEvents, enableMouseEvents } from './ui/utils/mouse.js';
 import { ScrollProvider } from './ui/contexts/ScrollProvider.js';
 import ansiEscapes from 'ansi-escapes';
 import { isAlternateBufferEnabled } from './ui/hooks/useAlternateBuffer.js';
+import { detectPreferredLocale, initializeI18n } from './i18n/index.js';
 
 const SLOW_RENDER_MS = 200;
 
@@ -249,6 +250,8 @@ export async function startInteractiveUI(
 export async function main() {
   setupUnhandledRejectionHandler();
   const settings = loadSettings();
+  const preferredLocale = detectPreferredLocale();
+  const { locale: activeLocale } = initializeI18n(preferredLocale);
   migrateDeprecatedSettings(
     settings,
     // Temporary extension manager only used during this non-interactive UI phase.
@@ -273,6 +276,9 @@ export async function main() {
   }
 
   const isDebugMode = cliConfig.isDebugMode(argv);
+  if (isDebugMode) {
+    debugLogger.debug(`Using locale "${activeLocale}" for i18n.`);
+  }
   const consolePatcher = new ConsolePatcher({
     stderr: true,
     debugMode: isDebugMode,

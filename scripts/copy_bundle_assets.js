@@ -37,4 +37,18 @@ for (const file of sbFiles) {
   copyFileSync(join(root, file), join(bundleDir, basename(file)));
 }
 
+// Copy i18n bundles into bundle/i18n
+const i18nSourceDir = join(root, 'packages', 'cli', 'src', 'i18n');
+const i18nBundleDir = join(bundleDir, 'i18n');
+if (existsSync(i18nSourceDir)) {
+  mkdirSync(i18nBundleDir, { recursive: true });
+  const localeFiles = glob.sync('**/*.json', { cwd: i18nSourceDir });
+  for (const file of localeFiles) {
+    const sourcePath = join(i18nSourceDir, file);
+    const targetPath = join(i18nBundleDir, file);
+    mkdirSync(dirname(targetPath), { recursive: true });
+    copyFileSync(sourcePath, targetPath);
+  }
+}
+
 console.log('Assets copied to bundle/');
