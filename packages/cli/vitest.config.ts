@@ -30,7 +30,7 @@ export default defineConfig({
     },
     setupFiles: ['./test-setup.ts'],
     coverage: {
-      enabled: true,
+      enabled: process.env.VITEST_COVERAGE === 'true',
       provider: 'v8',
       reportsDirectory: './coverage',
       include: ['src/**/*'],
