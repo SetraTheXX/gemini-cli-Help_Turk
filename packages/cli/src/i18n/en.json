@@ -1,0 +1,13 @@
+{
+  "commands.extensions.describe": "Manage Gemini CLI extensions.",
+  "commands.extensions.demandCommand": "You need at least one command before continuing.",
+  "commands.extensions.list.describe": "Lists installed extensions.",
+  "commands.extensions.list.none": "No extensions installed.",
+  "commands.mcp.describe": "Manage MCP servers",
+  "i18n.fallback.sample": "English fallback value.",
+  "tips.title": "Tips for getting started:",
+  "tips.line1": "1. Ask questions, edit files, or run commands.",
+  "tips.line2": "2. Be specific for the best results.",
+  "tips.createGemini": "Create GEMINI.md files to customize your interactions with Gemini.",
+  "tips.help": "for more information."
+}
