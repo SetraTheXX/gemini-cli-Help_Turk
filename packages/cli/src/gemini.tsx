@@ -132,17 +132,14 @@ function getNodeMemoryArgs(isDebugMode: boolean): string[] {
 export function setupUnhandledRejectionHandler() {
   let unhandledRejectionOccurred = false;
   process.on('unhandledRejection', (reason, _promise) => {
-    const errorMessage = `=========================================
-This is an unexpected error. Please file a bug report using the /bug tool.
-CRITICAL: Unhandled Promise Rejection!
-=========================================
-Reason: ${reason}${
+    const stackInfo =
       reason instanceof Error && reason.stack
-        ? `
-Stack trace:
-${reason.stack}`
-        : ''
-    }`;
+        ? `\n${t('errors.unhandledRejectionStack')}${reason.stack}`
+        : '';
+    const errorMessage = t('errors.unhandledRejection', {
+      reason: String(reason),
+      stack: stackInfo,
+    });
     appEvents.emit(AppEvent.LogError, errorMessage);
     if (!unhandledRejectionOccurred) {
       unhandledRejectionOccurred = true;

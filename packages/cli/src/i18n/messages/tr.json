@@ -106,5 +106,10 @@
   "commands.extensions.validate.semverWarning": "Uyarı: '{{version}}' sürümü standart semver formatında görünmüyor (örn. 1.0.0).",
   "commands.extensions.validate.warningHeader": "Doğrulama uyarıları:",
   "commands.extensions.validate.errorHeader": "Doğrulama aşağıdaki hatalarla başarısız oldu:",
-  "commands.extensions.new.success": "\"{{name}}\" uzantısı başarıyla oluşturuldu."
+  "commands.extensions.new.success": "\"{{name}}\" uzantısı başarıyla oluşturuldu.",
+  "errors.unhandledRejection": "=========================================\nBeklenmeyen bir hata oluştu. Lütfen /bug aracını kullanarak bir hata raporu gönderin.\nKRİTİK: Yakalanmamış Promise Reddi!\n=========================================\nNeden: {{reason}}{{stack}}",
+  "errors.unhandledRejectionStack": "Yığın izi:\n",
+  "nonInteractiveAuth.authMethodMissing": "Çalıştırmadan önce lütfen {{userSettingsPath}} içinde bir kimlik doğrulama yöntemi ayarlayın veya şu ortam değişkenlerinden birini belirtin: GEMINI_API_KEY, GOOGLE_GENAI_USE_VERTEXAI, GOOGLE_GENAI_USE_GCA",
+  "nonInteractiveAuth.enforcedMissing": "'{{enforcedType}}' kimlik doğrulama türü zorunlu, ancak yapılandırılmış bir kimlik doğrulama yok.",
+  "nonInteractiveAuth.enforcedMismatch": "Zorunlu kimlik doğrulama türü '{{enforcedType}}', ancak geçerli tür '{{effectiveAuthType}}'. Lütfen doğru türle yeniden kimlik doğrulaması yapın."
 }

@@ -106,5 +106,10 @@
   "commands.extensions.validate.semverWarning": "Warning: Version '{{version}}' does not appear to be standard semver (e.g., 1.0.0).",
   "commands.extensions.validate.warningHeader": "Validation warnings:",
   "commands.extensions.validate.errorHeader": "Validation failed with the following errors:",
-  "commands.extensions.new.success": "Extension \"{{name}}\" created successfully."
+  "commands.extensions.new.success": "Extension \"{{name}}\" created successfully.",
+  "errors.unhandledRejection": "=========================================\nThis is an unexpected error. Please file a bug report using the /bug tool.\nCRITICAL: Unhandled Promise Rejection!\n=========================================\nReason: {{reason}}{{stack}}",
+  "errors.unhandledRejectionStack": "Stack trace:\n",
+  "nonInteractiveAuth.authMethodMissing": "Please set an Auth method in your {{userSettingsPath}} or specify one of the following environment variables before running: GEMINI_API_KEY, GOOGLE_GENAI_USE_VERTEXAI, GOOGLE_GENAI_USE_GCA",
+  "nonInteractiveAuth.enforcedMissing": "The auth type '{{enforcedType}}' is enforced, but no authentication is configured.",
+  "nonInteractiveAuth.enforcedMismatch": "The enforced authentication type is '{{enforcedType}}', but the current type is '{{effectiveAuthType}}'. Please re-authenticate with the correct type."
 }
