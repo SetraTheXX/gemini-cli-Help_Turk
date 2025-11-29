@@ -45,6 +45,7 @@ function sanitizeLocaleInput(locale?: string): string | undefined {
   // Strip encoding (e.g., UTF-8) and modifiers (e.g., @euro)
   const [withoutEncoding] = locale.split('.');
   const [cleaned] = withoutEncoding.split('@');
+  if (cleaned === 'C' || cleaned === 'POSIX') return undefined;
   return cleaned.trim();
 }
 

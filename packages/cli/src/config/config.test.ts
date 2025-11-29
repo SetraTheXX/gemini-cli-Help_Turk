@@ -84,10 +84,8 @@ vi.mock('read-package-up', () => ({
   ),
 }));
 
-vi.mock('@google/gemini-cli-core', async () => {
-  const actualServer = await vi.importActual<typeof ServerConfig>(
-    '@google/gemini-cli-core',
-  );
+vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+  const actualServer = await importOriginal<typeof ServerConfig>();
   return {
     ...actualServer,
     IdeClient: {
@@ -125,6 +123,13 @@ vi.mock('@google/gemini-cli-core', async () => {
       respectGitIgnore: true,
       respectGeminiIgnore: true,
     },
+    DEFAULT_GEMINI_MODEL:
+      (actualServer as any).DEFAULT_GEMINI_MODEL ?? 'gemini-2.5-pro',
+    DEFAULT_GEMINI_MODEL_AUTO:
+      (actualServer as any).DEFAULT_GEMINI_MODEL_AUTO ?? 'auto',
+    DEFAULT_GEMINI_EMBEDDING_MODEL:
+      (actualServer as any).DEFAULT_GEMINI_EMBEDDING_MODEL ??
+      'gemini-embedding-001',
   };
 });
 
@@ -133,14 +138,19 @@ vi.mock('./extension-manager.js');
 // Global setup to ensure clean environment for all tests in this file
 const originalArgv = process.argv;
 const originalGeminiModel = process.env['GEMINI_MODEL'];
+const DEFAULT_TEST_LANG = 'en_US.UTF-8';
+process.env['LANG'] ??= DEFAULT_TEST_LANG;
 const originalLocaleEnv = {
-  LANG: process.env['LANG'],
+  LANG: process.env['LANG'] ?? DEFAULT_TEST_LANG,
   LC_ALL: process.env['LC_ALL'],
   LC_MESSAGES: process.env['LC_MESSAGES'],
 };
 
 beforeEach(() => {
   delete process.env['GEMINI_MODEL'];
+  process.env['LANG'] = 'en_US.UTF-8';
+  delete process.env['LC_ALL'];
+  delete process.env['LC_MESSAGES'];
 });
 
 afterEach(() => {

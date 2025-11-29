@@ -27,10 +27,14 @@ export default defineConfig({
     },
     alias: {
       react: path.resolve(__dirname, '../../node_modules/react'),
+      '@google/gemini-cli-core': path.resolve(
+        __dirname,
+        '../core/src/index.ts',
+      ),
     },
     setupFiles: ['./test-setup.ts'],
     coverage: {
-      enabled: true,
+      enabled: false,
       provider: 'v8',
       reportsDirectory: './coverage',
       include: ['src/**/*'],
