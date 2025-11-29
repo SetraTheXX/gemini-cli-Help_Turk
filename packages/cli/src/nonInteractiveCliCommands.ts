@@ -19,6 +19,7 @@ import type { CommandContext } from './ui/commands/types.js';
 import { createNonInteractiveUI } from './ui/noninteractive/nonInteractiveUi.js';
 import type { LoadedSettings } from './config/settings.js';
 import type { SessionStatsState } from './ui/contexts/SessionContext.js';
+import { t } from './i18n/index.js';
 
 /**
  * Processes a slash command in a non-interactive environment.
@@ -93,11 +94,11 @@ export const handleSlashCommand = async (
             // This ensures that if a command *does* request confirmation (e.g.
             // in the future with more granular permissions), it's handled appropriately.
             throw new FatalInputError(
-              'Exiting due to a confirmation prompt requested by the command.',
+              t('nonInteractive.confirmationExit'),
             );
           default:
             throw new FatalInputError(
-              'Exiting due to command result that is not supported in non-interactive mode.',
+              t('nonInteractive.unsupportedResult'),
             );
         }
       }

@@ -9,6 +9,7 @@ import { join, dirname, basename } from 'node:path';
 import type { CommandModule } from 'yargs';
 import { fileURLToPath } from 'node:url';
 import { debugLogger } from '@google/gemini-cli-core';
+import { t } from '../../i18n/index.js';
 
 interface NewArgs {
   path: string;
@@ -52,7 +53,10 @@ async function handleNew(args: NewArgs) {
   if (args.template) {
     await copyDirectory(args.template, args.path);
     debugLogger.log(
-      `Successfully created new extension from template "${args.template}" at ${args.path}.`,
+      t('commands.extensions.new.templateSuccess', {
+        template: args.template,
+        path: args.path,
+      }),
     );
   } else {
     await createDirectory(args.path);
@@ -65,10 +69,10 @@ async function handleNew(args: NewArgs) {
       join(args.path, 'gemini-extension.json'),
       JSON.stringify(manifest, null, 2),
     );
-    debugLogger.log(`Successfully created new extension at ${args.path}.`);
+    debugLogger.log(t('commands.extensions.new.defaultSuccess', { path: args.path }));
   }
   debugLogger.log(
-    `You can install this using "gemini extensions link ${args.path}" to test it out.`,
+    t('commands.extensions.new.linkHint', { path: args.path }),
   );
 }
 
@@ -81,16 +85,16 @@ async function getBoilerplateChoices() {
 
 export const newCommand: CommandModule = {
   command: 'new <path> [template]',
-  describe: 'Create a new extension from a boilerplate example.',
+  describe: t('commands.extensions.new.describe'),
   builder: async (yargs) => {
     const choices = await getBoilerplateChoices();
     return yargs
       .positional('path', {
-        describe: 'The path to create the extension in.',
+        describe: t('commands.extensions.new.path'),
         type: 'string',
       })
       .positional('template', {
-        describe: 'The boilerplate template to use.',
+        describe: t('commands.extensions.new.template'),
         type: 'string',
         choices,
       });

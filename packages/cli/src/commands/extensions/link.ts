@@ -15,6 +15,7 @@ import { requestConsentNonInteractive } from '../../config/extensions/consent.js
 import { ExtensionManager } from '../../config/extension-manager.js';
 import { loadSettings } from '../../config/settings.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
+import { t } from '../../i18n/index.js';
 
 interface InstallArgs {
   path: string;
@@ -36,9 +37,7 @@ export async function handleLink(args: InstallArgs) {
     await extensionManager.loadExtensions();
     const extension =
       await extensionManager.installOrUpdateExtension(installMetadata);
-    debugLogger.log(
-      `Extension "${extension.name}" linked successfully and enabled.`,
-    );
+    debugLogger.log(t('commands.extensions.link.success', { path: args.path }));
   } catch (error) {
     debugLogger.error(getErrorMessage(error));
     process.exit(1);
@@ -47,12 +46,11 @@ export async function handleLink(args: InstallArgs) {
 
 export const linkCommand: CommandModule = {
   command: 'link <path>',
-  describe:
-    'Links an extension from a local path. Updates made to the local path will always be reflected.',
+  describe: t('commands.extensions.link.describe'),
   builder: (yargs) =>
     yargs
       .positional('path', {
-        describe: 'The name of the extension to link.',
+        describe: t('commands.extensions.link.path'),
         type: 'string',
       })
       .check((_) => true),
