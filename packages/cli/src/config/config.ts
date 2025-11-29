@@ -37,6 +37,12 @@ import { getCliVersion } from '../utils/version.js';
 import { loadSandboxConfig } from './sandboxConfig.js';
 import { resolvePath } from '../utils/resolvePath.js';
 import { appEvents } from '../utils/events.js';
+import {
+  DEFAULT_LOCALE,
+  getYargsLocale,
+  resolveLocale,
+  validateLocale,
+} from './locale.js';
 
 import { isWorkspaceTrusted } from './trustedFolders.js';
 import { createPolicyEngineConfig } from './policy.js';
@@ -71,16 +77,30 @@ export interface CliArgs {
   outputFormat: string | undefined;
   fakeResponses: string | undefined;
   recordResponses: string | undefined;
+  locale: string | undefined;
 }
 
 export async function parseArguments(settings: Settings): Promise<CliArgs> {
   const rawArgv = hideBin(process.argv);
+  const { locale: resolvedLocale, yargsLocale } = resolveLocale({
+    argv: rawArgv,
+    settings,
+  });
   const yargsInstance = yargs(rawArgv)
-    .locale('en')
+    .locale(yargsLocale)
     .scriptName('gemini')
     .usage(
       'Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode',
     )
+
+    .option('locale', {
+      alias: 'L',
+      type: 'string',
+      description:
+        'Locale for CLI messages. Can also be set via LANG/LC_* or config general.locale.',
+      default: resolvedLocale,
+      coerce: validateLocale,
+    })
 
     .option('debug', {
       alias: 'd',
@@ -282,6 +302,9 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
     .alias('v', 'version')
     .help()
     .alias('h', 'help')
+    .epilogue(
+      'Locale can be set via --locale/-L, config general.locale, or LANG/LC_* environment variables (default: en-US).',
+    )
     .strict()
     .demandCommand(0, 0); // Allow base command to run with no subcommands
 
@@ -319,6 +342,12 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
 
   // Keep CliArgs.query as a string for downstream typing
   (result as Record<string, unknown>)['query'] = q || undefined;
+
+  const normalizedLocale = validateLocale(
+    (result as { locale?: string }).locale ?? DEFAULT_LOCALE,
+  );
+  (result as Record<string, unknown>)['locale'] = normalizedLocale;
+  yargsInstance.locale(getYargsLocale(normalizedLocale));
 
   // The import format is now only controlled by settings.memoryImportFormat
   // We no longer accept it as a CLI argument

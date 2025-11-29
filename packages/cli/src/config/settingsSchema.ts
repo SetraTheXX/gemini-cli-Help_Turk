@@ -196,6 +196,15 @@ const SETTINGS_SCHEMA = {
         description: 'Disable update notification prompts.',
         showInDialog: false,
       },
+      locale: {
+        type: 'string',
+        label: 'Locale',
+        category: 'General',
+        requiresRestart: false,
+        default: undefined as string | undefined,
+        description: 'Override CLI locale (e.g., en-US). Defaults to LANG/LC_* or en-US.',
+        showInDialog: false,
+      },
       checkpointing: {
         type: 'object',
         label: 'Checkpointing',
