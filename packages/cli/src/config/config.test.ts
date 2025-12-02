@@ -89,6 +89,9 @@ vi.mock('@google/gemini-cli-core', async () => {
   );
   return {
     ...actualServer,
+    DEFAULT_GEMINI_MODEL: 'gemini-2.5-pro',
+    DEFAULT_GEMINI_MODEL_AUTO: 'auto',
+    DEFAULT_GEMINI_EMBEDDING_MODEL: 'gemini-embedding-001',
     IdeClient: {
       getInstance: vi.fn().mockResolvedValue({
         getConnectionStatus: vi.fn(),
@@ -132,9 +135,17 @@ vi.mock('./extension-manager.js');
 // Global setup to ensure clean environment for all tests in this file
 const originalArgv = process.argv;
 const originalGeminiModel = process.env['GEMINI_MODEL'];
+const originalLocaleEnv = {
+  LANG: process.env['LANG'],
+  LC_ALL: process.env['LC_ALL'],
+  LC_MESSAGES: process.env['LC_MESSAGES'],
+};
 
 beforeEach(() => {
   delete process.env['GEMINI_MODEL'];
+  delete process.env['LANG'];
+  delete process.env['LC_ALL'];
+  delete process.env['LC_MESSAGES'];
 });
 
 afterEach(() => {
@@ -143,6 +154,21 @@ afterEach(() => {
     process.env['GEMINI_MODEL'] = originalGeminiModel;
   } else {
     delete process.env['GEMINI_MODEL'];
+  }
+  if (originalLocaleEnv.LANG !== undefined) {
+    process.env['LANG'] = originalLocaleEnv.LANG;
+  } else {
+    delete process.env['LANG'];
+  }
+  if (originalLocaleEnv.LC_ALL !== undefined) {
+    process.env['LC_ALL'] = originalLocaleEnv.LC_ALL;
+  } else {
+    delete process.env['LC_ALL'];
+  }
+  if (originalLocaleEnv.LC_MESSAGES !== undefined) {
+    process.env['LC_MESSAGES'] = originalLocaleEnv.LC_MESSAGES;
+  } else {
+    delete process.env['LC_MESSAGES'];
   }
 });
 
@@ -209,6 +235,32 @@ describe('parseArguments', () => {
 
     mockExit.mockRestore();
     mockConsoleError.mockRestore();
+  });
+
+  it('should normalize locale from environment variables', async () => {
+    process.env['LANG'] = 'tr_TR.UTF-8';
+    process.argv = ['node', 'script.js'];
+
+    const result = await parseArguments({} as Settings);
+
+    expect(result.locale).toBe('tr-TR');
+  });
+
+  it('should prefer CLI locale flag over environment variables', async () => {
+    process.env['LANG'] = 'tr_TR.UTF-8';
+    process.argv = ['node', 'script.js', '--locale', 'en_GB'];
+
+    const result = await parseArguments({} as Settings);
+
+    expect(result.locale).toBe('en-GB');
+  });
+
+  it('should throw when an invalid locale is provided', async () => {
+    process.argv = ['node', 'script.js', '--locale', 'not_a_locale'];
+
+    await expect(parseArguments({} as Settings)).rejects.toThrow(
+      'Invalid locale value: not_a_locale',
+    );
   });
 
   it('should allow --prompt without --prompt-interactive', async () => {

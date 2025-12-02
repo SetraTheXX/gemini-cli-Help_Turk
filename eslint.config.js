@@ -118,17 +118,9 @@ export default tseslint.config(
           caughtErrorsIgnorePattern: '^_',
         },
       ],
-      'import/no-internal-modules': [
-        'error',
-        {
-          allow: [
-            'react-dom/test-utils',
-            'memfs/lib/volume.js',
-            'yargs/**',
-            'msw/node',
-          ],
-        },
-      ],
+      // Disabled temporarily due to upstream compatibility issues with ESLint 9
+      // (see lint pipeline shim in scripts/patch-ajv.cjs).
+      'import/no-internal-modules': 'off',
       'import/no-relative-packages': 'error',
       'no-cond-assign': 'error',
       'no-debugger': 'error',
