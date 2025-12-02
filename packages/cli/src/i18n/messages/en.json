@@ -1,0 +1,72 @@
+{
+  "usage": "Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode",
+  "commands": {
+    "mainDescription": "Launch Gemini CLI",
+    "queryDescription": "Positional prompt. Defaults to one-shot; use -i/--prompt-interactive for interactive."
+  },
+  "options": {
+    "model": "Model",
+    "prompt": "Prompt. Appended to input on stdin (if any).",
+    "promptInteractive": "Execute the provided prompt and continue in interactive mode",
+    "sandbox": "Run in sandbox?",
+    "debug": "Run in debug mode?",
+    "yolo": "Automatically accept all actions (aka YOLO mode, see https://www.youtube.com/watch?v=xvFZjo5PgG0 for more details)?",
+    "approvalMode": "Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), yolo (auto-approve all tools)",
+    "experimentalAcp": "Starts the agent in ACP mode",
+    "allowedMcpServerNames": "Allowed MCP server names",
+    "allowedTools": "Tools that are allowed to run without confirmation",
+    "extensions": "A list of extensions to use. If not provided, all extensions are used.",
+    "listExtensions": "List all available extensions and exit.",
+    "resume": "Resume a previous session. Use \"latest\" for most recent or index number (e.g. --resume 5)",
+    "listSessions": "List available sessions for the current project and exit.",
+    "deleteSession": "Delete a session by index number (use --list-sessions to see available sessions).",
+    "includeDirectories": "Additional directories to include in the workspace (comma-separated or multiple --include-directories)",
+    "screenReader": "Enable screen reader mode for accessibility.",
+    "outputFormat": "The format of the CLI output.",
+    "locale": "Locale to use for CLI messages and help output",
+    "fakeResponses": "Path to a file with fake model responses for testing.",
+    "recordResponses": "Path to a file to record model responses for testing.",
+    "promptDeprecation": "Use the positional prompt instead. This flag will be removed in a future version."
+  },
+  "errors": {
+    "promptAndQuery": "Cannot use both a positional prompt and the --prompt (-p) flag together",
+    "promptAndInteractive": "Cannot use both --prompt (-p) and --prompt-interactive (-i) together",
+    "resumeNeedsInput": "When resuming a session, you must provide a message via --prompt (-p) or stdin",
+    "yoloAndApproval": "Cannot use both --yolo (-y) and --approval-mode together. Use --approval-mode=yolo instead.",
+    "invalidLocaleValue": "Invalid locale value: {{value}}",
+    "invalidLocaleMissing": "Invalid locale value: expected a non-empty string",
+    "unknown": "Unknown error"
+  },
+  "extensions": {
+    "describe": "Manage Gemini CLI extensions.",
+    "demandCommand": "You need at least one command before continuing.",
+    "install": {
+      "describe": "Installs an extension from a git repository URL or a local path.",
+      "source": "The github URL or local path of the extension to install.",
+      "ref": "The git ref to install from.",
+      "autoUpdate": "Enable auto-update for this extension.",
+      "preRelease": "Enable pre-release versions for this extension.",
+      "consent": "Acknowledge the security risks of installing an extension and skip the confirmation prompt.",
+      "errors": {
+        "localRefNotAllowed": "--ref and --auto-update are not applicable for local extensions.",
+        "sourceNotFound": "Install source not found.",
+        "sourceMissing": "The source argument must be provided."
+      },
+      "logs": {
+        "consentAcknowledged": "You have consented to the following:",
+        "success": "Extension \"{{name}}\" installed successfully and enabled."
+      }
+    },
+    "disable": {
+      "describe": "Disables an extension.",
+      "name": "The name of the extension to disable.",
+      "scope": "The scope to disable the extension in.",
+      "errors": {
+        "invalidScope": "Invalid scope: {{scope}}. Please use one of {{allowedScopes}}."
+      },
+      "logs": {
+        "success": "Extension \"{{name}}\" successfully disabled for scope \"{{scope}}\"."
+      }
+    }
+  }
+}

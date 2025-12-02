@@ -46,8 +46,8 @@
     "test:integration:sandbox:none": "cross-env GEMINI_SANDBOX=false vitest run --root ./integration-tests",
     "test:integration:sandbox:docker": "cross-env GEMINI_SANDBOX=docker npm run build:sandbox && cross-env GEMINI_SANDBOX=docker vitest run --root ./integration-tests",
     "test:integration:sandbox:podman": "cross-env GEMINI_SANDBOX=podman vitest run --root ./integration-tests",
-    "lint": "eslint . --ext .ts,.tsx && eslint integration-tests && eslint scripts",
-    "lint:fix": "eslint . --fix --ext .ts,.tsx && eslint integration-tests --fix && eslint scripts --fix && npm run format",
+    "lint": "node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint . --ext .ts,.tsx && node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint integration-tests && node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint scripts",
+    "lint:fix": "node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint . --fix --ext .ts,.tsx && node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint integration-tests --fix && node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint scripts --fix && npm run format",
     "lint:ci": "npm run lint:all",
     "lint:all": "node scripts/lint.js",
     "format": "prettier --experimental-cli --write .",
@@ -135,7 +135,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "eslint --fix --max-warnings 0 --no-warn-ignored"
+      "node -r ./scripts/patch-ajv.cjs ./node_modules/.bin/eslint --fix --max-warnings 0 --no-warn-ignored"
     ],
     "eslint.config.js": [
       "prettier --write"

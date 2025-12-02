@@ -1,0 +1,72 @@
+{
+  "usage": "Kullanım: gemini [seçenekler] [komut]\n\nGemini CLI - Etkileşimli CLI başlatır, etkileşimsiz çalıştırmak için -p/--prompt kullanın",
+  "commands": {
+    "mainDescription": "Gemini CLI'yi başlat",
+    "queryDescription": "Konumsal prompt. Varsayılan tek seferlik çalıştırır; etkileşimli mod için -i/--prompt-interactive kullanın."
+  },
+  "options": {
+    "model": "Model",
+    "prompt": "Prompt. Varsa stdin girdisinin sonuna eklenir.",
+    "promptInteractive": "Verilen prompt'u çalıştır ve etkileşimli modda devam et",
+    "sandbox": "Sandbox modunda çalıştırılsın mı?",
+    "debug": "Hata ayıklama modunda çalıştırılsın mı?",
+    "yolo": "Tüm eylemleri otomatik onayla (YOLO modu, ayrıntı için https://www.youtube.com/watch?v=xvFZjo5PgG0).",
+    "approvalMode": "Onay modunu ayarla: default (onay iste), auto_edit (düzenleme araçlarını otomatik onayla), yolo (tüm eylemleri otomatik onayla)",
+    "experimentalAcp": "Aracıyı ACP modunda başlatır",
+    "allowedMcpServerNames": "İzin verilen MCP sunucu adları",
+    "allowedTools": "Onay beklemeden çalışmasına izin verilen araçlar",
+    "extensions": "Kullanılacak eklenti listesi. Boş bırakılırsa tüm eklentiler kullanılır.",
+    "listExtensions": "Tüm eklentileri listele ve çık.",
+    "resume": "Önceki bir oturumu devam ettir. En son oturum için \"latest\" veya indeks numarası (örn. --resume 5) kullanın",
+    "listSessions": "Geçerli proje için kullanılabilir oturumları listele ve çık.",
+    "deleteSession": "Bir oturumu indeks numarasıyla sil (--list-sessions çıktısını kullanın).",
+    "includeDirectories": "Çalışma alanına eklenecek ek dizinler (virgülle ayrılmış veya birden çok --include-directories)",
+    "screenReader": "Erişilebilirlik için ekran okuyucu modunu etkinleştir.",
+    "outputFormat": "CLI çıktısının formatı.",
+    "locale": "CLI mesajları ve yardım çıktısı için kullanılacak yerel ayar",
+    "fakeResponses": "Test için sahte model yanıtlarının olduğu dosya yolu.",
+    "recordResponses": "Test için model yanıtlarının kaydedileceği dosya yolu.",
+    "promptDeprecation": "Bunun yerine konumsal prompt kullanın. Bu bayrak ileride kaldırılacaktır."
+  },
+  "errors": {
+    "promptAndQuery": "Hem konumsal prompt hem de --prompt (-p) bayrağı birlikte kullanılamaz",
+    "promptAndInteractive": "--prompt (-p) ile --prompt-interactive (-i) birlikte kullanılamaz",
+    "resumeNeedsInput": "Bir oturumu sürdürürken --prompt (-p) veya stdin ile bir mesaj vermelisiniz",
+    "yoloAndApproval": "--yolo (-y) ile --approval-mode birlikte kullanılamaz. Bunun yerine --approval-mode=yolo kullanın.",
+    "invalidLocaleValue": "Geçersiz locale değeri: {{value}}",
+    "invalidLocaleMissing": "Geçersiz locale değeri: boş olmayan bir ifade bekleniyordu",
+    "unknown": "Bilinmeyen hata"
+  },
+  "extensions": {
+    "describe": "Gemini CLI eklentilerini yönet.",
+    "demandCommand": "Devam etmeden önce en az bir komut belirtmelisiniz.",
+    "install": {
+      "describe": "Bir git deposu URL'sinden veya yerel bir yoldan eklenti kurar.",
+      "source": "Yüklenecek eklentinin github URL'si veya yerel yol.",
+      "ref": "Kurulacak git ref'i.",
+      "autoUpdate": "Bu eklenti için otomatik güncellemeyi etkinleştir.",
+      "preRelease": "Bu eklenti için ön sürümleri etkinleştir.",
+      "consent": "Eklenti kurulumunun güvenlik risklerini kabul et ve onay istemini atla.",
+      "errors": {
+        "localRefNotAllowed": "--ref ve --auto-update yerel eklentiler için kullanılamaz.",
+        "sourceNotFound": "Kurulum kaynağı bulunamadı.",
+        "sourceMissing": "Source argümanı verilmelidir."
+      },
+      "logs": {
+        "consentAcknowledged": "Şunlara onay verdiniz:",
+        "success": "\"{{name}}\" eklentisi başarıyla kuruldu ve etkinleştirildi."
+      }
+    },
+    "disable": {
+      "describe": "Bir eklentiyi devre dışı bırakır.",
+      "name": "Devre dışı bırakılacak eklentinin adı.",
+      "scope": "Eklentinin devre dışı bırakılacağı kapsam.",
+      "errors": {
+        "invalidScope": "Geçersiz kapsam: {{scope}}. Lütfen şunlardan birini kullanın: {{allowedScopes}}."
+      },
+      "logs": {
+        "success": "\"{{name}}\" eklentisi \"{{scope}}\" kapsamında devre dışı bırakıldı."
+      }
+    }
+  }
+}

@@ -26,6 +26,7 @@ import {
   type LoadedSettings,
 } from '../../config/settings.js';
 import { getErrorMessage } from '../../utils/errors.js';
+import { createTranslator } from '../../i18n/index.js';
 
 // Mock dependencies
 
@@ -41,6 +42,10 @@ vi.mock('@google/gemini-cli-core', async (importOriginal) => {
 
   return {
     ...actual,
+
+    DEFAULT_GEMINI_MODEL: 'gemini-1.5-pro',
+    DEFAULT_GEMINI_MODEL_AUTO: 'gemini-1.5-pro',
+    DEFAULT_GEMINI_EMBEDDING_MODEL: 'embedding-001',
 
     debugLogger: {
       log: vi.fn(),
@@ -59,6 +64,7 @@ vi.mock('../../config/extensions/extensionSettings.js', () => ({
 }));
 
 describe('extensions disable command', () => {
+  const t = createTranslator('en');
   const mockLoadSettings = vi.mocked(loadSettings);
 
   const mockGetErrorMessage = vi.mocked(getErrorMessage);
@@ -106,22 +112,28 @@ describe('extensions disable command', () => {
         name: 'my-extension',
         scope: undefined,
         expectedScope: SettingScope.User,
-        expectedLog:
-          'Extension "my-extension" successfully disabled for scope "undefined".',
+        expectedLog: t('extensions.disable.logs.success', {
+          name: 'my-extension',
+          scope: SettingScope.User,
+        }),
       },
       {
         name: 'my-extension',
         scope: 'user',
         expectedScope: SettingScope.User,
-        expectedLog:
-          'Extension "my-extension" successfully disabled for scope "user".',
+        expectedLog: t('extensions.disable.logs.success', {
+          name: 'my-extension',
+          scope: 'user',
+        }),
       },
       {
         name: 'my-extension',
         scope: 'workspace',
         expectedScope: SettingScope.Workspace,
-        expectedLog:
-          'Extension "my-extension" successfully disabled for scope "workspace".',
+        expectedLog: t('extensions.disable.logs.success', {
+          name: 'my-extension',
+          scope: 'workspace',
+        }),
       },
     ])(
       'should disable an extension in the $expectedScope scope when scope is $scope',

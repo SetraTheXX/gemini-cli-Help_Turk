@@ -26,11 +26,23 @@ export default defineConfig({
       junit: 'junit.xml',
     },
     alias: {
+      '@google/gemini-cli-core': path.resolve(
+        __dirname,
+        '../core/src/index.ts',
+      ),
       react: path.resolve(__dirname, '../../node_modules/react'),
     },
     setupFiles: ['./test-setup.ts'],
     coverage: {
-      enabled: true,
+      // Vitest's coverage stack currently fails on Node.js 22 because of a
+      // transitive path-scurry/test-exclude incompatibility. Disable coverage
+      // by default on Node 22+ so tests can run locally; set COVERAGE=true to
+      // force-enable when running on a compatible runtime (e.g., Node 20).
+      enabled:
+        process.env.COVERAGE === 'true'
+          ? true
+          : Number.parseInt(process.versions.node.split('.')[0], 10) < 22 &&
+            process.env.COVERAGE !== 'false',
       provider: 'v8',
       reportsDirectory: './coverage',
       include: ['src/**/*'],

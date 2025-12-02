@@ -9,7 +9,6 @@ import {
   debugLogger,
   type ExtensionInstallMetadata,
 } from '@google/gemini-cli-core';
-import { getErrorMessage } from '../../utils/errors.js';
 import { stat } from 'node:fs/promises';
 import {
   INSTALL_WARNING_MESSAGE,
@@ -18,6 +17,8 @@ import {
 import { ExtensionManager } from '../../config/extension-manager.js';
 import { loadSettings } from '../../config/settings.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
+import { createTranslator, type Translator } from '../../i18n/index.js';
+import { getErrorMessage } from '../../utils/errors.js';
 
 interface InstallArgs {
   source: string;
@@ -27,7 +28,10 @@ interface InstallArgs {
   consent?: boolean;
 }
 
-export async function handleInstall(args: InstallArgs) {
+export async function handleInstall(
+  args: InstallArgs,
+  t: Translator = createTranslator('en'),
+) {
   try {
     let installMetadata: ExtensionInstallMetadata;
     const { source } = args;
@@ -46,9 +50,7 @@ export async function handleInstall(args: InstallArgs) {
       };
     } else {
       if (args.ref || args.autoUpdate) {
-        throw new Error(
-          '--ref and --auto-update are not applicable for local extensions.',
-        );
+        throw new Error(t('extensions.install.errors.localRefNotAllowed'));
       }
       try {
         await stat(source);
@@ -57,7 +59,7 @@ export async function handleInstall(args: InstallArgs) {
           type: 'local',
         };
       } catch {
-        throw new Error('Install source not found.');
+        throw new Error(t('extensions.install.errors.sourceNotFound'));
       }
     }
 
@@ -65,7 +67,7 @@ export async function handleInstall(args: InstallArgs) {
       ? () => Promise.resolve(true)
       : requestConsentNonInteractive;
     if (args.consent) {
-      debugLogger.log('You have consented to the following:');
+      debugLogger.log(t('extensions.install.logs.consentAcknowledged'));
       debugLogger.log(INSTALL_WARNING_MESSAGE);
     }
 
@@ -80,7 +82,7 @@ export async function handleInstall(args: InstallArgs) {
     const extension =
       await extensionManager.installOrUpdateExtension(installMetadata);
     debugLogger.log(
-      `Extension "${extension.name}" installed successfully and enabled.`,
+      t('extensions.install.logs.success', { name: extension.name }),
     );
   } catch (error) {
     debugLogger.error(getErrorMessage(error));
@@ -88,47 +90,53 @@ export async function handleInstall(args: InstallArgs) {
   }
 }
 
-export const installCommand: CommandModule = {
-  command: 'install <source> [--auto-update] [--pre-release]',
-  describe: 'Installs an extension from a git repository URL or a local path.',
-  builder: (yargs) =>
-    yargs
-      .positional('source', {
-        describe: 'The github URL or local path of the extension to install.',
-        type: 'string',
-        demandOption: true,
-      })
-      .option('ref', {
-        describe: 'The git ref to install from.',
-        type: 'string',
-      })
-      .option('auto-update', {
-        describe: 'Enable auto-update for this extension.',
-        type: 'boolean',
-      })
-      .option('pre-release', {
-        describe: 'Enable pre-release versions for this extension.',
-        type: 'boolean',
-      })
-      .option('consent', {
-        describe:
-          'Acknowledge the security risks of installing an extension and skip the confirmation prompt.',
-        type: 'boolean',
-        default: false,
-      })
-      .check((argv) => {
-        if (!argv.source) {
-          throw new Error('The source argument must be provided.');
-        }
-        return true;
-      }),
-  handler: async (argv) => {
-    await handleInstall({
-      source: argv['source'] as string,
-      ref: argv['ref'] as string | undefined,
-      autoUpdate: argv['auto-update'] as boolean | undefined,
-      allowPreRelease: argv['pre-release'] as boolean | undefined,
-      consent: argv['consent'] as boolean | undefined,
-    });
-  },
-};
+export function createInstallCommand(t: Translator): CommandModule {
+  return {
+    command: 'install <source> [--auto-update] [--pre-release]',
+    describe: t('extensions.install.describe'),
+    builder: (yargs) =>
+      yargs
+        .positional('source', {
+          describe: t('extensions.install.source'),
+          type: 'string',
+          demandOption: true,
+        })
+        .option('ref', {
+          describe: t('extensions.install.ref'),
+          type: 'string',
+        })
+        .option('auto-update', {
+          describe: t('extensions.install.autoUpdate'),
+          type: 'boolean',
+        })
+        .option('pre-release', {
+          describe: t('extensions.install.preRelease'),
+          type: 'boolean',
+        })
+        .option('consent', {
+          describe: t('extensions.install.consent'),
+          type: 'boolean',
+          default: false,
+        })
+        .check((argv) => {
+          if (!argv.source) {
+            throw new Error(t('extensions.install.errors.sourceMissing'));
+          }
+          return true;
+        }),
+    handler: async (argv) => {
+      await handleInstall(
+        {
+          source: argv['source'] as string,
+          ref: argv['ref'] as string | undefined,
+          autoUpdate: argv['auto-update'] as boolean | undefined,
+          allowPreRelease: argv['pre-release'] as boolean | undefined,
+          consent: argv['consent'] as boolean | undefined,
+        },
+        t,
+      );
+    },
+  };
+}
+
+export const installCommand = createInstallCommand(createTranslator('en'));

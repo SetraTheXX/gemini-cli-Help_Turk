@@ -9,7 +9,7 @@ import { hideBin } from 'yargs/helpers';
 import process from 'node:process';
 import { mcpCommand } from '../commands/mcp.js';
 import type { OutputFormat } from '@google/gemini-cli-core';
-import { extensionsCommand } from '../commands/extensions.js';
+import { createExtensionsCommand } from '../commands/extensions.js';
 import {
   Config,
   setGeminiMdFilename as setServerGeminiMdFilename,
@@ -37,6 +37,8 @@ import { getCliVersion } from '../utils/version.js';
 import { loadSandboxConfig } from './sandboxConfig.js';
 import { resolvePath } from '../utils/resolvePath.js';
 import { appEvents } from '../utils/events.js';
+import { detectLocale, validateLocale } from '../utils/locale.js';
+import { createTranslator } from '../i18n/index.js';
 
 import { isWorkspaceTrusted } from './trustedFolders.js';
 import { createPolicyEngineConfig } from './policy.js';
@@ -71,77 +73,74 @@ export interface CliArgs {
   outputFormat: string | undefined;
   fakeResponses: string | undefined;
   recordResponses: string | undefined;
+  locale: string | undefined;
 }
 
 export async function parseArguments(settings: Settings): Promise<CliArgs> {
   const rawArgv = hideBin(process.argv);
+  const defaultLocale = detectLocale(process.env, 'en');
+  const t = createTranslator(defaultLocale);
   const yargsInstance = yargs(rawArgv)
-    .locale('en')
+    .locale(defaultLocale)
     .scriptName('gemini')
-    .usage(
-      'Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode',
-    )
+    .usage(t('usage'))
 
     .option('debug', {
       alias: 'd',
       type: 'boolean',
-      description: 'Run in debug mode?',
+      description: t('options.debug'),
       default: false,
     })
-    .command('$0 [query..]', 'Launch Gemini CLI', (yargsInstance) =>
+    .command('$0 [query..]', t('commands.mainDescription'), (yargsInstance) =>
       yargsInstance
         .positional('query', {
-          description:
-            'Positional prompt. Defaults to one-shot; use -i/--prompt-interactive for interactive.',
+          description: t('commands.queryDescription'),
         })
         .option('model', {
           alias: 'm',
           type: 'string',
           nargs: 1,
-          description: `Model`,
+          description: t('options.model'),
         })
         .option('prompt', {
           alias: 'p',
           type: 'string',
           nargs: 1,
-          description: 'Prompt. Appended to input on stdin (if any).',
+          description: t('options.prompt'),
         })
         .option('prompt-interactive', {
           alias: 'i',
           type: 'string',
           nargs: 1,
-          description:
-            'Execute the provided prompt and continue in interactive mode',
+          description: t('options.promptInteractive'),
         })
         .option('sandbox', {
           alias: 's',
           type: 'boolean',
-          description: 'Run in sandbox?',
+          description: t('options.sandbox'),
         })
 
         .option('yolo', {
           alias: 'y',
           type: 'boolean',
-          description:
-            'Automatically accept all actions (aka YOLO mode, see https://www.youtube.com/watch?v=xvFZjo5PgG0 for more details)?',
+          description: t('options.yolo'),
           default: false,
         })
         .option('approval-mode', {
           type: 'string',
           nargs: 1,
           choices: ['default', 'auto_edit', 'yolo'],
-          description:
-            'Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), yolo (auto-approve all tools)',
+          description: t('options.approvalMode'),
         })
         .option('experimental-acp', {
           type: 'boolean',
-          description: 'Starts the agent in ACP mode',
+          description: t('options.experimentalAcp'),
         })
         .option('allowed-mcp-server-names', {
           type: 'array',
           string: true,
           nargs: 1,
-          description: 'Allowed MCP server names',
+          description: t('options.allowedMcpServerNames'),
           coerce: (mcpServerNames: string[]) =>
             // Handle comma-separated values
             mcpServerNames.flatMap((mcpServerName) =>
@@ -152,7 +151,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
           type: 'array',
           string: true,
           nargs: 1,
-          description: 'Tools that are allowed to run without confirmation',
+          description: t('options.allowedTools'),
           coerce: (tools: string[]) =>
             // Handle comma-separated values
             tools.flatMap((tool) => tool.split(',').map((t) => t.trim())),
@@ -162,8 +161,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
           type: 'array',
           string: true,
           nargs: 1,
-          description:
-            'A list of extensions to use. If not provided, all extensions are used.',
+          description: t('options.extensions'),
           coerce: (extensions: string[]) =>
             // Handle comma-separated values
             extensions.flatMap((extension) =>
@@ -173,7 +171,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
         .option('list-extensions', {
           alias: 'l',
           type: 'boolean',
-          description: 'List all available extensions and exit.',
+          description: t('options.listExtensions'),
         })
         .option('resume', {
           alias: 'r',
@@ -181,8 +179,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
           // `skipValidation` so that we can distinguish between it being passed with a value, without
           // one, and not being passed at all.
           skipValidation: true,
-          description:
-            'Resume a previous session. Use "latest" for most recent or index number (e.g. --resume 5)',
+          description: t('options.resume'),
           coerce: (value: string): string => {
             // When --resume passed with a value (`gemini --resume 123`): value = "123" (string)
             // When --resume passed without a value (`gemini --resume`): value = "" (string)
@@ -196,53 +193,72 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
         })
         .option('list-sessions', {
           type: 'boolean',
-          description:
-            'List available sessions for the current project and exit.',
+          description: t('options.listSessions'),
         })
         .option('delete-session', {
           type: 'string',
-          description:
-            'Delete a session by index number (use --list-sessions to see available sessions).',
+          description: t('options.deleteSession'),
         })
         .option('include-directories', {
           type: 'array',
           string: true,
           nargs: 1,
-          description:
-            'Additional directories to include in the workspace (comma-separated or multiple --include-directories)',
+          description: t('options.includeDirectories'),
           coerce: (dirs: string[]) =>
             // Handle comma-separated values
             dirs.flatMap((dir) => dir.split(',').map((d) => d.trim())),
         })
         .option('screen-reader', {
           type: 'boolean',
-          description: 'Enable screen reader mode for accessibility.',
+          description: t('options.screenReader'),
         })
         .option('output-format', {
           alias: 'o',
           type: 'string',
           nargs: 1,
-          description: 'The format of the CLI output.',
+          description: t('options.outputFormat'),
           choices: ['text', 'json', 'stream-json'],
+        })
+        .option('locale', {
+          alias: 'L',
+          type: 'string',
+          description: t('options.locale'),
+          default: defaultLocale,
+          coerce: validateLocale,
         })
         .option('fake-responses', {
           type: 'string',
-          description: 'Path to a file with fake model responses for testing.',
+          description: t('options.fakeResponses'),
           hidden: true,
         })
         .option('record-responses', {
           type: 'string',
-          description: 'Path to a file to record model responses for testing.',
+          description: t('options.recordResponses'),
           hidden: true,
         })
-        .deprecateOption(
-          'prompt',
-          'Use the positional prompt instead. This flag will be removed in a future version.',
-        )
+        .deprecateOption('prompt', t('options.promptDeprecation'))
         // Ensure validation flows through .fail() for clean UX
         .fail((msg, err, yargs) => {
-          debugLogger.error(msg || err?.message || 'Unknown error');
+          const fallbackMessage = t('errors.unknown');
+          const error = err ?? new Error(msg || fallbackMessage);
+          const message = msg || error.message || fallbackMessage;
+          const errorMessage =
+            typeof error?.message === 'string' && error.message.trim()
+              ? error.message
+              : message;
+          const localizedMessage = errorMessage.includes('Invalid locale value')
+            ? errorMessage.includes('expected a non-empty string')
+              ? t('errors.invalidLocaleMissing')
+              : t('errors.invalidLocaleValue', {
+                  value: errorMessage.split(': ')[1] ?? '',
+                })
+            : errorMessage;
+          console.error(localizedMessage);
+          debugLogger.error(localizedMessage);
           yargs.showHelp();
+          if (errorMessage.includes('Invalid locale value')) {
+            throw new Error(localizedMessage);
+          }
           process.exit(1);
         })
         .check((argv) => {
@@ -254,18 +270,16 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
             : !!query;
 
           if (argv['prompt'] && hasPositionalQuery) {
-            return 'Cannot use both a positional prompt and the --prompt (-p) flag together';
+            return t('errors.promptAndQuery');
           }
           if (argv['prompt'] && argv['promptInteractive']) {
-            return 'Cannot use both --prompt (-p) and --prompt-interactive (-i) together';
+            return t('errors.promptAndInteractive');
           }
           if (argv.resume && !argv.prompt && !process.stdin.isTTY) {
-            throw new Error(
-              'When resuming a session, you must provide a message via --prompt (-p) or stdin',
-            );
+            throw new Error(t('errors.resumeNeedsInput'));
           }
           if (argv.yolo && argv['approvalMode']) {
-            return 'Cannot use both --yolo (-y) and --approval-mode together. Use --approval-mode=yolo instead.';
+            return t('errors.yoloAndApproval');
           }
           return true;
         }),
@@ -274,7 +288,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
     .command(mcpCommand);
 
   if (settings?.experimental?.extensionManagement ?? true) {
-    yargsInstance.command(extensionsCommand);
+    yargsInstance.command(createExtensionsCommand(t));
   }
 
   yargsInstance
