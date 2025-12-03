@@ -62,6 +62,7 @@
     "pre-commit": "node scripts/pre-commit.js"
   },
   "overrides": {
+    "lru-cache": "^10.4.3",
     "ink": "npm:@jrichman/ink@6.4.3",
     "wrap-ansi": "9.0.2",
     "cliui": {
