@@ -1,0 +1,152 @@
+[
+  {
+    "text": "model",
+    "file": "./packages/cli/src/ui/commands/statsCommand.test.ts",
+    "line": 47
+  },
+  {
+    "text": "tools",
+    "file": "./packages/cli/src/ui/commands/statsCommand.test.ts",
+    "line": 63
+  },
+  {
+    "text": "should add an info message and call 'open' in a non-sandbox environment",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.test.ts",
+    "line": 375
+  },
+  {
+    "text": "Extensions are not yet loaded, can't restart yet",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.test.ts",
+    "line": 673
+  },
+  {
+    "text": "Extensions are not yet loaded, can't restart yet",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 134
+  },
+  {
+    "text": "user",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 335
+  },
+  {
+    "text": "workspace",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 335
+  },
+  {
+    "text": "session",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 335
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 373
+  },
+  {
+    "text": "${scope}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 373
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 390
+  },
+  {
+    "text": "${scope}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 390
+  },
+  {
+    "text": "${args.trim()}",
+    "file": "./packages/cli/src/ui/commands/memoryCommand.ts",
+    "line": 58
+  },
+  {
+    "text": "${url}",
+    "file": "./packages/cli/src/ui/commands/setupGithubCommand.ts",
+    "line": 49
+  },
+  {
+    "text": "Successfully downloaded ${GITHUB_WORKFLOW_PATHS.length} workflows and updated .gitignore. Follow the steps in ${readmeUrl} (skipping the /setup-github step) to complete setup.",
+    "file": "./packages/cli/src/ui/commands/setupGithubCommand.ts",
+    "line": 195
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 669
+  },
+  {
+    "text": "my-function",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 669
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 670
+  },
+  {
+    "text": "arg1",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 671
+  },
+  {
+    "text": "value1",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 671
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 683
+  },
+  {
+    "text": "my-function",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 683
+  },
+  {
+    "text": "response",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 684
+  },
+  {
+    "text": "result",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 685
+  },
+  {
+    "text": "success",
+    "file": "./packages/cli/src/ui/commands/chatCommand.test.ts",
+    "line": 685
+  },
+  {
+    "text": "${fact}",
+    "file": "./packages/cli/src/ui/commands/memoryCommand.test.ts",
+    "line": 142
+  },
+  {
+    "text": "should add an info message and call 'open' in a non-sandbox environment",
+    "file": "./packages/cli/src/ui/commands/docsCommand.test.ts",
+    "line": 33
+  },
+  {
+    "text": "should not open browser for 'sandbox-exec'",
+    "file": "./packages/cli/src/ui/commands/docsCommand.test.ts",
+    "line": 76
+  },
+  {
+    "text": "No tools available",
+    "file": "./packages/cli/src/ui/commands/toolsCommand.test.ts",
+    "line": 52
+  },
+  {
+    "text": "desc",
+    "file": "./packages/cli/src/ui/commands/toolsCommand.test.ts",
+    "line": 97
+  }
+]

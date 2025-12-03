@@ -1,0 +1,1535 @@
+text,file,line
+"YOUR_PROJECT_ID",./README.md,156
+"YOUR_API_KEY",./README.md,172
+"YOUR_API_KEY",./README.md,188
+"Explain the architecture of this codebase",./README.md,223
+"Explain the architecture of this codebase",./README.md,230
+"Run tests and deploy",./README.md,237
+"center",./README.md,372
+"what",./docs/issue-and-pr-automation.md,12
+"why",./docs/issue-and-pr-automation.md,12
+"how",./docs/issue-and-pr-automation.md,13
+"X",./docs/issue-and-pr-automation.md,70
+"Details",./docs/issue-and-pr-automation.md,70
+"nightly",./docs/issue-and-pr-automation.md,119
+"name",./docs/extensions/getting-started-extensions.md,46
+"my-first-extension",./docs/extensions/getting-started-extensions.md,46
+"version",./docs/extensions/getting-started-extensions.md,47
+"mcpServers",./docs/extensions/getting-started-extensions.md,48
+"nodeServer",./docs/extensions/getting-started-extensions.md,49
+"command",./docs/extensions/getting-started-extensions.md,50
+"node",./docs/extensions/getting-started-extensions.md,50
+"args",./docs/extensions/getting-started-extensions.md,51
+"${extensionPath}${/}dist${/}example.js",./docs/extensions/getting-started-extensions.md,51
+"cwd",./docs/extensions/getting-started-extensions.md,52
+"${extensionPath}",./docs/extensions/getting-started-extensions.md,52
+"fetch posts",./docs/extensions/getting-started-extensions.md,159
+"some pattern",./docs/extensions/getting-started-extensions.md,187
+"name",./docs/extensions/getting-started-extensions.md,209
+"my-first-extension",./docs/extensions/getting-started-extensions.md,209
+"version",./docs/extensions/getting-started-extensions.md,210
+"contextFileName",./docs/extensions/getting-started-extensions.md,211
+"GEMINI.md",./docs/extensions/getting-started-extensions.md,211
+"mcpServers",./docs/extensions/getting-started-extensions.md,212
+"nodeServer",./docs/extensions/getting-started-extensions.md,213
+"command",./docs/extensions/getting-started-extensions.md,214
+"node",./docs/extensions/getting-started-extensions.md,214
+"args",./docs/extensions/getting-started-extensions.md,215
+"${extensionPath}${/}dist${/}example.js",./docs/extensions/getting-started-extensions.md,215
+"cwd",./docs/extensions/getting-started-extensions.md,216
+"${extensionPath}",./docs/extensions/getting-started-extensions.md,216
+"name",./docs/extensions/index.md,146
+"my-extension",./docs/extensions/index.md,146
+"version",./docs/extensions/index.md,147
+"mcpServers",./docs/extensions/index.md,148
+"my-server",./docs/extensions/index.md,149
+"command",./docs/extensions/index.md,150
+"node my-server.js",./docs/extensions/index.md,150
+"contextFileName",./docs/extensions/index.md,153
+"GEMINI.md",./docs/extensions/index.md,153
+"excludeTools",./docs/extensions/index.md,154
+"run_shell_command",./docs/extensions/index.md,154
+"excludeTools",./docs/extensions/index.md,180
+"run_shell_command(rm -rf)",./docs/extensions/index.md,180
+"name",./docs/extensions/index.md,209
+"my-api-extension",./docs/extensions/index.md,209
+"version",./docs/extensions/index.md,210
+"settings",./docs/extensions/index.md,211
+"name",./docs/extensions/index.md,213
+"API Key",./docs/extensions/index.md,213
+"description",./docs/extensions/index.md,214
+"Your API key for the service.",./docs/extensions/index.md,214
+"envVar",./docs/extensions/index.md,215
+"MY_API_KEY",./docs/extensions/index.md,215
+"cwd",./docs/extensions/index.md,269
+"${extensionPath}${/}run.ts",./docs/extensions/index.md,269
+"stable",./docs/extensions/extension-releasing.md,46
+"latest",./docs/extensions/extension-releasing.md,79
+"latest",./docs/extensions/extension-releasing.md,84
+"reads a file",./docs/integration-tests.md,56
+"true",./docs/integration-tests.md,65
+"true",./docs/integration-tests.md,72
+"npm run test:e2e -- -- --test-name-pattern '<your-new-test-name>'",./docs/integration-tests.md,86
+"<your-test-name-pattern>",./docs/integration-tests.md,92
+"type",./docs/faq.md,30
+"module",./docs/faq.md,30
+"module",./docs/faq.md,31
+"NodeNext",./docs/faq.md,31
+"your-project-id",./docs/faq.md,79
+"Is this release _truly_ ready for our users?",./docs/release-confidence.md,9
+"Tell me a joke",./docs/release-confidence.md,88
+"Summarize this",./docs/release-confidence.md,93
+"Turbo",./docs/release-confidence.md,135
+"Tool Call",./docs/release-confidence.md,142
+"Go/No-Go",./docs/release-confidence.md,152
+"/some-mcp-prompt",./docs/changelogs/index.md,145
+"latest",./docs/changelogs/index.md,183
+"useWriteTodos",./docs/changelogs/index.md,259
+"/joke Chuck Norris",./docs/changelogs/index.md,270
+"Hello",./docs/changelogs/index.md,367
+"enableToolOutputTruncation",./docs/changelogs/index.md,373
+"ui",./docs/changelogs/index.md,380
+"customWittyPhrases",./docs/changelogs/index.md,380
+"YOLO",./docs/changelogs/index.md,380
+"enforcedAuthType",./docs/changelogs/index.md,388
+"oauth-personal|gemini-api-key|…",./docs/changelogs/index.md,388
+"useSmartEdit",./docs/changelogs/index.md,413
+"skipNextSpeakerCheck",./docs/changelogs/index.md,419
+"general",./docs/changelogs/index.md,425
+"enablePromptCompletion",./docs/changelogs/index.md,425
+"showCitations",./docs/changelogs/index.md,440
+"pro",./docs/core/index.md,65
+"pro",./docs/core/index.md,67
+"flash",./docs/core/index.md,68
+"Summarize the contents of `my_document.txt`,",./docs/tools/index.md,12
+"run_shell_command",./docs/core/policy-engine.md,33
+"git ",./docs/core/policy-engine.md,34
+"ask_user",./docs/core/policy-engine.md,35
+"run_shell_command",./docs/core/policy-engine.md,137
+"mcpName__toolName",./docs/core/policy-engine.md,140
+"my-custom-server",./docs/core/policy-engine.md,141
+"command",./docs/core/policy-engine.md,144
+"run_shell_command",./docs/core/policy-engine.md,147
+"git ",./docs/core/policy-engine.md,148
+"run_shell_command",./docs/core/policy-engine.md,151
+"command",./docs/core/policy-engine.md,152
+"<your_command>",./docs/core/policy-engine.md,152
+"^git (commit|push)",./docs/core/policy-engine.md,154
+"allow",./docs/core/policy-engine.md,156
+"deny",./docs/core/policy-engine.md,156
+"ask_user",./docs/core/policy-engine.md,156
+"ask_user",./docs/core/policy-engine.md,157
+"autoEdit",./docs/core/policy-engine.md,163
+"write_file",./docs/core/policy-engine.md,177
+"replace",./docs/core/policy-engine.md,177
+"ask_user",./docs/core/policy-engine.md,178
+"run_shell_command",./docs/core/policy-engine.md,198
+"git ",./docs/core/policy-engine.md,199
+"ask_user",./docs/core/policy-engine.md,200
+"my-jira-server",./docs/core/policy-engine.md,217
+"search",./docs/core/policy-engine.md,218
+"allow",./docs/core/policy-engine.md,219
+"untrusted-server",./docs/core/policy-engine.md,231
+"deny",./docs/core/policy-engine.md,232
+"workspaces",./docs/npm.md,42
+"packages/*",./docs/npm.md,42
+"hostname:port",./docs/examples/proxy-script.md,39
+"your prompt here",./docs/get-started/deployment.md,58
+"mcp",./docs/tools/mcp-server.md,91
+"allowed",./docs/tools/mcp-server.md,92
+"my-trusted-server",./docs/tools/mcp-server.md,92
+"excluded",./docs/tools/mcp-server.md,93
+"experimental-server",./docs/tools/mcp-server.md,93
+"mcpServers",./docs/tools/mcp-server.md,109
+"serverName",./docs/tools/mcp-server.md,110
+"command",./docs/tools/mcp-server.md,111
+"path/to/server",./docs/tools/mcp-server.md,111
+"args",./docs/tools/mcp-server.md,112
+"--arg1",./docs/tools/mcp-server.md,112
+"value1",./docs/tools/mcp-server.md,112
+"env",./docs/tools/mcp-server.md,113
+"API_KEY",./docs/tools/mcp-server.md,114
+"$MY_API_TOKEN",./docs/tools/mcp-server.md,114
+"cwd",./docs/tools/mcp-server.md,116
+"./server-directory",./docs/tools/mcp-server.md,116
+"timeout",./docs/tools/mcp-server.md,117
+"trust",./docs/tools/mcp-server.md,118
+"http://localhost:8080/sse",./docs/tools/mcp-server.md,131
+"mcpServers",./docs/tools/mcp-server.md,173
+"discoveredServer",./docs/tools/mcp-server.md,174
+"url",./docs/tools/mcp-server.md,175
+"https://api.example.com/sse",./docs/tools/mcp-server.md,175
+"mcpServers",./docs/tools/mcp-server.md,272
+"googleCloudServer",./docs/tools/mcp-server.md,273
+"httpUrl",./docs/tools/mcp-server.md,274
+"https://my-gcp-service.run.app/mcp",./docs/tools/mcp-server.md,274
+"authProviderType",./docs/tools/mcp-server.md,275
+"google_credentials",./docs/tools/mcp-server.md,275
+"oauth",./docs/tools/mcp-server.md,276
+"scopes",./docs/tools/mcp-server.md,277
+"https://www.googleapis.com/auth/userinfo.email",./docs/tools/mcp-server.md,277
+"Security",./docs/tools/mcp-server.md,313
+"mcpServers",./docs/tools/mcp-server.md,327
+"pythonTools",./docs/tools/mcp-server.md,328
+"command",./docs/tools/mcp-server.md,329
+"python",./docs/tools/mcp-server.md,329
+"args",./docs/tools/mcp-server.md,330
+"-m",./docs/tools/mcp-server.md,330
+"my_mcp_server",./docs/tools/mcp-server.md,330
+"--port",./docs/tools/mcp-server.md,330
+"cwd",./docs/tools/mcp-server.md,331
+"./mcp-servers/python",./docs/tools/mcp-server.md,331
+"env",./docs/tools/mcp-server.md,332
+"DATABASE_URL",./docs/tools/mcp-server.md,333
+"$DB_CONNECTION_STRING",./docs/tools/mcp-server.md,333
+"API_KEY",./docs/tools/mcp-server.md,334
+"${EXTERNAL_API_KEY}",./docs/tools/mcp-server.md,334
+"timeout",./docs/tools/mcp-server.md,336
+"mcpServers",./docs/tools/mcp-server.md,346
+"nodeServer",./docs/tools/mcp-server.md,347
+"command",./docs/tools/mcp-server.md,348
+"node",./docs/tools/mcp-server.md,348
+"args",./docs/tools/mcp-server.md,349
+"dist/server.js",./docs/tools/mcp-server.md,349
+"--verbose",./docs/tools/mcp-server.md,349
+"cwd",./docs/tools/mcp-server.md,350
+"./mcp-servers/node",./docs/tools/mcp-server.md,350
+"trust",./docs/tools/mcp-server.md,351
+"mcpServers",./docs/tools/mcp-server.md,361
+"dockerizedServer",./docs/tools/mcp-server.md,362
+"command",./docs/tools/mcp-server.md,363
+"docker",./docs/tools/mcp-server.md,363
+"args",./docs/tools/mcp-server.md,364
+"run",./docs/tools/mcp-server.md,365
+"-i",./docs/tools/mcp-server.md,366
+"--rm",./docs/tools/mcp-server.md,367
+"-e",./docs/tools/mcp-server.md,368
+"API_KEY",./docs/tools/mcp-server.md,369
+"-v",./docs/tools/mcp-server.md,370
+"${PWD}:/workspace",./docs/tools/mcp-server.md,371
+"my-mcp-server:latest",./docs/tools/mcp-server.md,372
+"env",./docs/tools/mcp-server.md,374
+"API_KEY",./docs/tools/mcp-server.md,375
+"$EXTERNAL_SERVICE_TOKEN",./docs/tools/mcp-server.md,375
+"mcpServers",./docs/tools/mcp-server.md,386
+"httpServer",./docs/tools/mcp-server.md,387
+"httpUrl",./docs/tools/mcp-server.md,388
+"http://localhost:3000/mcp",./docs/tools/mcp-server.md,388
+"timeout",./docs/tools/mcp-server.md,389
+"mcpServers",./docs/tools/mcp-server.md,399
+"httpServerWithAuth",./docs/tools/mcp-server.md,400
+"httpUrl",./docs/tools/mcp-server.md,401
+"http://localhost:3000/mcp",./docs/tools/mcp-server.md,401
+"headers",./docs/tools/mcp-server.md,402
+"Authorization",./docs/tools/mcp-server.md,403
+"Bearer your-api-token",./docs/tools/mcp-server.md,403
+"X-Custom-Header",./docs/tools/mcp-server.md,404
+"custom-value",./docs/tools/mcp-server.md,404
+"Content-Type",./docs/tools/mcp-server.md,405
+"application/json",./docs/tools/mcp-server.md,405
+"timeout",./docs/tools/mcp-server.md,407
+"mcpServers",./docs/tools/mcp-server.md,417
+"filteredServer",./docs/tools/mcp-server.md,418
+"command",./docs/tools/mcp-server.md,419
+"python",./docs/tools/mcp-server.md,419
+"args",./docs/tools/mcp-server.md,420
+"-m",./docs/tools/mcp-server.md,420
+"my_mcp_server",./docs/tools/mcp-server.md,420
+"includeTools",./docs/tools/mcp-server.md,421
+"safe_tool",./docs/tools/mcp-server.md,421
+"file_reader",./docs/tools/mcp-server.md,421
+"data_processor",./docs/tools/mcp-server.md,421
+"excludeTools",./docs/tools/mcp-server.md,422
+"dangerous_tool",./docs/tools/mcp-server.md,422
+"file_deleter",./docs/tools/mcp-server.md,422
+"timeout",./docs/tools/mcp-server.md,423
+"mcpServers",./docs/tools/mcp-server.md,433
+"myIapProtectedServer",./docs/tools/mcp-server.md,434
+"url",./docs/tools/mcp-server.md,435
+"https://my-iap-service.run.app/sse",./docs/tools/mcp-server.md,435
+"authProviderType",./docs/tools/mcp-server.md,436
+"service_account_impersonation",./docs/tools/mcp-server.md,436
+"targetAudience",./docs/tools/mcp-server.md,437
+"YOUR_IAP_CLIENT_ID.apps.googleusercontent.com",./docs/tools/mcp-server.md,437
+"targetServiceAccount",./docs/tools/mcp-server.md,438
+"your-sa@your-project.iam.gserviceaccount.com",./docs/tools/mcp-server.md,438
+"content",./docs/tools/mcp-server.md,779
+"type",./docs/tools/mcp-server.md,781
+"text",./docs/tools/mcp-server.md,781
+"text",./docs/tools/mcp-server.md,782
+"Here is the logo you requested.",./docs/tools/mcp-server.md,782
+"type",./docs/tools/mcp-server.md,785
+"image",./docs/tools/mcp-server.md,785
+"data",./docs/tools/mcp-server.md,786
+"BASE64_ENCODED_IMAGE_DATA_HERE",./docs/tools/mcp-server.md,786
+"mimeType",./docs/tools/mcp-server.md,787
+"image/png",./docs/tools/mcp-server.md,787
+"type",./docs/tools/mcp-server.md,790
+"text",./docs/tools/mcp-server.md,790
+"text",./docs/tools/mcp-server.md,791
+"The logo was created in 2025.",./docs/tools/mcp-server.md,791
+"mcpServers",./docs/tools/mcp-server.md,856
+"nodeServer",./docs/tools/mcp-server.md,857
+"command",./docs/tools/mcp-server.md,858
+"node",./docs/tools/mcp-server.md,858
+"args",./docs/tools/mcp-server.md,859
+"filename.ts",./docs/tools/mcp-server.md,859
+"Gemini CLI",./docs/tools/mcp-server.md,871
+"reverent",./docs/tools/mcp-server.md,871
+"Gemini CLI",./docs/tools/mcp-server.md,877
+"project",./docs/tools/mcp-server.md,913
+"stdio",./docs/tools/mcp-server.md,914
+"X-Api-Key: abc123",./docs/tools/mcp-server.md,917
+"Authorization: Bearer abc123",./docs/tools/mcp-server.md,917
+"Authorization: Bearer abc123",./docs/tools/mcp-server.md,951
+"Authorization: Bearer abc123",./docs/tools/mcp-server.md,966
+"project",./docs/tools/mcp-server.md,1002
+"my-server",./docs/tools/mcp-server.md,1010
+"photos",./docs/get-started/examples.md,22
+"Your commands.",./docs/tools/shell.md,46
+"Your description of the command.",./docs/tools/shell.md,46
+"Your execution directory.",./docs/tools/shell.md,46
+"ls -la",./docs/tools/shell.md,54
+"./my_script.sh",./docs/tools/shell.md,60
+"scripts",./docs/tools/shell.md,60
+"Run my custom script",./docs/tools/shell.md,60
+"npm run dev &",./docs/tools/shell.md,66
+"Start development server in background",./docs/tools/shell.md,66
+"tools",./docs/tools/shell.md,86
+"shell",./docs/tools/shell.md,87
+"enableInteractiveShell",./docs/tools/shell.md,88
+"tools",./docs/tools/shell.md,104
+"shell",./docs/tools/shell.md,105
+"showColor",./docs/tools/shell.md,106
+"tools",./docs/tools/shell.md,122
+"shell",./docs/tools/shell.md,123
+"pager",./docs/tools/shell.md,124
+"less",./docs/tools/shell.md,124
+"tools",./docs/tools/shell.md,167
+"core",./docs/tools/shell.md,167
+"run_shell_command(git)",./docs/tools/shell.md,167
+"tools",./docs/tools/shell.md,172
+"exclude",./docs/tools/shell.md,172
+"run_shell_command(rm)",./docs/tools/shell.md,172
+"tools",./docs/tools/shell.md,194
+"core",./docs/tools/shell.md,195
+"run_shell_command(git)",./docs/tools/shell.md,195
+"run_shell_command(npm)",./docs/tools/shell.md,195
+"tools",./docs/tools/shell.md,210
+"core",./docs/tools/shell.md,211
+"run_shell_command",./docs/tools/shell.md,211
+"exclude",./docs/tools/shell.md,212
+"run_shell_command(rm)",./docs/tools/shell.md,212
+"tools",./docs/tools/shell.md,228
+"core",./docs/tools/shell.md,229
+"run_shell_command(git)",./docs/tools/shell.md,229
+"exclude",./docs/tools/shell.md,230
+"run_shell_command(git push)",./docs/tools/shell.md,230
+"tools",./docs/tools/shell.md,245
+"exclude",./docs/tools/shell.md,246
+"run_shell_command",./docs/tools/shell.md,246
+"Your query goes here.",./docs/tools/web-search.md,26
+"latest advancements in AI-powered code generation",./docs/tools/web-search.md,34
+"YOUR_PROJECT_ID",./docs/get-started/authentication.md,92
+"YOUR_PROJECT_ID",./docs/get-started/authentication.md,95
+"YOUR_GEMINI_API_KEY",./docs/get-started/authentication.md,112
+"YOUR_PROJECT_ID",./docs/get-started/authentication.md,142
+"YOUR_PROJECT_LOCATION",./docs/get-started/authentication.md,143
+"Vertex AI User",./docs/get-started/authentication.md,184
+"/path/to/your/keyfile.json",./docs/get-started/authentication.md,191
+"YOUR_GOOGLE_API_KEY",./docs/get-started/authentication.md,208
+"API keys are not supported by this API...",./docs/get-started/authentication.md,212
+"YOUR_PROJECT_ID",./docs/get-started/authentication.md,232
+"your-project-id",./docs/get-started/authentication.md,250
+"Your fact here.",./docs/tools/memory.md,32
+"My preferred programming language is Python.",./docs/tools/memory.md,40
+"The project I'm currently working on is called 'gemini-cli'.",./docs/tools/memory.md,46
+"*.log",./docs/tools/file-system.md,25
+".git",./docs/tools/file-system.md,25
+"*.py",./docs/tools/file-system.md,102
+"src/**/*.js",./docs/tools/file-system.md,102
+"*.ts",./docs/tools/file-system.md,116
+"function\s+myFunction",./docs/tools/file-system.md,131
+"*.js",./docs/tools/file-system.md,135
+"src/**/*.{ts,tsx}",./docs/tools/file-system.md,135
+"myFunction",./docs/tools/file-system.md,144
+" (filter: ",./docs/tools/file-system.md,144
+"useWriteTodos",./docs/tools/todos.md,54
+"Summarize https://example.com/article and extract key points from https://another.com/data",./docs/tools/web-fetch.md,19
+"Your prompt, including a URL such as https://google.com.",./docs/tools/web-fetch.md,37
+"Can you summarize the main points of https://example.com/news/latest",./docs/tools/web-fetch.md,45
+"What are the differences in the conclusions of these two papers: https://arxiv.org/abs/2401.0001 and https://arxiv.org/abs/2401.0002?",./docs/tools/web-fetch.md,51
+"analyze the code structure",./docs/cli/sandbox.md,57
+"run the test suite",./docs/cli/sandbox.md,61
+"tools",./docs/cli/sandbox.md,65
+"sandbox",./docs/cli/sandbox.md,66
+"docker",./docs/cli/sandbox.md,66
+"sandbox",./docs/cli/sandbox.md,77
+"tools",./docs/cli/sandbox.md,78
+"sandbox",./docs/cli/sandbox.md,78
+"--security-opt label=disable",./docs/cli/sandbox.md,102
+"--flag1 --flag2=value",./docs/cli/sandbox.md,108
+"Operation not permitted",./docs/cli/sandbox.md,125
+"debug command",./docs/cli/sandbox.md,143
+"run shell command: env | grep SANDBOX",./docs/cli/sandbox.md,154
+"run shell command: mount | grep workspace",./docs/cli/sandbox.md,157
+"checkpoint.",./docs/cli/checkpointing.md,12
+"general",./docs/cli/checkpointing.md,51
+"checkpointing",./docs/cli/checkpointing.md,52
+"enabled",./docs/cli/checkpointing.md,53
+"apiKey",./docs/get-started/configuration.md,77
+"$MY_API_TOKEN",./docs/get-started/configuration.md,77
+"30d",./docs/get-started/configuration.md,142
+"7d",./docs/get-started/configuration.md,142
+"24h",./docs/get-started/configuration.md,142
+"1w",./docs/get-started/configuration.md,143
+"1d",./docs/get-started/configuration.md,152
+"1d",./docs/get-started/configuration.md,153
+"text",./docs/get-started/configuration.md,159
+"text",./docs/get-started/configuration.md,160
+"json",./docs/get-started/configuration.md,160
+"run_shell_command",./docs/get-started/configuration.md,296
+"tokenBudget",./docs/get-started/configuration.md,296
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"temperature",./docs/get-started/configuration.md,316
+"topP",./docs/get-started/configuration.md,316
+"chat-base",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"thinkingConfig",./docs/get-started/configuration.md,316
+"includeThoughts",./docs/get-started/configuration.md,316
+"thinkingBudget",./docs/get-started/configuration.md,316
+"temperature",./docs/get-started/configuration.md,316
+"topP",./docs/get-started/configuration.md,316
+"topK",./docs/get-started/configuration.md,316
+"gemini-2.5-pro",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"chat-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-pro",./docs/get-started/configuration.md,316
+"gemini-2.5-flash",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"chat-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"chat-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash",./docs/get-started/configuration.md,316
+"classifier",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"maxOutputTokens",./docs/get-started/configuration.md,316
+"thinkingConfig",./docs/get-started/configuration.md,316
+"thinkingBudget",./docs/get-started/configuration.md,316
+"prompt-completion",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"temperature",./docs/get-started/configuration.md,316
+"maxOutputTokens",./docs/get-started/configuration.md,316
+"thinkingConfig",./docs/get-started/configuration.md,316
+"thinkingBudget",./docs/get-started/configuration.md,316
+"edit-corrector",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"thinkingConfig",./docs/get-started/configuration.md,316
+"thinkingBudget",./docs/get-started/configuration.md,316
+"summarizer-default",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"maxOutputTokens",./docs/get-started/configuration.md,316
+"summarizer-shell",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-lite",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"maxOutputTokens",./docs/get-started/configuration.md,316
+"web-search",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"tools",./docs/get-started/configuration.md,316
+"googleSearch",./docs/get-started/configuration.md,316
+"web-fetch",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"generateContentConfig",./docs/get-started/configuration.md,316
+"tools",./docs/get-started/configuration.md,316
+"urlContext",./docs/get-started/configuration.md,316
+"web-fetch-fallback",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"loop-detection",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"loop-detection-double-check",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"model",./docs/get-started/configuration.md,316
+"gemini-2.5-pro",./docs/get-started/configuration.md,316
+"llm-edit-fixer",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"next-speaker-checker",./docs/get-started/configuration.md,316
+"extends",./docs/get-started/configuration.md,316
+"gemini-2.5-flash-base",./docs/get-started/configuration.md,316
+"modelConfig",./docs/get-started/configuration.md,316
+"cat",./docs/get-started/configuration.md,388
+"run_shell_command(git)",./docs/get-started/configuration.md,408
+"run_shell_command(npm test)",./docs/get-started/configuration.md,409
+"DEBUG",./docs/get-started/configuration.md,544
+"DEBUG_MODE",./docs/get-started/configuration.md,544
+"gemini-2.5-pro",./docs/get-started/configuration.md,592
+"general",./docs/get-started/configuration.md,671
+"vimMode",./docs/get-started/configuration.md,672
+"preferredEditor",./docs/get-started/configuration.md,673
+"code",./docs/get-started/configuration.md,673
+"ui",./docs/get-started/configuration.md,675
+"theme",./docs/get-started/configuration.md,676
+"GitHub",./docs/get-started/configuration.md,676
+"hideBanner",./docs/get-started/configuration.md,677
+"hideTips",./docs/get-started/configuration.md,678
+"customWittyPhrases",./docs/get-started/configuration.md,679
+"You forget a thousand things every day. Make sure this is one of ’em",./docs/get-started/configuration.md,680
+"Connecting to AGI",./docs/get-started/configuration.md,681
+"tools",./docs/get-started/configuration.md,684
+"sandbox",./docs/get-started/configuration.md,685
+"docker",./docs/get-started/configuration.md,685
+"discoveryCommand",./docs/get-started/configuration.md,686
+"bin/get_tools",./docs/get-started/configuration.md,686
+"callCommand",./docs/get-started/configuration.md,687
+"bin/call_tool",./docs/get-started/configuration.md,687
+"exclude",./docs/get-started/configuration.md,688
+"write_file",./docs/get-started/configuration.md,688
+"mcpServers",./docs/get-started/configuration.md,690
+"mainServer",./docs/get-started/configuration.md,691
+"command",./docs/get-started/configuration.md,692
+"bin/mcp_server.py",./docs/get-started/configuration.md,692
+"anotherServer",./docs/get-started/configuration.md,694
+"command",./docs/get-started/configuration.md,695
+"node",./docs/get-started/configuration.md,695
+"args",./docs/get-started/configuration.md,696
+"mcp_server.js",./docs/get-started/configuration.md,696
+"--verbose",./docs/get-started/configuration.md,696
+"telemetry",./docs/get-started/configuration.md,699
+"enabled",./docs/get-started/configuration.md,700
+"target",./docs/get-started/configuration.md,701
+"local",./docs/get-started/configuration.md,701
+"otlpEndpoint",./docs/get-started/configuration.md,702
+"http://localhost:4317",./docs/get-started/configuration.md,702
+"logPrompts",./docs/get-started/configuration.md,703
+"privacy",./docs/get-started/configuration.md,705
+"usageStatisticsEnabled",./docs/get-started/configuration.md,706
+"model",./docs/get-started/configuration.md,708
+"name",./docs/get-started/configuration.md,709
+"gemini-1.5-pro-latest",./docs/get-started/configuration.md,709
+"maxSessionTurns",./docs/get-started/configuration.md,710
+"summarizeToolOutput",./docs/get-started/configuration.md,711
+"run_shell_command",./docs/get-started/configuration.md,712
+"tokenBudget",./docs/get-started/configuration.md,713
+"context",./docs/get-started/configuration.md,717
+"fileName",./docs/get-started/configuration.md,718
+"CONTEXT.md",./docs/get-started/configuration.md,718
+"GEMINI.md",./docs/get-started/configuration.md,718
+"includeDirectories",./docs/get-started/configuration.md,719
+"path/to/dir1",./docs/get-started/configuration.md,719
+"~/path/to/dir2",./docs/get-started/configuration.md,719
+"../path/to/dir3",./docs/get-started/configuration.md,719
+"loadFromIncludeDirectories",./docs/get-started/configuration.md,720
+"fileFiltering",./docs/get-started/configuration.md,721
+"respectGitIgnore",./docs/get-started/configuration.md,722
+"advanced",./docs/get-started/configuration.md,725
+"excludedEnvVars",./docs/get-started/configuration.md,726
+"DEBUG",./docs/get-started/configuration.md,726
+"DEBUG_MODE",./docs/get-started/configuration.md,726
+"NODE_ENV",./docs/get-started/configuration.md,726
+"gemini-2.5-flash",./docs/get-started/configuration.md,773
+"YOUR_GOOGLE_API_KEY",./docs/get-started/configuration.md,778
+"YOUR_PROJECT_ID",./docs/get-started/configuration.md,789
+"/path/to/your/credentials.json",./docs/get-started/configuration.md,793
+"YOUR_PROJECT_ID",./docs/get-started/configuration.md,796
+"YOUR_PROJECT_LOCATION",./docs/get-started/configuration.md,824
+"explain this code",./docs/get-started/configuration.md,870
+"ShellTool(git status)",./docs/get-started/configuration.md,901
+"memory",./docs/get-started/configuration.md,935
+"privacy",./docs/get-started/configuration.md,1101
+"usageStatisticsEnabled",./docs/get-started/configuration.md,1102
+"How would you like to authenticate for this project?",./docs/get-started/index.md,38
+"apiKey",./docs/cli/configuration.md,48
+"$MY_API_TOKEN",./docs/cli/configuration.md,48
+"contextFileName",./docs/cli/configuration.md,65
+"AGENTS.md",./docs/cli/configuration.md,65
+"urlTemplate",./docs/cli/configuration.md,70
+"https://github.com/google-gemini/gemini-cli/issues/new?template=bug_report.yml&title={title}&info={info}",./docs/cli/configuration.md,70
+"bugCommand",./docs/cli/configuration.md,76
+"urlTemplate",./docs/cli/configuration.md,77
+"https://bug.example.com/new?title={title}&info={info}",./docs/cli/configuration.md,77
+"respectGitIgnore",./docs/cli/configuration.md,84
+"enableRecursiveFileSearch",./docs/cli/configuration.md,84
+"fileFiltering",./docs/cli/configuration.md,95
+"respectGitIgnore",./docs/cli/configuration.md,96
+"enableRecursiveFileSearch",./docs/cli/configuration.md,97
+"coreTools",./docs/cli/configuration.md,107
+"ShellTool(ls -l)",./docs/cli/configuration.md,107
+"coreTools",./docs/cli/configuration.md,110
+"ReadFileTool",./docs/cli/configuration.md,110
+"GlobTool",./docs/cli/configuration.md,110
+"ShellTool(ls)",./docs/cli/configuration.md,110
+"excludeTools",./docs/cli/configuration.md,117
+"ShellTool(rm -rf)",./docs/cli/configuration.md,117
+"excludeTools",./docs/cli/configuration.md,119
+"run_shell_command",./docs/cli/configuration.md,119
+"findFiles",./docs/cli/configuration.md,119
+"allowMCPServers",./docs/cli/configuration.md,132
+"myPythonServer",./docs/cli/configuration.md,132
+"excludeMCPServers",./docs/cli/configuration.md,146
+"myNodeServer",./docs/cli/configuration.md,146
+"autoAccept",./docs/cli/configuration.md,160
+"Default",./docs/cli/configuration.md,164
+"theme",./docs/cli/configuration.md,165
+"GitHub",./docs/cli/configuration.md,165
+"vimMode",./docs/cli/configuration.md,173
+"sandbox",./docs/cli/configuration.md,181
+"docker",./docs/cli/configuration.md,181
+"toolDiscoveryCommand",./docs/cli/configuration.md,189
+"bin/get_tools",./docs/cli/configuration.md,189
+"toolCallCommand",./docs/cli/configuration.md,203
+"bin/call_tool",./docs/cli/configuration.md,203
+"mcpServers",./docs/cli/configuration.md,239
+"myPythonServer",./docs/cli/configuration.md,240
+"command",./docs/cli/configuration.md,241
+"python",./docs/cli/configuration.md,241
+"args",./docs/cli/configuration.md,242
+"mcp_server.py",./docs/cli/configuration.md,242
+"--port",./docs/cli/configuration.md,242
+"cwd",./docs/cli/configuration.md,243
+"./mcp_tools/python",./docs/cli/configuration.md,243
+"timeout",./docs/cli/configuration.md,244
+"includeTools",./docs/cli/configuration.md,245
+"safe_tool",./docs/cli/configuration.md,245
+"file_reader",./docs/cli/configuration.md,245
+"myNodeServer",./docs/cli/configuration.md,247
+"command",./docs/cli/configuration.md,248
+"node",./docs/cli/configuration.md,248
+"args",./docs/cli/configuration.md,249
+"mcp_server.js",./docs/cli/configuration.md,249
+"cwd",./docs/cli/configuration.md,250
+"./mcp_tools/node",./docs/cli/configuration.md,250
+"excludeTools",./docs/cli/configuration.md,251
+"dangerous_tool",./docs/cli/configuration.md,251
+"file_deleter",./docs/cli/configuration.md,251
+"myDockerServer",./docs/cli/configuration.md,253
+"command",./docs/cli/configuration.md,254
+"docker",./docs/cli/configuration.md,254
+"args",./docs/cli/configuration.md,255
+"run",./docs/cli/configuration.md,255
+"-i",./docs/cli/configuration.md,255
+"--rm",./docs/cli/configuration.md,255
+"-e",./docs/cli/configuration.md,255
+"API_KEY",./docs/cli/configuration.md,255
+"ghcr.io/foo/bar",./docs/cli/configuration.md,255
+"env",./docs/cli/configuration.md,256
+"API_KEY",./docs/cli/configuration.md,257
+"$MY_API_TOKEN",./docs/cli/configuration.md,257
+"enabled",./docs/cli/configuration.md,267
+"preferredEditor",./docs/cli/configuration.md,274
+"vscode",./docs/cli/configuration.md,274
+"enabled",./docs/cli/configuration.md,280
+"target",./docs/cli/configuration.md,280
+"local",./docs/cli/configuration.md,280
+"otlpEndpoint",./docs/cli/configuration.md,280
+"http://localhost:4317",./docs/cli/configuration.md,280
+"logPrompts",./docs/cli/configuration.md,280
+"telemetry",./docs/cli/configuration.md,290
+"enabled",./docs/cli/configuration.md,291
+"target",./docs/cli/configuration.md,292
+"local",./docs/cli/configuration.md,292
+"otlpEndpoint",./docs/cli/configuration.md,293
+"http://localhost:16686",./docs/cli/configuration.md,293
+"logPrompts",./docs/cli/configuration.md,294
+"usageStatisticsEnabled",./docs/cli/configuration.md,303
+"hideTips",./docs/cli/configuration.md,312
+"hideBanner",./docs/cli/configuration.md,322
+"maxSessionTurns",./docs/cli/configuration.md,332
+"summarizeToolOutput",./docs/cli/configuration.md,343
+"run_shell_command",./docs/cli/configuration.md,344
+"tokenBudget",./docs/cli/configuration.md,345
+"DEBUG",./docs/cli/configuration.md,355
+"DEBUG_MODE",./docs/cli/configuration.md,355
+"excludedProjectEnvVars",./docs/cli/configuration.md,358
+"DEBUG",./docs/cli/configuration.md,358
+"DEBUG_MODE",./docs/cli/configuration.md,358
+"NODE_ENV",./docs/cli/configuration.md,358
+"includeDirectories",./docs/cli/configuration.md,370
+"/path/to/another/project",./docs/cli/configuration.md,371
+"../shared-library",./docs/cli/configuration.md,372
+"~/common-utils",./docs/cli/configuration.md,373
+"loadMemoryFromIncludeDirectories",./docs/cli/configuration.md,385
+"theme",./docs/cli/configuration.md,392
+"GitHub",./docs/cli/configuration.md,392
+"sandbox",./docs/cli/configuration.md,393
+"docker",./docs/cli/configuration.md,393
+"toolDiscoveryCommand",./docs/cli/configuration.md,394
+"bin/get_tools",./docs/cli/configuration.md,394
+"toolCallCommand",./docs/cli/configuration.md,395
+"bin/call_tool",./docs/cli/configuration.md,395
+"mcpServers",./docs/cli/configuration.md,396
+"mainServer",./docs/cli/configuration.md,397
+"command",./docs/cli/configuration.md,398
+"bin/mcp_server.py",./docs/cli/configuration.md,398
+"anotherServer",./docs/cli/configuration.md,400
+"command",./docs/cli/configuration.md,401
+"node",./docs/cli/configuration.md,401
+"args",./docs/cli/configuration.md,402
+"mcp_server.js",./docs/cli/configuration.md,402
+"--verbose",./docs/cli/configuration.md,402
+"telemetry",./docs/cli/configuration.md,405
+"enabled",./docs/cli/configuration.md,406
+"target",./docs/cli/configuration.md,407
+"local",./docs/cli/configuration.md,407
+"otlpEndpoint",./docs/cli/configuration.md,408
+"http://localhost:4317",./docs/cli/configuration.md,408
+"logPrompts",./docs/cli/configuration.md,409
+"usageStatisticsEnabled",./docs/cli/configuration.md,411
+"hideTips",./docs/cli/configuration.md,412
+"hideBanner",./docs/cli/configuration.md,413
+"maxSessionTurns",./docs/cli/configuration.md,414
+"summarizeToolOutput",./docs/cli/configuration.md,415
+"run_shell_command",./docs/cli/configuration.md,416
+"tokenBudget",./docs/cli/configuration.md,417
+"excludedProjectEnvVars",./docs/cli/configuration.md,420
+"DEBUG",./docs/cli/configuration.md,420
+"DEBUG_MODE",./docs/cli/configuration.md,420
+"NODE_ENV",./docs/cli/configuration.md,420
+"includeDirectories",./docs/cli/configuration.md,421
+"path/to/dir1",./docs/cli/configuration.md,421
+"~/path/to/dir2",./docs/cli/configuration.md,421
+"../path/to/dir3",./docs/cli/configuration.md,421
+"loadMemoryFromIncludeDirectories",./docs/cli/configuration.md,422
+"gemini-2.5-flash",./docs/cli/configuration.md,466
+"YOUR_GOOGLE_API_KEY",./docs/cli/configuration.md,471
+"YOUR_PROJECT_ID",./docs/cli/configuration.md,482
+"/path/to/your/credentials.json",./docs/cli/configuration.md,486
+"YOUR_PROJECT_ID",./docs/cli/configuration.md,489
+"YOUR_PROJECT_LOCATION",./docs/cli/configuration.md,493
+"explain this code",./docs/cli/configuration.md,550
+"memory",./docs/cli/configuration.md,602
+"usageStatisticsEnabled",./docs/cli/configuration.md,766
+"your prompt here",./docs/get-started/installation.md,56
+"What is fine tuning?",./docs/cli/index.md,48
+"What is fine tuning?",./docs/cli/index.md,54
+"context",./docs/cli/gemini-md.md,104
+"fileName",./docs/cli/gemini-md.md,105
+"AGENTS.md",./docs/cli/gemini-md.md,105
+"CONTEXT.md",./docs/cli/gemini-md.md,105
+"GEMINI.md",./docs/cli/gemini-md.md,105
+"theme",./docs/cli/themes.md,5
+"theme",./docs/cli/themes.md,36
+"ui",./docs/cli/themes.md,61
+"customThemes",./docs/cli/themes.md,62
+"MyCustomTheme",./docs/cli/themes.md,63
+"name",./docs/cli/themes.md,64
+"MyCustomTheme",./docs/cli/themes.md,64
+"type",./docs/cli/themes.md,65
+"custom",./docs/cli/themes.md,65
+"Background",./docs/cli/themes.md,66
+"custom",./docs/cli/themes.md,99
+"ui",./docs/cli/themes.md,132
+"theme",./docs/cli/themes.md,133
+"/path/to/your/theme.json",./docs/cli/themes.md,133
+"name",./docs/cli/themes.md,145
+"My File Theme",./docs/cli/themes.md,145
+"type",./docs/cli/themes.md,146
+"custom",./docs/cli/themes.md,146
+"Background",./docs/cli/themes.md,147
+"#282A36",./docs/cli/themes.md,147
+"Foreground",./docs/cli/themes.md,148
+"#F8F8F2",./docs/cli/themes.md,148
+"LightBlue",./docs/cli/themes.md,149
+"#82AAFF",./docs/cli/themes.md,149
+"AccentBlue",./docs/cli/themes.md,150
+"#61AFEF",./docs/cli/themes.md,150
+"AccentPurple",./docs/cli/themes.md,151
+"#BD93F9",./docs/cli/themes.md,151
+"AccentCyan",./docs/cli/themes.md,152
+"#8BE9FD",./docs/cli/themes.md,152
+"AccentGreen",./docs/cli/themes.md,153
+"#50FA7B",./docs/cli/themes.md,153
+"AccentYellow",./docs/cli/themes.md,154
+"#F1FA8C",./docs/cli/themes.md,154
+"AccentRed",./docs/cli/themes.md,155
+"#FF5555",./docs/cli/themes.md,155
+"Comment",./docs/cli/themes.md,156
+"#6272A4",./docs/cli/themes.md,156
+"Gray",./docs/cli/themes.md,157
+"#ABB2BF",./docs/cli/themes.md,157
+"DiffAdded",./docs/cli/themes.md,158
+"#A6E3A1",./docs/cli/themes.md,158
+"DiffRemoved",./docs/cli/themes.md,159
+"#F38BA8",./docs/cli/themes.md,159
+"DiffModified",./docs/cli/themes.md,160
+"#89B4FA",./docs/cli/themes.md,160
+"GradientColors",./docs/cli/themes.md,161
+"#4796E4",./docs/cli/themes.md,161
+"#847ACE",./docs/cli/themes.md,161
+"#C3677F",./docs/cli/themes.md,161
+"../assets/theme-custom.png",./docs/cli/themes.md,173
+"Custom theme example",./docs/cli/themes.md,173
+"theme",./docs/cli/themes.md,179
+"MyCustomTheme",./docs/cli/themes.md,179
+"/assets/theme-ansi.png",./docs/cli/themes.md,191
+"ANSI theme",./docs/cli/themes.md,191
+"/assets/theme-atom-one.png",./docs/cli/themes.md,195
+"Atom One theme",./docs/cli/themes.md,195
+"/assets/theme-ayu.png",./docs/cli/themes.md,199
+"Ayu theme",./docs/cli/themes.md,199
+"/assets/theme-default.png",./docs/cli/themes.md,203
+"Default theme",./docs/cli/themes.md,203
+"/assets/theme-dracula.png",./docs/cli/themes.md,207
+"Dracula theme",./docs/cli/themes.md,207
+"/assets/theme-github.png",./docs/cli/themes.md,211
+"GitHub theme",./docs/cli/themes.md,211
+"/assets/theme-ansi-light.png",./docs/cli/themes.md,217
+"ANSI Light theme",./docs/cli/themes.md,217
+"/assets/theme-ayu-light.png",./docs/cli/themes.md,221
+"Ayu Light theme",./docs/cli/themes.md,221
+"/assets/theme-default-light.png",./docs/cli/themes.md,225
+"Default Light theme",./docs/cli/themes.md,225
+"/assets/theme-github-light.png",./docs/cli/themes.md,229
+"GitHub Light theme",./docs/cli/themes.md,229
+"/assets/theme-google-light.png",./docs/cli/themes.md,233
+"Google Code theme",./docs/cli/themes.md,233
+"/assets/theme-xcode-light.png",./docs/cli/themes.md,237
+"Xcode Light theme",./docs/cli/themes.md,237
+"smarter,",./docs/cli/model.md,38
+"apiKey",./docs/get-started/configuration-v1.md,74
+"$MY_API_TOKEN",./docs/get-started/configuration-v1.md,74
+"contextFileName",./docs/get-started/configuration-v1.md,95
+"AGENTS.md",./docs/get-started/configuration-v1.md,95
+"urlTemplate",./docs/get-started/configuration-v1.md,100
+"https://github.com/google-gemini/gemini-cli/issues/new?template=bug_report.yml&title={title}&info={info}",./docs/get-started/configuration-v1.md,100
+"bugCommand",./docs/get-started/configuration-v1.md,106
+"urlTemplate",./docs/get-started/configuration-v1.md,107
+"https://bug.example.com/new?title={title}&info={info}",./docs/get-started/configuration-v1.md,107
+"respectGitIgnore",./docs/get-started/configuration-v1.md,114
+"enableRecursiveFileSearch",./docs/get-started/configuration-v1.md,114
+"fileFiltering",./docs/get-started/configuration-v1.md,128
+"respectGitIgnore",./docs/get-started/configuration-v1.md,129
+"enableRecursiveFileSearch",./docs/get-started/configuration-v1.md,130
+"disableFuzzySearch",./docs/get-started/configuration-v1.md,131
+"coreTools",./docs/get-started/configuration-v1.md,164
+"ShellTool(ls -l)",./docs/get-started/configuration-v1.md,164
+"coreTools",./docs/get-started/configuration-v1.md,167
+"ReadFileTool",./docs/get-started/configuration-v1.md,167
+"GlobTool",./docs/get-started/configuration-v1.md,167
+"ShellTool(ls)",./docs/get-started/configuration-v1.md,167
+"allowedTools",./docs/get-started/configuration-v1.md,174
+"ShellTool(git status)",./docs/get-started/configuration-v1.md,174
+"excludeTools",./docs/get-started/configuration-v1.md,181
+"ShellTool(rm -rf)",./docs/get-started/configuration-v1.md,181
+"excludeTools",./docs/get-started/configuration-v1.md,183
+"run_shell_command",./docs/get-started/configuration-v1.md,183
+"findFiles",./docs/get-started/configuration-v1.md,183
+"allowMCPServers",./docs/get-started/configuration-v1.md,196
+"myPythonServer",./docs/get-started/configuration-v1.md,196
+"excludeMCPServers",./docs/get-started/configuration-v1.md,210
+"myNodeServer",./docs/get-started/configuration-v1.md,210
+"autoAccept",./docs/get-started/configuration-v1.md,224
+"Default",./docs/get-started/configuration-v1.md,228
+"theme",./docs/get-started/configuration-v1.md,229
+"GitHub",./docs/get-started/configuration-v1.md,229
+"vimMode",./docs/get-started/configuration-v1.md,237
+"sandbox",./docs/get-started/configuration-v1.md,245
+"docker",./docs/get-started/configuration-v1.md,245
+"toolDiscoveryCommand",./docs/get-started/configuration-v1.md,253
+"bin/get_tools",./docs/get-started/configuration-v1.md,253
+"toolCallCommand",./docs/get-started/configuration-v1.md,267
+"bin/call_tool",./docs/get-started/configuration-v1.md,267
+"mcpServers",./docs/get-started/configuration-v1.md,313
+"myPythonServer",./docs/get-started/configuration-v1.md,314
+"command",./docs/get-started/configuration-v1.md,315
+"python",./docs/get-started/configuration-v1.md,315
+"args",./docs/get-started/configuration-v1.md,316
+"mcp_server.py",./docs/get-started/configuration-v1.md,316
+"--port",./docs/get-started/configuration-v1.md,316
+"cwd",./docs/get-started/configuration-v1.md,317
+"./mcp_tools/python",./docs/get-started/configuration-v1.md,317
+"timeout",./docs/get-started/configuration-v1.md,318
+"includeTools",./docs/get-started/configuration-v1.md,319
+"safe_tool",./docs/get-started/configuration-v1.md,319
+"file_reader",./docs/get-started/configuration-v1.md,319
+"myNodeServer",./docs/get-started/configuration-v1.md,321
+"command",./docs/get-started/configuration-v1.md,322
+"node",./docs/get-started/configuration-v1.md,322
+"args",./docs/get-started/configuration-v1.md,323
+"mcp_server.js",./docs/get-started/configuration-v1.md,323
+"cwd",./docs/get-started/configuration-v1.md,324
+"./mcp_tools/node",./docs/get-started/configuration-v1.md,324
+"excludeTools",./docs/get-started/configuration-v1.md,325
+"dangerous_tool",./docs/get-started/configuration-v1.md,325
+"file_deleter",./docs/get-started/configuration-v1.md,325
+"myDockerServer",./docs/get-started/configuration-v1.md,327
+"command",./docs/get-started/configuration-v1.md,328
+"docker",./docs/get-started/configuration-v1.md,328
+"args",./docs/get-started/configuration-v1.md,329
+"run",./docs/get-started/configuration-v1.md,329
+"-i",./docs/get-started/configuration-v1.md,329
+"--rm",./docs/get-started/configuration-v1.md,329
+"-e",./docs/get-started/configuration-v1.md,329
+"API_KEY",./docs/get-started/configuration-v1.md,329
+"ghcr.io/foo/bar",./docs/get-started/configuration-v1.md,329
+"env",./docs/get-started/configuration-v1.md,330
+"API_KEY",./docs/get-started/configuration-v1.md,331
+"$MY_API_TOKEN",./docs/get-started/configuration-v1.md,331
+"mySseServer",./docs/get-started/configuration-v1.md,334
+"url",./docs/get-started/configuration-v1.md,335
+"http://localhost:8081/events",./docs/get-started/configuration-v1.md,335
+"headers",./docs/get-started/configuration-v1.md,336
+"Authorization",./docs/get-started/configuration-v1.md,337
+"Bearer $MY_SSE_TOKEN",./docs/get-started/configuration-v1.md,337
+"description",./docs/get-started/configuration-v1.md,339
+"An example SSE-based MCP server.",./docs/get-started/configuration-v1.md,339
+"myStreamableHttpServer",./docs/get-started/configuration-v1.md,341
+"httpUrl",./docs/get-started/configuration-v1.md,342
+"http://localhost:8082/stream",./docs/get-started/configuration-v1.md,342
+"headers",./docs/get-started/configuration-v1.md,343
+"X-API-Key",./docs/get-started/configuration-v1.md,344
+"$MY_HTTP_API_KEY",./docs/get-started/configuration-v1.md,344
+"description",./docs/get-started/configuration-v1.md,346
+"An example Streamable HTTP-based MCP server.",./docs/get-started/configuration-v1.md,346
+"enabled",./docs/get-started/configuration-v1.md,355
+"preferredEditor",./docs/get-started/configuration-v1.md,362
+"vscode",./docs/get-started/configuration-v1.md,362
+"enabled",./docs/get-started/configuration-v1.md,368
+"target",./docs/get-started/configuration-v1.md,368
+"local",./docs/get-started/configuration-v1.md,368
+"otlpEndpoint",./docs/get-started/configuration-v1.md,368
+"http://localhost:4317",./docs/get-started/configuration-v1.md,368
+"logPrompts",./docs/get-started/configuration-v1.md,368
+"telemetry",./docs/get-started/configuration-v1.md,378
+"enabled",./docs/get-started/configuration-v1.md,379
+"target",./docs/get-started/configuration-v1.md,380
+"local",./docs/get-started/configuration-v1.md,380
+"otlpEndpoint",./docs/get-started/configuration-v1.md,381
+"http://localhost:16686",./docs/get-started/configuration-v1.md,381
+"logPrompts",./docs/get-started/configuration-v1.md,382
+"usageStatisticsEnabled",./docs/get-started/configuration-v1.md,391
+"hideTips",./docs/get-started/configuration-v1.md,400
+"hideBanner",./docs/get-started/configuration-v1.md,410
+"maxSessionTurns",./docs/get-started/configuration-v1.md,420
+"summarizeToolOutput",./docs/get-started/configuration-v1.md,431
+"run_shell_command",./docs/get-started/configuration-v1.md,432
+"tokenBudget",./docs/get-started/configuration-v1.md,433
+"DEBUG",./docs/get-started/configuration-v1.md,443
+"DEBUG_MODE",./docs/get-started/configuration-v1.md,443
+"excludedProjectEnvVars",./docs/get-started/configuration-v1.md,446
+"DEBUG",./docs/get-started/configuration-v1.md,446
+"DEBUG_MODE",./docs/get-started/configuration-v1.md,446
+"NODE_ENV",./docs/get-started/configuration-v1.md,446
+"includeDirectories",./docs/get-started/configuration-v1.md,458
+"/path/to/another/project",./docs/get-started/configuration-v1.md,459
+"../shared-library",./docs/get-started/configuration-v1.md,460
+"~/common-utils",./docs/get-started/configuration-v1.md,461
+"loadMemoryFromIncludeDirectories",./docs/get-started/configuration-v1.md,473
+"showLineNumbers",./docs/get-started/configuration-v1.md,482
+"screenReader",./docs/get-started/configuration-v1.md,494
+"disableLoadingPhrases",./docs/get-started/configuration-v1.md,494
+"accessibility",./docs/get-started/configuration-v1.md,497
+"screenReader",./docs/get-started/configuration-v1.md,498
+"disableLoadingPhrases",./docs/get-started/configuration-v1.md,499
+"theme",./docs/get-started/configuration-v1.md,507
+"GitHub",./docs/get-started/configuration-v1.md,507
+"sandbox",./docs/get-started/configuration-v1.md,508
+"docker",./docs/get-started/configuration-v1.md,508
+"toolDiscoveryCommand",./docs/get-started/configuration-v1.md,509
+"bin/get_tools",./docs/get-started/configuration-v1.md,509
+"toolCallCommand",./docs/get-started/configuration-v1.md,510
+"bin/call_tool",./docs/get-started/configuration-v1.md,510
+"mcpServers",./docs/get-started/configuration-v1.md,511
+"mainServer",./docs/get-started/configuration-v1.md,512
+"command",./docs/get-started/configuration-v1.md,513
+"bin/mcp_server.py",./docs/get-started/configuration-v1.md,513
+"anotherServer",./docs/get-started/configuration-v1.md,515
+"command",./docs/get-started/configuration-v1.md,516
+"node",./docs/get-started/configuration-v1.md,516
+"args",./docs/get-started/configuration-v1.md,517
+"mcp_server.js",./docs/get-started/configuration-v1.md,517
+"--verbose",./docs/get-started/configuration-v1.md,517
+"telemetry",./docs/get-started/configuration-v1.md,520
+"enabled",./docs/get-started/configuration-v1.md,521
+"target",./docs/get-started/configuration-v1.md,522
+"local",./docs/get-started/configuration-v1.md,522
+"otlpEndpoint",./docs/get-started/configuration-v1.md,523
+"http://localhost:4317",./docs/get-started/configuration-v1.md,523
+"logPrompts",./docs/get-started/configuration-v1.md,524
+"usageStatisticsEnabled",./docs/get-started/configuration-v1.md,526
+"hideTips",./docs/get-started/configuration-v1.md,527
+"hideBanner",./docs/get-started/configuration-v1.md,528
+"maxSessionTurns",./docs/get-started/configuration-v1.md,529
+"summarizeToolOutput",./docs/get-started/configuration-v1.md,530
+"run_shell_command",./docs/get-started/configuration-v1.md,531
+"tokenBudget",./docs/get-started/configuration-v1.md,532
+"excludedProjectEnvVars",./docs/get-started/configuration-v1.md,535
+"DEBUG",./docs/get-started/configuration-v1.md,535
+"DEBUG_MODE",./docs/get-started/configuration-v1.md,535
+"NODE_ENV",./docs/get-started/configuration-v1.md,535
+"includeDirectories",./docs/get-started/configuration-v1.md,536
+"path/to/dir1",./docs/get-started/configuration-v1.md,536
+"~/path/to/dir2",./docs/get-started/configuration-v1.md,536
+"../path/to/dir3",./docs/get-started/configuration-v1.md,536
+"loadMemoryFromIncludeDirectories",./docs/get-started/configuration-v1.md,537
+"gemini-2.5-flash",./docs/get-started/configuration-v1.md,583
+"YOUR_GOOGLE_API_KEY",./docs/get-started/configuration-v1.md,588
+"YOUR_PROJECT_ID",./docs/get-started/configuration-v1.md,599
+"/path/to/your/credentials.json",./docs/get-started/configuration-v1.md,603
+"YOUR_PROJECT_ID",./docs/get-started/configuration-v1.md,606
+"YOUR_PROJECT_LOCATION",./docs/get-started/configuration-v1.md,610
+"explain this code",./docs/get-started/configuration-v1.md,654
+"ShellTool(git status)",./docs/get-started/configuration-v1.md,680
+"memory",./docs/get-started/configuration-v1.md,722
+"usageStatisticsEnabled",./docs/get-started/configuration-v1.md,886
+"security",./docs/cli/trusted-folders.md,17
+"folderTrust",./docs/cli/trusted-folders.md,18
+"enabled",./docs/cli/trusted-folders.md,19
+"safe mode.",./docs/cli/trusted-folders.md,36
+"safe mode",./docs/cli/trusted-folders.md,43
+"mcpServers",./docs/cli/tutorials.md,39
+"github",./docs/cli/tutorials.md,40
+"command",./docs/cli/tutorials.md,41
+"docker",./docs/cli/tutorials.md,41
+"args",./docs/cli/tutorials.md,42
+"run",./docs/cli/tutorials.md,43
+"-i",./docs/cli/tutorials.md,44
+"--rm",./docs/cli/tutorials.md,45
+"-e",./docs/cli/tutorials.md,46
+"GITHUB_PERSONAL_ACCESS_TOKEN",./docs/cli/tutorials.md,47
+"ghcr.io/github/github-mcp-server",./docs/cli/tutorials.md,48
+"env",./docs/cli/tutorials.md,50
+"GITHUB_PERSONAL_ACCESS_TOKEN",./docs/cli/tutorials.md,51
+"${GITHUB_PERSONAL_ACCESS_TOKEN}",./docs/cli/tutorials.md,51
+"pat_YourActualGitHubTokenHere",./docs/cli/tutorials.md,69
+"get all open issues assigned to me in the 'foo/bar' repo and prioritize them",./docs/cli/tutorials.md,82
+"uninstall",./docs/cli/uninstall.md,9
+"$(npm config get cache)/_npx",./docs/cli/uninstall.md,19
+"%LocalAppData%\npm-cache\_npx",./docs/cli/uninstall.md,28
+"npm-cache\_npx",./docs/cli/uninstall.md,35
+"Yes",./docs/ide-integration/index.md,42
+"Gemini CLI Companion",./docs/ide-integration/index.md,69
+"Newly Published",./docs/ide-integration/index.md,71
+"Button is misaligned",./docs/cli/custom-commands.md,71
+"Generates a fix for a given issue.",./docs/cli/custom-commands.md,73
+"Please provide a code fix for the issue described here: {{args}}.",./docs/cli/custom-commands.md,74
+"Button is misaligned",./docs/cli/custom-commands.md,78
+"It\'s complicated",./docs/cli/custom-commands.md,104
+"It\'s complicated",./docs/cli/custom-commands.md,105
+"Support for default argument parsing.",./docs/cli/custom-commands.md,130
+"Adds a new entry to the project\'s CHANGELOG.md file.",./docs/cli/custom-commands.md,132
+"added",./docs/cli/custom-commands.md,144
+"changed",./docs/cli/custom-commands.md,144
+"fixed",./docs/cli/custom-commands.md,144
+"removed",./docs/cli/custom-commands.md,144
+"Keep a Changelog",./docs/cli/custom-commands.md,151
+"New feature",./docs/cli/custom-commands.md,155
+"Generates a Git commit message based on staged changes.",./docs/cli/custom-commands.md,199
+"Reviews the provided context using a best practice guide.",./docs/cli/custom-commands.md,251
+"Pure Function",./docs/cli/custom-commands.md,269
+"Asks the model to refactor the current context into a pure function.",./docs/cli/custom-commands.md,293
+"discovery file.",./docs/ide-integration/ide-companion-spec.md,32
+"port",./docs/ide-integration/ide-companion-spec.md,50
+"workspacePath",./docs/ide-integration/ide-companion-spec.md,51
+"/path/to/project1:/path/to/project2",./docs/ide-integration/ide-companion-spec.md,51
+"authToken",./docs/ide-integration/ide-companion-spec.md,52
+"a-very-secret-token",./docs/ide-integration/ide-companion-spec.md,52
+"ideInfo",./docs/ide-integration/ide-companion-spec.md,53
+"name",./docs/ide-integration/ide-companion-spec.md,54
+"vscode",./docs/ide-integration/ide-companion-spec.md,54
+"displayName",./docs/ide-integration/ide-companion-spec.md,55
+"VS Code",./docs/ide-integration/ide-companion-spec.md,55
+"active",./docs/ide-integration/ide-companion-spec.md,149
+"Apply",./docs/ide-integration/ide-companion-spec.md,224
+"Save",./docs/ide-integration/ide-companion-spec.md,225
+"ui",./docs/cli/enterprise.md,44
+"theme",./docs/cli/enterprise.md,45
+"default-corporate-theme",./docs/cli/enterprise.md,45
+"context",./docs/cli/enterprise.md,47
+"includeDirectories",./docs/cli/enterprise.md,48
+"/etc/gemini-cli/common-context",./docs/cli/enterprise.md,48
+"ui",./docs/cli/enterprise.md,57
+"theme",./docs/cli/enterprise.md,58
+"user-preferred-dark-theme",./docs/cli/enterprise.md,58
+"mcpServers",./docs/cli/enterprise.md,60
+"corp-server",./docs/cli/enterprise.md,61
+"command",./docs/cli/enterprise.md,62
+"/usr/local/bin/corp-server-dev",./docs/cli/enterprise.md,62
+"user-tool",./docs/cli/enterprise.md,64
+"command",./docs/cli/enterprise.md,65
+"npm start --prefix ~/tools/my-tool",./docs/cli/enterprise.md,65
+"context",./docs/cli/enterprise.md,68
+"includeDirectories",./docs/cli/enterprise.md,69
+"~/gemini-context",./docs/cli/enterprise.md,69
+"ui",./docs/cli/enterprise.md,78
+"theme",./docs/cli/enterprise.md,79
+"project-specific-light-theme",./docs/cli/enterprise.md,79
+"mcpServers",./docs/cli/enterprise.md,81
+"project-tool",./docs/cli/enterprise.md,82
+"command",./docs/cli/enterprise.md,83
+"npm start",./docs/cli/enterprise.md,83
+"context",./docs/cli/enterprise.md,86
+"includeDirectories",./docs/cli/enterprise.md,87
+"./project-context",./docs/cli/enterprise.md,87
+"ui",./docs/cli/enterprise.md,95
+"theme",./docs/cli/enterprise.md,96
+"system-enforced-theme",./docs/cli/enterprise.md,96
+"mcpServers",./docs/cli/enterprise.md,98
+"corp-server",./docs/cli/enterprise.md,99
+"command",./docs/cli/enterprise.md,100
+"/usr/local/bin/corp-server-prod",./docs/cli/enterprise.md,100
+"context",./docs/cli/enterprise.md,103
+"includeDirectories",./docs/cli/enterprise.md,104
+"/etc/gemini-cli/global-context",./docs/cli/enterprise.md,104
+"ui",./docs/cli/enterprise.md,114
+"theme",./docs/cli/enterprise.md,115
+"system-enforced-theme",./docs/cli/enterprise.md,115
+"mcpServers",./docs/cli/enterprise.md,117
+"corp-server",./docs/cli/enterprise.md,118
+"command",./docs/cli/enterprise.md,119
+"/usr/local/bin/corp-server-prod",./docs/cli/enterprise.md,119
+"user-tool",./docs/cli/enterprise.md,121
+"command",./docs/cli/enterprise.md,122
+"npm start --prefix ~/tools/my-tool",./docs/cli/enterprise.md,122
+"project-tool",./docs/cli/enterprise.md,124
+"command",./docs/cli/enterprise.md,125
+"npm start",./docs/cli/enterprise.md,125
+"context",./docs/cli/enterprise.md,128
+"includeDirectories",./docs/cli/enterprise.md,129
+"/etc/gemini-cli/common-context",./docs/cli/enterprise.md,130
+"~/gemini-context",./docs/cli/enterprise.md,131
+"./project-context",./docs/cli/enterprise.md,132
+"/etc/gemini-cli/global-context",./docs/cli/enterprise.md,133
+"tools",./docs/cli/enterprise.md,179
+"core",./docs/cli/enterprise.md,180
+"ReadFileTool",./docs/cli/enterprise.md,180
+"GlobTool",./docs/cli/enterprise.md,180
+"ShellTool(ls)",./docs/cli/enterprise.md,180
+"tools",./docs/cli/enterprise.md,194
+"exclude",./docs/cli/enterprise.md,195
+"ShellTool(rm -rf)",./docs/cli/enterprise.md,195
+"security",./docs/cli/enterprise.md,216
+"disableYoloMode",./docs/cli/enterprise.md,217
+"mcp",./docs/cli/enterprise.md,271
+"allowed",./docs/cli/enterprise.md,272
+"third-party-analyzer",./docs/cli/enterprise.md,272
+"mcpServers",./docs/cli/enterprise.md,274
+"third-party-analyzer",./docs/cli/enterprise.md,275
+"command",./docs/cli/enterprise.md,276
+"/usr/local/bin/start-3p-analyzer.sh",./docs/cli/enterprise.md,276
+"includeTools",./docs/cli/enterprise.md,277
+"code-search",./docs/cli/enterprise.md,277
+"get-ticket-details",./docs/cli/enterprise.md,277
+"mcp",./docs/cli/enterprise.md,305
+"allowed",./docs/cli/enterprise.md,306
+"corp-data-api",./docs/cli/enterprise.md,306
+"source-code-analyzer",./docs/cli/enterprise.md,306
+"mcpServers",./docs/cli/enterprise.md,308
+"corp-data-api",./docs/cli/enterprise.md,309
+"command",./docs/cli/enterprise.md,310
+"/usr/local/bin/start-corp-api.sh",./docs/cli/enterprise.md,310
+"timeout",./docs/cli/enterprise.md,311
+"source-code-analyzer",./docs/cli/enterprise.md,313
+"command",./docs/cli/enterprise.md,314
+"/usr/local/bin/start-analyzer.sh",./docs/cli/enterprise.md,314
+"mcp.allowed",./docs/cli/enterprise.md,333
+"mcpServers",./docs/cli/enterprise.md,337
+"corp-data-api",./docs/cli/enterprise.md,338
+"command",./docs/cli/enterprise.md,339
+"/usr/local/bin/start-corp-api.sh",./docs/cli/enterprise.md,339
+"tools",./docs/cli/enterprise.md,360
+"sandbox",./docs/cli/enterprise.md,361
+"docker",./docs/cli/enterprise.md,361
+"mcpServers",./docs/cli/enterprise.md,381
+"proxied-server",./docs/cli/enterprise.md,382
+"command",./docs/cli/enterprise.md,383
+"node",./docs/cli/enterprise.md,383
+"args",./docs/cli/enterprise.md,384
+"mcp_server.js",./docs/cli/enterprise.md,384
+"env",./docs/cli/enterprise.md,385
+"HTTP_PROXY",./docs/cli/enterprise.md,386
+"http://proxy.example.com:8080",./docs/cli/enterprise.md,386
+"HTTPS_PROXY",./docs/cli/enterprise.md,387
+"http://proxy.example.com:8080",./docs/cli/enterprise.md,387
+"telemetry",./docs/cli/enterprise.md,406
+"enabled",./docs/cli/enterprise.md,407
+"target",./docs/cli/enterprise.md,408
+"gcp",./docs/cli/enterprise.md,408
+"logPrompts",./docs/cli/enterprise.md,409
+"enforcedAuthType",./docs/cli/enterprise.md,428
+"oauth-personal",./docs/cli/enterprise.md,428
+"tools",./docs/cli/enterprise.md,445
+"sandbox",./docs/cli/enterprise.md,446
+"docker",./docs/cli/enterprise.md,446
+"core",./docs/cli/enterprise.md,447
+"ReadFileTool",./docs/cli/enterprise.md,448
+"GlobTool",./docs/cli/enterprise.md,449
+"ShellTool(ls)",./docs/cli/enterprise.md,450
+"ShellTool(cat)",./docs/cli/enterprise.md,451
+"ShellTool(grep)",./docs/cli/enterprise.md,452
+"mcp",./docs/cli/enterprise.md,455
+"allowed",./docs/cli/enterprise.md,456
+"corp-tools",./docs/cli/enterprise.md,456
+"mcpServers",./docs/cli/enterprise.md,458
+"corp-tools",./docs/cli/enterprise.md,459
+"command",./docs/cli/enterprise.md,460
+"/opt/gemini-tools/start.sh",./docs/cli/enterprise.md,460
+"timeout",./docs/cli/enterprise.md,461
+"telemetry",./docs/cli/enterprise.md,464
+"enabled",./docs/cli/enterprise.md,465
+"target",./docs/cli/enterprise.md,466
+"gcp",./docs/cli/enterprise.md,466
+"otlpEndpoint",./docs/cli/enterprise.md,467
+"https://telemetry-prod.example.com:4317",./docs/cli/enterprise.md,467
+"logPrompts",./docs/cli/enterprise.md,468
+"advanced",./docs/cli/enterprise.md,470
+"bugCommand",./docs/cli/enterprise.md,471
+"urlTemplate",./docs/cli/enterprise.md,472
+"https://servicedesk.example.com/new-ticket?title={title}&details={info}",./docs/cli/enterprise.md,472
+"privacy",./docs/cli/enterprise.md,475
+"usageStatisticsEnabled",./docs/cli/enterprise.md,476
+"What is machine learning?",./docs/cli/headless.md,55
+"Explain this code",./docs/cli/headless.md,63
+"Summarize this documentation",./docs/cli/headless.md,71
+"What is the capital of France?",./docs/cli/headless.md,81
+"response",./docs/cli/headless.md,101
+"string",./docs/cli/headless.md,101
+"stats",./docs/cli/headless.md,102
+"models",./docs/cli/headless.md,104
+"[model-name]",./docs/cli/headless.md,106
+"api",./docs/cli/headless.md,107
+"tokens",./docs/cli/headless.md,110
+"tools",./docs/cli/headless.md,115
+"totalCalls",./docs/cli/headless.md,117
+"number",./docs/cli/headless.md,117
+"totalSuccess",./docs/cli/headless.md,118
+"number",./docs/cli/headless.md,118
+"totalFail",./docs/cli/headless.md,119
+"number",./docs/cli/headless.md,119
+"totalDurationMs",./docs/cli/headless.md,120
+"number",./docs/cli/headless.md,120
+"totalDecisions",./docs/cli/headless.md,121
+"byName",./docs/cli/headless.md,124
+"files",./docs/cli/headless.md,128
+"totalLinesAdded",./docs/cli/headless.md,130
+"number",./docs/cli/headless.md,130
+"totalLinesRemoved",./docs/cli/headless.md,131
+"number",./docs/cli/headless.md,131
+"error",./docs/cli/headless.md,134
+"type",./docs/cli/headless.md,136
+"string",./docs/cli/headless.md,136
+"ApiError",./docs/cli/headless.md,136
+"AuthError",./docs/cli/headless.md,136
+"message",./docs/cli/headless.md,137
+"string",./docs/cli/headless.md,137
+"code",./docs/cli/headless.md,138
+"number",./docs/cli/headless.md,138
+"What is the capital of France?",./docs/cli/headless.md,146
+"response",./docs/cli/headless.md,153
+"The capital of France is Paris.",./docs/cli/headless.md,153
+"stats",./docs/cli/headless.md,154
+"models",./docs/cli/headless.md,155
+"gemini-2.5-pro",./docs/cli/headless.md,156
+"api",./docs/cli/headless.md,157
+"totalRequests",./docs/cli/headless.md,158
+"totalErrors",./docs/cli/headless.md,159
+"totalLatencyMs",./docs/cli/headless.md,160
+"tokens",./docs/cli/headless.md,162
+"prompt",./docs/cli/headless.md,163
+"candidates",./docs/cli/headless.md,164
+"total",./docs/cli/headless.md,165
+"cached",./docs/cli/headless.md,166
+"thoughts",./docs/cli/headless.md,167
+"tool",./docs/cli/headless.md,168
+"gemini-2.5-flash",./docs/cli/headless.md,171
+"api",./docs/cli/headless.md,172
+"totalRequests",./docs/cli/headless.md,173
+"totalErrors",./docs/cli/headless.md,174
+"totalLatencyMs",./docs/cli/headless.md,175
+"tokens",./docs/cli/headless.md,177
+"prompt",./docs/cli/headless.md,178
+"candidates",./docs/cli/headless.md,179
+"total",./docs/cli/headless.md,180
+"cached",./docs/cli/headless.md,181
+"thoughts",./docs/cli/headless.md,182
+"tool",./docs/cli/headless.md,183
+"tools",./docs/cli/headless.md,187
+"totalCalls",./docs/cli/headless.md,188
+"totalSuccess",./docs/cli/headless.md,189
+"totalFail",./docs/cli/headless.md,190
+"totalDurationMs",./docs/cli/headless.md,191
+"totalDecisions",./docs/cli/headless.md,192
+"accept",./docs/cli/headless.md,193
+"reject",./docs/cli/headless.md,194
+"modify",./docs/cli/headless.md,195
+"auto_accept",./docs/cli/headless.md,196
+"byName",./docs/cli/headless.md,198
+"google_web_search",./docs/cli/headless.md,199
+"count",./docs/cli/headless.md,200
+"success",./docs/cli/headless.md,201
+"fail",./docs/cli/headless.md,202
+"durationMs",./docs/cli/headless.md,203
+"decisions",./docs/cli/headless.md,204
+"accept",./docs/cli/headless.md,205
+"reject",./docs/cli/headless.md,206
+"modify",./docs/cli/headless.md,207
+"auto_accept",./docs/cli/headless.md,208
+"files",./docs/cli/headless.md,213
+"totalLinesAdded",./docs/cli/headless.md,214
+"totalLinesRemoved",./docs/cli/headless.md,215
+"What is 2+2?",./docs/cli/headless.md,255
+"Analyze this code",./docs/cli/headless.md,258
+"List files",./docs/cli/headless.md,261
+"type",./docs/cli/headless.md,269
+"init",./docs/cli/headless.md,269
+"timestamp",./docs/cli/headless.md,269
+"2025-10-10T12:00:00.000Z",./docs/cli/headless.md,269
+"session_id",./docs/cli/headless.md,269
+"abc123",./docs/cli/headless.md,269
+"model",./docs/cli/headless.md,269
+"gemini-2.0-flash-exp",./docs/cli/headless.md,269
+"type",./docs/cli/headless.md,270
+"message",./docs/cli/headless.md,270
+"role",./docs/cli/headless.md,270
+"user",./docs/cli/headless.md,270
+"content",./docs/cli/headless.md,270
+"List files in current directory",./docs/cli/headless.md,270
+"timestamp",./docs/cli/headless.md,270
+"2025-10-10T12:00:01.000Z",./docs/cli/headless.md,270
+"type",./docs/cli/headless.md,271
+"tool_use",./docs/cli/headless.md,271
+"tool_name",./docs/cli/headless.md,271
+"Bash",./docs/cli/headless.md,271
+"tool_id",./docs/cli/headless.md,271
+"bash-123",./docs/cli/headless.md,271
+"parameters",./docs/cli/headless.md,271
+"command",./docs/cli/headless.md,271
+"ls -la",./docs/cli/headless.md,271
+"timestamp",./docs/cli/headless.md,271
+"2025-10-10T12:00:02.000Z",./docs/cli/headless.md,271
+"type",./docs/cli/headless.md,272
+"tool_result",./docs/cli/headless.md,272
+"tool_id",./docs/cli/headless.md,272
+"bash-123",./docs/cli/headless.md,272
+"status",./docs/cli/headless.md,272
+"success",./docs/cli/headless.md,272
+"output",./docs/cli/headless.md,272
+"file1.txt\nfile2.txt",./docs/cli/headless.md,272
+"timestamp",./docs/cli/headless.md,272
+"2025-10-10T12:00:03.000Z",./docs/cli/headless.md,272
+"type",./docs/cli/headless.md,273
+"message",./docs/cli/headless.md,273
+"role",./docs/cli/headless.md,273
+"assistant",./docs/cli/headless.md,273
+"content",./docs/cli/headless.md,273
+"Here are the files...",./docs/cli/headless.md,273
+"delta",./docs/cli/headless.md,273
+"timestamp",./docs/cli/headless.md,273
+"2025-10-10T12:00:04.000Z",./docs/cli/headless.md,273
+"type",./docs/cli/headless.md,274
+"result",./docs/cli/headless.md,274
+"status",./docs/cli/headless.md,274
+"success",./docs/cli/headless.md,274
+"stats",./docs/cli/headless.md,274
+"total_tokens",./docs/cli/headless.md,274
+"input_tokens",./docs/cli/headless.md,274
+"output_tokens",./docs/cli/headless.md,274
+"duration_ms",./docs/cli/headless.md,274
+"tool_calls",./docs/cli/headless.md,274
+"timestamp",./docs/cli/headless.md,274
+"2025-10-10T12:00:05.000Z",./docs/cli/headless.md,274
+"Explain Docker",./docs/cli/headless.md,283
+"Explain Docker",./docs/cli/headless.md,284
+"Add more details",./docs/cli/headless.md,287
+"What is Kubernetes?",./docs/cli/headless.md,290
+"Explain microservices",./docs/cli/headless.md,291
+"List programming languages",./docs/cli/headless.md,292
+"python",./docs/cli/headless.md,292
+"query",./docs/cli/headless.md,301
+"query",./docs/cli/headless.md,302
+"query",./docs/cli/headless.md,303
+"query",./docs/cli/headless.md,304
+"query",./docs/cli/headless.md,305
+"query",./docs/cli/headless.md,306
+"query",./docs/cli/headless.md,307
+"Review this authentication code for security issues",./docs/cli/headless.md,318
+"Write a concise commit message for these changes",./docs/cli/headless.md,324
+"$result",./docs/cli/headless.md,325
+"Generate OpenAPI spec for these routes",./docs/cli/headless.md,331
+"$result",./docs/cli/headless.md,332
+"Analyzing $file...",./docs/cli/headless.md,339
+"$file",./docs/cli/headless.md,340
+"Find potential bugs and suggest improvements",./docs/cli/headless.md,340
+"$result",./docs/cli/headless.md,341
+"reports/$(basename ",./docs/cli/headless.md,341
+").analysis",./docs/cli/headless.md,341
+"Completed analysis for $(basename ",./docs/cli/headless.md,342
+"Review these changes for bugs, security issues, and code quality",./docs/cli/headless.md,349
+"$result",./docs/cli/headless.md,350
+"ERROR",./docs/cli/headless.md,356
+"Analyze these errors and suggest root cause and fixes",./docs/cli/headless.md,356
+"Generate release notes from these commits",./docs/cli/headless.md,362
+"$result",./docs/cli/headless.md,363
+"$response",./docs/cli/headless.md,364
+"$response",./docs/cli/headless.md,365
+"Explain this database schema",./docs/cli/headless.md,371
+"$result",./docs/cli/headless.md,372
+"$result",./docs/cli/headless.md,373
+") | if . == ",./docs/cli/headless.md,373
+" then ",./docs/cli/headless.md,373
+"$result",./docs/cli/headless.md,374
+"$result",./docs/cli/headless.md,375
+") | if . == ",./docs/cli/headless.md,375
+" then ",./docs/cli/headless.md,375
+"$(date): $total_tokens tokens, $tool_calls tool calls ($tools_used) used with models: $models_used",./docs/cli/headless.md,376
+"$result",./docs/cli/headless.md,377
+"Recent usage trends:",./docs/cli/headless.md,378
+"experimental.useModelRouter",./docs/cli/model-routing.md,33
+"experimental.useModelRouter",./docs/cli/model-routing.md,36
+"auto",./docs/cli/model-routing.md,54
+"gcp",./docs/cli/telemetry.md,80
+"local",./docs/cli/telemetry.md,80
+"local",./docs/cli/telemetry.md,80
+"grpc",./docs/cli/telemetry.md,82
+"http",./docs/cli/telemetry.md,82
+"grpc",./docs/cli/telemetry.md,82
+"your-telemetry-project-id",./docs/cli/telemetry.md,103
+"your-project-id",./docs/cli/telemetry.md,107
+"/path/to/your/service-account.json",./docs/cli/telemetry.md,117
+"$OTLP_GOOGLE_CLOUD_PROJECT",./docs/cli/telemetry.md,130
+"telemetry",./docs/cli/telemetry.md,140
+"enabled",./docs/cli/telemetry.md,141
+"target",./docs/cli/telemetry.md,142
+"gcp",./docs/cli/telemetry.md,142
+"telemetry",./docs/cli/telemetry.md,161
+"enabled",./docs/cli/telemetry.md,162
+"target",./docs/cli/telemetry.md,163
+"gcp",./docs/cli/telemetry.md,163
+"useCollector",./docs/cli/telemetry.md,164
+"telemetry",./docs/cli/telemetry.md,196
+"enabled",./docs/cli/telemetry.md,197
+"target",./docs/cli/telemetry.md,198
+"local",./docs/cli/telemetry.md,198
+"otlpEndpoint",./docs/cli/telemetry.md,199
+"outfile",./docs/cli/telemetry.md,200
+".gemini/telemetry.log",./docs/cli/telemetry.md,200
+"text",./docs/cli/telemetry.md,260
+"json",./docs/cli/telemetry.md,260
+"stream-json",./docs/cli/telemetry.md,260
+"accept",./docs/cli/telemetry.md,279
+"reject",./docs/cli/telemetry.md,279
+"auto_accept",./docs/cli/telemetry.md,279
+"modify",./docs/cli/telemetry.md,279
+"native",./docs/cli/telemetry.md,283
+"mcp",./docs/cli/telemetry.md,283
+"success",./docs/cli/telemetry.md,305
+"failure",./docs/cli/telemetry.md,305
+"create",./docs/cli/telemetry.md,334
+"read",./docs/cli/telemetry.md,334
+"update",./docs/cli/telemetry.md,334
+"success",./docs/cli/telemetry.md,388
+"error",./docs/cli/telemetry.md,388
+"private_ip",./docs/cli/telemetry.md,455
+"primary_failed",./docs/cli/telemetry.md,455
+"accept",./docs/cli/telemetry.md,545
+"reject",./docs/cli/telemetry.md,545
+"modify",./docs/cli/telemetry.md,545
+"auto_accept",./docs/cli/telemetry.md,545
+"mcp",./docs/cli/telemetry.md,547
+"native",./docs/cli/telemetry.md,547
+"input",./docs/cli/telemetry.md,576
+"output",./docs/cli/telemetry.md,576
+"thought",./docs/cli/telemetry.md,576
+"cache",./docs/cli/telemetry.md,576
+"tool",./docs/cli/telemetry.md,576
+"create",./docs/cli/telemetry.md,585
+"read",./docs/cli/telemetry.md,585
+"update",./docs/cli/telemetry.md,585
+"added",./docs/cli/telemetry.md,595
+"removed",./docs/cli/telemetry.md,595
+"heap_used",./docs/cli/telemetry.md,672
+"heap_total",./docs/cli/telemetry.md,672
+"external",./docs/cli/telemetry.md,672
+"rss",./docs/cli/telemetry.md,672
+"validation",./docs/cli/telemetry.md,685
+"preparation",./docs/cli/telemetry.md,685
+"execution",./docs/cli/telemetry.md,685
+"result_processing",./docs/cli/telemetry.md,685
+"request_preparation",./docs/cli/telemetry.md,690
+"network_latency",./docs/cli/telemetry.md,690
+"response_processing",./docs/cli/telemetry.md,690
+"token_processing",./docs/cli/telemetry.md,691
+"low",./docs/cli/telemetry.md,709
+"medium",./docs/cli/telemetry.md,709
+"high",./docs/cli/telemetry.md,709
+"low",./docs/cli/telemetry.md,717
+"medium",./docs/cli/telemetry.md,717
+"high",./docs/cli/telemetry.md,717
+"generate_content",./docs/cli/telemetry.md,738
+"chat",./docs/cli/telemetry.md,738
+"gcp.gen_ai",./docs/cli/telemetry.md,739
+"gcp.vertex_ai",./docs/cli/telemetry.md,740
+"input",./docs/cli/telemetry.md,741
+"output",./docs/cli/telemetry.md,741
+"generate_content",./docs/cli/telemetry.md,753
+"chat",./docs/cli/telemetry.md,753
+"gcp.gen_ai",./docs/cli/telemetry.md,754
+"gcp.vertex_ai",./docs/cli/telemetry.md,755
+"Promote Release",./docs/releases.md,71
+"hotfix/v0.6.0-preview.2/preview/cherry-pick-abc1234",./docs/releases.md,316
+"hotfix/v0.5.1/stable/cherry-pick-abc1234",./docs/releases.md,323
+"hotfix/v0.6.0-preview.2/preview/cherry-pick-abc1234",./docs/releases.md,330
+"preview",./docs/releases.md,357
+"release/v0.6.0-preview.2",./docs/releases.md,360
+"Run workflow",./docs/releases.md,396
+"Run workflow",./docs/releases.md,398
+"registry",./docs/releases.md,413
+"thename",./docs/releases.md,413
+"Operation not permitted",./docs/troubleshooting.md,61
+"Permission denied",./docs/troubleshooting.md,61
+"CI",./docs/troubleshooting.md,69
+"Gemini CLI: Run",./packages/vscode-ide-companion/README.md,21

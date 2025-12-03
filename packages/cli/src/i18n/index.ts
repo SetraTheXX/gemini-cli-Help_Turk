@@ -39,19 +39,52 @@ function formatTemplate(template: string, values?: TemplateValues): string {
   );
 }
 
-function resolveCatalog(locale: string): CatalogKey {
-  const language = locale.toLowerCase().split('-')[0];
-  if (language === 'tr') {
-    return 'tr';
+export function normalizeLocale(locale: unknown): {
+  normalized: string;
+  catalogKey: CatalogKey;
+  warningKey?: MessageKey;
+  warningValues?: TemplateValues;
+} {
+  if (typeof locale !== 'string') {
+    return {
+      normalized: 'en',
+      catalogKey: 'en',
+      warningKey: 'errors.invalidLocaleMissing',
+    };
   }
-  return 'en';
+
+  const trimmed = locale.trim();
+  if (!trimmed) {
+    return {
+      normalized: 'en',
+      catalogKey: 'en',
+      warningKey: 'errors.invalidLocaleMissing',
+    };
+  }
+
+  const language = trimmed.toLowerCase().split('-')[0];
+
+  if (language === 'tr') {
+    return { normalized: language, catalogKey: 'tr' };
+  }
+
+  if (language === 'en') {
+    return { normalized: language, catalogKey: 'en' };
+  }
+
+  return {
+    normalized: language,
+    catalogKey: 'en',
+    warningKey: 'errors.unsupportedLocale',
+    warningValues: { value: locale },
+  };
 }
 
-export function createTranslator(locale: string) {
-  const catalogKey = resolveCatalog(locale);
+export function createTranslator(locale: unknown) {
+  const { catalogKey, warningKey, warningValues } = normalizeLocale(locale);
   const catalog = catalogs[catalogKey];
 
-  return (key: MessageKey, values?: TemplateValues) => {
+  const translator = (key: MessageKey, values?: TemplateValues) => {
     const rawMessage =
       getNestedMessage(catalog as NestedMessages, key) ??
       getNestedMessage(catalogs.en as NestedMessages, key) ??
@@ -63,6 +96,14 @@ export function createTranslator(locale: string) {
 
     return formatTemplate(rawMessage, values);
   };
+
+  if (warningKey) {
+    // Localized warning for invalid or unsupported locale input
+     
+    console.warn(translator(warningKey, warningValues));
+  }
+
+  return translator;
 }
 
 export type Translator = ReturnType<typeof createTranslator>;

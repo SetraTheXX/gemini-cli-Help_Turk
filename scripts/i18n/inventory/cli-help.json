@@ -1,0 +1,862 @@
+[
+  {
+    "text": "hello",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 42
+  },
+  {
+    "text": "non-existent-server",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 77
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 113
+  },
+  {
+    "text": "server-to-keep",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 114
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 115
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 115
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 116
+  },
+  {
+    "text": "keep.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 116
+  },
+  {
+    "text": "server-to-remove",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 118
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 119
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 119
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 120
+  },
+  {
+    "text": "remove.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 120
+  },
+  {
+    "text": "server-to-keep",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 130
+  },
+  {
+    "text": "server-to-remove",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 131
+  },
+  {
+    "text": "server-to-remove",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 134
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 142
+  },
+  {
+    "text": "context7",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 144
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 145
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 145
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 146
+  },
+  {
+    "text": "server.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 146
+  },
+  {
+    "text": "oldServer",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 149
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 150
+  },
+  {
+    "text": "old",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 150
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 151
+  },
+  {
+    "text": "old.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 151
+  },
+  {
+    "text": "context7",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 162
+  },
+  {
+    "text": "oldServer",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 163
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 171
+  },
+  {
+    "text": "only-server",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 172
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 173
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 173
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 174
+  },
+  {
+    "text": "server.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 174
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 184
+  },
+  {
+    "text": "only-server",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 185
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 186
+  },
+  {
+    "text": "model",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 193
+  },
+  {
+    "text": "model",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 193
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 193
+  },
+  {
+    "text": "model",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 195
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 196
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 196
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 198
+  },
+  {
+    "text": "server1",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 199
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 200
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 200
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 201
+  },
+  {
+    "text": "s1.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 201
+  },
+  {
+    "text": "server2",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 203
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 204
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 204
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 205
+  },
+  {
+    "text": "s2.js",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 205
+  },
+  {
+    "text": "ui",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 208
+  },
+  {
+    "text": "theme",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 209
+  },
+  {
+    "text": "dark",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 209
+  },
+  {
+    "text": "model",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 218
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 219
+  },
+  {
+    "text": "server2",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 220
+  },
+  {
+    "text": "ui",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 221
+  },
+  {
+    "text": "theme",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 222
+  },
+  {
+    "text": "dark",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 222
+  },
+  {
+    "text": "server1",
+    "file": "./packages/cli/src/commands/mcp/remove.test.ts",
+    "line": 223
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/remove.ts",
+    "line": 27
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/remove.ts",
+    "line": 35
+  },
+  {
+    "text": "X-API-Key: your-key",
+    "file": "./packages/cli/src/commands/mcp/add.test.ts",
+    "line": 95
+  },
+  {
+    "text": "Authorization: Bearer your-token",
+    "file": "./packages/cli/src/commands/mcp/add.test.ts",
+    "line": 108
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 120
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 129
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 132
+  },
+  {
+    "text": "X-Api-Key: abc123",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 181
+  },
+  {
+    "text": "Authorization: Bearer abc123",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 181
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/extensions/uninstall.ts",
+    "line": 34
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/extensions/uninstall.ts",
+    "line": 42
+  },
+  {
+    "text": "INVALID_NAME",
+    "file": "./packages/cli/src/commands/extensions/validate.test.ts",
+    "line": 78
+  },
+  {
+    "text": "Version '1' does not appear to be standard semver (e.g., 1.0.0).",
+    "file": "./packages/cli/src/commands/extensions/validate.test.ts",
+    "line": 96
+  },
+  {
+    "text": "%s",
+    "file": "./packages/cli/src/commands/extensions/disable.test.ts",
+    "line": 267
+  },
+  {
+    "text": "test-ext",
+    "file": "./packages/cli/src/commands/extensions/disable.test.ts",
+    "line": 309
+  },
+  {
+    "text": "workspace",
+    "file": "./packages/cli/src/commands/extensions/disable.test.ts",
+    "line": 309
+  },
+  {
+    "text": "${info.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 29
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 48
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 53
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 62
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 78
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 81
+  },
+  {
+    "text": "http-extension",
+    "file": "./packages/cli/src/commands/extensions/install.test.ts",
+    "line": 90
+  },
+  {
+    "text": "https-extension",
+    "file": "./packages/cli/src/commands/extensions/install.test.ts",
+    "line": 104
+  },
+  {
+    "text": "git-extension",
+    "file": "./packages/cli/src/commands/extensions/install.test.ts",
+    "line": 118
+  },
+  {
+    "text": "sso-extension",
+    "file": "./packages/cli/src/commands/extensions/install.test.ts",
+    "line": 142
+  },
+  {
+    "text": "local-extension",
+    "file": "./packages/cli/src/commands/extensions/install.test.ts",
+    "line": 156
+  },
+  {
+    "text": "my-extension",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 108
+  },
+  {
+    "text": "ext1",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 124
+  },
+  {
+    "text": "ext2",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 127
+  },
+  {
+    "text": "ext3",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 130
+  },
+  {
+    "text": "ext1",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 156
+  },
+  {
+    "text": "ext2",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 159
+  },
+  {
+    "text": "ext3",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 162
+  },
+  {
+    "text": "ext1",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 184
+  },
+  {
+    "text": "ext2",
+    "file": "./packages/cli/src/commands/extensions/uninstall.test.ts",
+    "line": 187
+  },
+  {
+    "text": "${args.template}",
+    "file": "./packages/cli/src/commands/extensions/new.ts",
+    "line": 55
+  },
+  {
+    "text": "gemini extensions link ${args.path}",
+    "file": "./packages/cli/src/commands/extensions/new.ts",
+    "line": 71
+  },
+  {
+    "text": "my-extension",
+    "file": "./packages/cli/src/commands/extensions/update.test.ts",
+    "line": 84
+  },
+  {
+    "text": "my-extension",
+    "file": "./packages/cli/src/commands/extensions/update.test.ts",
+    "line": 89
+  },
+  {
+    "text": "ext1",
+    "file": "./packages/cli/src/commands/extensions/update.test.ts",
+    "line": 126
+  },
+  {
+    "text": "ext2",
+    "file": "./packages/cli/src/commands/extensions/update.test.ts",
+    "line": 126
+  },
+  {
+    "text": "my-extension",
+    "file": "./packages/cli/src/commands/extensions/enable.test.ts",
+    "line": 83
+  },
+  {
+    "text": "my-extension",
+    "file": "./packages/cli/src/commands/extensions/enable.test.ts",
+    "line": 90
+  },
+  {
+    "text": "workspace",
+    "file": "./packages/cli/src/commands/extensions/enable.test.ts",
+    "line": 90
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/enable.ts",
+    "line": 41
+  },
+  {
+    "text": "${args.scope}",
+    "file": "./packages/cli/src/commands/extensions/enable.ts",
+    "line": 41
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/enable.ts",
+    "line": 45
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/extensions/examples/context/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "context-example",
+    "file": "./packages/cli/src/commands/extensions/examples/context/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "version",
+    "file": "./packages/cli/src/commands/extensions/examples/context/gemini-extension.json",
+    "line": 3
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/extensions/examples/exclude-tools/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "excludeTools",
+    "file": "./packages/cli/src/commands/extensions/examples/exclude-tools/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "version",
+    "file": "./packages/cli/src/commands/extensions/examples/exclude-tools/gemini-extension.json",
+    "line": 3
+  },
+  {
+    "text": "excludeTools",
+    "file": "./packages/cli/src/commands/extensions/examples/exclude-tools/gemini-extension.json",
+    "line": 4
+  },
+  {
+    "text": "run_shell_command(rm -rf)",
+    "file": "./packages/cli/src/commands/extensions/examples/exclude-tools/gemini-extension.json",
+    "line": 4
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/extensions/examples/custom-commands/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "custom-commands",
+    "file": "./packages/cli/src/commands/extensions/examples/custom-commands/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "version",
+    "file": "./packages/cli/src/commands/extensions/examples/custom-commands/gemini-extension.json",
+    "line": 3
+  },
+  {
+    "text": "compilerOptions",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 2
+  },
+  {
+    "text": "target",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 3
+  },
+  {
+    "text": "ES2022",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 3
+  },
+  {
+    "text": "module",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 4
+  },
+  {
+    "text": "NodeNext",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 4
+  },
+  {
+    "text": "moduleResolution",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 5
+  },
+  {
+    "text": "NodeNext",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 5
+  },
+  {
+    "text": "strict",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 6
+  },
+  {
+    "text": "esModuleInterop",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 7
+  },
+  {
+    "text": "skipLibCheck",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 8
+  },
+  {
+    "text": "forceConsistentCasingInFileNames",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 9
+  },
+  {
+    "text": "outDir",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 10
+  },
+  {
+    "text": "./dist",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 10
+  },
+  {
+    "text": "include",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 12
+  },
+  {
+    "text": "example.ts",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/tsconfig.json",
+    "line": 12
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "mcp-server-example",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 2
+  },
+  {
+    "text": "version",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 3
+  },
+  {
+    "text": "mcpServers",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 4
+  },
+  {
+    "text": "nodeServer",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 5
+  },
+  {
+    "text": "command",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 6
+  },
+  {
+    "text": "node",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 6
+  },
+  {
+    "text": "args",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 7
+  },
+  {
+    "text": "${extensionPath}${/}dist${/}example.js",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 7
+  },
+  {
+    "text": "cwd",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 8
+  },
+  {
+    "text": "${extensionPath}",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/gemini-extension.json",
+    "line": 8
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 2
+  },
+  {
+    "text": "mcp-server-example",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 2
+  },
+  {
+    "text": "version",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 3
+  },
+  {
+    "text": "description",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 4
+  },
+  {
+    "text": "Example MCP Server for Gemini CLI Extension",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 4
+  },
+  {
+    "text": "type",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 5
+  },
+  {
+    "text": "module",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 5
+  },
+  {
+    "text": "main",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 6
+  },
+  {
+    "text": "example.js",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 6
+  },
+  {
+    "text": "scripts",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 7
+  },
+  {
+    "text": "build",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 8
+  },
+  {
+    "text": "tsc",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 8
+  },
+  {
+    "text": "devDependencies",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 10
+  },
+  {
+    "text": "typescript",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 11
+  },
+  {
+    "text": "@types/node",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 12
+  },
+  {
+    "text": "dependencies",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 14
+  },
+  {
+    "text": "@modelcontextprotocol/sdk",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 15
+  },
+  {
+    "text": "zod",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/package.json",
+    "line": 16
+  },
+  {
+    "text": "fetch_posts",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/example.test.ts",
+    "line": 55
+  },
+  {
+    "text": "poem-writer",
+    "file": "./packages/cli/src/commands/extensions/examples/mcp-server/example.test.ts",
+    "line": 66
+  },
+  {
+    "text": "${extension.name}",
+    "file": "./packages/cli/src/commands/extensions/link.ts",
+    "line": 40
+  },
+  {
+    "text": "my-linked-extension",
+    "file": "./packages/cli/src/commands/extensions/link.test.ts",
+    "line": 91
+  }
+]

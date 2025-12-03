@@ -35,6 +35,7 @@
     "yoloAndApproval": "--yolo (-y) ile --approval-mode birlikte kullanılamaz. Bunun yerine --approval-mode=yolo kullanın.",
     "invalidLocaleValue": "Geçersiz locale değeri: {{value}}",
     "invalidLocaleMissing": "Geçersiz locale değeri: boş olmayan bir ifade bekleniyordu",
+    "unsupportedLocale": "Desteklenmeyen yerel ayar \"{{value}}\". İngilizce'ye dönülüyor.",
     "unknown": "Bilinmeyen hata"
   },
   "extensions": {
