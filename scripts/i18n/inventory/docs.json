@@ -1,0 +1,7672 @@
+[
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./README.md",
+    "line": 156
+  },
+  {
+    "text": "YOUR_API_KEY",
+    "file": "./README.md",
+    "line": 172
+  },
+  {
+    "text": "YOUR_API_KEY",
+    "file": "./README.md",
+    "line": 188
+  },
+  {
+    "text": "Explain the architecture of this codebase",
+    "file": "./README.md",
+    "line": 223
+  },
+  {
+    "text": "Explain the architecture of this codebase",
+    "file": "./README.md",
+    "line": 230
+  },
+  {
+    "text": "Run tests and deploy",
+    "file": "./README.md",
+    "line": 237
+  },
+  {
+    "text": "center",
+    "file": "./README.md",
+    "line": 372
+  },
+  {
+    "text": "what",
+    "file": "./docs/issue-and-pr-automation.md",
+    "line": 12
+  },
+  {
+    "text": "why",
+    "file": "./docs/issue-and-pr-automation.md",
+    "line": 12
+  },
+  {
+    "text": "how",
+    "file": "./docs/issue-and-pr-automation.md",
+    "line": 13
+  },
+  {
+    "text": "X",
+    "file": "./docs/issue-and-pr-automation.md",
+    "line": 70
+  },
+  {
+    "text": "Details",
+    "file": "./docs/issue-and-pr-automation.md",
+    "line": 70
+  },
+  {
+    "text": "nightly",
+    "file": "./docs/issue-and-pr-automation.md",
+    "line": 119
+  },
+  {
+    "text": "name",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 46
+  },
+  {
+    "text": "my-first-extension",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 46
+  },
+  {
+    "text": "version",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 47
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 48
+  },
+  {
+    "text": "nodeServer",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 49
+  },
+  {
+    "text": "command",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 50
+  },
+  {
+    "text": "node",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 50
+  },
+  {
+    "text": "args",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 51
+  },
+  {
+    "text": "${extensionPath}${/}dist${/}example.js",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 51
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 52
+  },
+  {
+    "text": "${extensionPath}",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 52
+  },
+  {
+    "text": "fetch posts",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 159
+  },
+  {
+    "text": "some pattern",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 187
+  },
+  {
+    "text": "name",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 209
+  },
+  {
+    "text": "my-first-extension",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 209
+  },
+  {
+    "text": "version",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 210
+  },
+  {
+    "text": "contextFileName",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 211
+  },
+  {
+    "text": "GEMINI.md",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 211
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 212
+  },
+  {
+    "text": "nodeServer",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 213
+  },
+  {
+    "text": "command",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 214
+  },
+  {
+    "text": "node",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 214
+  },
+  {
+    "text": "args",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 215
+  },
+  {
+    "text": "${extensionPath}${/}dist${/}example.js",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 215
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 216
+  },
+  {
+    "text": "${extensionPath}",
+    "file": "./docs/extensions/getting-started-extensions.md",
+    "line": 216
+  },
+  {
+    "text": "name",
+    "file": "./docs/extensions/index.md",
+    "line": 146
+  },
+  {
+    "text": "my-extension",
+    "file": "./docs/extensions/index.md",
+    "line": 146
+  },
+  {
+    "text": "version",
+    "file": "./docs/extensions/index.md",
+    "line": 147
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/extensions/index.md",
+    "line": 148
+  },
+  {
+    "text": "my-server",
+    "file": "./docs/extensions/index.md",
+    "line": 149
+  },
+  {
+    "text": "command",
+    "file": "./docs/extensions/index.md",
+    "line": 150
+  },
+  {
+    "text": "node my-server.js",
+    "file": "./docs/extensions/index.md",
+    "line": 150
+  },
+  {
+    "text": "contextFileName",
+    "file": "./docs/extensions/index.md",
+    "line": 153
+  },
+  {
+    "text": "GEMINI.md",
+    "file": "./docs/extensions/index.md",
+    "line": 153
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/extensions/index.md",
+    "line": 154
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/extensions/index.md",
+    "line": 154
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/extensions/index.md",
+    "line": 180
+  },
+  {
+    "text": "run_shell_command(rm -rf)",
+    "file": "./docs/extensions/index.md",
+    "line": 180
+  },
+  {
+    "text": "name",
+    "file": "./docs/extensions/index.md",
+    "line": 209
+  },
+  {
+    "text": "my-api-extension",
+    "file": "./docs/extensions/index.md",
+    "line": 209
+  },
+  {
+    "text": "version",
+    "file": "./docs/extensions/index.md",
+    "line": 210
+  },
+  {
+    "text": "settings",
+    "file": "./docs/extensions/index.md",
+    "line": 211
+  },
+  {
+    "text": "name",
+    "file": "./docs/extensions/index.md",
+    "line": 213
+  },
+  {
+    "text": "API Key",
+    "file": "./docs/extensions/index.md",
+    "line": 213
+  },
+  {
+    "text": "description",
+    "file": "./docs/extensions/index.md",
+    "line": 214
+  },
+  {
+    "text": "Your API key for the service.",
+    "file": "./docs/extensions/index.md",
+    "line": 214
+  },
+  {
+    "text": "envVar",
+    "file": "./docs/extensions/index.md",
+    "line": 215
+  },
+  {
+    "text": "MY_API_KEY",
+    "file": "./docs/extensions/index.md",
+    "line": 215
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/extensions/index.md",
+    "line": 269
+  },
+  {
+    "text": "${extensionPath}${/}run.ts",
+    "file": "./docs/extensions/index.md",
+    "line": 269
+  },
+  {
+    "text": "stable",
+    "file": "./docs/extensions/extension-releasing.md",
+    "line": 46
+  },
+  {
+    "text": "latest",
+    "file": "./docs/extensions/extension-releasing.md",
+    "line": 79
+  },
+  {
+    "text": "latest",
+    "file": "./docs/extensions/extension-releasing.md",
+    "line": 84
+  },
+  {
+    "text": "reads a file",
+    "file": "./docs/integration-tests.md",
+    "line": 56
+  },
+  {
+    "text": "true",
+    "file": "./docs/integration-tests.md",
+    "line": 65
+  },
+  {
+    "text": "true",
+    "file": "./docs/integration-tests.md",
+    "line": 72
+  },
+  {
+    "text": "npm run test:e2e -- -- --test-name-pattern '<your-new-test-name>'",
+    "file": "./docs/integration-tests.md",
+    "line": 86
+  },
+  {
+    "text": "<your-test-name-pattern>",
+    "file": "./docs/integration-tests.md",
+    "line": 92
+  },
+  {
+    "text": "type",
+    "file": "./docs/faq.md",
+    "line": 30
+  },
+  {
+    "text": "module",
+    "file": "./docs/faq.md",
+    "line": 30
+  },
+  {
+    "text": "module",
+    "file": "./docs/faq.md",
+    "line": 31
+  },
+  {
+    "text": "NodeNext",
+    "file": "./docs/faq.md",
+    "line": 31
+  },
+  {
+    "text": "your-project-id",
+    "file": "./docs/faq.md",
+    "line": 79
+  },
+  {
+    "text": "Is this release _truly_ ready for our users?",
+    "file": "./docs/release-confidence.md",
+    "line": 9
+  },
+  {
+    "text": "Tell me a joke",
+    "file": "./docs/release-confidence.md",
+    "line": 88
+  },
+  {
+    "text": "Summarize this",
+    "file": "./docs/release-confidence.md",
+    "line": 93
+  },
+  {
+    "text": "Turbo",
+    "file": "./docs/release-confidence.md",
+    "line": 135
+  },
+  {
+    "text": "Tool Call",
+    "file": "./docs/release-confidence.md",
+    "line": 142
+  },
+  {
+    "text": "Go/No-Go",
+    "file": "./docs/release-confidence.md",
+    "line": 152
+  },
+  {
+    "text": "/some-mcp-prompt",
+    "file": "./docs/changelogs/index.md",
+    "line": 145
+  },
+  {
+    "text": "latest",
+    "file": "./docs/changelogs/index.md",
+    "line": 183
+  },
+  {
+    "text": "useWriteTodos",
+    "file": "./docs/changelogs/index.md",
+    "line": 259
+  },
+  {
+    "text": "/joke Chuck Norris",
+    "file": "./docs/changelogs/index.md",
+    "line": 270
+  },
+  {
+    "text": "Hello",
+    "file": "./docs/changelogs/index.md",
+    "line": 367
+  },
+  {
+    "text": "enableToolOutputTruncation",
+    "file": "./docs/changelogs/index.md",
+    "line": 373
+  },
+  {
+    "text": "ui",
+    "file": "./docs/changelogs/index.md",
+    "line": 380
+  },
+  {
+    "text": "customWittyPhrases",
+    "file": "./docs/changelogs/index.md",
+    "line": 380
+  },
+  {
+    "text": "YOLO",
+    "file": "./docs/changelogs/index.md",
+    "line": 380
+  },
+  {
+    "text": "enforcedAuthType",
+    "file": "./docs/changelogs/index.md",
+    "line": 388
+  },
+  {
+    "text": "oauth-personal|gemini-api-key|…",
+    "file": "./docs/changelogs/index.md",
+    "line": 388
+  },
+  {
+    "text": "useSmartEdit",
+    "file": "./docs/changelogs/index.md",
+    "line": 413
+  },
+  {
+    "text": "skipNextSpeakerCheck",
+    "file": "./docs/changelogs/index.md",
+    "line": 419
+  },
+  {
+    "text": "general",
+    "file": "./docs/changelogs/index.md",
+    "line": 425
+  },
+  {
+    "text": "enablePromptCompletion",
+    "file": "./docs/changelogs/index.md",
+    "line": 425
+  },
+  {
+    "text": "showCitations",
+    "file": "./docs/changelogs/index.md",
+    "line": 440
+  },
+  {
+    "text": "pro",
+    "file": "./docs/core/index.md",
+    "line": 65
+  },
+  {
+    "text": "pro",
+    "file": "./docs/core/index.md",
+    "line": 67
+  },
+  {
+    "text": "flash",
+    "file": "./docs/core/index.md",
+    "line": 68
+  },
+  {
+    "text": "Summarize the contents of `my_document.txt`,",
+    "file": "./docs/tools/index.md",
+    "line": 12
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 33
+  },
+  {
+    "text": "git ",
+    "file": "./docs/core/policy-engine.md",
+    "line": 34
+  },
+  {
+    "text": "ask_user",
+    "file": "./docs/core/policy-engine.md",
+    "line": 35
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 137
+  },
+  {
+    "text": "mcpName__toolName",
+    "file": "./docs/core/policy-engine.md",
+    "line": 140
+  },
+  {
+    "text": "my-custom-server",
+    "file": "./docs/core/policy-engine.md",
+    "line": 141
+  },
+  {
+    "text": "command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 144
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 147
+  },
+  {
+    "text": "git ",
+    "file": "./docs/core/policy-engine.md",
+    "line": 148
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 151
+  },
+  {
+    "text": "command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 152
+  },
+  {
+    "text": "<your_command>",
+    "file": "./docs/core/policy-engine.md",
+    "line": 152
+  },
+  {
+    "text": "^git (commit|push)",
+    "file": "./docs/core/policy-engine.md",
+    "line": 154
+  },
+  {
+    "text": "allow",
+    "file": "./docs/core/policy-engine.md",
+    "line": 156
+  },
+  {
+    "text": "deny",
+    "file": "./docs/core/policy-engine.md",
+    "line": 156
+  },
+  {
+    "text": "ask_user",
+    "file": "./docs/core/policy-engine.md",
+    "line": 156
+  },
+  {
+    "text": "ask_user",
+    "file": "./docs/core/policy-engine.md",
+    "line": 157
+  },
+  {
+    "text": "autoEdit",
+    "file": "./docs/core/policy-engine.md",
+    "line": 163
+  },
+  {
+    "text": "write_file",
+    "file": "./docs/core/policy-engine.md",
+    "line": 177
+  },
+  {
+    "text": "replace",
+    "file": "./docs/core/policy-engine.md",
+    "line": 177
+  },
+  {
+    "text": "ask_user",
+    "file": "./docs/core/policy-engine.md",
+    "line": 178
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/core/policy-engine.md",
+    "line": 198
+  },
+  {
+    "text": "git ",
+    "file": "./docs/core/policy-engine.md",
+    "line": 199
+  },
+  {
+    "text": "ask_user",
+    "file": "./docs/core/policy-engine.md",
+    "line": 200
+  },
+  {
+    "text": "my-jira-server",
+    "file": "./docs/core/policy-engine.md",
+    "line": 217
+  },
+  {
+    "text": "search",
+    "file": "./docs/core/policy-engine.md",
+    "line": 218
+  },
+  {
+    "text": "allow",
+    "file": "./docs/core/policy-engine.md",
+    "line": 219
+  },
+  {
+    "text": "untrusted-server",
+    "file": "./docs/core/policy-engine.md",
+    "line": 231
+  },
+  {
+    "text": "deny",
+    "file": "./docs/core/policy-engine.md",
+    "line": 232
+  },
+  {
+    "text": "workspaces",
+    "file": "./docs/npm.md",
+    "line": 42
+  },
+  {
+    "text": "packages/*",
+    "file": "./docs/npm.md",
+    "line": 42
+  },
+  {
+    "text": "hostname:port",
+    "file": "./docs/examples/proxy-script.md",
+    "line": 39
+  },
+  {
+    "text": "your prompt here",
+    "file": "./docs/get-started/deployment.md",
+    "line": 58
+  },
+  {
+    "text": "mcp",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 91
+  },
+  {
+    "text": "allowed",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 92
+  },
+  {
+    "text": "my-trusted-server",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 92
+  },
+  {
+    "text": "excluded",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 93
+  },
+  {
+    "text": "experimental-server",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 93
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 109
+  },
+  {
+    "text": "serverName",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 110
+  },
+  {
+    "text": "command",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 111
+  },
+  {
+    "text": "path/to/server",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 111
+  },
+  {
+    "text": "args",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 112
+  },
+  {
+    "text": "--arg1",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 112
+  },
+  {
+    "text": "value1",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 112
+  },
+  {
+    "text": "env",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 113
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 114
+  },
+  {
+    "text": "$MY_API_TOKEN",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 114
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 116
+  },
+  {
+    "text": "./server-directory",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 116
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 117
+  },
+  {
+    "text": "trust",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 118
+  },
+  {
+    "text": "http://localhost:8080/sse",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 131
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 173
+  },
+  {
+    "text": "discoveredServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 174
+  },
+  {
+    "text": "url",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 175
+  },
+  {
+    "text": "https://api.example.com/sse",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 175
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 272
+  },
+  {
+    "text": "googleCloudServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 273
+  },
+  {
+    "text": "httpUrl",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 274
+  },
+  {
+    "text": "https://my-gcp-service.run.app/mcp",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 274
+  },
+  {
+    "text": "authProviderType",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 275
+  },
+  {
+    "text": "google_credentials",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 275
+  },
+  {
+    "text": "oauth",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 276
+  },
+  {
+    "text": "scopes",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 277
+  },
+  {
+    "text": "https://www.googleapis.com/auth/userinfo.email",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 277
+  },
+  {
+    "text": "Security",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 313
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 327
+  },
+  {
+    "text": "pythonTools",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 328
+  },
+  {
+    "text": "command",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 329
+  },
+  {
+    "text": "python",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 329
+  },
+  {
+    "text": "args",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 330
+  },
+  {
+    "text": "-m",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 330
+  },
+  {
+    "text": "my_mcp_server",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 330
+  },
+  {
+    "text": "--port",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 330
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 331
+  },
+  {
+    "text": "./mcp-servers/python",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 331
+  },
+  {
+    "text": "env",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 332
+  },
+  {
+    "text": "DATABASE_URL",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 333
+  },
+  {
+    "text": "$DB_CONNECTION_STRING",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 333
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 334
+  },
+  {
+    "text": "${EXTERNAL_API_KEY}",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 334
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 336
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 346
+  },
+  {
+    "text": "nodeServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 347
+  },
+  {
+    "text": "command",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 348
+  },
+  {
+    "text": "node",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 348
+  },
+  {
+    "text": "args",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 349
+  },
+  {
+    "text": "dist/server.js",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 349
+  },
+  {
+    "text": "--verbose",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 349
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 350
+  },
+  {
+    "text": "./mcp-servers/node",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 350
+  },
+  {
+    "text": "trust",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 351
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 361
+  },
+  {
+    "text": "dockerizedServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 362
+  },
+  {
+    "text": "command",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 363
+  },
+  {
+    "text": "docker",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 363
+  },
+  {
+    "text": "args",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 364
+  },
+  {
+    "text": "run",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 365
+  },
+  {
+    "text": "-i",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 366
+  },
+  {
+    "text": "--rm",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 367
+  },
+  {
+    "text": "-e",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 368
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 369
+  },
+  {
+    "text": "-v",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 370
+  },
+  {
+    "text": "${PWD}:/workspace",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 371
+  },
+  {
+    "text": "my-mcp-server:latest",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 372
+  },
+  {
+    "text": "env",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 374
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 375
+  },
+  {
+    "text": "$EXTERNAL_SERVICE_TOKEN",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 375
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 386
+  },
+  {
+    "text": "httpServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 387
+  },
+  {
+    "text": "httpUrl",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 388
+  },
+  {
+    "text": "http://localhost:3000/mcp",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 388
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 389
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 399
+  },
+  {
+    "text": "httpServerWithAuth",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 400
+  },
+  {
+    "text": "httpUrl",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 401
+  },
+  {
+    "text": "http://localhost:3000/mcp",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 401
+  },
+  {
+    "text": "headers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 402
+  },
+  {
+    "text": "Authorization",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 403
+  },
+  {
+    "text": "Bearer your-api-token",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 403
+  },
+  {
+    "text": "X-Custom-Header",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 404
+  },
+  {
+    "text": "custom-value",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 404
+  },
+  {
+    "text": "Content-Type",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 405
+  },
+  {
+    "text": "application/json",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 405
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 407
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 417
+  },
+  {
+    "text": "filteredServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 418
+  },
+  {
+    "text": "command",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 419
+  },
+  {
+    "text": "python",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 419
+  },
+  {
+    "text": "args",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 420
+  },
+  {
+    "text": "-m",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 420
+  },
+  {
+    "text": "my_mcp_server",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 420
+  },
+  {
+    "text": "includeTools",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 421
+  },
+  {
+    "text": "safe_tool",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 421
+  },
+  {
+    "text": "file_reader",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 421
+  },
+  {
+    "text": "data_processor",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 421
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 422
+  },
+  {
+    "text": "dangerous_tool",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 422
+  },
+  {
+    "text": "file_deleter",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 422
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 423
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 433
+  },
+  {
+    "text": "myIapProtectedServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 434
+  },
+  {
+    "text": "url",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 435
+  },
+  {
+    "text": "https://my-iap-service.run.app/sse",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 435
+  },
+  {
+    "text": "authProviderType",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 436
+  },
+  {
+    "text": "service_account_impersonation",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 436
+  },
+  {
+    "text": "targetAudience",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 437
+  },
+  {
+    "text": "YOUR_IAP_CLIENT_ID.apps.googleusercontent.com",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 437
+  },
+  {
+    "text": "targetServiceAccount",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 438
+  },
+  {
+    "text": "your-sa@your-project.iam.gserviceaccount.com",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 438
+  },
+  {
+    "text": "content",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 779
+  },
+  {
+    "text": "type",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 781
+  },
+  {
+    "text": "text",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 781
+  },
+  {
+    "text": "text",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 782
+  },
+  {
+    "text": "Here is the logo you requested.",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 782
+  },
+  {
+    "text": "type",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 785
+  },
+  {
+    "text": "image",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 785
+  },
+  {
+    "text": "data",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 786
+  },
+  {
+    "text": "BASE64_ENCODED_IMAGE_DATA_HERE",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 786
+  },
+  {
+    "text": "mimeType",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 787
+  },
+  {
+    "text": "image/png",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 787
+  },
+  {
+    "text": "type",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 790
+  },
+  {
+    "text": "text",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 790
+  },
+  {
+    "text": "text",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 791
+  },
+  {
+    "text": "The logo was created in 2025.",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 791
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 856
+  },
+  {
+    "text": "nodeServer",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 857
+  },
+  {
+    "text": "command",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 858
+  },
+  {
+    "text": "node",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 858
+  },
+  {
+    "text": "args",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 859
+  },
+  {
+    "text": "filename.ts",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 859
+  },
+  {
+    "text": "Gemini CLI",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 871
+  },
+  {
+    "text": "reverent",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 871
+  },
+  {
+    "text": "Gemini CLI",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 877
+  },
+  {
+    "text": "project",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 913
+  },
+  {
+    "text": "stdio",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 914
+  },
+  {
+    "text": "X-Api-Key: abc123",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 917
+  },
+  {
+    "text": "Authorization: Bearer abc123",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 917
+  },
+  {
+    "text": "Authorization: Bearer abc123",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 951
+  },
+  {
+    "text": "Authorization: Bearer abc123",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 966
+  },
+  {
+    "text": "project",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 1002
+  },
+  {
+    "text": "my-server",
+    "file": "./docs/tools/mcp-server.md",
+    "line": 1010
+  },
+  {
+    "text": "photos",
+    "file": "./docs/get-started/examples.md",
+    "line": 22
+  },
+  {
+    "text": "Your commands.",
+    "file": "./docs/tools/shell.md",
+    "line": 46
+  },
+  {
+    "text": "Your description of the command.",
+    "file": "./docs/tools/shell.md",
+    "line": 46
+  },
+  {
+    "text": "Your execution directory.",
+    "file": "./docs/tools/shell.md",
+    "line": 46
+  },
+  {
+    "text": "ls -la",
+    "file": "./docs/tools/shell.md",
+    "line": 54
+  },
+  {
+    "text": "./my_script.sh",
+    "file": "./docs/tools/shell.md",
+    "line": 60
+  },
+  {
+    "text": "scripts",
+    "file": "./docs/tools/shell.md",
+    "line": 60
+  },
+  {
+    "text": "Run my custom script",
+    "file": "./docs/tools/shell.md",
+    "line": 60
+  },
+  {
+    "text": "npm run dev &",
+    "file": "./docs/tools/shell.md",
+    "line": 66
+  },
+  {
+    "text": "Start development server in background",
+    "file": "./docs/tools/shell.md",
+    "line": 66
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 86
+  },
+  {
+    "text": "shell",
+    "file": "./docs/tools/shell.md",
+    "line": 87
+  },
+  {
+    "text": "enableInteractiveShell",
+    "file": "./docs/tools/shell.md",
+    "line": 88
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 104
+  },
+  {
+    "text": "shell",
+    "file": "./docs/tools/shell.md",
+    "line": 105
+  },
+  {
+    "text": "showColor",
+    "file": "./docs/tools/shell.md",
+    "line": 106
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 122
+  },
+  {
+    "text": "shell",
+    "file": "./docs/tools/shell.md",
+    "line": 123
+  },
+  {
+    "text": "pager",
+    "file": "./docs/tools/shell.md",
+    "line": 124
+  },
+  {
+    "text": "less",
+    "file": "./docs/tools/shell.md",
+    "line": 124
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 167
+  },
+  {
+    "text": "core",
+    "file": "./docs/tools/shell.md",
+    "line": 167
+  },
+  {
+    "text": "run_shell_command(git)",
+    "file": "./docs/tools/shell.md",
+    "line": 167
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 172
+  },
+  {
+    "text": "exclude",
+    "file": "./docs/tools/shell.md",
+    "line": 172
+  },
+  {
+    "text": "run_shell_command(rm)",
+    "file": "./docs/tools/shell.md",
+    "line": 172
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 194
+  },
+  {
+    "text": "core",
+    "file": "./docs/tools/shell.md",
+    "line": 195
+  },
+  {
+    "text": "run_shell_command(git)",
+    "file": "./docs/tools/shell.md",
+    "line": 195
+  },
+  {
+    "text": "run_shell_command(npm)",
+    "file": "./docs/tools/shell.md",
+    "line": 195
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 210
+  },
+  {
+    "text": "core",
+    "file": "./docs/tools/shell.md",
+    "line": 211
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/tools/shell.md",
+    "line": 211
+  },
+  {
+    "text": "exclude",
+    "file": "./docs/tools/shell.md",
+    "line": 212
+  },
+  {
+    "text": "run_shell_command(rm)",
+    "file": "./docs/tools/shell.md",
+    "line": 212
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 228
+  },
+  {
+    "text": "core",
+    "file": "./docs/tools/shell.md",
+    "line": 229
+  },
+  {
+    "text": "run_shell_command(git)",
+    "file": "./docs/tools/shell.md",
+    "line": 229
+  },
+  {
+    "text": "exclude",
+    "file": "./docs/tools/shell.md",
+    "line": 230
+  },
+  {
+    "text": "run_shell_command(git push)",
+    "file": "./docs/tools/shell.md",
+    "line": 230
+  },
+  {
+    "text": "tools",
+    "file": "./docs/tools/shell.md",
+    "line": 245
+  },
+  {
+    "text": "exclude",
+    "file": "./docs/tools/shell.md",
+    "line": 246
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/tools/shell.md",
+    "line": 246
+  },
+  {
+    "text": "Your query goes here.",
+    "file": "./docs/tools/web-search.md",
+    "line": 26
+  },
+  {
+    "text": "latest advancements in AI-powered code generation",
+    "file": "./docs/tools/web-search.md",
+    "line": 34
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/authentication.md",
+    "line": 92
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/authentication.md",
+    "line": 95
+  },
+  {
+    "text": "YOUR_GEMINI_API_KEY",
+    "file": "./docs/get-started/authentication.md",
+    "line": 112
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/authentication.md",
+    "line": 142
+  },
+  {
+    "text": "YOUR_PROJECT_LOCATION",
+    "file": "./docs/get-started/authentication.md",
+    "line": 143
+  },
+  {
+    "text": "Vertex AI User",
+    "file": "./docs/get-started/authentication.md",
+    "line": 184
+  },
+  {
+    "text": "/path/to/your/keyfile.json",
+    "file": "./docs/get-started/authentication.md",
+    "line": 191
+  },
+  {
+    "text": "YOUR_GOOGLE_API_KEY",
+    "file": "./docs/get-started/authentication.md",
+    "line": 208
+  },
+  {
+    "text": "API keys are not supported by this API...",
+    "file": "./docs/get-started/authentication.md",
+    "line": 212
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/authentication.md",
+    "line": 232
+  },
+  {
+    "text": "your-project-id",
+    "file": "./docs/get-started/authentication.md",
+    "line": 250
+  },
+  {
+    "text": "Your fact here.",
+    "file": "./docs/tools/memory.md",
+    "line": 32
+  },
+  {
+    "text": "My preferred programming language is Python.",
+    "file": "./docs/tools/memory.md",
+    "line": 40
+  },
+  {
+    "text": "The project I'm currently working on is called 'gemini-cli'.",
+    "file": "./docs/tools/memory.md",
+    "line": 46
+  },
+  {
+    "text": "*.log",
+    "file": "./docs/tools/file-system.md",
+    "line": 25
+  },
+  {
+    "text": ".git",
+    "file": "./docs/tools/file-system.md",
+    "line": 25
+  },
+  {
+    "text": "*.py",
+    "file": "./docs/tools/file-system.md",
+    "line": 102
+  },
+  {
+    "text": "src/**/*.js",
+    "file": "./docs/tools/file-system.md",
+    "line": 102
+  },
+  {
+    "text": "*.ts",
+    "file": "./docs/tools/file-system.md",
+    "line": 116
+  },
+  {
+    "text": "function\\s+myFunction",
+    "file": "./docs/tools/file-system.md",
+    "line": 131
+  },
+  {
+    "text": "*.js",
+    "file": "./docs/tools/file-system.md",
+    "line": 135
+  },
+  {
+    "text": "src/**/*.{ts,tsx}",
+    "file": "./docs/tools/file-system.md",
+    "line": 135
+  },
+  {
+    "text": "myFunction",
+    "file": "./docs/tools/file-system.md",
+    "line": 144
+  },
+  {
+    "text": " (filter: ",
+    "file": "./docs/tools/file-system.md",
+    "line": 144
+  },
+  {
+    "text": "useWriteTodos",
+    "file": "./docs/tools/todos.md",
+    "line": 54
+  },
+  {
+    "text": "Summarize https://example.com/article and extract key points from https://another.com/data",
+    "file": "./docs/tools/web-fetch.md",
+    "line": 19
+  },
+  {
+    "text": "Your prompt, including a URL such as https://google.com.",
+    "file": "./docs/tools/web-fetch.md",
+    "line": 37
+  },
+  {
+    "text": "Can you summarize the main points of https://example.com/news/latest",
+    "file": "./docs/tools/web-fetch.md",
+    "line": 45
+  },
+  {
+    "text": "What are the differences in the conclusions of these two papers: https://arxiv.org/abs/2401.0001 and https://arxiv.org/abs/2401.0002?",
+    "file": "./docs/tools/web-fetch.md",
+    "line": 51
+  },
+  {
+    "text": "analyze the code structure",
+    "file": "./docs/cli/sandbox.md",
+    "line": 57
+  },
+  {
+    "text": "run the test suite",
+    "file": "./docs/cli/sandbox.md",
+    "line": 61
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/sandbox.md",
+    "line": 65
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/sandbox.md",
+    "line": 66
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/sandbox.md",
+    "line": 66
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/sandbox.md",
+    "line": 77
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/sandbox.md",
+    "line": 78
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/sandbox.md",
+    "line": 78
+  },
+  {
+    "text": "--security-opt label=disable",
+    "file": "./docs/cli/sandbox.md",
+    "line": 102
+  },
+  {
+    "text": "--flag1 --flag2=value",
+    "file": "./docs/cli/sandbox.md",
+    "line": 108
+  },
+  {
+    "text": "Operation not permitted",
+    "file": "./docs/cli/sandbox.md",
+    "line": 125
+  },
+  {
+    "text": "debug command",
+    "file": "./docs/cli/sandbox.md",
+    "line": 143
+  },
+  {
+    "text": "run shell command: env | grep SANDBOX",
+    "file": "./docs/cli/sandbox.md",
+    "line": 154
+  },
+  {
+    "text": "run shell command: mount | grep workspace",
+    "file": "./docs/cli/sandbox.md",
+    "line": 157
+  },
+  {
+    "text": "checkpoint.",
+    "file": "./docs/cli/checkpointing.md",
+    "line": 12
+  },
+  {
+    "text": "general",
+    "file": "./docs/cli/checkpointing.md",
+    "line": 51
+  },
+  {
+    "text": "checkpointing",
+    "file": "./docs/cli/checkpointing.md",
+    "line": 52
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/checkpointing.md",
+    "line": 53
+  },
+  {
+    "text": "apiKey",
+    "file": "./docs/get-started/configuration.md",
+    "line": 77
+  },
+  {
+    "text": "$MY_API_TOKEN",
+    "file": "./docs/get-started/configuration.md",
+    "line": 77
+  },
+  {
+    "text": "30d",
+    "file": "./docs/get-started/configuration.md",
+    "line": 142
+  },
+  {
+    "text": "7d",
+    "file": "./docs/get-started/configuration.md",
+    "line": 142
+  },
+  {
+    "text": "24h",
+    "file": "./docs/get-started/configuration.md",
+    "line": 142
+  },
+  {
+    "text": "1w",
+    "file": "./docs/get-started/configuration.md",
+    "line": 143
+  },
+  {
+    "text": "1d",
+    "file": "./docs/get-started/configuration.md",
+    "line": 152
+  },
+  {
+    "text": "1d",
+    "file": "./docs/get-started/configuration.md",
+    "line": 153
+  },
+  {
+    "text": "text",
+    "file": "./docs/get-started/configuration.md",
+    "line": 159
+  },
+  {
+    "text": "text",
+    "file": "./docs/get-started/configuration.md",
+    "line": 160
+  },
+  {
+    "text": "json",
+    "file": "./docs/get-started/configuration.md",
+    "line": 160
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/get-started/configuration.md",
+    "line": 296
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./docs/get-started/configuration.md",
+    "line": 296
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "temperature",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "topP",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "chat-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "includeThoughts",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingBudget",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "temperature",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "topP",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "topK",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "chat-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "chat-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "chat-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "classifier",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "maxOutputTokens",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingBudget",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "prompt-completion",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "temperature",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "maxOutputTokens",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingBudget",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "edit-corrector",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "thinkingBudget",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "summarizer-default",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "maxOutputTokens",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "summarizer-shell",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-lite",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "maxOutputTokens",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "web-search",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "tools",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "googleSearch",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "web-fetch",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "generateContentConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "tools",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "urlContext",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "web-fetch-fallback",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "loop-detection",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "loop-detection-double-check",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "llm-edit-fixer",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "next-speaker-checker",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "extends",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "gemini-2.5-flash-base",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "modelConfig",
+    "file": "./docs/get-started/configuration.md",
+    "line": 316
+  },
+  {
+    "text": "cat",
+    "file": "./docs/get-started/configuration.md",
+    "line": 388
+  },
+  {
+    "text": "run_shell_command(git)",
+    "file": "./docs/get-started/configuration.md",
+    "line": 408
+  },
+  {
+    "text": "run_shell_command(npm test)",
+    "file": "./docs/get-started/configuration.md",
+    "line": 409
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/get-started/configuration.md",
+    "line": 544
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/get-started/configuration.md",
+    "line": 544
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./docs/get-started/configuration.md",
+    "line": 592
+  },
+  {
+    "text": "general",
+    "file": "./docs/get-started/configuration.md",
+    "line": 671
+  },
+  {
+    "text": "vimMode",
+    "file": "./docs/get-started/configuration.md",
+    "line": 672
+  },
+  {
+    "text": "preferredEditor",
+    "file": "./docs/get-started/configuration.md",
+    "line": 673
+  },
+  {
+    "text": "code",
+    "file": "./docs/get-started/configuration.md",
+    "line": 673
+  },
+  {
+    "text": "ui",
+    "file": "./docs/get-started/configuration.md",
+    "line": 675
+  },
+  {
+    "text": "theme",
+    "file": "./docs/get-started/configuration.md",
+    "line": 676
+  },
+  {
+    "text": "GitHub",
+    "file": "./docs/get-started/configuration.md",
+    "line": 676
+  },
+  {
+    "text": "hideBanner",
+    "file": "./docs/get-started/configuration.md",
+    "line": 677
+  },
+  {
+    "text": "hideTips",
+    "file": "./docs/get-started/configuration.md",
+    "line": 678
+  },
+  {
+    "text": "customWittyPhrases",
+    "file": "./docs/get-started/configuration.md",
+    "line": 679
+  },
+  {
+    "text": "You forget a thousand things every day. Make sure this is one of ’em",
+    "file": "./docs/get-started/configuration.md",
+    "line": 680
+  },
+  {
+    "text": "Connecting to AGI",
+    "file": "./docs/get-started/configuration.md",
+    "line": 681
+  },
+  {
+    "text": "tools",
+    "file": "./docs/get-started/configuration.md",
+    "line": 684
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/get-started/configuration.md",
+    "line": 685
+  },
+  {
+    "text": "docker",
+    "file": "./docs/get-started/configuration.md",
+    "line": 685
+  },
+  {
+    "text": "discoveryCommand",
+    "file": "./docs/get-started/configuration.md",
+    "line": 686
+  },
+  {
+    "text": "bin/get_tools",
+    "file": "./docs/get-started/configuration.md",
+    "line": 686
+  },
+  {
+    "text": "callCommand",
+    "file": "./docs/get-started/configuration.md",
+    "line": 687
+  },
+  {
+    "text": "bin/call_tool",
+    "file": "./docs/get-started/configuration.md",
+    "line": 687
+  },
+  {
+    "text": "exclude",
+    "file": "./docs/get-started/configuration.md",
+    "line": 688
+  },
+  {
+    "text": "write_file",
+    "file": "./docs/get-started/configuration.md",
+    "line": 688
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/get-started/configuration.md",
+    "line": 690
+  },
+  {
+    "text": "mainServer",
+    "file": "./docs/get-started/configuration.md",
+    "line": 691
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration.md",
+    "line": 692
+  },
+  {
+    "text": "bin/mcp_server.py",
+    "file": "./docs/get-started/configuration.md",
+    "line": 692
+  },
+  {
+    "text": "anotherServer",
+    "file": "./docs/get-started/configuration.md",
+    "line": 694
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration.md",
+    "line": 695
+  },
+  {
+    "text": "node",
+    "file": "./docs/get-started/configuration.md",
+    "line": 695
+  },
+  {
+    "text": "args",
+    "file": "./docs/get-started/configuration.md",
+    "line": 696
+  },
+  {
+    "text": "mcp_server.js",
+    "file": "./docs/get-started/configuration.md",
+    "line": 696
+  },
+  {
+    "text": "--verbose",
+    "file": "./docs/get-started/configuration.md",
+    "line": 696
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/get-started/configuration.md",
+    "line": 699
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/get-started/configuration.md",
+    "line": 700
+  },
+  {
+    "text": "target",
+    "file": "./docs/get-started/configuration.md",
+    "line": 701
+  },
+  {
+    "text": "local",
+    "file": "./docs/get-started/configuration.md",
+    "line": 701
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/get-started/configuration.md",
+    "line": 702
+  },
+  {
+    "text": "http://localhost:4317",
+    "file": "./docs/get-started/configuration.md",
+    "line": 702
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/get-started/configuration.md",
+    "line": 703
+  },
+  {
+    "text": "privacy",
+    "file": "./docs/get-started/configuration.md",
+    "line": 705
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/get-started/configuration.md",
+    "line": 706
+  },
+  {
+    "text": "model",
+    "file": "./docs/get-started/configuration.md",
+    "line": 708
+  },
+  {
+    "text": "name",
+    "file": "./docs/get-started/configuration.md",
+    "line": 709
+  },
+  {
+    "text": "gemini-1.5-pro-latest",
+    "file": "./docs/get-started/configuration.md",
+    "line": 709
+  },
+  {
+    "text": "maxSessionTurns",
+    "file": "./docs/get-started/configuration.md",
+    "line": 710
+  },
+  {
+    "text": "summarizeToolOutput",
+    "file": "./docs/get-started/configuration.md",
+    "line": 711
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/get-started/configuration.md",
+    "line": 712
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./docs/get-started/configuration.md",
+    "line": 713
+  },
+  {
+    "text": "context",
+    "file": "./docs/get-started/configuration.md",
+    "line": 717
+  },
+  {
+    "text": "fileName",
+    "file": "./docs/get-started/configuration.md",
+    "line": 718
+  },
+  {
+    "text": "CONTEXT.md",
+    "file": "./docs/get-started/configuration.md",
+    "line": 718
+  },
+  {
+    "text": "GEMINI.md",
+    "file": "./docs/get-started/configuration.md",
+    "line": 718
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/get-started/configuration.md",
+    "line": 719
+  },
+  {
+    "text": "path/to/dir1",
+    "file": "./docs/get-started/configuration.md",
+    "line": 719
+  },
+  {
+    "text": "~/path/to/dir2",
+    "file": "./docs/get-started/configuration.md",
+    "line": 719
+  },
+  {
+    "text": "../path/to/dir3",
+    "file": "./docs/get-started/configuration.md",
+    "line": 719
+  },
+  {
+    "text": "loadFromIncludeDirectories",
+    "file": "./docs/get-started/configuration.md",
+    "line": 720
+  },
+  {
+    "text": "fileFiltering",
+    "file": "./docs/get-started/configuration.md",
+    "line": 721
+  },
+  {
+    "text": "respectGitIgnore",
+    "file": "./docs/get-started/configuration.md",
+    "line": 722
+  },
+  {
+    "text": "advanced",
+    "file": "./docs/get-started/configuration.md",
+    "line": 725
+  },
+  {
+    "text": "excludedEnvVars",
+    "file": "./docs/get-started/configuration.md",
+    "line": 726
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/get-started/configuration.md",
+    "line": 726
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/get-started/configuration.md",
+    "line": 726
+  },
+  {
+    "text": "NODE_ENV",
+    "file": "./docs/get-started/configuration.md",
+    "line": 726
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/get-started/configuration.md",
+    "line": 773
+  },
+  {
+    "text": "YOUR_GOOGLE_API_KEY",
+    "file": "./docs/get-started/configuration.md",
+    "line": 778
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/configuration.md",
+    "line": 789
+  },
+  {
+    "text": "/path/to/your/credentials.json",
+    "file": "./docs/get-started/configuration.md",
+    "line": 793
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/configuration.md",
+    "line": 796
+  },
+  {
+    "text": "YOUR_PROJECT_LOCATION",
+    "file": "./docs/get-started/configuration.md",
+    "line": 824
+  },
+  {
+    "text": "explain this code",
+    "file": "./docs/get-started/configuration.md",
+    "line": 870
+  },
+  {
+    "text": "ShellTool(git status)",
+    "file": "./docs/get-started/configuration.md",
+    "line": 901
+  },
+  {
+    "text": "memory",
+    "file": "./docs/get-started/configuration.md",
+    "line": 935
+  },
+  {
+    "text": "privacy",
+    "file": "./docs/get-started/configuration.md",
+    "line": 1101
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/get-started/configuration.md",
+    "line": 1102
+  },
+  {
+    "text": "How would you like to authenticate for this project?",
+    "file": "./docs/get-started/index.md",
+    "line": 38
+  },
+  {
+    "text": "apiKey",
+    "file": "./docs/cli/configuration.md",
+    "line": 48
+  },
+  {
+    "text": "$MY_API_TOKEN",
+    "file": "./docs/cli/configuration.md",
+    "line": 48
+  },
+  {
+    "text": "contextFileName",
+    "file": "./docs/cli/configuration.md",
+    "line": 65
+  },
+  {
+    "text": "AGENTS.md",
+    "file": "./docs/cli/configuration.md",
+    "line": 65
+  },
+  {
+    "text": "urlTemplate",
+    "file": "./docs/cli/configuration.md",
+    "line": 70
+  },
+  {
+    "text": "https://github.com/google-gemini/gemini-cli/issues/new?template=bug_report.yml&title={title}&info={info}",
+    "file": "./docs/cli/configuration.md",
+    "line": 70
+  },
+  {
+    "text": "bugCommand",
+    "file": "./docs/cli/configuration.md",
+    "line": 76
+  },
+  {
+    "text": "urlTemplate",
+    "file": "./docs/cli/configuration.md",
+    "line": 77
+  },
+  {
+    "text": "https://bug.example.com/new?title={title}&info={info}",
+    "file": "./docs/cli/configuration.md",
+    "line": 77
+  },
+  {
+    "text": "respectGitIgnore",
+    "file": "./docs/cli/configuration.md",
+    "line": 84
+  },
+  {
+    "text": "enableRecursiveFileSearch",
+    "file": "./docs/cli/configuration.md",
+    "line": 84
+  },
+  {
+    "text": "fileFiltering",
+    "file": "./docs/cli/configuration.md",
+    "line": 95
+  },
+  {
+    "text": "respectGitIgnore",
+    "file": "./docs/cli/configuration.md",
+    "line": 96
+  },
+  {
+    "text": "enableRecursiveFileSearch",
+    "file": "./docs/cli/configuration.md",
+    "line": 97
+  },
+  {
+    "text": "coreTools",
+    "file": "./docs/cli/configuration.md",
+    "line": 107
+  },
+  {
+    "text": "ShellTool(ls -l)",
+    "file": "./docs/cli/configuration.md",
+    "line": 107
+  },
+  {
+    "text": "coreTools",
+    "file": "./docs/cli/configuration.md",
+    "line": 110
+  },
+  {
+    "text": "ReadFileTool",
+    "file": "./docs/cli/configuration.md",
+    "line": 110
+  },
+  {
+    "text": "GlobTool",
+    "file": "./docs/cli/configuration.md",
+    "line": 110
+  },
+  {
+    "text": "ShellTool(ls)",
+    "file": "./docs/cli/configuration.md",
+    "line": 110
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/cli/configuration.md",
+    "line": 117
+  },
+  {
+    "text": "ShellTool(rm -rf)",
+    "file": "./docs/cli/configuration.md",
+    "line": 117
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/cli/configuration.md",
+    "line": 119
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/cli/configuration.md",
+    "line": 119
+  },
+  {
+    "text": "findFiles",
+    "file": "./docs/cli/configuration.md",
+    "line": 119
+  },
+  {
+    "text": "allowMCPServers",
+    "file": "./docs/cli/configuration.md",
+    "line": 132
+  },
+  {
+    "text": "myPythonServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 132
+  },
+  {
+    "text": "excludeMCPServers",
+    "file": "./docs/cli/configuration.md",
+    "line": 146
+  },
+  {
+    "text": "myNodeServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 146
+  },
+  {
+    "text": "autoAccept",
+    "file": "./docs/cli/configuration.md",
+    "line": 160
+  },
+  {
+    "text": "Default",
+    "file": "./docs/cli/configuration.md",
+    "line": 164
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/configuration.md",
+    "line": 165
+  },
+  {
+    "text": "GitHub",
+    "file": "./docs/cli/configuration.md",
+    "line": 165
+  },
+  {
+    "text": "vimMode",
+    "file": "./docs/cli/configuration.md",
+    "line": 173
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/configuration.md",
+    "line": 181
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/configuration.md",
+    "line": 181
+  },
+  {
+    "text": "toolDiscoveryCommand",
+    "file": "./docs/cli/configuration.md",
+    "line": 189
+  },
+  {
+    "text": "bin/get_tools",
+    "file": "./docs/cli/configuration.md",
+    "line": 189
+  },
+  {
+    "text": "toolCallCommand",
+    "file": "./docs/cli/configuration.md",
+    "line": 203
+  },
+  {
+    "text": "bin/call_tool",
+    "file": "./docs/cli/configuration.md",
+    "line": 203
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/configuration.md",
+    "line": 239
+  },
+  {
+    "text": "myPythonServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 240
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/configuration.md",
+    "line": 241
+  },
+  {
+    "text": "python",
+    "file": "./docs/cli/configuration.md",
+    "line": 241
+  },
+  {
+    "text": "args",
+    "file": "./docs/cli/configuration.md",
+    "line": 242
+  },
+  {
+    "text": "mcp_server.py",
+    "file": "./docs/cli/configuration.md",
+    "line": 242
+  },
+  {
+    "text": "--port",
+    "file": "./docs/cli/configuration.md",
+    "line": 242
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/cli/configuration.md",
+    "line": 243
+  },
+  {
+    "text": "./mcp_tools/python",
+    "file": "./docs/cli/configuration.md",
+    "line": 243
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/cli/configuration.md",
+    "line": 244
+  },
+  {
+    "text": "includeTools",
+    "file": "./docs/cli/configuration.md",
+    "line": 245
+  },
+  {
+    "text": "safe_tool",
+    "file": "./docs/cli/configuration.md",
+    "line": 245
+  },
+  {
+    "text": "file_reader",
+    "file": "./docs/cli/configuration.md",
+    "line": 245
+  },
+  {
+    "text": "myNodeServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 247
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/configuration.md",
+    "line": 248
+  },
+  {
+    "text": "node",
+    "file": "./docs/cli/configuration.md",
+    "line": 248
+  },
+  {
+    "text": "args",
+    "file": "./docs/cli/configuration.md",
+    "line": 249
+  },
+  {
+    "text": "mcp_server.js",
+    "file": "./docs/cli/configuration.md",
+    "line": 249
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/cli/configuration.md",
+    "line": 250
+  },
+  {
+    "text": "./mcp_tools/node",
+    "file": "./docs/cli/configuration.md",
+    "line": 250
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/cli/configuration.md",
+    "line": 251
+  },
+  {
+    "text": "dangerous_tool",
+    "file": "./docs/cli/configuration.md",
+    "line": 251
+  },
+  {
+    "text": "file_deleter",
+    "file": "./docs/cli/configuration.md",
+    "line": 251
+  },
+  {
+    "text": "myDockerServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 253
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/configuration.md",
+    "line": 254
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/configuration.md",
+    "line": 254
+  },
+  {
+    "text": "args",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "run",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "-i",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "--rm",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "-e",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "ghcr.io/foo/bar",
+    "file": "./docs/cli/configuration.md",
+    "line": 255
+  },
+  {
+    "text": "env",
+    "file": "./docs/cli/configuration.md",
+    "line": 256
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/cli/configuration.md",
+    "line": 257
+  },
+  {
+    "text": "$MY_API_TOKEN",
+    "file": "./docs/cli/configuration.md",
+    "line": 257
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 267
+  },
+  {
+    "text": "preferredEditor",
+    "file": "./docs/cli/configuration.md",
+    "line": 274
+  },
+  {
+    "text": "vscode",
+    "file": "./docs/cli/configuration.md",
+    "line": 274
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 280
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/configuration.md",
+    "line": 280
+  },
+  {
+    "text": "local",
+    "file": "./docs/cli/configuration.md",
+    "line": 280
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/cli/configuration.md",
+    "line": 280
+  },
+  {
+    "text": "http://localhost:4317",
+    "file": "./docs/cli/configuration.md",
+    "line": 280
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/cli/configuration.md",
+    "line": 280
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/configuration.md",
+    "line": 290
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 291
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/configuration.md",
+    "line": 292
+  },
+  {
+    "text": "local",
+    "file": "./docs/cli/configuration.md",
+    "line": 292
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/cli/configuration.md",
+    "line": 293
+  },
+  {
+    "text": "http://localhost:16686",
+    "file": "./docs/cli/configuration.md",
+    "line": 293
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/cli/configuration.md",
+    "line": 294
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 303
+  },
+  {
+    "text": "hideTips",
+    "file": "./docs/cli/configuration.md",
+    "line": 312
+  },
+  {
+    "text": "hideBanner",
+    "file": "./docs/cli/configuration.md",
+    "line": 322
+  },
+  {
+    "text": "maxSessionTurns",
+    "file": "./docs/cli/configuration.md",
+    "line": 332
+  },
+  {
+    "text": "summarizeToolOutput",
+    "file": "./docs/cli/configuration.md",
+    "line": 343
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/cli/configuration.md",
+    "line": 344
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./docs/cli/configuration.md",
+    "line": 345
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/cli/configuration.md",
+    "line": 355
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/cli/configuration.md",
+    "line": 355
+  },
+  {
+    "text": "excludedProjectEnvVars",
+    "file": "./docs/cli/configuration.md",
+    "line": 358
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/cli/configuration.md",
+    "line": 358
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/cli/configuration.md",
+    "line": 358
+  },
+  {
+    "text": "NODE_ENV",
+    "file": "./docs/cli/configuration.md",
+    "line": 358
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/configuration.md",
+    "line": 370
+  },
+  {
+    "text": "/path/to/another/project",
+    "file": "./docs/cli/configuration.md",
+    "line": 371
+  },
+  {
+    "text": "../shared-library",
+    "file": "./docs/cli/configuration.md",
+    "line": 372
+  },
+  {
+    "text": "~/common-utils",
+    "file": "./docs/cli/configuration.md",
+    "line": 373
+  },
+  {
+    "text": "loadMemoryFromIncludeDirectories",
+    "file": "./docs/cli/configuration.md",
+    "line": 385
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/configuration.md",
+    "line": 392
+  },
+  {
+    "text": "GitHub",
+    "file": "./docs/cli/configuration.md",
+    "line": 392
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/configuration.md",
+    "line": 393
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/configuration.md",
+    "line": 393
+  },
+  {
+    "text": "toolDiscoveryCommand",
+    "file": "./docs/cli/configuration.md",
+    "line": 394
+  },
+  {
+    "text": "bin/get_tools",
+    "file": "./docs/cli/configuration.md",
+    "line": 394
+  },
+  {
+    "text": "toolCallCommand",
+    "file": "./docs/cli/configuration.md",
+    "line": 395
+  },
+  {
+    "text": "bin/call_tool",
+    "file": "./docs/cli/configuration.md",
+    "line": 395
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/configuration.md",
+    "line": 396
+  },
+  {
+    "text": "mainServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 397
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/configuration.md",
+    "line": 398
+  },
+  {
+    "text": "bin/mcp_server.py",
+    "file": "./docs/cli/configuration.md",
+    "line": 398
+  },
+  {
+    "text": "anotherServer",
+    "file": "./docs/cli/configuration.md",
+    "line": 400
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/configuration.md",
+    "line": 401
+  },
+  {
+    "text": "node",
+    "file": "./docs/cli/configuration.md",
+    "line": 401
+  },
+  {
+    "text": "args",
+    "file": "./docs/cli/configuration.md",
+    "line": 402
+  },
+  {
+    "text": "mcp_server.js",
+    "file": "./docs/cli/configuration.md",
+    "line": 402
+  },
+  {
+    "text": "--verbose",
+    "file": "./docs/cli/configuration.md",
+    "line": 402
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/configuration.md",
+    "line": 405
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 406
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/configuration.md",
+    "line": 407
+  },
+  {
+    "text": "local",
+    "file": "./docs/cli/configuration.md",
+    "line": 407
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/cli/configuration.md",
+    "line": 408
+  },
+  {
+    "text": "http://localhost:4317",
+    "file": "./docs/cli/configuration.md",
+    "line": 408
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/cli/configuration.md",
+    "line": 409
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 411
+  },
+  {
+    "text": "hideTips",
+    "file": "./docs/cli/configuration.md",
+    "line": 412
+  },
+  {
+    "text": "hideBanner",
+    "file": "./docs/cli/configuration.md",
+    "line": 413
+  },
+  {
+    "text": "maxSessionTurns",
+    "file": "./docs/cli/configuration.md",
+    "line": 414
+  },
+  {
+    "text": "summarizeToolOutput",
+    "file": "./docs/cli/configuration.md",
+    "line": 415
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/cli/configuration.md",
+    "line": 416
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./docs/cli/configuration.md",
+    "line": 417
+  },
+  {
+    "text": "excludedProjectEnvVars",
+    "file": "./docs/cli/configuration.md",
+    "line": 420
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/cli/configuration.md",
+    "line": 420
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/cli/configuration.md",
+    "line": 420
+  },
+  {
+    "text": "NODE_ENV",
+    "file": "./docs/cli/configuration.md",
+    "line": 420
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/configuration.md",
+    "line": 421
+  },
+  {
+    "text": "path/to/dir1",
+    "file": "./docs/cli/configuration.md",
+    "line": 421
+  },
+  {
+    "text": "~/path/to/dir2",
+    "file": "./docs/cli/configuration.md",
+    "line": 421
+  },
+  {
+    "text": "../path/to/dir3",
+    "file": "./docs/cli/configuration.md",
+    "line": 421
+  },
+  {
+    "text": "loadMemoryFromIncludeDirectories",
+    "file": "./docs/cli/configuration.md",
+    "line": 422
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/cli/configuration.md",
+    "line": 466
+  },
+  {
+    "text": "YOUR_GOOGLE_API_KEY",
+    "file": "./docs/cli/configuration.md",
+    "line": 471
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/cli/configuration.md",
+    "line": 482
+  },
+  {
+    "text": "/path/to/your/credentials.json",
+    "file": "./docs/cli/configuration.md",
+    "line": 486
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/cli/configuration.md",
+    "line": 489
+  },
+  {
+    "text": "YOUR_PROJECT_LOCATION",
+    "file": "./docs/cli/configuration.md",
+    "line": 493
+  },
+  {
+    "text": "explain this code",
+    "file": "./docs/cli/configuration.md",
+    "line": 550
+  },
+  {
+    "text": "memory",
+    "file": "./docs/cli/configuration.md",
+    "line": 602
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/cli/configuration.md",
+    "line": 766
+  },
+  {
+    "text": "your prompt here",
+    "file": "./docs/get-started/installation.md",
+    "line": 56
+  },
+  {
+    "text": "What is fine tuning?",
+    "file": "./docs/cli/index.md",
+    "line": 48
+  },
+  {
+    "text": "What is fine tuning?",
+    "file": "./docs/cli/index.md",
+    "line": 54
+  },
+  {
+    "text": "context",
+    "file": "./docs/cli/gemini-md.md",
+    "line": 104
+  },
+  {
+    "text": "fileName",
+    "file": "./docs/cli/gemini-md.md",
+    "line": 105
+  },
+  {
+    "text": "AGENTS.md",
+    "file": "./docs/cli/gemini-md.md",
+    "line": 105
+  },
+  {
+    "text": "CONTEXT.md",
+    "file": "./docs/cli/gemini-md.md",
+    "line": 105
+  },
+  {
+    "text": "GEMINI.md",
+    "file": "./docs/cli/gemini-md.md",
+    "line": 105
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/themes.md",
+    "line": 5
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/themes.md",
+    "line": 36
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/themes.md",
+    "line": 61
+  },
+  {
+    "text": "customThemes",
+    "file": "./docs/cli/themes.md",
+    "line": 62
+  },
+  {
+    "text": "MyCustomTheme",
+    "file": "./docs/cli/themes.md",
+    "line": 63
+  },
+  {
+    "text": "name",
+    "file": "./docs/cli/themes.md",
+    "line": 64
+  },
+  {
+    "text": "MyCustomTheme",
+    "file": "./docs/cli/themes.md",
+    "line": 64
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/themes.md",
+    "line": 65
+  },
+  {
+    "text": "custom",
+    "file": "./docs/cli/themes.md",
+    "line": 65
+  },
+  {
+    "text": "Background",
+    "file": "./docs/cli/themes.md",
+    "line": 66
+  },
+  {
+    "text": "custom",
+    "file": "./docs/cli/themes.md",
+    "line": 99
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/themes.md",
+    "line": 132
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/themes.md",
+    "line": 133
+  },
+  {
+    "text": "/path/to/your/theme.json",
+    "file": "./docs/cli/themes.md",
+    "line": 133
+  },
+  {
+    "text": "name",
+    "file": "./docs/cli/themes.md",
+    "line": 145
+  },
+  {
+    "text": "My File Theme",
+    "file": "./docs/cli/themes.md",
+    "line": 145
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/themes.md",
+    "line": 146
+  },
+  {
+    "text": "custom",
+    "file": "./docs/cli/themes.md",
+    "line": 146
+  },
+  {
+    "text": "Background",
+    "file": "./docs/cli/themes.md",
+    "line": 147
+  },
+  {
+    "text": "#282A36",
+    "file": "./docs/cli/themes.md",
+    "line": 147
+  },
+  {
+    "text": "Foreground",
+    "file": "./docs/cli/themes.md",
+    "line": 148
+  },
+  {
+    "text": "#F8F8F2",
+    "file": "./docs/cli/themes.md",
+    "line": 148
+  },
+  {
+    "text": "LightBlue",
+    "file": "./docs/cli/themes.md",
+    "line": 149
+  },
+  {
+    "text": "#82AAFF",
+    "file": "./docs/cli/themes.md",
+    "line": 149
+  },
+  {
+    "text": "AccentBlue",
+    "file": "./docs/cli/themes.md",
+    "line": 150
+  },
+  {
+    "text": "#61AFEF",
+    "file": "./docs/cli/themes.md",
+    "line": 150
+  },
+  {
+    "text": "AccentPurple",
+    "file": "./docs/cli/themes.md",
+    "line": 151
+  },
+  {
+    "text": "#BD93F9",
+    "file": "./docs/cli/themes.md",
+    "line": 151
+  },
+  {
+    "text": "AccentCyan",
+    "file": "./docs/cli/themes.md",
+    "line": 152
+  },
+  {
+    "text": "#8BE9FD",
+    "file": "./docs/cli/themes.md",
+    "line": 152
+  },
+  {
+    "text": "AccentGreen",
+    "file": "./docs/cli/themes.md",
+    "line": 153
+  },
+  {
+    "text": "#50FA7B",
+    "file": "./docs/cli/themes.md",
+    "line": 153
+  },
+  {
+    "text": "AccentYellow",
+    "file": "./docs/cli/themes.md",
+    "line": 154
+  },
+  {
+    "text": "#F1FA8C",
+    "file": "./docs/cli/themes.md",
+    "line": 154
+  },
+  {
+    "text": "AccentRed",
+    "file": "./docs/cli/themes.md",
+    "line": 155
+  },
+  {
+    "text": "#FF5555",
+    "file": "./docs/cli/themes.md",
+    "line": 155
+  },
+  {
+    "text": "Comment",
+    "file": "./docs/cli/themes.md",
+    "line": 156
+  },
+  {
+    "text": "#6272A4",
+    "file": "./docs/cli/themes.md",
+    "line": 156
+  },
+  {
+    "text": "Gray",
+    "file": "./docs/cli/themes.md",
+    "line": 157
+  },
+  {
+    "text": "#ABB2BF",
+    "file": "./docs/cli/themes.md",
+    "line": 157
+  },
+  {
+    "text": "DiffAdded",
+    "file": "./docs/cli/themes.md",
+    "line": 158
+  },
+  {
+    "text": "#A6E3A1",
+    "file": "./docs/cli/themes.md",
+    "line": 158
+  },
+  {
+    "text": "DiffRemoved",
+    "file": "./docs/cli/themes.md",
+    "line": 159
+  },
+  {
+    "text": "#F38BA8",
+    "file": "./docs/cli/themes.md",
+    "line": 159
+  },
+  {
+    "text": "DiffModified",
+    "file": "./docs/cli/themes.md",
+    "line": 160
+  },
+  {
+    "text": "#89B4FA",
+    "file": "./docs/cli/themes.md",
+    "line": 160
+  },
+  {
+    "text": "GradientColors",
+    "file": "./docs/cli/themes.md",
+    "line": 161
+  },
+  {
+    "text": "#4796E4",
+    "file": "./docs/cli/themes.md",
+    "line": 161
+  },
+  {
+    "text": "#847ACE",
+    "file": "./docs/cli/themes.md",
+    "line": 161
+  },
+  {
+    "text": "#C3677F",
+    "file": "./docs/cli/themes.md",
+    "line": 161
+  },
+  {
+    "text": "../assets/theme-custom.png",
+    "file": "./docs/cli/themes.md",
+    "line": 173
+  },
+  {
+    "text": "Custom theme example",
+    "file": "./docs/cli/themes.md",
+    "line": 173
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/themes.md",
+    "line": 179
+  },
+  {
+    "text": "MyCustomTheme",
+    "file": "./docs/cli/themes.md",
+    "line": 179
+  },
+  {
+    "text": "/assets/theme-ansi.png",
+    "file": "./docs/cli/themes.md",
+    "line": 191
+  },
+  {
+    "text": "ANSI theme",
+    "file": "./docs/cli/themes.md",
+    "line": 191
+  },
+  {
+    "text": "/assets/theme-atom-one.png",
+    "file": "./docs/cli/themes.md",
+    "line": 195
+  },
+  {
+    "text": "Atom One theme",
+    "file": "./docs/cli/themes.md",
+    "line": 195
+  },
+  {
+    "text": "/assets/theme-ayu.png",
+    "file": "./docs/cli/themes.md",
+    "line": 199
+  },
+  {
+    "text": "Ayu theme",
+    "file": "./docs/cli/themes.md",
+    "line": 199
+  },
+  {
+    "text": "/assets/theme-default.png",
+    "file": "./docs/cli/themes.md",
+    "line": 203
+  },
+  {
+    "text": "Default theme",
+    "file": "./docs/cli/themes.md",
+    "line": 203
+  },
+  {
+    "text": "/assets/theme-dracula.png",
+    "file": "./docs/cli/themes.md",
+    "line": 207
+  },
+  {
+    "text": "Dracula theme",
+    "file": "./docs/cli/themes.md",
+    "line": 207
+  },
+  {
+    "text": "/assets/theme-github.png",
+    "file": "./docs/cli/themes.md",
+    "line": 211
+  },
+  {
+    "text": "GitHub theme",
+    "file": "./docs/cli/themes.md",
+    "line": 211
+  },
+  {
+    "text": "/assets/theme-ansi-light.png",
+    "file": "./docs/cli/themes.md",
+    "line": 217
+  },
+  {
+    "text": "ANSI Light theme",
+    "file": "./docs/cli/themes.md",
+    "line": 217
+  },
+  {
+    "text": "/assets/theme-ayu-light.png",
+    "file": "./docs/cli/themes.md",
+    "line": 221
+  },
+  {
+    "text": "Ayu Light theme",
+    "file": "./docs/cli/themes.md",
+    "line": 221
+  },
+  {
+    "text": "/assets/theme-default-light.png",
+    "file": "./docs/cli/themes.md",
+    "line": 225
+  },
+  {
+    "text": "Default Light theme",
+    "file": "./docs/cli/themes.md",
+    "line": 225
+  },
+  {
+    "text": "/assets/theme-github-light.png",
+    "file": "./docs/cli/themes.md",
+    "line": 229
+  },
+  {
+    "text": "GitHub Light theme",
+    "file": "./docs/cli/themes.md",
+    "line": 229
+  },
+  {
+    "text": "/assets/theme-google-light.png",
+    "file": "./docs/cli/themes.md",
+    "line": 233
+  },
+  {
+    "text": "Google Code theme",
+    "file": "./docs/cli/themes.md",
+    "line": 233
+  },
+  {
+    "text": "/assets/theme-xcode-light.png",
+    "file": "./docs/cli/themes.md",
+    "line": 237
+  },
+  {
+    "text": "Xcode Light theme",
+    "file": "./docs/cli/themes.md",
+    "line": 237
+  },
+  {
+    "text": "smarter,",
+    "file": "./docs/cli/model.md",
+    "line": 38
+  },
+  {
+    "text": "apiKey",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 74
+  },
+  {
+    "text": "$MY_API_TOKEN",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 74
+  },
+  {
+    "text": "contextFileName",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 95
+  },
+  {
+    "text": "AGENTS.md",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 95
+  },
+  {
+    "text": "urlTemplate",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 100
+  },
+  {
+    "text": "https://github.com/google-gemini/gemini-cli/issues/new?template=bug_report.yml&title={title}&info={info}",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 100
+  },
+  {
+    "text": "bugCommand",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 106
+  },
+  {
+    "text": "urlTemplate",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 107
+  },
+  {
+    "text": "https://bug.example.com/new?title={title}&info={info}",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 107
+  },
+  {
+    "text": "respectGitIgnore",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 114
+  },
+  {
+    "text": "enableRecursiveFileSearch",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 114
+  },
+  {
+    "text": "fileFiltering",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 128
+  },
+  {
+    "text": "respectGitIgnore",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 129
+  },
+  {
+    "text": "enableRecursiveFileSearch",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 130
+  },
+  {
+    "text": "disableFuzzySearch",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 131
+  },
+  {
+    "text": "coreTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 164
+  },
+  {
+    "text": "ShellTool(ls -l)",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 164
+  },
+  {
+    "text": "coreTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 167
+  },
+  {
+    "text": "ReadFileTool",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 167
+  },
+  {
+    "text": "GlobTool",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 167
+  },
+  {
+    "text": "ShellTool(ls)",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 167
+  },
+  {
+    "text": "allowedTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 174
+  },
+  {
+    "text": "ShellTool(git status)",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 174
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 181
+  },
+  {
+    "text": "ShellTool(rm -rf)",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 181
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 183
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 183
+  },
+  {
+    "text": "findFiles",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 183
+  },
+  {
+    "text": "allowMCPServers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 196
+  },
+  {
+    "text": "myPythonServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 196
+  },
+  {
+    "text": "excludeMCPServers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 210
+  },
+  {
+    "text": "myNodeServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 210
+  },
+  {
+    "text": "autoAccept",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 224
+  },
+  {
+    "text": "Default",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 228
+  },
+  {
+    "text": "theme",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 229
+  },
+  {
+    "text": "GitHub",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 229
+  },
+  {
+    "text": "vimMode",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 237
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 245
+  },
+  {
+    "text": "docker",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 245
+  },
+  {
+    "text": "toolDiscoveryCommand",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 253
+  },
+  {
+    "text": "bin/get_tools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 253
+  },
+  {
+    "text": "toolCallCommand",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 267
+  },
+  {
+    "text": "bin/call_tool",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 267
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 313
+  },
+  {
+    "text": "myPythonServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 314
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 315
+  },
+  {
+    "text": "python",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 315
+  },
+  {
+    "text": "args",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 316
+  },
+  {
+    "text": "mcp_server.py",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 316
+  },
+  {
+    "text": "--port",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 316
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 317
+  },
+  {
+    "text": "./mcp_tools/python",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 317
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 318
+  },
+  {
+    "text": "includeTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 319
+  },
+  {
+    "text": "safe_tool",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 319
+  },
+  {
+    "text": "file_reader",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 319
+  },
+  {
+    "text": "myNodeServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 321
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 322
+  },
+  {
+    "text": "node",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 322
+  },
+  {
+    "text": "args",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 323
+  },
+  {
+    "text": "mcp_server.js",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 323
+  },
+  {
+    "text": "cwd",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 324
+  },
+  {
+    "text": "./mcp_tools/node",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 324
+  },
+  {
+    "text": "excludeTools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 325
+  },
+  {
+    "text": "dangerous_tool",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 325
+  },
+  {
+    "text": "file_deleter",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 325
+  },
+  {
+    "text": "myDockerServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 327
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 328
+  },
+  {
+    "text": "docker",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 328
+  },
+  {
+    "text": "args",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "run",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "-i",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "--rm",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "-e",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "ghcr.io/foo/bar",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 329
+  },
+  {
+    "text": "env",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 330
+  },
+  {
+    "text": "API_KEY",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 331
+  },
+  {
+    "text": "$MY_API_TOKEN",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 331
+  },
+  {
+    "text": "mySseServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 334
+  },
+  {
+    "text": "url",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 335
+  },
+  {
+    "text": "http://localhost:8081/events",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 335
+  },
+  {
+    "text": "headers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 336
+  },
+  {
+    "text": "Authorization",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 337
+  },
+  {
+    "text": "Bearer $MY_SSE_TOKEN",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 337
+  },
+  {
+    "text": "description",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 339
+  },
+  {
+    "text": "An example SSE-based MCP server.",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 339
+  },
+  {
+    "text": "myStreamableHttpServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 341
+  },
+  {
+    "text": "httpUrl",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 342
+  },
+  {
+    "text": "http://localhost:8082/stream",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 342
+  },
+  {
+    "text": "headers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 343
+  },
+  {
+    "text": "X-API-Key",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 344
+  },
+  {
+    "text": "$MY_HTTP_API_KEY",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 344
+  },
+  {
+    "text": "description",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 346
+  },
+  {
+    "text": "An example Streamable HTTP-based MCP server.",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 346
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 355
+  },
+  {
+    "text": "preferredEditor",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 362
+  },
+  {
+    "text": "vscode",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 362
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 368
+  },
+  {
+    "text": "target",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 368
+  },
+  {
+    "text": "local",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 368
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 368
+  },
+  {
+    "text": "http://localhost:4317",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 368
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 368
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 378
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 379
+  },
+  {
+    "text": "target",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 380
+  },
+  {
+    "text": "local",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 380
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 381
+  },
+  {
+    "text": "http://localhost:16686",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 381
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 382
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 391
+  },
+  {
+    "text": "hideTips",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 400
+  },
+  {
+    "text": "hideBanner",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 410
+  },
+  {
+    "text": "maxSessionTurns",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 420
+  },
+  {
+    "text": "summarizeToolOutput",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 431
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 432
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 433
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 443
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 443
+  },
+  {
+    "text": "excludedProjectEnvVars",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 446
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 446
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 446
+  },
+  {
+    "text": "NODE_ENV",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 446
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 458
+  },
+  {
+    "text": "/path/to/another/project",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 459
+  },
+  {
+    "text": "../shared-library",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 460
+  },
+  {
+    "text": "~/common-utils",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 461
+  },
+  {
+    "text": "loadMemoryFromIncludeDirectories",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 473
+  },
+  {
+    "text": "showLineNumbers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 482
+  },
+  {
+    "text": "screenReader",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 494
+  },
+  {
+    "text": "disableLoadingPhrases",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 494
+  },
+  {
+    "text": "accessibility",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 497
+  },
+  {
+    "text": "screenReader",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 498
+  },
+  {
+    "text": "disableLoadingPhrases",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 499
+  },
+  {
+    "text": "theme",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 507
+  },
+  {
+    "text": "GitHub",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 507
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 508
+  },
+  {
+    "text": "docker",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 508
+  },
+  {
+    "text": "toolDiscoveryCommand",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 509
+  },
+  {
+    "text": "bin/get_tools",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 509
+  },
+  {
+    "text": "toolCallCommand",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 510
+  },
+  {
+    "text": "bin/call_tool",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 510
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 511
+  },
+  {
+    "text": "mainServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 512
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 513
+  },
+  {
+    "text": "bin/mcp_server.py",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 513
+  },
+  {
+    "text": "anotherServer",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 515
+  },
+  {
+    "text": "command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 516
+  },
+  {
+    "text": "node",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 516
+  },
+  {
+    "text": "args",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 517
+  },
+  {
+    "text": "mcp_server.js",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 517
+  },
+  {
+    "text": "--verbose",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 517
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 520
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 521
+  },
+  {
+    "text": "target",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 522
+  },
+  {
+    "text": "local",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 522
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 523
+  },
+  {
+    "text": "http://localhost:4317",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 523
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 524
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 526
+  },
+  {
+    "text": "hideTips",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 527
+  },
+  {
+    "text": "hideBanner",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 528
+  },
+  {
+    "text": "maxSessionTurns",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 529
+  },
+  {
+    "text": "summarizeToolOutput",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 530
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 531
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 532
+  },
+  {
+    "text": "excludedProjectEnvVars",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 535
+  },
+  {
+    "text": "DEBUG",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 535
+  },
+  {
+    "text": "DEBUG_MODE",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 535
+  },
+  {
+    "text": "NODE_ENV",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 535
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 536
+  },
+  {
+    "text": "path/to/dir1",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 536
+  },
+  {
+    "text": "~/path/to/dir2",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 536
+  },
+  {
+    "text": "../path/to/dir3",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 536
+  },
+  {
+    "text": "loadMemoryFromIncludeDirectories",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 537
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 583
+  },
+  {
+    "text": "YOUR_GOOGLE_API_KEY",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 588
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 599
+  },
+  {
+    "text": "/path/to/your/credentials.json",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 603
+  },
+  {
+    "text": "YOUR_PROJECT_ID",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 606
+  },
+  {
+    "text": "YOUR_PROJECT_LOCATION",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 610
+  },
+  {
+    "text": "explain this code",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 654
+  },
+  {
+    "text": "ShellTool(git status)",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 680
+  },
+  {
+    "text": "memory",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 722
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/get-started/configuration-v1.md",
+    "line": 886
+  },
+  {
+    "text": "security",
+    "file": "./docs/cli/trusted-folders.md",
+    "line": 17
+  },
+  {
+    "text": "folderTrust",
+    "file": "./docs/cli/trusted-folders.md",
+    "line": 18
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/trusted-folders.md",
+    "line": 19
+  },
+  {
+    "text": "safe mode.",
+    "file": "./docs/cli/trusted-folders.md",
+    "line": 36
+  },
+  {
+    "text": "safe mode",
+    "file": "./docs/cli/trusted-folders.md",
+    "line": 43
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/tutorials.md",
+    "line": 39
+  },
+  {
+    "text": "github",
+    "file": "./docs/cli/tutorials.md",
+    "line": 40
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/tutorials.md",
+    "line": 41
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/tutorials.md",
+    "line": 41
+  },
+  {
+    "text": "args",
+    "file": "./docs/cli/tutorials.md",
+    "line": 42
+  },
+  {
+    "text": "run",
+    "file": "./docs/cli/tutorials.md",
+    "line": 43
+  },
+  {
+    "text": "-i",
+    "file": "./docs/cli/tutorials.md",
+    "line": 44
+  },
+  {
+    "text": "--rm",
+    "file": "./docs/cli/tutorials.md",
+    "line": 45
+  },
+  {
+    "text": "-e",
+    "file": "./docs/cli/tutorials.md",
+    "line": 46
+  },
+  {
+    "text": "GITHUB_PERSONAL_ACCESS_TOKEN",
+    "file": "./docs/cli/tutorials.md",
+    "line": 47
+  },
+  {
+    "text": "ghcr.io/github/github-mcp-server",
+    "file": "./docs/cli/tutorials.md",
+    "line": 48
+  },
+  {
+    "text": "env",
+    "file": "./docs/cli/tutorials.md",
+    "line": 50
+  },
+  {
+    "text": "GITHUB_PERSONAL_ACCESS_TOKEN",
+    "file": "./docs/cli/tutorials.md",
+    "line": 51
+  },
+  {
+    "text": "${GITHUB_PERSONAL_ACCESS_TOKEN}",
+    "file": "./docs/cli/tutorials.md",
+    "line": 51
+  },
+  {
+    "text": "pat_YourActualGitHubTokenHere",
+    "file": "./docs/cli/tutorials.md",
+    "line": 69
+  },
+  {
+    "text": "get all open issues assigned to me in the 'foo/bar' repo and prioritize them",
+    "file": "./docs/cli/tutorials.md",
+    "line": 82
+  },
+  {
+    "text": "uninstall",
+    "file": "./docs/cli/uninstall.md",
+    "line": 9
+  },
+  {
+    "text": "$(npm config get cache)/_npx",
+    "file": "./docs/cli/uninstall.md",
+    "line": 19
+  },
+  {
+    "text": "%LocalAppData%\\npm-cache\\_npx",
+    "file": "./docs/cli/uninstall.md",
+    "line": 28
+  },
+  {
+    "text": "npm-cache\\_npx",
+    "file": "./docs/cli/uninstall.md",
+    "line": 35
+  },
+  {
+    "text": "Yes",
+    "file": "./docs/ide-integration/index.md",
+    "line": 42
+  },
+  {
+    "text": "Gemini CLI Companion",
+    "file": "./docs/ide-integration/index.md",
+    "line": 69
+  },
+  {
+    "text": "Newly Published",
+    "file": "./docs/ide-integration/index.md",
+    "line": 71
+  },
+  {
+    "text": "Button is misaligned",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 71
+  },
+  {
+    "text": "Generates a fix for a given issue.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 73
+  },
+  {
+    "text": "Please provide a code fix for the issue described here: {{args}}.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 74
+  },
+  {
+    "text": "Button is misaligned",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 78
+  },
+  {
+    "text": "It\\'s complicated",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 104
+  },
+  {
+    "text": "It\\'s complicated",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 105
+  },
+  {
+    "text": "Support for default argument parsing.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 130
+  },
+  {
+    "text": "Adds a new entry to the project\\'s CHANGELOG.md file.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 132
+  },
+  {
+    "text": "added",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 144
+  },
+  {
+    "text": "changed",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 144
+  },
+  {
+    "text": "fixed",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 144
+  },
+  {
+    "text": "removed",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 144
+  },
+  {
+    "text": "Keep a Changelog",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 151
+  },
+  {
+    "text": "New feature",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 155
+  },
+  {
+    "text": "Generates a Git commit message based on staged changes.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 199
+  },
+  {
+    "text": "Reviews the provided context using a best practice guide.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 251
+  },
+  {
+    "text": "Pure Function",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 269
+  },
+  {
+    "text": "Asks the model to refactor the current context into a pure function.",
+    "file": "./docs/cli/custom-commands.md",
+    "line": 293
+  },
+  {
+    "text": "discovery file.",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 32
+  },
+  {
+    "text": "port",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 50
+  },
+  {
+    "text": "workspacePath",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 51
+  },
+  {
+    "text": "/path/to/project1:/path/to/project2",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 51
+  },
+  {
+    "text": "authToken",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 52
+  },
+  {
+    "text": "a-very-secret-token",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 52
+  },
+  {
+    "text": "ideInfo",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 53
+  },
+  {
+    "text": "name",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 54
+  },
+  {
+    "text": "vscode",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 54
+  },
+  {
+    "text": "displayName",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 55
+  },
+  {
+    "text": "VS Code",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 55
+  },
+  {
+    "text": "active",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 149
+  },
+  {
+    "text": "Apply",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 224
+  },
+  {
+    "text": "Save",
+    "file": "./docs/ide-integration/ide-companion-spec.md",
+    "line": 225
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/enterprise.md",
+    "line": 44
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 45
+  },
+  {
+    "text": "default-corporate-theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 45
+  },
+  {
+    "text": "context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 47
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/enterprise.md",
+    "line": 48
+  },
+  {
+    "text": "/etc/gemini-cli/common-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 48
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/enterprise.md",
+    "line": 57
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 58
+  },
+  {
+    "text": "user-preferred-dark-theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 58
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 60
+  },
+  {
+    "text": "corp-server",
+    "file": "./docs/cli/enterprise.md",
+    "line": 61
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 62
+  },
+  {
+    "text": "/usr/local/bin/corp-server-dev",
+    "file": "./docs/cli/enterprise.md",
+    "line": 62
+  },
+  {
+    "text": "user-tool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 64
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 65
+  },
+  {
+    "text": "npm start --prefix ~/tools/my-tool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 65
+  },
+  {
+    "text": "context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 68
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/enterprise.md",
+    "line": 69
+  },
+  {
+    "text": "~/gemini-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 69
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/enterprise.md",
+    "line": 78
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 79
+  },
+  {
+    "text": "project-specific-light-theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 79
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 81
+  },
+  {
+    "text": "project-tool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 82
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 83
+  },
+  {
+    "text": "npm start",
+    "file": "./docs/cli/enterprise.md",
+    "line": 83
+  },
+  {
+    "text": "context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 86
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/enterprise.md",
+    "line": 87
+  },
+  {
+    "text": "./project-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 87
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/enterprise.md",
+    "line": 95
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 96
+  },
+  {
+    "text": "system-enforced-theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 96
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 98
+  },
+  {
+    "text": "corp-server",
+    "file": "./docs/cli/enterprise.md",
+    "line": 99
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 100
+  },
+  {
+    "text": "/usr/local/bin/corp-server-prod",
+    "file": "./docs/cli/enterprise.md",
+    "line": 100
+  },
+  {
+    "text": "context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 103
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/enterprise.md",
+    "line": 104
+  },
+  {
+    "text": "/etc/gemini-cli/global-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 104
+  },
+  {
+    "text": "ui",
+    "file": "./docs/cli/enterprise.md",
+    "line": 114
+  },
+  {
+    "text": "theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 115
+  },
+  {
+    "text": "system-enforced-theme",
+    "file": "./docs/cli/enterprise.md",
+    "line": 115
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 117
+  },
+  {
+    "text": "corp-server",
+    "file": "./docs/cli/enterprise.md",
+    "line": 118
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 119
+  },
+  {
+    "text": "/usr/local/bin/corp-server-prod",
+    "file": "./docs/cli/enterprise.md",
+    "line": 119
+  },
+  {
+    "text": "user-tool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 121
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 122
+  },
+  {
+    "text": "npm start --prefix ~/tools/my-tool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 122
+  },
+  {
+    "text": "project-tool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 124
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 125
+  },
+  {
+    "text": "npm start",
+    "file": "./docs/cli/enterprise.md",
+    "line": 125
+  },
+  {
+    "text": "context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 128
+  },
+  {
+    "text": "includeDirectories",
+    "file": "./docs/cli/enterprise.md",
+    "line": 129
+  },
+  {
+    "text": "/etc/gemini-cli/common-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 130
+  },
+  {
+    "text": "~/gemini-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 131
+  },
+  {
+    "text": "./project-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 132
+  },
+  {
+    "text": "/etc/gemini-cli/global-context",
+    "file": "./docs/cli/enterprise.md",
+    "line": 133
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 179
+  },
+  {
+    "text": "core",
+    "file": "./docs/cli/enterprise.md",
+    "line": 180
+  },
+  {
+    "text": "ReadFileTool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 180
+  },
+  {
+    "text": "GlobTool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 180
+  },
+  {
+    "text": "ShellTool(ls)",
+    "file": "./docs/cli/enterprise.md",
+    "line": 180
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 194
+  },
+  {
+    "text": "exclude",
+    "file": "./docs/cli/enterprise.md",
+    "line": 195
+  },
+  {
+    "text": "ShellTool(rm -rf)",
+    "file": "./docs/cli/enterprise.md",
+    "line": 195
+  },
+  {
+    "text": "security",
+    "file": "./docs/cli/enterprise.md",
+    "line": 216
+  },
+  {
+    "text": "disableYoloMode",
+    "file": "./docs/cli/enterprise.md",
+    "line": 217
+  },
+  {
+    "text": "mcp",
+    "file": "./docs/cli/enterprise.md",
+    "line": 271
+  },
+  {
+    "text": "allowed",
+    "file": "./docs/cli/enterprise.md",
+    "line": 272
+  },
+  {
+    "text": "third-party-analyzer",
+    "file": "./docs/cli/enterprise.md",
+    "line": 272
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 274
+  },
+  {
+    "text": "third-party-analyzer",
+    "file": "./docs/cli/enterprise.md",
+    "line": 275
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 276
+  },
+  {
+    "text": "/usr/local/bin/start-3p-analyzer.sh",
+    "file": "./docs/cli/enterprise.md",
+    "line": 276
+  },
+  {
+    "text": "includeTools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 277
+  },
+  {
+    "text": "code-search",
+    "file": "./docs/cli/enterprise.md",
+    "line": 277
+  },
+  {
+    "text": "get-ticket-details",
+    "file": "./docs/cli/enterprise.md",
+    "line": 277
+  },
+  {
+    "text": "mcp",
+    "file": "./docs/cli/enterprise.md",
+    "line": 305
+  },
+  {
+    "text": "allowed",
+    "file": "./docs/cli/enterprise.md",
+    "line": 306
+  },
+  {
+    "text": "corp-data-api",
+    "file": "./docs/cli/enterprise.md",
+    "line": 306
+  },
+  {
+    "text": "source-code-analyzer",
+    "file": "./docs/cli/enterprise.md",
+    "line": 306
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 308
+  },
+  {
+    "text": "corp-data-api",
+    "file": "./docs/cli/enterprise.md",
+    "line": 309
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 310
+  },
+  {
+    "text": "/usr/local/bin/start-corp-api.sh",
+    "file": "./docs/cli/enterprise.md",
+    "line": 310
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/cli/enterprise.md",
+    "line": 311
+  },
+  {
+    "text": "source-code-analyzer",
+    "file": "./docs/cli/enterprise.md",
+    "line": 313
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 314
+  },
+  {
+    "text": "/usr/local/bin/start-analyzer.sh",
+    "file": "./docs/cli/enterprise.md",
+    "line": 314
+  },
+  {
+    "text": "mcp.allowed",
+    "file": "./docs/cli/enterprise.md",
+    "line": 333
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 337
+  },
+  {
+    "text": "corp-data-api",
+    "file": "./docs/cli/enterprise.md",
+    "line": 338
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 339
+  },
+  {
+    "text": "/usr/local/bin/start-corp-api.sh",
+    "file": "./docs/cli/enterprise.md",
+    "line": 339
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 360
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/enterprise.md",
+    "line": 361
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/enterprise.md",
+    "line": 361
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 381
+  },
+  {
+    "text": "proxied-server",
+    "file": "./docs/cli/enterprise.md",
+    "line": 382
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 383
+  },
+  {
+    "text": "node",
+    "file": "./docs/cli/enterprise.md",
+    "line": 383
+  },
+  {
+    "text": "args",
+    "file": "./docs/cli/enterprise.md",
+    "line": 384
+  },
+  {
+    "text": "mcp_server.js",
+    "file": "./docs/cli/enterprise.md",
+    "line": 384
+  },
+  {
+    "text": "env",
+    "file": "./docs/cli/enterprise.md",
+    "line": 385
+  },
+  {
+    "text": "HTTP_PROXY",
+    "file": "./docs/cli/enterprise.md",
+    "line": 386
+  },
+  {
+    "text": "http://proxy.example.com:8080",
+    "file": "./docs/cli/enterprise.md",
+    "line": 386
+  },
+  {
+    "text": "HTTPS_PROXY",
+    "file": "./docs/cli/enterprise.md",
+    "line": 387
+  },
+  {
+    "text": "http://proxy.example.com:8080",
+    "file": "./docs/cli/enterprise.md",
+    "line": 387
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/enterprise.md",
+    "line": 406
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/enterprise.md",
+    "line": 407
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/enterprise.md",
+    "line": 408
+  },
+  {
+    "text": "gcp",
+    "file": "./docs/cli/enterprise.md",
+    "line": 408
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/cli/enterprise.md",
+    "line": 409
+  },
+  {
+    "text": "enforcedAuthType",
+    "file": "./docs/cli/enterprise.md",
+    "line": 428
+  },
+  {
+    "text": "oauth-personal",
+    "file": "./docs/cli/enterprise.md",
+    "line": 428
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 445
+  },
+  {
+    "text": "sandbox",
+    "file": "./docs/cli/enterprise.md",
+    "line": 446
+  },
+  {
+    "text": "docker",
+    "file": "./docs/cli/enterprise.md",
+    "line": 446
+  },
+  {
+    "text": "core",
+    "file": "./docs/cli/enterprise.md",
+    "line": 447
+  },
+  {
+    "text": "ReadFileTool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 448
+  },
+  {
+    "text": "GlobTool",
+    "file": "./docs/cli/enterprise.md",
+    "line": 449
+  },
+  {
+    "text": "ShellTool(ls)",
+    "file": "./docs/cli/enterprise.md",
+    "line": 450
+  },
+  {
+    "text": "ShellTool(cat)",
+    "file": "./docs/cli/enterprise.md",
+    "line": 451
+  },
+  {
+    "text": "ShellTool(grep)",
+    "file": "./docs/cli/enterprise.md",
+    "line": 452
+  },
+  {
+    "text": "mcp",
+    "file": "./docs/cli/enterprise.md",
+    "line": 455
+  },
+  {
+    "text": "allowed",
+    "file": "./docs/cli/enterprise.md",
+    "line": 456
+  },
+  {
+    "text": "corp-tools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 456
+  },
+  {
+    "text": "mcpServers",
+    "file": "./docs/cli/enterprise.md",
+    "line": 458
+  },
+  {
+    "text": "corp-tools",
+    "file": "./docs/cli/enterprise.md",
+    "line": 459
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/enterprise.md",
+    "line": 460
+  },
+  {
+    "text": "/opt/gemini-tools/start.sh",
+    "file": "./docs/cli/enterprise.md",
+    "line": 460
+  },
+  {
+    "text": "timeout",
+    "file": "./docs/cli/enterprise.md",
+    "line": 461
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/enterprise.md",
+    "line": 464
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/enterprise.md",
+    "line": 465
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/enterprise.md",
+    "line": 466
+  },
+  {
+    "text": "gcp",
+    "file": "./docs/cli/enterprise.md",
+    "line": 466
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/cli/enterprise.md",
+    "line": 467
+  },
+  {
+    "text": "https://telemetry-prod.example.com:4317",
+    "file": "./docs/cli/enterprise.md",
+    "line": 467
+  },
+  {
+    "text": "logPrompts",
+    "file": "./docs/cli/enterprise.md",
+    "line": 468
+  },
+  {
+    "text": "advanced",
+    "file": "./docs/cli/enterprise.md",
+    "line": 470
+  },
+  {
+    "text": "bugCommand",
+    "file": "./docs/cli/enterprise.md",
+    "line": 471
+  },
+  {
+    "text": "urlTemplate",
+    "file": "./docs/cli/enterprise.md",
+    "line": 472
+  },
+  {
+    "text": "https://servicedesk.example.com/new-ticket?title={title}&details={info}",
+    "file": "./docs/cli/enterprise.md",
+    "line": 472
+  },
+  {
+    "text": "privacy",
+    "file": "./docs/cli/enterprise.md",
+    "line": 475
+  },
+  {
+    "text": "usageStatisticsEnabled",
+    "file": "./docs/cli/enterprise.md",
+    "line": 476
+  },
+  {
+    "text": "What is machine learning?",
+    "file": "./docs/cli/headless.md",
+    "line": 55
+  },
+  {
+    "text": "Explain this code",
+    "file": "./docs/cli/headless.md",
+    "line": 63
+  },
+  {
+    "text": "Summarize this documentation",
+    "file": "./docs/cli/headless.md",
+    "line": 71
+  },
+  {
+    "text": "What is the capital of France?",
+    "file": "./docs/cli/headless.md",
+    "line": 81
+  },
+  {
+    "text": "response",
+    "file": "./docs/cli/headless.md",
+    "line": 101
+  },
+  {
+    "text": "string",
+    "file": "./docs/cli/headless.md",
+    "line": 101
+  },
+  {
+    "text": "stats",
+    "file": "./docs/cli/headless.md",
+    "line": 102
+  },
+  {
+    "text": "models",
+    "file": "./docs/cli/headless.md",
+    "line": 104
+  },
+  {
+    "text": "[model-name]",
+    "file": "./docs/cli/headless.md",
+    "line": 106
+  },
+  {
+    "text": "api",
+    "file": "./docs/cli/headless.md",
+    "line": 107
+  },
+  {
+    "text": "tokens",
+    "file": "./docs/cli/headless.md",
+    "line": 110
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/headless.md",
+    "line": 115
+  },
+  {
+    "text": "totalCalls",
+    "file": "./docs/cli/headless.md",
+    "line": 117
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 117
+  },
+  {
+    "text": "totalSuccess",
+    "file": "./docs/cli/headless.md",
+    "line": 118
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 118
+  },
+  {
+    "text": "totalFail",
+    "file": "./docs/cli/headless.md",
+    "line": 119
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 119
+  },
+  {
+    "text": "totalDurationMs",
+    "file": "./docs/cli/headless.md",
+    "line": 120
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 120
+  },
+  {
+    "text": "totalDecisions",
+    "file": "./docs/cli/headless.md",
+    "line": 121
+  },
+  {
+    "text": "byName",
+    "file": "./docs/cli/headless.md",
+    "line": 124
+  },
+  {
+    "text": "files",
+    "file": "./docs/cli/headless.md",
+    "line": 128
+  },
+  {
+    "text": "totalLinesAdded",
+    "file": "./docs/cli/headless.md",
+    "line": 130
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 130
+  },
+  {
+    "text": "totalLinesRemoved",
+    "file": "./docs/cli/headless.md",
+    "line": 131
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 131
+  },
+  {
+    "text": "error",
+    "file": "./docs/cli/headless.md",
+    "line": 134
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 136
+  },
+  {
+    "text": "string",
+    "file": "./docs/cli/headless.md",
+    "line": 136
+  },
+  {
+    "text": "ApiError",
+    "file": "./docs/cli/headless.md",
+    "line": 136
+  },
+  {
+    "text": "AuthError",
+    "file": "./docs/cli/headless.md",
+    "line": 136
+  },
+  {
+    "text": "message",
+    "file": "./docs/cli/headless.md",
+    "line": 137
+  },
+  {
+    "text": "string",
+    "file": "./docs/cli/headless.md",
+    "line": 137
+  },
+  {
+    "text": "code",
+    "file": "./docs/cli/headless.md",
+    "line": 138
+  },
+  {
+    "text": "number",
+    "file": "./docs/cli/headless.md",
+    "line": 138
+  },
+  {
+    "text": "What is the capital of France?",
+    "file": "./docs/cli/headless.md",
+    "line": 146
+  },
+  {
+    "text": "response",
+    "file": "./docs/cli/headless.md",
+    "line": 153
+  },
+  {
+    "text": "The capital of France is Paris.",
+    "file": "./docs/cli/headless.md",
+    "line": 153
+  },
+  {
+    "text": "stats",
+    "file": "./docs/cli/headless.md",
+    "line": 154
+  },
+  {
+    "text": "models",
+    "file": "./docs/cli/headless.md",
+    "line": 155
+  },
+  {
+    "text": "gemini-2.5-pro",
+    "file": "./docs/cli/headless.md",
+    "line": 156
+  },
+  {
+    "text": "api",
+    "file": "./docs/cli/headless.md",
+    "line": 157
+  },
+  {
+    "text": "totalRequests",
+    "file": "./docs/cli/headless.md",
+    "line": 158
+  },
+  {
+    "text": "totalErrors",
+    "file": "./docs/cli/headless.md",
+    "line": 159
+  },
+  {
+    "text": "totalLatencyMs",
+    "file": "./docs/cli/headless.md",
+    "line": 160
+  },
+  {
+    "text": "tokens",
+    "file": "./docs/cli/headless.md",
+    "line": 162
+  },
+  {
+    "text": "prompt",
+    "file": "./docs/cli/headless.md",
+    "line": 163
+  },
+  {
+    "text": "candidates",
+    "file": "./docs/cli/headless.md",
+    "line": 164
+  },
+  {
+    "text": "total",
+    "file": "./docs/cli/headless.md",
+    "line": 165
+  },
+  {
+    "text": "cached",
+    "file": "./docs/cli/headless.md",
+    "line": 166
+  },
+  {
+    "text": "thoughts",
+    "file": "./docs/cli/headless.md",
+    "line": 167
+  },
+  {
+    "text": "tool",
+    "file": "./docs/cli/headless.md",
+    "line": 168
+  },
+  {
+    "text": "gemini-2.5-flash",
+    "file": "./docs/cli/headless.md",
+    "line": 171
+  },
+  {
+    "text": "api",
+    "file": "./docs/cli/headless.md",
+    "line": 172
+  },
+  {
+    "text": "totalRequests",
+    "file": "./docs/cli/headless.md",
+    "line": 173
+  },
+  {
+    "text": "totalErrors",
+    "file": "./docs/cli/headless.md",
+    "line": 174
+  },
+  {
+    "text": "totalLatencyMs",
+    "file": "./docs/cli/headless.md",
+    "line": 175
+  },
+  {
+    "text": "tokens",
+    "file": "./docs/cli/headless.md",
+    "line": 177
+  },
+  {
+    "text": "prompt",
+    "file": "./docs/cli/headless.md",
+    "line": 178
+  },
+  {
+    "text": "candidates",
+    "file": "./docs/cli/headless.md",
+    "line": 179
+  },
+  {
+    "text": "total",
+    "file": "./docs/cli/headless.md",
+    "line": 180
+  },
+  {
+    "text": "cached",
+    "file": "./docs/cli/headless.md",
+    "line": 181
+  },
+  {
+    "text": "thoughts",
+    "file": "./docs/cli/headless.md",
+    "line": 182
+  },
+  {
+    "text": "tool",
+    "file": "./docs/cli/headless.md",
+    "line": 183
+  },
+  {
+    "text": "tools",
+    "file": "./docs/cli/headless.md",
+    "line": 187
+  },
+  {
+    "text": "totalCalls",
+    "file": "./docs/cli/headless.md",
+    "line": 188
+  },
+  {
+    "text": "totalSuccess",
+    "file": "./docs/cli/headless.md",
+    "line": 189
+  },
+  {
+    "text": "totalFail",
+    "file": "./docs/cli/headless.md",
+    "line": 190
+  },
+  {
+    "text": "totalDurationMs",
+    "file": "./docs/cli/headless.md",
+    "line": 191
+  },
+  {
+    "text": "totalDecisions",
+    "file": "./docs/cli/headless.md",
+    "line": 192
+  },
+  {
+    "text": "accept",
+    "file": "./docs/cli/headless.md",
+    "line": 193
+  },
+  {
+    "text": "reject",
+    "file": "./docs/cli/headless.md",
+    "line": 194
+  },
+  {
+    "text": "modify",
+    "file": "./docs/cli/headless.md",
+    "line": 195
+  },
+  {
+    "text": "auto_accept",
+    "file": "./docs/cli/headless.md",
+    "line": 196
+  },
+  {
+    "text": "byName",
+    "file": "./docs/cli/headless.md",
+    "line": 198
+  },
+  {
+    "text": "google_web_search",
+    "file": "./docs/cli/headless.md",
+    "line": 199
+  },
+  {
+    "text": "count",
+    "file": "./docs/cli/headless.md",
+    "line": 200
+  },
+  {
+    "text": "success",
+    "file": "./docs/cli/headless.md",
+    "line": 201
+  },
+  {
+    "text": "fail",
+    "file": "./docs/cli/headless.md",
+    "line": 202
+  },
+  {
+    "text": "durationMs",
+    "file": "./docs/cli/headless.md",
+    "line": 203
+  },
+  {
+    "text": "decisions",
+    "file": "./docs/cli/headless.md",
+    "line": 204
+  },
+  {
+    "text": "accept",
+    "file": "./docs/cli/headless.md",
+    "line": 205
+  },
+  {
+    "text": "reject",
+    "file": "./docs/cli/headless.md",
+    "line": 206
+  },
+  {
+    "text": "modify",
+    "file": "./docs/cli/headless.md",
+    "line": 207
+  },
+  {
+    "text": "auto_accept",
+    "file": "./docs/cli/headless.md",
+    "line": 208
+  },
+  {
+    "text": "files",
+    "file": "./docs/cli/headless.md",
+    "line": 213
+  },
+  {
+    "text": "totalLinesAdded",
+    "file": "./docs/cli/headless.md",
+    "line": 214
+  },
+  {
+    "text": "totalLinesRemoved",
+    "file": "./docs/cli/headless.md",
+    "line": 215
+  },
+  {
+    "text": "What is 2+2?",
+    "file": "./docs/cli/headless.md",
+    "line": 255
+  },
+  {
+    "text": "Analyze this code",
+    "file": "./docs/cli/headless.md",
+    "line": 258
+  },
+  {
+    "text": "List files",
+    "file": "./docs/cli/headless.md",
+    "line": 261
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "init",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "timestamp",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "2025-10-10T12:00:00.000Z",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "session_id",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "abc123",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "model",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "gemini-2.0-flash-exp",
+    "file": "./docs/cli/headless.md",
+    "line": 269
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "message",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "role",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "user",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "content",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "List files in current directory",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "timestamp",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "2025-10-10T12:00:01.000Z",
+    "file": "./docs/cli/headless.md",
+    "line": 270
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "tool_use",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "tool_name",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "Bash",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "tool_id",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "bash-123",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "parameters",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "command",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "ls -la",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "timestamp",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "2025-10-10T12:00:02.000Z",
+    "file": "./docs/cli/headless.md",
+    "line": 271
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "tool_result",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "tool_id",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "bash-123",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "status",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "success",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "output",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "file1.txt\\nfile2.txt",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "timestamp",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "2025-10-10T12:00:03.000Z",
+    "file": "./docs/cli/headless.md",
+    "line": 272
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "message",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "role",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "assistant",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "content",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "Here are the files...",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "delta",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "timestamp",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "2025-10-10T12:00:04.000Z",
+    "file": "./docs/cli/headless.md",
+    "line": 273
+  },
+  {
+    "text": "type",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "result",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "status",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "success",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "stats",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "total_tokens",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "input_tokens",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "output_tokens",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "duration_ms",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "tool_calls",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "timestamp",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "2025-10-10T12:00:05.000Z",
+    "file": "./docs/cli/headless.md",
+    "line": 274
+  },
+  {
+    "text": "Explain Docker",
+    "file": "./docs/cli/headless.md",
+    "line": 283
+  },
+  {
+    "text": "Explain Docker",
+    "file": "./docs/cli/headless.md",
+    "line": 284
+  },
+  {
+    "text": "Add more details",
+    "file": "./docs/cli/headless.md",
+    "line": 287
+  },
+  {
+    "text": "What is Kubernetes?",
+    "file": "./docs/cli/headless.md",
+    "line": 290
+  },
+  {
+    "text": "Explain microservices",
+    "file": "./docs/cli/headless.md",
+    "line": 291
+  },
+  {
+    "text": "List programming languages",
+    "file": "./docs/cli/headless.md",
+    "line": 292
+  },
+  {
+    "text": "python",
+    "file": "./docs/cli/headless.md",
+    "line": 292
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 301
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 302
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 303
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 304
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 305
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 306
+  },
+  {
+    "text": "query",
+    "file": "./docs/cli/headless.md",
+    "line": 307
+  },
+  {
+    "text": "Review this authentication code for security issues",
+    "file": "./docs/cli/headless.md",
+    "line": 318
+  },
+  {
+    "text": "Write a concise commit message for these changes",
+    "file": "./docs/cli/headless.md",
+    "line": 324
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 325
+  },
+  {
+    "text": "Generate OpenAPI spec for these routes",
+    "file": "./docs/cli/headless.md",
+    "line": 331
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 332
+  },
+  {
+    "text": "Analyzing $file...",
+    "file": "./docs/cli/headless.md",
+    "line": 339
+  },
+  {
+    "text": "$file",
+    "file": "./docs/cli/headless.md",
+    "line": 340
+  },
+  {
+    "text": "Find potential bugs and suggest improvements",
+    "file": "./docs/cli/headless.md",
+    "line": 340
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 341
+  },
+  {
+    "text": "reports/$(basename ",
+    "file": "./docs/cli/headless.md",
+    "line": 341
+  },
+  {
+    "text": ").analysis",
+    "file": "./docs/cli/headless.md",
+    "line": 341
+  },
+  {
+    "text": "Completed analysis for $(basename ",
+    "file": "./docs/cli/headless.md",
+    "line": 342
+  },
+  {
+    "text": "Review these changes for bugs, security issues, and code quality",
+    "file": "./docs/cli/headless.md",
+    "line": 349
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 350
+  },
+  {
+    "text": "ERROR",
+    "file": "./docs/cli/headless.md",
+    "line": 356
+  },
+  {
+    "text": "Analyze these errors and suggest root cause and fixes",
+    "file": "./docs/cli/headless.md",
+    "line": 356
+  },
+  {
+    "text": "Generate release notes from these commits",
+    "file": "./docs/cli/headless.md",
+    "line": 362
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 363
+  },
+  {
+    "text": "$response",
+    "file": "./docs/cli/headless.md",
+    "line": 364
+  },
+  {
+    "text": "$response",
+    "file": "./docs/cli/headless.md",
+    "line": 365
+  },
+  {
+    "text": "Explain this database schema",
+    "file": "./docs/cli/headless.md",
+    "line": 371
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 372
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 373
+  },
+  {
+    "text": ") | if . == ",
+    "file": "./docs/cli/headless.md",
+    "line": 373
+  },
+  {
+    "text": " then ",
+    "file": "./docs/cli/headless.md",
+    "line": 373
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 374
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 375
+  },
+  {
+    "text": ") | if . == ",
+    "file": "./docs/cli/headless.md",
+    "line": 375
+  },
+  {
+    "text": " then ",
+    "file": "./docs/cli/headless.md",
+    "line": 375
+  },
+  {
+    "text": "$(date): $total_tokens tokens, $tool_calls tool calls ($tools_used) used with models: $models_used",
+    "file": "./docs/cli/headless.md",
+    "line": 376
+  },
+  {
+    "text": "$result",
+    "file": "./docs/cli/headless.md",
+    "line": 377
+  },
+  {
+    "text": "Recent usage trends:",
+    "file": "./docs/cli/headless.md",
+    "line": 378
+  },
+  {
+    "text": "experimental.useModelRouter",
+    "file": "./docs/cli/model-routing.md",
+    "line": 33
+  },
+  {
+    "text": "experimental.useModelRouter",
+    "file": "./docs/cli/model-routing.md",
+    "line": 36
+  },
+  {
+    "text": "auto",
+    "file": "./docs/cli/model-routing.md",
+    "line": 54
+  },
+  {
+    "text": "gcp",
+    "file": "./docs/cli/telemetry.md",
+    "line": 80
+  },
+  {
+    "text": "local",
+    "file": "./docs/cli/telemetry.md",
+    "line": 80
+  },
+  {
+    "text": "local",
+    "file": "./docs/cli/telemetry.md",
+    "line": 80
+  },
+  {
+    "text": "grpc",
+    "file": "./docs/cli/telemetry.md",
+    "line": 82
+  },
+  {
+    "text": "http",
+    "file": "./docs/cli/telemetry.md",
+    "line": 82
+  },
+  {
+    "text": "grpc",
+    "file": "./docs/cli/telemetry.md",
+    "line": 82
+  },
+  {
+    "text": "your-telemetry-project-id",
+    "file": "./docs/cli/telemetry.md",
+    "line": 103
+  },
+  {
+    "text": "your-project-id",
+    "file": "./docs/cli/telemetry.md",
+    "line": 107
+  },
+  {
+    "text": "/path/to/your/service-account.json",
+    "file": "./docs/cli/telemetry.md",
+    "line": 117
+  },
+  {
+    "text": "$OTLP_GOOGLE_CLOUD_PROJECT",
+    "file": "./docs/cli/telemetry.md",
+    "line": 130
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/telemetry.md",
+    "line": 140
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/telemetry.md",
+    "line": 141
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/telemetry.md",
+    "line": 142
+  },
+  {
+    "text": "gcp",
+    "file": "./docs/cli/telemetry.md",
+    "line": 142
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/telemetry.md",
+    "line": 161
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/telemetry.md",
+    "line": 162
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/telemetry.md",
+    "line": 163
+  },
+  {
+    "text": "gcp",
+    "file": "./docs/cli/telemetry.md",
+    "line": 163
+  },
+  {
+    "text": "useCollector",
+    "file": "./docs/cli/telemetry.md",
+    "line": 164
+  },
+  {
+    "text": "telemetry",
+    "file": "./docs/cli/telemetry.md",
+    "line": 196
+  },
+  {
+    "text": "enabled",
+    "file": "./docs/cli/telemetry.md",
+    "line": 197
+  },
+  {
+    "text": "target",
+    "file": "./docs/cli/telemetry.md",
+    "line": 198
+  },
+  {
+    "text": "local",
+    "file": "./docs/cli/telemetry.md",
+    "line": 198
+  },
+  {
+    "text": "otlpEndpoint",
+    "file": "./docs/cli/telemetry.md",
+    "line": 199
+  },
+  {
+    "text": "outfile",
+    "file": "./docs/cli/telemetry.md",
+    "line": 200
+  },
+  {
+    "text": ".gemini/telemetry.log",
+    "file": "./docs/cli/telemetry.md",
+    "line": 200
+  },
+  {
+    "text": "text",
+    "file": "./docs/cli/telemetry.md",
+    "line": 260
+  },
+  {
+    "text": "json",
+    "file": "./docs/cli/telemetry.md",
+    "line": 260
+  },
+  {
+    "text": "stream-json",
+    "file": "./docs/cli/telemetry.md",
+    "line": 260
+  },
+  {
+    "text": "accept",
+    "file": "./docs/cli/telemetry.md",
+    "line": 279
+  },
+  {
+    "text": "reject",
+    "file": "./docs/cli/telemetry.md",
+    "line": 279
+  },
+  {
+    "text": "auto_accept",
+    "file": "./docs/cli/telemetry.md",
+    "line": 279
+  },
+  {
+    "text": "modify",
+    "file": "./docs/cli/telemetry.md",
+    "line": 279
+  },
+  {
+    "text": "native",
+    "file": "./docs/cli/telemetry.md",
+    "line": 283
+  },
+  {
+    "text": "mcp",
+    "file": "./docs/cli/telemetry.md",
+    "line": 283
+  },
+  {
+    "text": "success",
+    "file": "./docs/cli/telemetry.md",
+    "line": 305
+  },
+  {
+    "text": "failure",
+    "file": "./docs/cli/telemetry.md",
+    "line": 305
+  },
+  {
+    "text": "create",
+    "file": "./docs/cli/telemetry.md",
+    "line": 334
+  },
+  {
+    "text": "read",
+    "file": "./docs/cli/telemetry.md",
+    "line": 334
+  },
+  {
+    "text": "update",
+    "file": "./docs/cli/telemetry.md",
+    "line": 334
+  },
+  {
+    "text": "success",
+    "file": "./docs/cli/telemetry.md",
+    "line": 388
+  },
+  {
+    "text": "error",
+    "file": "./docs/cli/telemetry.md",
+    "line": 388
+  },
+  {
+    "text": "private_ip",
+    "file": "./docs/cli/telemetry.md",
+    "line": 455
+  },
+  {
+    "text": "primary_failed",
+    "file": "./docs/cli/telemetry.md",
+    "line": 455
+  },
+  {
+    "text": "accept",
+    "file": "./docs/cli/telemetry.md",
+    "line": 545
+  },
+  {
+    "text": "reject",
+    "file": "./docs/cli/telemetry.md",
+    "line": 545
+  },
+  {
+    "text": "modify",
+    "file": "./docs/cli/telemetry.md",
+    "line": 545
+  },
+  {
+    "text": "auto_accept",
+    "file": "./docs/cli/telemetry.md",
+    "line": 545
+  },
+  {
+    "text": "mcp",
+    "file": "./docs/cli/telemetry.md",
+    "line": 547
+  },
+  {
+    "text": "native",
+    "file": "./docs/cli/telemetry.md",
+    "line": 547
+  },
+  {
+    "text": "input",
+    "file": "./docs/cli/telemetry.md",
+    "line": 576
+  },
+  {
+    "text": "output",
+    "file": "./docs/cli/telemetry.md",
+    "line": 576
+  },
+  {
+    "text": "thought",
+    "file": "./docs/cli/telemetry.md",
+    "line": 576
+  },
+  {
+    "text": "cache",
+    "file": "./docs/cli/telemetry.md",
+    "line": 576
+  },
+  {
+    "text": "tool",
+    "file": "./docs/cli/telemetry.md",
+    "line": 576
+  },
+  {
+    "text": "create",
+    "file": "./docs/cli/telemetry.md",
+    "line": 585
+  },
+  {
+    "text": "read",
+    "file": "./docs/cli/telemetry.md",
+    "line": 585
+  },
+  {
+    "text": "update",
+    "file": "./docs/cli/telemetry.md",
+    "line": 585
+  },
+  {
+    "text": "added",
+    "file": "./docs/cli/telemetry.md",
+    "line": 595
+  },
+  {
+    "text": "removed",
+    "file": "./docs/cli/telemetry.md",
+    "line": 595
+  },
+  {
+    "text": "heap_used",
+    "file": "./docs/cli/telemetry.md",
+    "line": 672
+  },
+  {
+    "text": "heap_total",
+    "file": "./docs/cli/telemetry.md",
+    "line": 672
+  },
+  {
+    "text": "external",
+    "file": "./docs/cli/telemetry.md",
+    "line": 672
+  },
+  {
+    "text": "rss",
+    "file": "./docs/cli/telemetry.md",
+    "line": 672
+  },
+  {
+    "text": "validation",
+    "file": "./docs/cli/telemetry.md",
+    "line": 685
+  },
+  {
+    "text": "preparation",
+    "file": "./docs/cli/telemetry.md",
+    "line": 685
+  },
+  {
+    "text": "execution",
+    "file": "./docs/cli/telemetry.md",
+    "line": 685
+  },
+  {
+    "text": "result_processing",
+    "file": "./docs/cli/telemetry.md",
+    "line": 685
+  },
+  {
+    "text": "request_preparation",
+    "file": "./docs/cli/telemetry.md",
+    "line": 690
+  },
+  {
+    "text": "network_latency",
+    "file": "./docs/cli/telemetry.md",
+    "line": 690
+  },
+  {
+    "text": "response_processing",
+    "file": "./docs/cli/telemetry.md",
+    "line": 690
+  },
+  {
+    "text": "token_processing",
+    "file": "./docs/cli/telemetry.md",
+    "line": 691
+  },
+  {
+    "text": "low",
+    "file": "./docs/cli/telemetry.md",
+    "line": 709
+  },
+  {
+    "text": "medium",
+    "file": "./docs/cli/telemetry.md",
+    "line": 709
+  },
+  {
+    "text": "high",
+    "file": "./docs/cli/telemetry.md",
+    "line": 709
+  },
+  {
+    "text": "low",
+    "file": "./docs/cli/telemetry.md",
+    "line": 717
+  },
+  {
+    "text": "medium",
+    "file": "./docs/cli/telemetry.md",
+    "line": 717
+  },
+  {
+    "text": "high",
+    "file": "./docs/cli/telemetry.md",
+    "line": 717
+  },
+  {
+    "text": "generate_content",
+    "file": "./docs/cli/telemetry.md",
+    "line": 738
+  },
+  {
+    "text": "chat",
+    "file": "./docs/cli/telemetry.md",
+    "line": 738
+  },
+  {
+    "text": "gcp.gen_ai",
+    "file": "./docs/cli/telemetry.md",
+    "line": 739
+  },
+  {
+    "text": "gcp.vertex_ai",
+    "file": "./docs/cli/telemetry.md",
+    "line": 740
+  },
+  {
+    "text": "input",
+    "file": "./docs/cli/telemetry.md",
+    "line": 741
+  },
+  {
+    "text": "output",
+    "file": "./docs/cli/telemetry.md",
+    "line": 741
+  },
+  {
+    "text": "generate_content",
+    "file": "./docs/cli/telemetry.md",
+    "line": 753
+  },
+  {
+    "text": "chat",
+    "file": "./docs/cli/telemetry.md",
+    "line": 753
+  },
+  {
+    "text": "gcp.gen_ai",
+    "file": "./docs/cli/telemetry.md",
+    "line": 754
+  },
+  {
+    "text": "gcp.vertex_ai",
+    "file": "./docs/cli/telemetry.md",
+    "line": 755
+  },
+  {
+    "text": "Promote Release",
+    "file": "./docs/releases.md",
+    "line": 71
+  },
+  {
+    "text": "hotfix/v0.6.0-preview.2/preview/cherry-pick-abc1234",
+    "file": "./docs/releases.md",
+    "line": 316
+  },
+  {
+    "text": "hotfix/v0.5.1/stable/cherry-pick-abc1234",
+    "file": "./docs/releases.md",
+    "line": 323
+  },
+  {
+    "text": "hotfix/v0.6.0-preview.2/preview/cherry-pick-abc1234",
+    "file": "./docs/releases.md",
+    "line": 330
+  },
+  {
+    "text": "preview",
+    "file": "./docs/releases.md",
+    "line": 357
+  },
+  {
+    "text": "release/v0.6.0-preview.2",
+    "file": "./docs/releases.md",
+    "line": 360
+  },
+  {
+    "text": "Run workflow",
+    "file": "./docs/releases.md",
+    "line": 396
+  },
+  {
+    "text": "Run workflow",
+    "file": "./docs/releases.md",
+    "line": 398
+  },
+  {
+    "text": "registry",
+    "file": "./docs/releases.md",
+    "line": 413
+  },
+  {
+    "text": "thename",
+    "file": "./docs/releases.md",
+    "line": 413
+  },
+  {
+    "text": "Operation not permitted",
+    "file": "./docs/troubleshooting.md",
+    "line": 61
+  },
+  {
+    "text": "Permission denied",
+    "file": "./docs/troubleshooting.md",
+    "line": 61
+  },
+  {
+    "text": "CI",
+    "file": "./docs/troubleshooting.md",
+    "line": 69
+  },
+  {
+    "text": "Gemini CLI: Run",
+    "file": "./packages/vscode-ide-companion/README.md",
+    "line": 21
+  }
+]

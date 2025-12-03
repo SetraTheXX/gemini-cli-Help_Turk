@@ -1,0 +1,31 @@
+text,file,line
+"model",./packages/cli/src/ui/commands/statsCommand.test.ts,47
+"tools",./packages/cli/src/ui/commands/statsCommand.test.ts,63
+"should add an info message and call 'open' in a non-sandbox environment",./packages/cli/src/ui/commands/extensionsCommand.test.ts,375
+"Extensions are not yet loaded, can't restart yet",./packages/cli/src/ui/commands/extensionsCommand.test.ts,673
+"Extensions are not yet loaded, can't restart yet",./packages/cli/src/ui/commands/extensionsCommand.ts,134
+"user",./packages/cli/src/ui/commands/extensionsCommand.ts,335
+"workspace",./packages/cli/src/ui/commands/extensionsCommand.ts,335
+"session",./packages/cli/src/ui/commands/extensionsCommand.ts,335
+"${name}",./packages/cli/src/ui/commands/extensionsCommand.ts,373
+"${scope}",./packages/cli/src/ui/commands/extensionsCommand.ts,373
+"${name}",./packages/cli/src/ui/commands/extensionsCommand.ts,390
+"${scope}",./packages/cli/src/ui/commands/extensionsCommand.ts,390
+"${args.trim()}",./packages/cli/src/ui/commands/memoryCommand.ts,58
+"${url}",./packages/cli/src/ui/commands/setupGithubCommand.ts,49
+"Successfully downloaded ${GITHUB_WORKFLOW_PATHS.length} workflows and updated .gitignore. Follow the steps in ${readmeUrl} (skipping the /setup-github step) to complete setup.",./packages/cli/src/ui/commands/setupGithubCommand.ts,195
+"name",./packages/cli/src/ui/commands/chatCommand.test.ts,669
+"my-function",./packages/cli/src/ui/commands/chatCommand.test.ts,669
+"args",./packages/cli/src/ui/commands/chatCommand.test.ts,670
+"arg1",./packages/cli/src/ui/commands/chatCommand.test.ts,671
+"value1",./packages/cli/src/ui/commands/chatCommand.test.ts,671
+"name",./packages/cli/src/ui/commands/chatCommand.test.ts,683
+"my-function",./packages/cli/src/ui/commands/chatCommand.test.ts,683
+"response",./packages/cli/src/ui/commands/chatCommand.test.ts,684
+"result",./packages/cli/src/ui/commands/chatCommand.test.ts,685
+"success",./packages/cli/src/ui/commands/chatCommand.test.ts,685
+"${fact}",./packages/cli/src/ui/commands/memoryCommand.test.ts,142
+"should add an info message and call 'open' in a non-sandbox environment",./packages/cli/src/ui/commands/docsCommand.test.ts,33
+"should not open browser for 'sandbox-exec'",./packages/cli/src/ui/commands/docsCommand.test.ts,76
+"No tools available",./packages/cli/src/ui/commands/toolsCommand.test.ts,52
+"desc",./packages/cli/src/ui/commands/toolsCommand.test.ts,97

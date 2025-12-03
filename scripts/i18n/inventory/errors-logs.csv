@@ -1,0 +1,944 @@
+text,file,line
+"vitest",./packages/a2a-server/vitest.config.ts,7
+"${outcomeString}",./packages/a2a-server/src/agent/task.ts,709
+"${completedToolCall.request.name}",./packages/a2a-server/src/agent/task.ts,840
+"Hello!",./packages/a2a-server/src/http/app.ts,62
+"command",./packages/a2a-server/src/http/app.ts,151
+"args",./packages/a2a-server/src/http/app.ts,157
+"vitest",./packages/cli/vitest.config.ts,7
+"port",./packages/test-utils/src/file-system-test-helpers.ts,33
+"column",./packages/cli/src/ui/privacy/CloudPaidPrivacyNotice.tsx,28
+"column",./packages/cli/src/ui/privacy/GeminiPrivacyNotice.tsx,26
+"round",./packages/cli/src/ui/privacy/PrivacyNotice.tsx,39
+"column",./packages/cli/src/ui/privacy/PrivacyNotice.tsx,39
+"column",./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx,45
+"column",./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx,56
+"column",./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx,76
+"column",./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx,107
+"${payload.message}",./packages/cli/src/ui/AppContainer.tsx,1234
+"No, don't ask again",./packages/cli/src/ui/IdeIntegrationNudge.tsx,64
+"No, don't ask again",./packages/cli/src/ui/IdeIntegrationNudge.tsx,69
+"column",./packages/cli/src/ui/IdeIntegrationNudge.tsx,83
+"round",./packages/cli/src/ui/IdeIntegrationNudge.tsx,84
+"column",./packages/cli/src/ui/IdeIntegrationNudge.tsx,90
+"${name}",./packages/cli/src/commands/mcp/remove.ts,27
+"${name}",./packages/cli/src/commands/mcp/remove.ts,35
+"value",./packages/cli/src/ui/contexts/SessionContext.tsx,167
+"${name}",./packages/cli/src/commands/mcp/add.ts,120
+"${name}",./packages/cli/src/commands/mcp/add.ts,129
+"${name}",./packages/cli/src/commands/mcp/add.ts,132
+"X-Api-Key: abc123",./packages/cli/src/commands/mcp/add.ts,181
+"Authorization: Bearer abc123",./packages/cli/src/commands/mcp/add.ts,181
+"${name}",./packages/cli/src/commands/extensions/uninstall.ts,34
+"${name}",./packages/cli/src/commands/extensions/uninstall.ts,42
+"${info.name}",./packages/cli/src/commands/extensions/update.ts,29
+"${args.name}",./packages/cli/src/commands/extensions/update.ts,48
+"${args.name}",./packages/cli/src/commands/extensions/update.ts,53
+"${args.name}",./packages/cli/src/commands/extensions/update.ts,62
+"${args.name}",./packages/cli/src/commands/extensions/update.ts,78
+"${args.name}",./packages/cli/src/commands/extensions/update.ts,81
+"${args.template}",./packages/cli/src/commands/extensions/new.ts,55
+"gemini extensions link ${args.path}",./packages/cli/src/commands/extensions/new.ts,71
+"${args.name}",./packages/cli/src/commands/extensions/enable.ts,41
+"${args.scope}",./packages/cli/src/commands/extensions/enable.ts,41
+"${args.name}",./packages/cli/src/commands/extensions/enable.ts,45
+"Extensions are not yet loaded, can't restart yet",./packages/cli/src/ui/commands/extensionsCommand.ts,134
+"user",./packages/cli/src/ui/commands/extensionsCommand.ts,335
+"workspace",./packages/cli/src/ui/commands/extensionsCommand.ts,335
+"session",./packages/cli/src/ui/commands/extensionsCommand.ts,335
+"${name}",./packages/cli/src/ui/commands/extensionsCommand.ts,373
+"${scope}",./packages/cli/src/ui/commands/extensionsCommand.ts,373
+"${name}",./packages/cli/src/ui/commands/extensionsCommand.ts,390
+"${scope}",./packages/cli/src/ui/commands/extensionsCommand.ts,390
+"${args.trim()}",./packages/cli/src/ui/commands/memoryCommand.ts,58
+"${url}",./packages/cli/src/ui/commands/setupGithubCommand.ts,49
+"Successfully downloaded ${GITHUB_WORKFLOW_PATHS.length} workflows and updated .gitignore. Follow the steps in ${readmeUrl} (skipping the /setup-github step) to complete setup.",./packages/cli/src/ui/commands/setupGithubCommand.ts,195
+"${extension.name}",./packages/cli/src/commands/extensions/link.ts,40
+"round",./packages/cli/src/ui/auth/ApiAuthDialog.tsx,49
+"column",./packages/cli/src/ui/auth/ApiAuthDialog.tsx,51
+"column",./packages/cli/src/ui/auth/ApiAuthDialog.tsx,58
+"row",./packages/cli/src/ui/auth/ApiAuthDialog.tsx,70
+"round",./packages/cli/src/ui/auth/ApiAuthDialog.tsx,72
+"Paste your API key here",./packages/cli/src/ui/auth/ApiAuthDialog.tsx,81
+"round",./packages/cli/src/ui/auth/AuthDialog.tsx,174
+"row",./packages/cli/src/ui/auth/AuthDialog.tsx,176
+"flex-start",./packages/cli/src/ui/auth/AuthDialog.tsx,179
+"column",./packages/cli/src/ui/auth/AuthDialog.tsx,182
+"vitest/globals",./packages/cli/src/test-utils/customMatchers.ts,7
+"${l.content}",./packages/cli/src/test-utils/customMatchers.ts,46
+"column",./packages/cli/src/test-utils/render.tsx,192
+"Gemini API Key",./packages/cli/src/ui/auth/useAuth.ts,75
+"${defaultAuthType}",./packages/cli/src/ui/auth/useAuth.ts,103
+"${authType}",./packages/cli/src/ui/auth/useAuth.ts,112
+"round",./packages/cli/src/ui/auth/AuthInProgress.tsx,43
+"column",./packages/cli/src/ui/auth/AuthInProgress.tsx,45
+"dots",./packages/cli/src/ui/auth/AuthInProgress.tsx,56
+"/memory add some data",./packages/cli/src/utils/commands.ts,19
+"/help",./packages/cli/src/utils/commands.ts,19
+"Agent powering down. Goodbye!",./packages/cli/src/ui/components/SessionSummaryDisplay.tsx,17
+"column",./packages/cli/src/ui/components/Tips.tsx,19
+"tr_TR.UTF-8",./packages/cli/src/utils/locale.ts,15
+"tr-TR",./packages/cli/src/utils/locale.ts,15
+"en_US",./packages/cli/src/utils/locale.ts,16
+"en-US",./packages/cli/src/utils/locale.ts,16
+"fr",./packages/cli/src/utils/locale.ts,17
+"fr",./packages/cli/src/utils/locale.ts,17
+"round",./packages/cli/src/ui/components/ConsentPrompt.tsx,25
+"column",./packages/cli/src/ui/components/ConsentPrompt.tsx,27
+"column",./packages/cli/src/ui/components/MainContent.tsx,54
+"app-header",./packages/cli/src/ui/components/MainContent.tsx,96
+"app-header",./packages/cli/src/ui/components/MainContent.tsx,145
+" flexDirection=",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,53
+"column",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,55
+"round",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,56
+"column",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,61
+"Loop detected:",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,64
+"truncate-end",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,69
+"column",./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx,77
+"column",./packages/cli/src/ui/components/ContextSummaryDisplay.tsx,90
+" or ",./packages/cli/src/utils/sandbox.ts,60
+" or ",./packages/cli/src/utils/sandbox.ts,61
+"$PATH${pathSuffix}",./packages/cli/src/utils/sandbox.ts,141
+"$PYTHONPATH${pythonPathSuffix}",./packages/cli/src/utils/sandbox.ts,157
+"${nodeOptions}",./packages/cli/src/utils/sandbox.ts,275
+"{{.Names}}",./packages/cli/src/utils/sandbox.ts,569
+"${allNodeOptions}",./packages/cli/src/utils/sandbox.ts,700
+"round",./packages/cli/src/ui/components/ProQuotaDialog.tsx,39
+"column",./packages/cli/src/ui/components/ProQuotaDialog.tsx,39
+"column",./packages/cli/src/ui/components/AnsiOutput.tsx,30
+"truncate",./packages/cli/src/ui/components/AnsiOutput.tsx,32
+"git pull",./packages/cli/src/utils/installationInfo.ts,60
+"^gemini-cli$",./packages/cli/src/utils/installationInfo.ts,84
+"brew upgrade",./packages/cli/src/utils/installationInfo.ts,91
+"Locally installed. Please update via your project's package.json.",./packages/cli/src/utils/installationInfo.ts,162
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,42
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,45
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,48
+"round",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,65
+"round",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,98
+"column",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,100
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,117
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,122
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,127
+"single",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,136
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,162
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,172
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,182
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,192
+"single",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,199
+"flex-end",./packages/cli/src/ui/components/ToolStatsDisplay.tsx,214
+"Token: $API_KEY",./packages/cli/src/utils/envVarResolver.ts,16
+"Token: secret-123",./packages/cli/src/utils/envVarResolver.ts,16
+"URL: ${BASE_URL}/api",./packages/cli/src/utils/envVarResolver.ts,17
+"URL: https://api.example.com/api",./packages/cli/src/utils/envVarResolver.ts,17
+"Missing: $UNDEFINED_VAR",./packages/cli/src/utils/envVarResolver.ts,18
+"Missing: $UNDEFINED_VAR",./packages/cli/src/utils/envVarResolver.ts,18
+"$HOST",./packages/cli/src/utils/envVarResolver.ts,48
+"${PORT}",./packages/cli/src/utils/envVarResolver.ts,49
+"$ENV",./packages/cli/src/utils/envVarResolver.ts,51
+"api",./packages/cli/src/utils/envVarResolver.ts,51
+"round",./packages/cli/src/ui/components/ModelDialog.tsx,90
+"column",./packages/cli/src/ui/components/ModelDialog.tsx,92
+"column",./packages/cli/src/ui/components/ModelDialog.tsx,105
+"column",./packages/cli/src/ui/components/ModelDialog.tsx,110
+"column",./packages/cli/src/ui/components/LoadingIndicator.tsx,47
+"truncate-end",./packages/cli/src/ui/components/LoadingIndicator.tsx,65
+"30d",./packages/cli/src/utils/sessionCleanup.ts,224
+"7d",./packages/cli/src/utils/sessionCleanup.ts,224
+"24h",./packages/cli/src/utils/sessionCleanup.ts,224
+"round",./packages/cli/src/ui/components/EditorSettingsDialog.tsx,132
+"row",./packages/cli/src/ui/components/EditorSettingsDialog.tsx,134
+"column",./packages/cli/src/ui/components/EditorSettingsDialog.tsx,138
+"column",./packages/cli/src/ui/components/EditorSettingsDialog.tsx,156
+"column",./packages/cli/src/ui/components/EditorSettingsDialog.tsx,175
+"column",./packages/cli/src/ui/components/EditorSettingsDialog.tsx,179
+"${sessionIndex}",./packages/cli/src/utils/sessions.ts,69
+"Don't trust",./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx,49
+"round",./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx,90
+"column",./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx,92
+"column",./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx,95
+"screenReader",./packages/cli/src/ui/components/Notifications.tsx,86
+"round",./packages/cli/src/ui/components/Notifications.tsx,93
+"column",./packages/cli/src/ui/components/Notifications.tsx,97
+"round",./packages/cli/src/ui/components/Notifications.tsx,108
+"truncate",./packages/cli/src/ui/components/shared/RadioButtonSelect.tsx,76
+"truncate",./packages/cli/src/ui/components/shared/RadioButtonSelect.tsx,84
+"row",./packages/cli/src/ui/components/shared/EnumSelector.tsx,63
+"center",./packages/cli/src/ui/components/shared/EnumSelector.tsx,63
+"column",./packages/cli/src/ui/components/shared/TextInput.tsx,78
+"column",./packages/cli/src/ui/components/shared/BaseSelectionList.tsx,92
+"flex-start",./packages/cli/src/ui/components/shared/BaseSelectionList.tsx,131
+"column",./packages/cli/src/ui/components/shared/ScopeSelector.tsx,41
+"truncate",./packages/cli/src/ui/components/shared/ScopeSelector.tsx,42
+"2 hours ago",./packages/cli/src/utils/sessionUtils.ts,78
+"3 days ago",./packages/cli/src/utils/sessionUtils.ts,78
+"${identifier}",./packages/cli/src/utils/sessionUtils.ts,257
+"latest",./packages/cli/src/utils/sessionUtils.ts,264
+"${resumeArg}",./packages/cli/src/utils/sessionUtils.ts,290
+"column",./packages/cli/src/ui/components/shared/ScrollableList.tsx,237
+"hidden",./packages/cli/src/ui/components/shared/ScrollableList.tsx,238
+"v1.2.3",./packages/cli/src/utils/gitUtils.ts,54
+"file not found",./packages/cli/src/utils/startupWarnings.ts,30
+"Error NO ENTry",./packages/cli/src/utils/startupWarnings.ts,33
+"${order}",./packages/cli/src/gemini.tsx,95
+"${defaultValue}",./packages/cli/src/gemini.tsx,95
+"${settings.merged.ui?.theme}",./packages/cli/src/gemini.tsx,312
+"handleInput",./packages/cli/src/ui/components/shared/text-buffer.ts,2268
+"vi",./packages/cli/src/ui/components/shared/text-buffer.ts,2273
+"${effectiveTheme}",./packages/cli/src/core/theme.ts,18
+"column",./packages/cli/src/ui/components/shared/Scrollable.tsx,148
+"scroll",./packages/cli/src/ui/components/shared/Scrollable.tsx,149
+"hidden",./packages/cli/src/ui/components/shared/Scrollable.tsx,150
+"column",./packages/cli/src/ui/components/shared/Scrollable.tsx,160
+"scroll",./packages/cli/src/ui/components/shared/VirtualizedList.tsx,477
+"hidden",./packages/cli/src/ui/components/shared/VirtualizedList.tsx,478
+"column",./packages/cli/src/ui/components/shared/VirtualizedList.tsx,483
+" flexDirection=",./packages/cli/src/ui/components/shared/VirtualizedList.tsx,486
+"cyan",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,89
+"truncate",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,89
+"yellow",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,94
+"column",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,187
+"truncate",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,189
+"truncate",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,196
+"row",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,231
+"row",./packages/cli/src/ui/components/shared/MaxSizedBox.tsx,285
+"auto",./packages/cli/src/zed-integration/zedIntegration.ts,52
+"${fc.name}",./packages/cli/src/zed-integration/zedIntegration.ts,395
+"${fc.name}",./packages/cli/src/zed-integration/zedIntegration.ts,443
+"column",./packages/cli/src/ui/components/shared/DescriptiveRadioButtonSelect.tsx,63
+"round",./packages/cli/src/ui/components/StickyHeader.tsx,33
+"column",./packages/cli/src/ui/components/StickyHeader.tsx,34
+"single",./packages/cli/src/ui/components/StickyHeader.tsx,48
+"round",./packages/cli/src/ui/components/StickyHeader.tsx,58
+"column",./packages/cli/src/ui/components/QuittingDisplay.tsx,23
+"round",./packages/cli/src/ui/components/AboutBox.tsx,32
+"column",./packages/cli/src/ui/components/AboutBox.tsx,34
+"row",./packages/cli/src/ui/components/AboutBox.tsx,44
+"row",./packages/cli/src/ui/components/AboutBox.tsx,55
+"row",./packages/cli/src/ui/components/AboutBox.tsx,66
+"row",./packages/cli/src/ui/components/AboutBox.tsx,76
+"row",./packages/cli/src/ui/components/AboutBox.tsx,86
+"row",./packages/cli/src/ui/components/AboutBox.tsx,96
+"row",./packages/cli/src/ui/components/AboutBox.tsx,109
+"row",./packages/cli/src/ui/components/AboutBox.tsx,121
+"column",./packages/cli/src/ui/components/QueuedMessageDisplay.tsx,23
+"truncate",./packages/cli/src/ui/components/QueuedMessageDisplay.tsx,34
+"column",./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx,54
+"round",./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx,56
+"hidden",./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx,63
+"row",./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx,98
+"wrap",./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx,100
+"column",./packages/cli/src/ui/components/AppHeader.tsx,24
+"round",./packages/cli/src/ui/components/UpdateNotification.tsx,16
+"${sanitizedConfig.name}",./packages/cli/src/config/extensions/consent.ts,110
+"${extensionConfig.name}",./packages/cli/src/config/extensions/consent.ts,160
+"column",./packages/cli/src/ui/components/views/ToolsList.tsx,24
+"row",./packages/cli/src/ui/components/views/ToolsList.tsx,31
+"column",./packages/cli/src/ui/components/views/ToolsList.tsx,33
+"column",./packages/cli/src/ui/components/views/ChatList.tsx,22
+"row",./packages/cli/src/ui/components/views/ChatList.tsx,34
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,47
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,61
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,63
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,149
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,176
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,192
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,204
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,218
+"column",./packages/cli/src/ui/components/views/McpStatus.tsx,221
+"/owner/repo",./packages/cli/src/config/extensions/github.ts,99
+"owner/repo",./packages/cli/src/config/extensions/github.ts,107
+"latest",./packages/cli/src/config/extensions/github.ts,132
+"${extension.name}",./packages/cli/src/config/extensions/github.ts,165
+"${lsRemoteOutput}",./packages/cli/src/config/extensions/github.ts,212
+"source",./packages/cli/src/config/extensions/github.ts,223
+"${installMetadata.source}",./packages/cli/src/config/extensions/github.ts,251
+"column",./packages/cli/src/ui/components/views/ExtensionsList.tsx,25
+"column",./packages/cli/src/ui/components/views/ExtensionsList.tsx,27
+"cyan",./packages/cli/src/ui/components/views/ExtensionsList.tsx,64
+"column",./packages/cli/src/ui/components/DialogManager.tsx,110
+"column",./packages/cli/src/ui/components/DialogManager.tsx,131
+"column",./packages/cli/src/ui/components/DialogManager.tsx,155
+"column",./packages/cli/src/ui/components/DialogManager.tsx,167
+"column",./packages/cli/src/ui/components/DialogManager.tsx,180
+"row",./packages/cli/src/ui/components/Footer.tsx,78
+"center",./packages/cli/src/ui/components/Footer.tsx,79
+"center",./packages/cli/src/ui/components/Footer.tsx,114
+"center",./packages/cli/src/ui/components/Footer.tsx,115
+"flex",./packages/cli/src/ui/components/Footer.tsx,116
+"green",./packages/cli/src/ui/components/Footer.tsx,122
+"center",./packages/cli/src/ui/components/Footer.tsx,145
+"flex-end",./packages/cli/src/ui/components/Footer.tsx,145
+"center",./packages/cli/src/ui/components/Footer.tsx,146
+"center",./packages/cli/src/ui/components/Footer.tsx,162
+"row",./packages/cli/src/ui/components/Footer.tsx,164
+"row",./packages/cli/src/ui/components/Footer.tsx,176
+"@path file",./packages/cli/src/config/config.ts,317
+"disableYolo",./packages/cli/src/config/config.ts,481
+"default",./packages/cli/src/config/config.ts,496
+"gutter",./packages/cli/src/ui/components/StatsDisplay.tsx,31
+"column",./packages/cli/src/ui/components/StatsDisplay.tsx,64
+"column",./packages/cli/src/ui/components/StatsDisplay.tsx,83
+"flex-end",./packages/cli/src/ui/components/StatsDisplay.tsx,91
+"flex-end",./packages/cli/src/ui/components/StatsDisplay.tsx,96
+"flex-end",./packages/cli/src/ui/components/StatsDisplay.tsx,101
+"round",./packages/cli/src/ui/components/StatsDisplay.tsx,109
+"flex-end",./packages/cli/src/ui/components/StatsDisplay.tsx,124
+"flex-end",./packages/cli/src/ui/components/StatsDisplay.tsx,129
+"flex-end",./packages/cli/src/ui/components/StatsDisplay.tsx,134
+"column",./packages/cli/src/ui/components/StatsDisplay.tsx,142
+"round",./packages/cli/src/ui/components/StatsDisplay.tsx,199
+"column",./packages/cli/src/ui/components/StatsDisplay.tsx,201
+"Interaction Summary",./packages/cli/src/ui/components/StatsDisplay.tsx,208
+"Session ID:",./packages/cli/src/ui/components/StatsDisplay.tsx,209
+"Tool Calls:",./packages/cli/src/ui/components/StatsDisplay.tsx,212
+"Success Rate:",./packages/cli/src/ui/components/StatsDisplay.tsx,219
+"User Agreement:",./packages/cli/src/ui/components/StatsDisplay.tsx,223
+"Code Changes:",./packages/cli/src/ui/components/StatsDisplay.tsx,234
+"Performance",./packages/cli/src/ui/components/StatsDisplay.tsx,247
+"Wall Time:",./packages/cli/src/ui/components/StatsDisplay.tsx,248
+"Agent Active:",./packages/cli/src/ui/components/StatsDisplay.tsx,251
+"API Time:",./packages/cli/src/ui/components/StatsDisplay.tsx,256
+"Tool Time:",./packages/cli/src/ui/components/StatsDisplay.tsx,264
+"wrap",./packages/cli/src/ui/components/PrepareLabel.tsx,42
+"wrap",./packages/cli/src/ui/components/PrepareLabel.tsx,98
+"30d",./packages/cli/src/config/settings.ts,212
+"7d",./packages/cli/src/config/settings.ts,212
+"24h",./packages/cli/src/config/settings.ts,212
+"1w",./packages/cli/src/config/settings.ts,212
+"1d",./packages/cli/src/config/settings.ts,218
+"gcloud config set project",./packages/cli/src/config/settings.ts,524
+"true",./packages/cli/src/config/settings.ts,607
+"flex-start",./packages/cli/src/ui/components/Header.tsx,53
+"column",./packages/cli/src/ui/components/Header.tsx,56
+" flexDirection=",./packages/cli/src/ui/components/Header.tsx,60
+" justifyContent=",./packages/cli/src/ui/components/Header.tsx,60
+"trusted",./packages/cli/src/config/trustedFolders.ts,73
+"row",./packages/cli/src/ui/components/messages/CompressionMessage.tsx,59
+"dots",./packages/cli/src/ui/components/messages/CompressionMessage.tsx,62
+"row",./packages/cli/src/ui/components/messages/InfoMessage.tsx,28
+"column",./packages/cli/src/ui/components/messages/InfoMessage.tsx,32
+"wrap",./packages/cli/src/ui/components/messages/InfoMessage.tsx,34
+"${mcpProps.toolName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,173
+"${mcpProps.serverName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,173
+"${mcpProps.toolName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,181
+"${mcpProps.serverName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,181
+"${mcpProps.toolName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,183
+"${mcpProps.serverName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,183
+"${mcpProps.serverName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,186
+"${mcpProps.serverName}",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,188
+"column",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,270
+"column",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,278
+"column",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,295
+"round",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,318
+"space-around",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,320
+"hidden",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,323
+"column",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,335
+"hidden",./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx,338
+"${this.workspaceDir}",./packages/cli/src/config/extension-manager.ts,148
+"git clone",./packages/cli/src/config/extension-manager.ts,199
+"${newExtensionConfig.name}",./packages/cli/src/config/extension-manager.ts,237
+"${newExtensionName}",./packages/cli/src/config/extension-manager.ts,248
+"${newExtensionName}",./packages/cli/src/config/extension-manager.ts,252
+"name",./packages/cli/src/config/extension-manager.ts,555
+"version",./packages/cli/src/config/extension-manager.ts,555
+"${name}",./packages/cli/src/config/extension-manager.ts,719
+"row",./packages/cli/src/ui/components/messages/Todo.tsx,35
+"Todo list",./packages/cli/src/ui/components/messages/Todo.tsx,36
+"Completed",./packages/cli/src/ui/components/messages/Todo.tsx,48
+"In Progress",./packages/cli/src/ui/components/messages/Todo.tsx,54
+"Pending",./packages/cli/src/ui/components/messages/Todo.tsx,60
+"Cancelled",./packages/cli/src/ui/components/messages/Todo.tsx,67
+"row",./packages/cli/src/ui/components/messages/Todo.tsx,93
+"single",./packages/cli/src/ui/components/messages/Todo.tsx,153
+"column",./packages/cli/src/ui/components/messages/Todo.tsx,162
+"row",./packages/cli/src/ui/components/messages/Todo.tsx,167
+"truncate",./packages/cli/src/ui/components/messages/Todo.tsx,173
+"column",./packages/cli/src/ui/components/messages/Todo.tsx,187
+"list",./packages/cli/src/ui/components/messages/Todo.tsx,187
+"listitem",./packages/cli/src/ui/components/messages/Todo.tsx,189
+"\ No newline at end of file",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,78
+"round",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,136
+"column",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,146
+"round",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,224
+"truncate",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,287
+"double",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,293
+"row",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,344
+"flex-end",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,358
+"wrap",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,366
+"wrap",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,375
+"column",./packages/cli/src/ui/components/messages/DiffRenderer.tsx,409
+"row",./packages/cli/src/ui/components/messages/WarningMessage.tsx,21
+"wrap",./packages/cli/src/ui/components/messages/WarningMessage.tsx,26
+"row",./packages/cli/src/ui/components/messages/UserMessage.tsx,27
+"flex-start",./packages/cli/src/ui/components/messages/UserMessage.tsx,30
+"wrap",./packages/cli/src/ui/components/messages/UserMessage.tsx,39
+"column",./packages/cli/src/ui/components/messages/GeminiMessageContent.tsx,38
+"toggle",./packages/cli/src/config/settingsSchema.ts,47
+"exception TypeError: fetch failed sending request",./packages/cli/src/config/settingsSchema.ts,236
+"30d",./packages/cli/src/config/settingsSchema.ts,271
+"7d",./packages/cli/src/config/settingsSchema.ts,271
+"24h",./packages/cli/src/config/settingsSchema.ts,271
+"1w",./packages/cli/src/config/settingsSchema.ts,271
+"${DEFAULT_MIN_RETENTION}",./packages/cli/src/config/settingsSchema.ts,290
+"run_shell_command",./packages/cli/src/config/settingsSchema.ts,670
+"tokenBudget",./packages/cli/src/config/settingsSchema.ts,670
+"run_shell_command(git)",./packages/cli/src/config/settingsSchema.ts,947
+"run_shell_command(npm test)",./packages/cli/src/config/settingsSchema.ts,947
+"row",./packages/cli/src/ui/components/messages/GeminiMessage.tsx,34
+"column",./packages/cli/src/ui/components/messages/GeminiMessage.tsx,40
+"row",./packages/cli/src/ui/components/messages/ErrorMessage.tsx,20
+"wrap",./packages/cli/src/ui/components/messages/ErrorMessage.tsx,25
+"column",./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx,94
+"column",./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx,109
+"column",./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx,134
+"round",./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx,135
+"round",./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx,178
+"The 'prompt' field is required.",./packages/cli/src/services/FileCommandLoader.ts,49
+"The 'prompt' field must be a string.",./packages/cli/src/services/FileCommandLoader.ts,50
+"last wins",./packages/cli/src/services/FileCommandLoader.ts,81
+"column",./packages/cli/src/ui/components/messages/ToolMessage.tsx,141
+"column",./packages/cli/src/ui/components/messages/ToolMessage.tsx,142
+"column",./packages/cli/src/ui/components/messages/ToolMessage.tsx,145
+"column",./packages/cli/src/ui/components/messages/ToolMessage.tsx,156
+"wrap",./packages/cli/src/ui/components/messages/ToolMessage.tsx,157
+"wrap",./packages/cli/src/ui/components/messages/ToolMessage.tsx,164
+"round",./packages/cli/src/ui/components/messages/ToolMessage.tsx,227
+"column",./packages/cli/src/ui/components/messages/ToolMessage.tsx,235
+"toggle",./packages/cli/src/ui/components/messages/ToolMessage.tsx,270
+"hidden",./packages/cli/src/ui/components/messages/ToolMessage.tsx,325
+"truncate",./packages/cli/src/ui/components/messages/ToolMessage.tsx,326
+"truncate",./packages/cli/src/ui/components/messages/ToolMessage.tsx,337
+"${command}",./packages/cli/src/services/prompt-processors/shellProcessor.ts,131
+"gray",./packages/cli/src/ui/components/SuggestionsDisplay.tsx,46
+"column",./packages/cli/src/ui/components/SuggestionsDisplay.tsx,73
+"row",./packages/cli/src/ui/components/SuggestionsDisplay.tsx,93
+"truncate",./packages/cli/src/ui/components/SuggestionsDisplay.tsx,109
+"gray",./packages/cli/src/ui/components/SuggestionsDisplay.tsx,122
+"gray",./packages/cli/src/ui/components/SuggestionsDisplay.tsx,124
+"Don't trust",./packages/cli/src/ui/components/FolderTrustDialog.tsx,72
+"Don't trust",./packages/cli/src/ui/components/FolderTrustDialog.tsx,74
+"column",./packages/cli/src/ui/components/FolderTrustDialog.tsx,79
+"column",./packages/cli/src/ui/components/FolderTrustDialog.tsx,81
+"round",./packages/cli/src/ui/components/FolderTrustDialog.tsx,82
+"column",./packages/cli/src/ui/components/FolderTrustDialog.tsx,88
+"${prompt.name}",./packages/cli/src/services/McpPromptLoader.ts,56
+"${prompt.name}",./packages/cli/src/services/McpPromptLoader.ts,60
+"value",./packages/cli/src/services/McpPromptLoader.ts,62
+"foo",./packages/cli/src/services/McpPromptLoader.ts,63
+"foo",./packages/cli/src/services/McpPromptLoader.ts,63
+"value",./packages/cli/src/services/McpPromptLoader.ts,232
+"column",./packages/cli/src/ui/components/HistoryItemDisplay.tsx,61
+"act(...)",./packages/cli/test-setup.ts,62
+"column",./packages/cli/src/ui/components/AlternateBufferQuittingDisplay.tsx,26
+"app-header",./packages/cli/src/ui/components/AlternateBufferQuittingDisplay.tsx,31
+"column",./packages/cli/examples/scrollable-list-demo.tsx,93
+"round",./packages/cli/examples/scrollable-list-demo.tsx,103
+"cyan",./packages/cli/examples/scrollable-list-demo.tsx,103
+"column",./packages/cli/examples/scrollable-list-demo.tsx,108
+"column",./packages/cli/examples/scrollable-list-demo.tsx,111
+"column",./packages/cli/examples/scrollable-list-demo.tsx,116
+"single",./packages/cli/examples/scrollable-list-demo.tsx,122
+"gray",./packages/cli/examples/scrollable-list-demo.tsx,127
+"gray",./packages/cli/examples/scrollable-list-demo.tsx,134
+"round",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,62
+"round",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,90
+"column",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,92
+"single",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,119
+"API",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,128
+"Requests",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,130
+"Errors",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,134
+"Avg Latency",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,149
+"Tokens",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,159
+"Total",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,161
+"Prompt",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,169
+"Cached",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,175
+"Thoughts",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,189
+"Tool",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,196
+"Output",./packages/cli/src/ui/components/ModelStatsDisplay.tsx,202
+"Settings",./packages/cli/src/ui/components/SettingsDialog.tsx,376
+"round",./packages/cli/src/ui/components/SettingsDialog.tsx,756
+"row",./packages/cli/src/ui/components/SettingsDialog.tsx,758
+"column",./packages/cli/src/ui/components/SettingsDialog.tsx,763
+"truncate",./packages/cli/src/ui/components/SettingsDialog.tsx,764
+"row",./packages/cli/src/ui/components/SettingsDialog.tsx,847
+"center",./packages/cli/src/ui/components/SettingsDialog.tsx,847
+"column",./packages/cli/src/ui/components/SettingsDialog.tsx,890
+"truncate",./packages/cli/src/ui/components/SettingsDialog.tsx,891
+"column",./packages/cli/src/ui/components/Help.tsx,18
+"round",./packages/cli/src/ui/components/Help.tsx,21
+"column",./packages/cli/src/ui/components/Help.tsx,70
+"${checkerConfig.name}",./packages/core/src/safety/checker-runner.ts,93
+"${checkerConfig.name}",./packages/core/src/safety/checker-runner.ts,133
+"${checkerName}",./packages/core/src/safety/checker-runner.ts,166
+"${checkerName}",./packages/core/src/safety/checker-runner.ts,206
+"decision",./packages/core/src/safety/checker-runner.ts,223
+"${checkerName}",./packages/core/src/safety/checker-runner.ts,231
+"${checkerName}",./packages/core/src/safety/checker-runner.ts,249
+"${checkerName}",./packages/core/src/safety/checker-runner.ts,270
+"${name}",./packages/core/src/safety/registry.ts,36
+"${name}",./packages/core/src/safety/registry.ts,44
+"${name}",./packages/core/src/safety/registry.ts,50
+"${name}",./packages/core/src/safety/registry.ts,58
+"${name}",./packages/core/src/safety/registry.ts,67
+"${p}",./packages/core/src/safety/built-in.ts,52
+"${argName}",./packages/core/src/safety/built-in.ts,52
+"${p}",./packages/core/src/safety/built-in.ts,69
+"${argName}",./packages/core/src/safety/built-in.ts,69
+"round",./packages/cli/src/ui/components/InputPrompt.tsx,1002
+"row",./packages/cli/src/ui/components/InputPrompt.tsx,1010
+"flex-start",./packages/cli/src/ui/components/InputPrompt.tsx,1011
+"column",./packages/cli/src/ui/components/InputPrompt.tsx,1037
+"NONE",./packages/cli/src/ui/components/IdeTrustChangeDialog.tsx,31
+"round",./packages/cli/src/ui/components/IdeTrustChangeDialog.tsx,41
+"row",./packages/cli/src/ui/components/ShellConfirmationDialog.tsx,71
+"column",./packages/cli/src/ui/components/ShellConfirmationDialog.tsx,73
+"round",./packages/cli/src/ui/components/ShellConfirmationDialog.tsx,74
+"column",./packages/cli/src/ui/components/ShellConfirmationDialog.tsx,80
+"column",./packages/cli/src/ui/components/ShellConfirmationDialog.tsx,88
+"round",./packages/cli/src/ui/components/ShellConfirmationDialog.tsx,89
+"truncate",./packages/cli/src/ui/components/ShowMoreLines.tsx,35
+"column",./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx,140
+"column",./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx,142
+"round",./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx,143
+"column",./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx,149
+"${path}",./packages/core/src/policy/toml-loader.ts,150
+"run_shell_command",./packages/core/src/policy/toml-loader.ts,169
+"run_shell_command",./packages/core/src/policy/toml-loader.ts,172
+"run_shell_command",./packages/core/src/policy/toml-loader.ts,174
+"command",./packages/core/src/policy/toml-loader.ts,345
+"command",./packages/core/src/policy/toml-loader.ts,352
+"command",./packages/core/src/policy/toml-loader.ts,431
+"command",./packages/core/src/policy/toml-loader.ts,437
+"[Circular]",./packages/core/src/policy/stable-stringify.ts,22
+"a",./packages/core/src/policy/stable-stringify.ts,41
+"b",./packages/core/src/policy/stable-stringify.ts,41
+"a",./packages/core/src/policy/stable-stringify.ts,48
+"self",./packages/core/src/policy/stable-stringify.ts,48
+"[Circular]",./packages/core/src/policy/stable-stringify.ts,48
+"safe",./packages/core/src/policy/stable-stringify.ts,57
+"data",./packages/core/src/policy/stable-stringify.ts,57
+"[Circular]",./packages/core/src/policy/stable-stringify.ts,77
+"Preview",./packages/cli/src/ui/components/ThemeDialog.tsx,172
+"round",./packages/cli/src/ui/components/ThemeDialog.tsx,196
+"column",./packages/cli/src/ui/components/ThemeDialog.tsx,198
+"row",./packages/cli/src/ui/components/ThemeDialog.tsx,206
+"column",./packages/cli/src/ui/components/ThemeDialog.tsx,208
+"truncate",./packages/cli/src/ui/components/ThemeDialog.tsx,209
+"column",./packages/cli/src/ui/components/ThemeDialog.tsx,228
+"single",./packages/cli/src/ui/components/ThemeDialog.tsx,240
+"column",./packages/cli/src/ui/components/ThemeDialog.tsx,246
+"Hello, ",./packages/cli/src/ui/components/ThemeDialog.tsx,266
+"Hello, {name}!",./packages/cli/src/ui/components/ThemeDialog.tsx,267
+"truncate",./packages/cli/src/ui/components/ThemeDialog.tsx,289
+"column",./packages/cli/src/ui/components/Composer.tsx,53
+"column",./packages/cli/src/ui/components/Composer.tsx,139
+"  Press 'i' for INSERT mode and 'Esc' for NORMAL mode.",./packages/cli/src/ui/components/Composer.tsx,174
+"Always Allow",./packages/core/src/policy/config.ts,150
+"serverName__toolName",./packages/core/src/policy/config.ts,207
+"always allow",./packages/core/src/policy/config.ts,249
+"serverName__*",./packages/core/src/policy/policy-engine.ts,27
+"serverName__anyTool",./packages/core/src/policy/policy-engine.ts,27
+"malicious-server",./packages/core/src/policy/policy-engine.ts,32
+"trusted-server",./packages/core/src/policy/policy-engine.ts,32
+"trusted-server__malicious",./packages/core/src/policy/policy-engine.ts,32
+"1h 5s",./packages/cli/src/ui/utils/formatters.ts,19
+"column",./packages/cli/src/ui/utils/textUtils.ts,28
+"copy-on-write",./packages/cli/src/ui/utils/textUtils.ts,161
+"safe",./packages/cli/src/ui/utils/markdownUtilities.ts,12
+"safer",./packages/cli/src/ui/utils/markdownUtilities.ts,33
+"${terminal}",./packages/cli/src/ui/utils/terminalSetup.ts,350
+"${tempFilePath}",./packages/cli/src/ui/utils/clipboardUtils.ts,71
+"success",./packages/cli/src/ui/utils/clipboardUtils.ts,74
+"${tempFilePath}",./packages/cli/src/ui/utils/clipboardUtils.ts,77
+"error",./packages/cli/src/ui/utils/clipboardUtils.ts,79
+"${portStr}",./packages/core/src/mcp/oauth-provider.ts,363
+"${serverName}",./packages/core/src/mcp/oauth-provider.ts,726
+"${hostname}",./packages/core/src/mcp/google-auth-provider.ts,48
+" or ",./packages/cli/src/ui/utils/InlineMarkdownRenderer.tsx,14
+"<u>",./packages/cli/src/ui/utils/InlineMarkdownRenderer.tsx,17
+"</u>",./packages/cli/src/ui/utils/InlineMarkdownRenderer.tsx,18
+"${intent}",./packages/core/src/fallback/handler.ts,52
+"column",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,56
+"wrap",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,145
+"wrap",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,184
+"ul",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,249
+"ol",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,262
+"wrap",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,278
+"line-eof",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,290
+"generating more",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,336
+"column",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,371
+"column",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,391
+"row",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,423
+"wrap",./packages/cli/src/ui/utils/MarkdownDisplay.tsx,429
+"flex-start",./packages/cli/src/ui/utils/CodeColorizer.tsx,196
+"flex-end",./packages/cli/src/ui/utils/CodeColorizer.tsx,197
+"wrap",./packages/cli/src/ui/utils/CodeColorizer.tsx,204
+"top",./packages/cli/src/ui/utils/CodeColorizer.tsx,217
+"column",./packages/cli/src/ui/utils/CodeColorizer.tsx,225
+"${language}",./packages/cli/src/ui/utils/CodeColorizer.tsx,231
+"flex-start",./packages/cli/src/ui/utils/CodeColorizer.tsx,251
+"flex-end",./packages/cli/src/ui/utils/CodeColorizer.tsx,252
+"top",./packages/cli/src/ui/utils/CodeColorizer.tsx,266
+"column",./packages/cli/src/ui/utils/CodeColorizer.tsx,274
+"ESC",./packages/cli/src/ui/utils/mouse.ts,229
+"ESC [",./packages/cli/src/ui/utils/mouse.ts,229
+"column",./packages/cli/src/ui/utils/TableRenderer.tsx,140
+"best",./packages/cli/src/ui/utils/updateCheck.ts,33
+"column",./packages/cli/src/ui/layouts/ScreenReaderAppLayout.tsx,25
+"hidden",./packages/cli/src/ui/layouts/ScreenReaderAppLayout.tsx,32
+"column",./packages/cli/src/ui/layouts/DefaultAppLayout.tsx,32
+"hidden",./packages/cli/src/ui/layouts/DefaultAppLayout.tsx,37
+"column",./packages/cli/src/ui/layouts/DefaultAppLayout.tsx,43
+"${extension.name}",./packages/cli/src/ui/hooks/useExtensionUpdates.ts,176
+"/extensions list",./packages/cli/src/ui/hooks/useExtensionUpdates.ts,197
+"C:\",./packages/core/src/utils/paths.ts,98
+"Worker",./packages/cli/src/ui/hooks/useAtCompletion.ts,154
+"${oldPath}",./packages/core/src/utils/editor.ts,152
+"${newPath}",./packages/core/src/utils/editor.ts,152
+"--wait",./packages/core/src/utils/editor.ts,162
+"Proceed",./packages/cli/src/ui/hooks/slashCommandProcessor.ts,354
+"${child.raw}",./packages/core/src/utils/memoryImportProcessor.ts,171
+"{textToSummarize}",./packages/core/src/utils/summarizer.ts,52
+"34.074824224s",./packages/core/src/utils/googleQuotaErrors.ts,46
+"60s",./packages/core/src/utils/googleQuotaErrors.ts,46
+"900ms",./packages/core/src/utils/googleQuotaErrors.ts,46
+"Please retry in X[s|ms]",./packages/core/src/utils/googleQuotaErrors.ts,71
+"Request cancelled",./packages/cli/src/ui/hooks/useGeminiStream.ts,292
+"statically",./packages/cli/src/ui/hooks/useGeminiStream.ts,516
+"The original search failed due to incorrect indentation; the new search corrects the indentation to match the source file.",./packages/core/src/utils/llm-edit-fixer.ts,34
+"ReadFileTool",./packages/core/src/utils/tool-utils.ts,18
+"ShellTool(git status)",./packages/core/src/utils/tool-utils.ts,19
+"${trimmedText}",./packages/cli/src/ui/hooks/usePromptCompletion.ts,103
+"${trimmedText}",./packages/cli/src/ui/hooks/usePromptCompletion.ts,103
+"Next, I will...",./packages/core/src/utils/nextSpeakerChecker.ts,15
+"Now I'll process...",./packages/core/src/utils/nextSpeakerChecker.ts,15
+"Moving on to analyze...",./packages/core/src/utils/nextSpeakerChecker.ts,15
+"Brief explanation justifying the 'next_speaker' choice based *strictly* on the applicable rule and the content/structure of the preceding turn.",./packages/core/src/utils/nextSpeakerChecker.ts,25
+"51820.638305887s",./packages/core/src/utils/googleErrors.ts,25
+"file.txt. Next sentence",./packages/cli/src/ui/hooks/atCommandProcessor.ts,94
+"@file.txt",./packages/cli/src/ui/hooks/atCommandProcessor.ts,169
+"${resolvedPath}",./packages/core/src/utils/getFolderStructure.ts,316
+"${resolvedPath}",./packages/core/src/utils/getFolderStructure.ts,346
+"not yet checked",./packages/core/src/utils/systemEncoding.ts,13
+"checked but failed",./packages/core/src/utils/systemEncoding.ts,13
+"${output.trim()}",./packages/core/src/utils/systemEncoding.ts,67
+"en_US.UTF-8",./packages/core/src/utils/systemEncoding.ts,97
+"UTF-8",./packages/core/src/utils/systemEncoding.ts,102
+"${editorType}",./packages/cli/src/ui/hooks/useEditorSettings.ts,61
+"${themeName}",./packages/cli/src/ui/hooks/useThemeCommand.ts,52
+"${themeName}",./packages/cli/src/ui/hooks/useThemeCommand.ts,85
+"${pwdFilePath}",./packages/cli/src/ui/hooks/shellCommandProcessor.ts,106
+"build",./packages/core/src/utils/filesearch/ignore.ts,81
+"my.assets",./packages/core/src/utils/filesearch/ignore.ts,86
+"my.assets/",./packages/core/src/utils/filesearch/ignore.ts,94
+"foo",./packages/core/src/utils/filesearch/result-cache.ts,40
+"foobar",./packages/core/src/utils/filesearch/result-cache.ts,40
+"foo",./packages/core/src/utils/filesearch/result-cache.ts,42
+"success",./packages/core/src/utils/shell-utils.ts,129
+"success",./packages/core/src/utils/shell-utils.ts,136
+"' && last === '",./packages/core/src/utils/shell-utils.ts,193
+" && last === ",./packages/core/src/utils/shell-utils.ts,193
+"${arg.replace(/",./packages/core/src/utils/shell-utils.ts,477
+"ls -la /tmp",./packages/core/src/utils/shell-utils.ts,505
+"ls",./packages/core/src/utils/shell-utils.ts,505
+"git status && npm test",./packages/core/src/utils/shell-utils.ts,506
+"git",./packages/core/src/utils/shell-utils.ts,506
+"') && newCommand.endsWith('",./packages/core/src/utils/shell-utils.ts,537
+") && newCommand.endsWith(",./packages/core/src/utils/shell-utils.ts,538
+"Default Deny",./packages/core/src/utils/shell-utils.ts,561
+"Default Allow",./packages/core/src/utils/shell-utils.ts,567
+"Default Deny",./packages/core/src/utils/shell-utils.ts,576
+"DEFAULT DENY",./packages/core/src/utils/shell-utils.ts,652
+"DEFAULT ALLOW",./packages/core/src/utils/shell-utils.ts,690
+"default allow",./packages/core/src/utils/shell-utils.ts,731
+"default allow",./packages/core/src/utils/shell-utils.ts,773
+"subject",./packages/core/src/utils/thoughtUtils.ts,18
+"${name}",./packages/cli/src/ui/themes/theme-manager.ts,79
+"${name}",./packages/cli/src/ui/themes/theme-manager.ts,92
+"${name}",./packages/cli/src/ui/themes/theme-manager.ts,95
+"${themePath}",./packages/cli/src/ui/themes/theme-manager.ts,251
+"${themePath}",./packages/cli/src/ui/themes/theme-manager.ts,264
+"${themePath}",./packages/cli/src/ui/themes/theme-manager.ts,270
+"${themePath}",./packages/cli/src/ui/themes/theme-manager.ts,291
+"blunt hammer",./packages/core/src/utils/editCorrector.ts,137
+"\\\\\\nconst greeting = \`Hello \\\\\`\${name}\\\\\`\`;",./packages/core/src/utils/editCorrector.ts,405
+"\nconst greeting = \`Hello ${'\\`'}\${name}${'\\`'}\`;",./packages/core/src/utils/editCorrector.ts,405
+"\nconst greeting = \`Hello ${'\\`'}\${name}${'\\`'}\`;",./packages/core/src/utils/editCorrector.ts,405
+"\\\\\\nconst greeting = \`Hello \\\\\`\${name}\\\\\`\`;",./packages/core/src/utils/editCorrector.ts,494
+"\nconst greeting = \`Hello ${'\\`'}\${name}${'\\`'}\`;",./packages/core/src/utils/editCorrector.ts,494
+"\\\\\\nconst greeting = \`Hello \\\\\`\${name} \${lastName}\\\\\`\`;",./packages/core/src/utils/editCorrector.ts,494
+"\nconst greeting = \`Hello ${'\\`'}\${name} \${lastName}${'\\`'}\`;",./packages/core/src/utils/editCorrector.ts,494
+"Hello\\",./packages/core/src/utils/editCorrector.ts,550
+"Hello",./packages/core/src/utils/editCorrector.ts,550
+"\n",./packages/core/src/utils/editCorrector.ts,562
+"\t",./packages/core/src/utils/editCorrector.ts,562
+"foo",./packages/core/src/utils/editCorrector.ts,564
+"bar\\nbaz",./packages/core/src/utils/editCorrector.ts,564
+"bar\nbaz",./packages/core/src/utils/editCorrector.ts,564
+"Hello World\\",./packages/core/src/utils/editCorrector.ts,565
+"Hello World",./packages/core/src/utils/editCorrector.ts,565
+"Hello\\",./packages/core/src/utils/editCorrector.ts,622
+"Hello",./packages/core/src/utils/editCorrector.ts,622
+"\n",./packages/core/src/utils/editCorrector.ts,629
+"\t",./packages/core/src/utils/editCorrector.ts,629
+"bar\\nbaz",./packages/core/src/utils/editCorrector.ts,631
+"bar\nbaz",./packages/core/src/utils/editCorrector.ts,631
+"Hello World\\",./packages/core/src/utils/editCorrector.ts,632
+"Hello World",./packages/core/src/utils/editCorrector.ts,632
+"\\n",./packages/core/src/utils/editCorrector.ts,707
+"\\\n",./packages/core/src/utils/editCorrector.ts,710
+", match is ",./packages/core/src/utils/editCorrector.ts,716
+"'; // Correctly escaped: ",./packages/core/src/utils/editCorrector.ts,729
+"\\\n",./packages/core/src/utils/editCorrector.ts,735
+"${colorValue}",./packages/cli/src/ui/themes/color-utils.ts,231
+"how",./packages/core/src/routing/strategies/classifierStrategy.ts,41
+"why.",./packages/core/src/routing/strategies/classifierStrategy.ts,41
+"type",./packages/core/src/routing/strategies/classifierStrategy.ts,49
+"object",./packages/core/src/routing/strategies/classifierStrategy.ts,49
+"properties",./packages/core/src/routing/strategies/classifierStrategy.ts,50
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,51
+"type",./packages/core/src/routing/strategies/classifierStrategy.ts,52
+"string",./packages/core/src/routing/strategies/classifierStrategy.ts,52
+"description",./packages/core/src/routing/strategies/classifierStrategy.ts,53
+"A brief, step-by-step explanation for the model choice, referencing the rubric.",./packages/core/src/routing/strategies/classifierStrategy.ts,53
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,55
+"type",./packages/core/src/routing/strategies/classifierStrategy.ts,56
+"string",./packages/core/src/routing/strategies/classifierStrategy.ts,56
+"enum",./packages/core/src/routing/strategies/classifierStrategy.ts,57
+"${FLASH_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,57
+"${PRO_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,57
+"required",./packages/core/src/routing/strategies/classifierStrategy.ts,60
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,60
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,60
+"How should I architect the data pipeline for this new analytics service?",./packages/core/src/routing/strategies/classifierStrategy.ts,64
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,67
+"The user is asking for high-level architectural design and strategy. This falls under 'Strategic Planning & Conceptual Design'.",./packages/core/src/routing/strategies/classifierStrategy.ts,67
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,68
+"${PRO_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,68
+"list the files in the current directory",./packages/core/src/routing/strategies/classifierStrategy.ts,71
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,74
+"This is a direct command requiring a single tool call (ls). It has Low Operational Complexity (1 step).",./packages/core/src/routing/strategies/classifierStrategy.ts,74
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,75
+"${FLASH_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,75
+"I need to add a new 'email' field to the User schema in 'src/models/user.ts', migrate the database, and update the registration endpoint.",./packages/core/src/routing/strategies/classifierStrategy.ts,78
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,81
+"This request involves multiple coordinated steps across different files and systems. This meets the criteria for High Operational Complexity (4+ steps).",./packages/core/src/routing/strategies/classifierStrategy.ts,81
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,82
+"${PRO_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,82
+"Read the contents of 'package.json'.",./packages/core/src/routing/strategies/classifierStrategy.ts,85
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,88
+"This is a direct command requiring a single read. It has Low Operational Complexity (1 step).",./packages/core/src/routing/strategies/classifierStrategy.ts,88
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,89
+"${FLASH_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,89
+"I'm getting an error 'Cannot read property 'map' of undefined' when I click the save button. Can you fix it?",./packages/core/src/routing/strategies/classifierStrategy.ts,93
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,96
+"The user is reporting an error symptom without a known cause. This requires investigation and falls under 'Deep Debugging'.",./packages/core/src/routing/strategies/classifierStrategy.ts,96
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,97
+"${PRO_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,97
+"What is the best way to rename the variable 'data' to 'userData' in 'src/utils.js'?",./packages/core/src/routing/strategies/classifierStrategy.ts,100
+"reasoning",./packages/core/src/routing/strategies/classifierStrategy.ts,103
+"Although the user uses strategic language ('best way'), the underlying task is a localized edit. The operational complexity is low (1-2 steps).",./packages/core/src/routing/strategies/classifierStrategy.ts,103
+"model_choice",./packages/core/src/routing/strategies/classifierStrategy.ts,104
+"${FLASH_MODEL}",./packages/core/src/routing/strategies/classifierStrategy.ts,104
+"${powershellCommand}",./packages/core/src/ide/process-utils.ts,40
+"${hookName}",./packages/core/src/hooks/hookRegistry.ts,115
+"${hookName}",./packages/core/src/hooks/hookRegistry.ts,118
+"${eventName}",./packages/core/src/hooks/hookRegistry.ts,168
+"${source}",./packages/core/src/hooks/hookRegistry.ts,168
+"SURFACE_NOT_SET",./packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts,133
+"Don't like these tips? You can hide them (/settings)...",./packages/cli/src/ui/constants/tips.ts,18
+"If you're using an IDE, see the context with Ctrl+G...",./packages/cli/src/ui/constants/tips.ts,120
+"Change the CLI's color theme with /theme...",./packages/cli/src/ui/constants/tips.ts,157
+"I'm Feeling Lucky",./packages/cli/src/ui/constants/wittyPhrases.ts,8
+"Don't rush perfection (or my code)...",./packages/cli/src/ui/constants/wittyPhrases.ts,18
+"Just a sec, I'm debugging reality...",./packages/cli/src/ui/constants/wittyPhrases.ts,30
+"Swapping bits... don't tell the bytes...",./packages/cli/src/ui/constants/wittyPhrases.ts,40
+"Greasin' the cogs of the machine...",./packages/cli/src/ui/constants/wittyPhrases.ts,47
+"Just a moment, I'm in the zone...",./packages/cli/src/ui/constants/wittyPhrases.ts,55
+"Just a tick, I'm polishing my wit...",./packages/cli/src/ui/constants/wittyPhrases.ts,57
+"Hold tight, I'm crafting a masterpiece...",./packages/cli/src/ui/constants/wittyPhrases.ts,58
+"Just a jiffy, I'm debugging the universe...",./packages/cli/src/ui/constants/wittyPhrases.ts,59
+"Just a moment, I'm aligning the pixels...",./packages/cli/src/ui/constants/wittyPhrases.ts,60
+"Just a sec, I'm optimizing the humor...",./packages/cli/src/ui/constants/wittyPhrases.ts,61
+"Just a moment, I'm tuning the algorithms...",./packages/cli/src/ui/constants/wittyPhrases.ts,62
+"Don't panic...",./packages/cli/src/ui/constants/wittyPhrases.ts,65
+"The cake is not a lie, it's just still loading...",./packages/cli/src/ui/constants/wittyPhrases.ts,72
+"Just a moment, I'm finding the right meme...",./packages/cli/src/ui/constants/wittyPhrases.ts,74
+"Pressing 'A' to continue...",./packages/cli/src/ui/constants/wittyPhrases.ts,75
+"I'm going the distance, I'm going for speed...",./packages/cli/src/ui/constants/wittyPhrases.ts,87
+"I've got a good feeling about this...",./packages/cli/src/ui/constants/wittyPhrases.ts,89
+"Why don't programmers like nature? It has too many bugs...",./packages/cli/src/ui/constants/wittyPhrases.ts,96
+"What can you do with a broken pencil? Nothing, it's pointless...",./packages/cli/src/ui/constants/wittyPhrases.ts,99
+"That's not a bug, it's an undocumented feature...",./packages/cli/src/ui/constants/wittyPhrases.ts,106
+"I'll be back... with an answer.",./packages/cli/src/ui/constants/wittyPhrases.ts,108
+"I've seen things you people wouldn't believe... like a user who reads loading messages.",./packages/cli/src/ui/constants/wittyPhrases.ts,114
+"What's a computer's favorite snack? Microchips.",./packages/cli/src/ui/constants/wittyPhrases.ts,116
+"Why do Java developers wear glasses? Because they don't C#.",./packages/cli/src/ui/constants/wittyPhrases.ts,117
+"Pretty sure there's a cat walking on the keyboard somewhere...",./packages/cli/src/ui/constants/wittyPhrases.ts,130
+"It's not a bug, it's a feature... of this loading screen.",./packages/cli/src/ui/constants/wittyPhrases.ts,132
+"oneof",./packages/core/src/code_assist/converter.ts,222
+"${portStr}",./packages/core/src/code_assist/oauth2.ts,453
+"Here is the user's editor context as a JSON object. This is for your information only.",./packages/core/src/core/client.ts,280
+"Here is a summary of changes in the user's editor context, in JSON format. This is for your information only.",./packages/core/src/core/client.ts,390
+"${texts[index]}",./packages/core/src/core/baseLlmClient.ts,177
+"${prompt.name}",./packages/core/src/prompts/prompt-registry.ts,21
+"${newName}",./packages/core/src/prompts/prompt-registry.ts,21
+"${token}",./packages/core/src/tools/web-fetch.ts,61
+"${token}",./packages/core/src/tools/web-fetch.ts,66
+"${this.params.prompt}",./packages/core/src/tools/web-fetch.ts,163
+"${displayPrompt}",./packages/core/src/tools/web-fetch.ts,200
+"${userPrompt}:\n\n",./packages/core/src/tools/web-fetch.ts,354
+"Processes content from URL(s), including local and private network addresses (e.g., localhost), embedded in a prompt. Include up to 20 URLs and instructions (e.g., summarize, extract specific data) directly in the 'prompt' parameter.",./packages/core/src/tools/web-fetch.ts,395
+"Summarize https://example.com/article and extract key points from https://another.com/data",./packages/core/src/tools/web-fetch.ts,401
+"http://",./packages/core/src/tools/web-fetch.ts,401
+"https://",./packages/core/src/tools/web-fetch.ts,401
+"example.com",./packages/core/src/tools/web-fetch.ts,401
+"https://example.com",./packages/core/src/tools/web-fetch.ts,401
+"example.com",./packages/core/src/tools/web-fetch.ts,401
+"The 'prompt' parameter cannot be empty and must contain URL(s) and instructions.",./packages/core/src/tools/web-fetch.ts,418
+"The 'prompt' must contain at least one valid URL (starting with http:// or https://).",./packages/core/src/tools/web-fetch.ts,428
+" Did you mean 'tool'?",./packages/core/src/core/coreToolScheduler.ts,639
+" Did you mean one of: 'tool1', 'tool2'?",./packages/core/src/core/coreToolScheduler.ts,639
+"${match.name}",./packages/core/src/core/coreToolScheduler.ts,658
+"${reqInfo.name}",./packages/core/src/core/coreToolScheduler.ts,763
+"active",./packages/core/src/core/coreToolScheduler.ts,833
+"The 'file_path' parameter must be non-empty.",./packages/core/src/tools/edit.ts,549
+"${relativePath}",./packages/core/src/tools/ripGrep.ts,105
+"*.js",./packages/core/src/tools/ripGrep.ts,142
+"*.{ts,tsx}",./packages/core/src/tools/ripGrep.ts,142
+"${searchDirDisplay}",./packages/core/src/tools/ripGrep.ts,231
+"${this.params.pattern}",./packages/core/src/tools/ripGrep.ts,233
+"${this.params.include}",./packages/core/src/tools/ripGrep.ts,233
+"${this.params.pattern}",./packages/core/src/tools/ripGrep.ts,255
+"${this.params.include}",./packages/core/src/tools/ripGrep.ts,255
+"grep ...",./packages/core/src/tools/ripGrep.ts,490
+"The pattern to search for. By default, treated as a Rust-flavored regular expression. Use '\\b' for precise symbol matching (e.g., '\\bMatchMe\\b').",./packages/core/src/tools/ripGrep.ts,496
+"Directory or file to search. Directories are searched recursively. Relative paths are resolved against current working directory. Defaults to current working directory ('.') if omitted.",./packages/core/src/tools/ripGrep.ts,501
+"Glob pattern to filter files (e.g., '*.ts', 'src/**'). Recommended for large repositories to reduce noise. Defaults to all files if omitted.",./packages/core/src/tools/ripGrep.ts,506
+"valid",./packages/core/src/core/geminiChat.ts,8
+"file_path",./packages/core/src/tools/write-file.ts,442
+"switch",./packages/core/src/core/prompts.ts,42
+"Okay, I will now...",./packages/core/src/core/prompts.ts,215
+"I have finished the changes...",./packages/core/src/core/prompts.ts,215
+"Should I remember that for you?",./packages/core/src/core/prompts.ts,235
+"why",./packages/core/src/core/prompts.ts,277
+"what",./packages/core/src/core/prompts.ts,277
+" or ",./packages/core/src/core/prompts.ts,314
+"Refactor the authentication service to use a new JWT library.",./packages/core/src/core/prompts.ts,368
+"${initialError.raw}",./packages/core/src/tools/smart-edit.ts,422
+"To fix a bug where users can be null...",./packages/core/src/tools/smart-edit.ts,880
+"...in the 'renderUserProfile' function...",./packages/core/src/tools/smart-edit.ts,881
+"...add a null check for the 'user' object...",./packages/core/src/tools/smart-edit.ts,882
+"...so that it displays a loading spinner instead of crashing.",./packages/core/src/tools/smart-edit.ts,883
+"In the 'calculateTotal' function, correct the sales tax calculation by updating the 'taxRate' constant from 0.05 to 0.075 to reflect the new regional tax laws.",./packages/core/src/tools/smart-edit.ts,885
+"Change the text.",./packages/core/src/tools/smart-edit.ts,888
+"Fix the bug.",./packages/core/src/tools/smart-edit.ts,889
+"Replace the line with this new line.",./packages/core/src/tools/smart-edit.ts,890
+"The 'file_path' parameter must be non-empty.",./packages/core/src/tools/smart-edit.ts,929
+"www-authenticate",./packages/core/src/tools/mcp-client.ts,309
+"${tag}",./packages/core/src/core/logger.ts,453
+"Remember that I like pineapple on pizza",./packages/core/src/tools/memoryTool.ts,51
+"Please save this: my cat's name is Whiskers",./packages/core/src/tools/memoryTool.ts,51
+"Should I remember that for you?",./packages/core/src/tools/memoryTool.ts,58
+"My favorite color is blue",./packages/core/src/tools/memoryTool.ts,62
+"My favorite color is blue",./packages/core/src/tools/memoryTool.ts,62
+"${fact}",./packages/core/src/tools/memoryTool.ts,267
+"${fact}",./packages/core/src/tools/memoryTool.ts,280
+"fact",./packages/core/src/tools/memoryTool.ts,320
+"interesting",./packages/core/src/core/recordingContentGenerator.ts,26
+"ShellTool(wc)",./packages/core/src/tools/shell.ts,94
+"${command}",./packages/core/src/tools/shell.ts,106
+"${this.params.dir_path}",./packages/core/src/tools/glob.ts,127
+"${this.params.pattern}",./packages/core/src/tools/glob.ts,195
+"${this.params.pattern}",./packages/core/src/tools/glob.ts,227
+"The glob pattern to match against (e.g., '**/*.py', 'docs/*.md').",./packages/core/src/tools/glob.ts,276
+"${searchDirAbsolute}",./packages/core/src/tools/glob.ts,323
+"The 'pattern' parameter cannot be empty.",./packages/core/src/tools/glob.ts,343
+"Optional: For text files, the 0-based line number to start reading from. Requires 'limit' to be set. Use for paginating through large files.",./packages/core/src/tools/read-file.ts,167
+"Optional: For text files, maximum number of lines to read. Use with 'offset' to paginate through large files. If omitted, reads the entire file (if feasible, up to a default limit).",./packages/core/src/tools/read-file.ts,172
+"The 'file_path' parameter must be non-empty.",./packages/core/src/tools/read-file.ts,189
+"*.ts",./packages/core/src/tools/read-many-files.ts,39
+"src/** /*.md",./packages/core/src/tools/read-many-files.ts,39
+"*.log",./packages/core/src/tools/read-many-files.ts,46
+"dist/**",./packages/core/src/tools/read-many-files.ts,46
+"src/**/*.ts",./packages/core/src/tools/read-many-files.ts,459
+"README.md",./packages/core/src/tools/read-many-files.ts,459
+"docs/",./packages/core/src/tools/read-many-files.ts,459
+"**/*.log",./packages/core/src/tools/read-many-files.ts,468
+"temp/",./packages/core/src/tools/read-many-files.ts,468
+"read all files in X directory",./packages/core/src/tools/read-many-files.ts,514
+"show me the content of all Y files",./packages/core/src/tools/read-many-files.ts,514
+"fetch",./packages/core/src/tools/write-todos.ts,62
+"axios",./packages/core/src/tools/write-todos.ts,62
+"gemini-2.5-flash-image",./packages/core/src/tools/write-todos.ts,62
+"fancy logo",./packages/core/src/tools/write-todos.ts,64
+"Download",./packages/core/src/tools/write-todos.ts,65
+"logo creator,",./packages/core/src/tools/write-todos.ts,71
+"in_progress",./packages/core/src/tools/write-todos.ts,243
+"google-workspace__*",./packages/core/src/tools/mcp-tool.ts,78
+"none",./packages/core/src/config/config.ts,1075
+"trusted",./packages/core/src/config/config.ts,1110
+"${this.params.query}",./packages/core/src/tools/web-search.ts,75
+"${this.params.query}",./packages/core/src/tools/web-search.ts,99
+"${this.params.query}",./packages/core/src/tools/web-search.ts,162
+"${this.params.query}",./packages/core/src/tools/web-search.ts,163
+"The 'query' parameter cannot be empty.",./packages/core/src/tools/web-search.ts,226
+"chat",./packages/core/src/config/defaultModelConfigs.ts,11
+"user-facing",./packages/core/src/config/defaultModelConfigs.ts,36
+"*.js",./packages/core/src/tools/grep.ts,42
+"*.{ts,tsx}",./packages/core/src/tools/grep.ts,42
+"${relativePath}",./packages/core/src/tools/grep.ts,92
+"${searchDirDisplay}",./packages/core/src/tools/grep.ts,159
+"${this.params.pattern}",./packages/core/src/tools/grep.ts,163
+"${this.params.include}",./packages/core/src/tools/grep.ts,163
+"${this.params.pattern}",./packages/core/src/tools/grep.ts,184
+"${this.params.include}",./packages/core/src/tools/grep.ts,184
+"The regular expression (regex) pattern to search for within file contents (e.g., 'function\\s+myFunction', 'import\\s+\\{.*\\}\\s+from\\s+.*').",./packages/core/src/tools/grep.ts,585
+"Optional: A glob pattern to filter which files are searched (e.g., '*.js', '*.{ts,tsx}', 'src/**'). If omitted, searches all files (respecting potential global ignores).",./packages/core/src/tools/grep.ts,595
+"${relativePath}",./packages/core/src/tools/grep.ts,627
+"lite",./packages/core/src/config/models.ts,22
+"lite",./packages/core/src/config/models.ts,23
+"pro",./packages/core/src/config/models.ts,24
+"lite",./packages/core/src/config/models.ts,24
+"lite",./packages/core/src/config/models.ts,40
+"${config.extension.name}",./packages/core/src/tools/mcp-client-manager.ts,154
+"${name}",./packages/core/src/tools/mcp-client-manager.ts,157
+"${name}",./packages/core/src/tools/mcp-client-manager.ts,284
+"${tool.name}",./packages/core/src/tools/tool-registry.ts,225
+"tool",./packages/core/src/tools/tool-registry.ts,375
+"${discoveryCmd}",./packages/core/src/tools/tool-registry.ts,420
+"A summary of the investigation's conclusions and insights for the main agent.",./packages/core/src/agents/codebase-investigator.ts,22
+"what does gettext.translation do with localedir=None?",./packages/core/src/agents/codebase-investigator.ts,109
+"SummaryOfFindings",./packages/core/src/agents/codebase-investigator.ts,130
+"The core issue is a race condition in the \`updateUser\` function. The function reads the user's state, performs an asynchronous operation, and then writes the state back. If another request modifies the user state during the async operation, that change will be overwritten. The fix requires implementing a transactional read-modify-write pattern, potentially using a database lock or a versioning system.",./packages/core/src/agents/codebase-investigator.ts,130
+"ExplorationTrace",./packages/core/src/agents/codebase-investigator.ts,131
+"Used \`grep\` to search for \`updateUser\` to locate the primary function.",./packages/core/src/agents/codebase-investigator.ts,132
+"Read the file \`src/controllers/userController.js\` to understand the function's logic.",./packages/core/src/agents/codebase-investigator.ts,133
+"Used \`ls -R\` to look for related files, such as services or database models.",./packages/core/src/agents/codebase-investigator.ts,134
+"Read \`src/services/userService.js\` and \`src/models/User.js\` to understand the data flow and how state is managed.",./packages/core/src/agents/codebase-investigator.ts,135
+"RelevantLocations",./packages/core/src/agents/codebase-investigator.ts,137
+"FilePath",./packages/core/src/agents/codebase-investigator.ts,139
+"src/controllers/userController.js",./packages/core/src/agents/codebase-investigator.ts,139
+"Reasoning",./packages/core/src/agents/codebase-investigator.ts,140
+"This file contains the \`updateUser\` function which has the race condition. It's the entry point for the problematic logic.",./packages/core/src/agents/codebase-investigator.ts,140
+"KeySymbols",./packages/core/src/agents/codebase-investigator.ts,141
+"updateUser",./packages/core/src/agents/codebase-investigator.ts,141
+"getUser",./packages/core/src/agents/codebase-investigator.ts,141
+"saveUser",./packages/core/src/agents/codebase-investigator.ts,141
+"FilePath",./packages/core/src/agents/codebase-investigator.ts,144
+"src/services/userService.js",./packages/core/src/agents/codebase-investigator.ts,144
+"Reasoning",./packages/core/src/agents/codebase-investigator.ts,145
+"This service is called by the controller and handles the direct interaction with the data layer. Any locking mechanism would likely be implemented here.",./packages/core/src/agents/codebase-investigator.ts,145
+"KeySymbols",./packages/core/src/agents/codebase-investigator.ts,146
+"updateUserData",./packages/core/src/agents/codebase-investigator.ts,146
+"${aliasName}",./packages/core/src/services/modelConfigService.ts,76
+"${context.model}",./packages/core/src/services/modelConfigService.ts,194
+"last",./packages/core/src/agents/executor.ts,313
+"thought",./packages/core/src/agents/executor.ts,622
+"Environment Context",./packages/core/src/agents/executor.ts,1003
+"${tool.name}",./packages/core/src/agents/executor.ts,1058
+"${agentName}",./packages/core/src/agents/executor.ts,1059
+"Get Started!",./packages/core/src/agents/types.ts,93
+"report",./packages/core/src/agents/types.ts,135
+"answer",./packages/core/src/agents/types.ts,135

@@ -35,6 +35,7 @@
     "yoloAndApproval": "Cannot use both --yolo (-y) and --approval-mode together. Use --approval-mode=yolo instead.",
     "invalidLocaleValue": "Invalid locale value: {{value}}",
     "invalidLocaleMissing": "Invalid locale value: expected a non-empty string",
+    "unsupportedLocale": "Unsupported locale \"{{value}}\". Falling back to English.",
     "unknown": "Unknown error"
   },
   "extensions": {

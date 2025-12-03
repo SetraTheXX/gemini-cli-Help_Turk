@@ -1,0 +1,4717 @@
+[
+  {
+    "text": "vitest",
+    "file": "./packages/a2a-server/vitest.config.ts",
+    "line": 7
+  },
+  {
+    "text": "${outcomeString}",
+    "file": "./packages/a2a-server/src/agent/task.ts",
+    "line": 709
+  },
+  {
+    "text": "${completedToolCall.request.name}",
+    "file": "./packages/a2a-server/src/agent/task.ts",
+    "line": 840
+  },
+  {
+    "text": "Hello!",
+    "file": "./packages/a2a-server/src/http/app.ts",
+    "line": 62
+  },
+  {
+    "text": "command",
+    "file": "./packages/a2a-server/src/http/app.ts",
+    "line": 151
+  },
+  {
+    "text": "args",
+    "file": "./packages/a2a-server/src/http/app.ts",
+    "line": 157
+  },
+  {
+    "text": "vitest",
+    "file": "./packages/cli/vitest.config.ts",
+    "line": 7
+  },
+  {
+    "text": "port",
+    "file": "./packages/test-utils/src/file-system-test-helpers.ts",
+    "line": 33
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/CloudPaidPrivacyNotice.tsx",
+    "line": 28
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/GeminiPrivacyNotice.tsx",
+    "line": 26
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/privacy/PrivacyNotice.tsx",
+    "line": 39
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/PrivacyNotice.tsx",
+    "line": 39
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx",
+    "line": 45
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx",
+    "line": 56
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx",
+    "line": 76
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/privacy/CloudFreePrivacyNotice.tsx",
+    "line": 107
+  },
+  {
+    "text": "${payload.message}",
+    "file": "./packages/cli/src/ui/AppContainer.tsx",
+    "line": 1234
+  },
+  {
+    "text": "No, don't ask again",
+    "file": "./packages/cli/src/ui/IdeIntegrationNudge.tsx",
+    "line": 64
+  },
+  {
+    "text": "No, don't ask again",
+    "file": "./packages/cli/src/ui/IdeIntegrationNudge.tsx",
+    "line": 69
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/IdeIntegrationNudge.tsx",
+    "line": 83
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/IdeIntegrationNudge.tsx",
+    "line": 84
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/IdeIntegrationNudge.tsx",
+    "line": 90
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/remove.ts",
+    "line": 27
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/remove.ts",
+    "line": 35
+  },
+  {
+    "text": "value",
+    "file": "./packages/cli/src/ui/contexts/SessionContext.tsx",
+    "line": 167
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 120
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 129
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 132
+  },
+  {
+    "text": "X-Api-Key: abc123",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 181
+  },
+  {
+    "text": "Authorization: Bearer abc123",
+    "file": "./packages/cli/src/commands/mcp/add.ts",
+    "line": 181
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/extensions/uninstall.ts",
+    "line": 34
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/commands/extensions/uninstall.ts",
+    "line": 42
+  },
+  {
+    "text": "${info.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 29
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 48
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 53
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 62
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 78
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/update.ts",
+    "line": 81
+  },
+  {
+    "text": "${args.template}",
+    "file": "./packages/cli/src/commands/extensions/new.ts",
+    "line": 55
+  },
+  {
+    "text": "gemini extensions link ${args.path}",
+    "file": "./packages/cli/src/commands/extensions/new.ts",
+    "line": 71
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/enable.ts",
+    "line": 41
+  },
+  {
+    "text": "${args.scope}",
+    "file": "./packages/cli/src/commands/extensions/enable.ts",
+    "line": 41
+  },
+  {
+    "text": "${args.name}",
+    "file": "./packages/cli/src/commands/extensions/enable.ts",
+    "line": 45
+  },
+  {
+    "text": "Extensions are not yet loaded, can't restart yet",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 134
+  },
+  {
+    "text": "user",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 335
+  },
+  {
+    "text": "workspace",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 335
+  },
+  {
+    "text": "session",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 335
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 373
+  },
+  {
+    "text": "${scope}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 373
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 390
+  },
+  {
+    "text": "${scope}",
+    "file": "./packages/cli/src/ui/commands/extensionsCommand.ts",
+    "line": 390
+  },
+  {
+    "text": "${args.trim()}",
+    "file": "./packages/cli/src/ui/commands/memoryCommand.ts",
+    "line": 58
+  },
+  {
+    "text": "${url}",
+    "file": "./packages/cli/src/ui/commands/setupGithubCommand.ts",
+    "line": 49
+  },
+  {
+    "text": "Successfully downloaded ${GITHUB_WORKFLOW_PATHS.length} workflows and updated .gitignore. Follow the steps in ${readmeUrl} (skipping the /setup-github step) to complete setup.",
+    "file": "./packages/cli/src/ui/commands/setupGithubCommand.ts",
+    "line": 195
+  },
+  {
+    "text": "${extension.name}",
+    "file": "./packages/cli/src/commands/extensions/link.ts",
+    "line": 40
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/auth/ApiAuthDialog.tsx",
+    "line": 49
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/auth/ApiAuthDialog.tsx",
+    "line": 51
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/auth/ApiAuthDialog.tsx",
+    "line": 58
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/auth/ApiAuthDialog.tsx",
+    "line": 70
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/auth/ApiAuthDialog.tsx",
+    "line": 72
+  },
+  {
+    "text": "Paste your API key here",
+    "file": "./packages/cli/src/ui/auth/ApiAuthDialog.tsx",
+    "line": 81
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/auth/AuthDialog.tsx",
+    "line": 174
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/auth/AuthDialog.tsx",
+    "line": 176
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/auth/AuthDialog.tsx",
+    "line": 179
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/auth/AuthDialog.tsx",
+    "line": 182
+  },
+  {
+    "text": "vitest/globals",
+    "file": "./packages/cli/src/test-utils/customMatchers.ts",
+    "line": 7
+  },
+  {
+    "text": "${l.content}",
+    "file": "./packages/cli/src/test-utils/customMatchers.ts",
+    "line": 46
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/test-utils/render.tsx",
+    "line": 192
+  },
+  {
+    "text": "Gemini API Key",
+    "file": "./packages/cli/src/ui/auth/useAuth.ts",
+    "line": 75
+  },
+  {
+    "text": "${defaultAuthType}",
+    "file": "./packages/cli/src/ui/auth/useAuth.ts",
+    "line": 103
+  },
+  {
+    "text": "${authType}",
+    "file": "./packages/cli/src/ui/auth/useAuth.ts",
+    "line": 112
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/auth/AuthInProgress.tsx",
+    "line": 43
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/auth/AuthInProgress.tsx",
+    "line": 45
+  },
+  {
+    "text": "dots",
+    "file": "./packages/cli/src/ui/auth/AuthInProgress.tsx",
+    "line": 56
+  },
+  {
+    "text": "/memory add some data",
+    "file": "./packages/cli/src/utils/commands.ts",
+    "line": 19
+  },
+  {
+    "text": "/help",
+    "file": "./packages/cli/src/utils/commands.ts",
+    "line": 19
+  },
+  {
+    "text": "Agent powering down. Goodbye!",
+    "file": "./packages/cli/src/ui/components/SessionSummaryDisplay.tsx",
+    "line": 17
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Tips.tsx",
+    "line": 19
+  },
+  {
+    "text": "tr_TR.UTF-8",
+    "file": "./packages/cli/src/utils/locale.ts",
+    "line": 15
+  },
+  {
+    "text": "tr-TR",
+    "file": "./packages/cli/src/utils/locale.ts",
+    "line": 15
+  },
+  {
+    "text": "en_US",
+    "file": "./packages/cli/src/utils/locale.ts",
+    "line": 16
+  },
+  {
+    "text": "en-US",
+    "file": "./packages/cli/src/utils/locale.ts",
+    "line": 16
+  },
+  {
+    "text": "fr",
+    "file": "./packages/cli/src/utils/locale.ts",
+    "line": 17
+  },
+  {
+    "text": "fr",
+    "file": "./packages/cli/src/utils/locale.ts",
+    "line": 17
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ConsentPrompt.tsx",
+    "line": 25
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ConsentPrompt.tsx",
+    "line": 27
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/MainContent.tsx",
+    "line": 54
+  },
+  {
+    "text": "app-header",
+    "file": "./packages/cli/src/ui/components/MainContent.tsx",
+    "line": 96
+  },
+  {
+    "text": "app-header",
+    "file": "./packages/cli/src/ui/components/MainContent.tsx",
+    "line": 145
+  },
+  {
+    "text": " flexDirection=",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 53
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 55
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 56
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 61
+  },
+  {
+    "text": "Loop detected:",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 64
+  },
+  {
+    "text": "truncate-end",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 69
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/LoopDetectionConfirmation.tsx",
+    "line": 77
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ContextSummaryDisplay.tsx",
+    "line": 90
+  },
+  {
+    "text": " or ",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 60
+  },
+  {
+    "text": " or ",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 61
+  },
+  {
+    "text": "$PATH${pathSuffix}",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 141
+  },
+  {
+    "text": "$PYTHONPATH${pythonPathSuffix}",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 157
+  },
+  {
+    "text": "${nodeOptions}",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 275
+  },
+  {
+    "text": "{{.Names}}",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 569
+  },
+  {
+    "text": "${allNodeOptions}",
+    "file": "./packages/cli/src/utils/sandbox.ts",
+    "line": 700
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ProQuotaDialog.tsx",
+    "line": 39
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ProQuotaDialog.tsx",
+    "line": 39
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/AnsiOutput.tsx",
+    "line": 30
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/AnsiOutput.tsx",
+    "line": 32
+  },
+  {
+    "text": "git pull",
+    "file": "./packages/cli/src/utils/installationInfo.ts",
+    "line": 60
+  },
+  {
+    "text": "^gemini-cli$",
+    "file": "./packages/cli/src/utils/installationInfo.ts",
+    "line": 84
+  },
+  {
+    "text": "brew upgrade",
+    "file": "./packages/cli/src/utils/installationInfo.ts",
+    "line": 91
+  },
+  {
+    "text": "Locally installed. Please update via your project's package.json.",
+    "file": "./packages/cli/src/utils/installationInfo.ts",
+    "line": 162
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 42
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 45
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 48
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 65
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 98
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 100
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 117
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 122
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 127
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 136
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 162
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 172
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 182
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 192
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 199
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/ToolStatsDisplay.tsx",
+    "line": 214
+  },
+  {
+    "text": "Token: $API_KEY",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 16
+  },
+  {
+    "text": "Token: secret-123",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 16
+  },
+  {
+    "text": "URL: ${BASE_URL}/api",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 17
+  },
+  {
+    "text": "URL: https://api.example.com/api",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 17
+  },
+  {
+    "text": "Missing: $UNDEFINED_VAR",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 18
+  },
+  {
+    "text": "Missing: $UNDEFINED_VAR",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 18
+  },
+  {
+    "text": "$HOST",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 48
+  },
+  {
+    "text": "${PORT}",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 49
+  },
+  {
+    "text": "$ENV",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 51
+  },
+  {
+    "text": "api",
+    "file": "./packages/cli/src/utils/envVarResolver.ts",
+    "line": 51
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ModelDialog.tsx",
+    "line": 90
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ModelDialog.tsx",
+    "line": 92
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ModelDialog.tsx",
+    "line": 105
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ModelDialog.tsx",
+    "line": 110
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/LoadingIndicator.tsx",
+    "line": 47
+  },
+  {
+    "text": "truncate-end",
+    "file": "./packages/cli/src/ui/components/LoadingIndicator.tsx",
+    "line": 65
+  },
+  {
+    "text": "30d",
+    "file": "./packages/cli/src/utils/sessionCleanup.ts",
+    "line": 224
+  },
+  {
+    "text": "7d",
+    "file": "./packages/cli/src/utils/sessionCleanup.ts",
+    "line": 224
+  },
+  {
+    "text": "24h",
+    "file": "./packages/cli/src/utils/sessionCleanup.ts",
+    "line": 224
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/EditorSettingsDialog.tsx",
+    "line": 132
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/EditorSettingsDialog.tsx",
+    "line": 134
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/EditorSettingsDialog.tsx",
+    "line": 138
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/EditorSettingsDialog.tsx",
+    "line": 156
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/EditorSettingsDialog.tsx",
+    "line": 175
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/EditorSettingsDialog.tsx",
+    "line": 179
+  },
+  {
+    "text": "${sessionIndex}",
+    "file": "./packages/cli/src/utils/sessions.ts",
+    "line": 69
+  },
+  {
+    "text": "Don't trust",
+    "file": "./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx",
+    "line": 49
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx",
+    "line": 90
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx",
+    "line": 92
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/PermissionsModifyTrustDialog.tsx",
+    "line": 95
+  },
+  {
+    "text": "screenReader",
+    "file": "./packages/cli/src/ui/components/Notifications.tsx",
+    "line": 86
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/Notifications.tsx",
+    "line": 93
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Notifications.tsx",
+    "line": 97
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/Notifications.tsx",
+    "line": 108
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/shared/RadioButtonSelect.tsx",
+    "line": 76
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/shared/RadioButtonSelect.tsx",
+    "line": 84
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/shared/EnumSelector.tsx",
+    "line": 63
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/shared/EnumSelector.tsx",
+    "line": 63
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/TextInput.tsx",
+    "line": 78
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/BaseSelectionList.tsx",
+    "line": 92
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/components/shared/BaseSelectionList.tsx",
+    "line": 131
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/ScopeSelector.tsx",
+    "line": 41
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/shared/ScopeSelector.tsx",
+    "line": 42
+  },
+  {
+    "text": "2 hours ago",
+    "file": "./packages/cli/src/utils/sessionUtils.ts",
+    "line": 78
+  },
+  {
+    "text": "3 days ago",
+    "file": "./packages/cli/src/utils/sessionUtils.ts",
+    "line": 78
+  },
+  {
+    "text": "${identifier}",
+    "file": "./packages/cli/src/utils/sessionUtils.ts",
+    "line": 257
+  },
+  {
+    "text": "latest",
+    "file": "./packages/cli/src/utils/sessionUtils.ts",
+    "line": 264
+  },
+  {
+    "text": "${resumeArg}",
+    "file": "./packages/cli/src/utils/sessionUtils.ts",
+    "line": 290
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/ScrollableList.tsx",
+    "line": 237
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/shared/ScrollableList.tsx",
+    "line": 238
+  },
+  {
+    "text": "v1.2.3",
+    "file": "./packages/cli/src/utils/gitUtils.ts",
+    "line": 54
+  },
+  {
+    "text": "file not found",
+    "file": "./packages/cli/src/utils/startupWarnings.ts",
+    "line": 30
+  },
+  {
+    "text": "Error NO ENTry",
+    "file": "./packages/cli/src/utils/startupWarnings.ts",
+    "line": 33
+  },
+  {
+    "text": "${order}",
+    "file": "./packages/cli/src/gemini.tsx",
+    "line": 95
+  },
+  {
+    "text": "${defaultValue}",
+    "file": "./packages/cli/src/gemini.tsx",
+    "line": 95
+  },
+  {
+    "text": "${settings.merged.ui?.theme}",
+    "file": "./packages/cli/src/gemini.tsx",
+    "line": 312
+  },
+  {
+    "text": "handleInput",
+    "file": "./packages/cli/src/ui/components/shared/text-buffer.ts",
+    "line": 2268
+  },
+  {
+    "text": "vi",
+    "file": "./packages/cli/src/ui/components/shared/text-buffer.ts",
+    "line": 2273
+  },
+  {
+    "text": "${effectiveTheme}",
+    "file": "./packages/cli/src/core/theme.ts",
+    "line": 18
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/Scrollable.tsx",
+    "line": 148
+  },
+  {
+    "text": "scroll",
+    "file": "./packages/cli/src/ui/components/shared/Scrollable.tsx",
+    "line": 149
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/shared/Scrollable.tsx",
+    "line": 150
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/Scrollable.tsx",
+    "line": 160
+  },
+  {
+    "text": "scroll",
+    "file": "./packages/cli/src/ui/components/shared/VirtualizedList.tsx",
+    "line": 477
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/shared/VirtualizedList.tsx",
+    "line": 478
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/VirtualizedList.tsx",
+    "line": 483
+  },
+  {
+    "text": " flexDirection=",
+    "file": "./packages/cli/src/ui/components/shared/VirtualizedList.tsx",
+    "line": 486
+  },
+  {
+    "text": "cyan",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 89
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 89
+  },
+  {
+    "text": "yellow",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 94
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 187
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 189
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 196
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 231
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/shared/MaxSizedBox.tsx",
+    "line": 285
+  },
+  {
+    "text": "auto",
+    "file": "./packages/cli/src/zed-integration/zedIntegration.ts",
+    "line": 52
+  },
+  {
+    "text": "${fc.name}",
+    "file": "./packages/cli/src/zed-integration/zedIntegration.ts",
+    "line": 395
+  },
+  {
+    "text": "${fc.name}",
+    "file": "./packages/cli/src/zed-integration/zedIntegration.ts",
+    "line": 443
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/shared/DescriptiveRadioButtonSelect.tsx",
+    "line": 63
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/StickyHeader.tsx",
+    "line": 33
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/StickyHeader.tsx",
+    "line": 34
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/src/ui/components/StickyHeader.tsx",
+    "line": 48
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/StickyHeader.tsx",
+    "line": 58
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/QuittingDisplay.tsx",
+    "line": 23
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 32
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 34
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 44
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 55
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 66
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 76
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 86
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 96
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 109
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/AboutBox.tsx",
+    "line": 121
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/QueuedMessageDisplay.tsx",
+    "line": 23
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/QueuedMessageDisplay.tsx",
+    "line": 34
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx",
+    "line": 54
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx",
+    "line": 56
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx",
+    "line": 63
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx",
+    "line": 98
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/DetailedMessagesDisplay.tsx",
+    "line": 100
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/AppHeader.tsx",
+    "line": 24
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/UpdateNotification.tsx",
+    "line": 16
+  },
+  {
+    "text": "${sanitizedConfig.name}",
+    "file": "./packages/cli/src/config/extensions/consent.ts",
+    "line": 110
+  },
+  {
+    "text": "${extensionConfig.name}",
+    "file": "./packages/cli/src/config/extensions/consent.ts",
+    "line": 160
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/ToolsList.tsx",
+    "line": 24
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/views/ToolsList.tsx",
+    "line": 31
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/ToolsList.tsx",
+    "line": 33
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/ChatList.tsx",
+    "line": 22
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/views/ChatList.tsx",
+    "line": 34
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 47
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 61
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 63
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 149
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 176
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 192
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 204
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 218
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/McpStatus.tsx",
+    "line": 221
+  },
+  {
+    "text": "/owner/repo",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 99
+  },
+  {
+    "text": "owner/repo",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 107
+  },
+  {
+    "text": "latest",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 132
+  },
+  {
+    "text": "${extension.name}",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 165
+  },
+  {
+    "text": "${lsRemoteOutput}",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 212
+  },
+  {
+    "text": "source",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 223
+  },
+  {
+    "text": "${installMetadata.source}",
+    "file": "./packages/cli/src/config/extensions/github.ts",
+    "line": 251
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/ExtensionsList.tsx",
+    "line": 25
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/views/ExtensionsList.tsx",
+    "line": 27
+  },
+  {
+    "text": "cyan",
+    "file": "./packages/cli/src/ui/components/views/ExtensionsList.tsx",
+    "line": 64
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/DialogManager.tsx",
+    "line": 110
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/DialogManager.tsx",
+    "line": 131
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/DialogManager.tsx",
+    "line": 155
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/DialogManager.tsx",
+    "line": 167
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/DialogManager.tsx",
+    "line": 180
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 78
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 79
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 114
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 115
+  },
+  {
+    "text": "flex",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 116
+  },
+  {
+    "text": "green",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 122
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 145
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 145
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 146
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 162
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 164
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/Footer.tsx",
+    "line": 176
+  },
+  {
+    "text": "@path file",
+    "file": "./packages/cli/src/config/config.ts",
+    "line": 317
+  },
+  {
+    "text": "disableYolo",
+    "file": "./packages/cli/src/config/config.ts",
+    "line": 481
+  },
+  {
+    "text": "default",
+    "file": "./packages/cli/src/config/config.ts",
+    "line": 496
+  },
+  {
+    "text": "gutter",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 31
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 64
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 83
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 91
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 96
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 101
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 109
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 124
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 129
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 134
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 142
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 199
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 201
+  },
+  {
+    "text": "Interaction Summary",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 208
+  },
+  {
+    "text": "Session ID:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 209
+  },
+  {
+    "text": "Tool Calls:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 212
+  },
+  {
+    "text": "Success Rate:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 219
+  },
+  {
+    "text": "User Agreement:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 223
+  },
+  {
+    "text": "Code Changes:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 234
+  },
+  {
+    "text": "Performance",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 247
+  },
+  {
+    "text": "Wall Time:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 248
+  },
+  {
+    "text": "Agent Active:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 251
+  },
+  {
+    "text": "API Time:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 256
+  },
+  {
+    "text": "Tool Time:",
+    "file": "./packages/cli/src/ui/components/StatsDisplay.tsx",
+    "line": 264
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/PrepareLabel.tsx",
+    "line": 42
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/PrepareLabel.tsx",
+    "line": 98
+  },
+  {
+    "text": "30d",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 212
+  },
+  {
+    "text": "7d",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 212
+  },
+  {
+    "text": "24h",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 212
+  },
+  {
+    "text": "1w",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 212
+  },
+  {
+    "text": "1d",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 218
+  },
+  {
+    "text": "gcloud config set project",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 524
+  },
+  {
+    "text": "true",
+    "file": "./packages/cli/src/config/settings.ts",
+    "line": 607
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/components/Header.tsx",
+    "line": 53
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Header.tsx",
+    "line": 56
+  },
+  {
+    "text": " flexDirection=",
+    "file": "./packages/cli/src/ui/components/Header.tsx",
+    "line": 60
+  },
+  {
+    "text": " justifyContent=",
+    "file": "./packages/cli/src/ui/components/Header.tsx",
+    "line": 60
+  },
+  {
+    "text": "trusted",
+    "file": "./packages/cli/src/config/trustedFolders.ts",
+    "line": 73
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/CompressionMessage.tsx",
+    "line": 59
+  },
+  {
+    "text": "dots",
+    "file": "./packages/cli/src/ui/components/messages/CompressionMessage.tsx",
+    "line": 62
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/InfoMessage.tsx",
+    "line": 28
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/InfoMessage.tsx",
+    "line": 32
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/InfoMessage.tsx",
+    "line": 34
+  },
+  {
+    "text": "${mcpProps.toolName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 173
+  },
+  {
+    "text": "${mcpProps.serverName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 173
+  },
+  {
+    "text": "${mcpProps.toolName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 181
+  },
+  {
+    "text": "${mcpProps.serverName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 181
+  },
+  {
+    "text": "${mcpProps.toolName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 183
+  },
+  {
+    "text": "${mcpProps.serverName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 183
+  },
+  {
+    "text": "${mcpProps.serverName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 186
+  },
+  {
+    "text": "${mcpProps.serverName}",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 188
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 270
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 278
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 295
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 318
+  },
+  {
+    "text": "space-around",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 320
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 323
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 335
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/messages/ToolConfirmationMessage.tsx",
+    "line": 338
+  },
+  {
+    "text": "${this.workspaceDir}",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 148
+  },
+  {
+    "text": "git clone",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 199
+  },
+  {
+    "text": "${newExtensionConfig.name}",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 237
+  },
+  {
+    "text": "${newExtensionName}",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 248
+  },
+  {
+    "text": "${newExtensionName}",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 252
+  },
+  {
+    "text": "name",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 555
+  },
+  {
+    "text": "version",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 555
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/config/extension-manager.ts",
+    "line": 719
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 35
+  },
+  {
+    "text": "Todo list",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 36
+  },
+  {
+    "text": "Completed",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 48
+  },
+  {
+    "text": "In Progress",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 54
+  },
+  {
+    "text": "Pending",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 60
+  },
+  {
+    "text": "Cancelled",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 67
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 93
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 153
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 162
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 167
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 173
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 187
+  },
+  {
+    "text": "list",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 187
+  },
+  {
+    "text": "listitem",
+    "file": "./packages/cli/src/ui/components/messages/Todo.tsx",
+    "line": 189
+  },
+  {
+    "text": "\\ No newline at end of file",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 78
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 136
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 146
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 224
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 287
+  },
+  {
+    "text": "double",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 293
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 344
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 358
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 366
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 375
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/DiffRenderer.tsx",
+    "line": 409
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/WarningMessage.tsx",
+    "line": 21
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/WarningMessage.tsx",
+    "line": 26
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/UserMessage.tsx",
+    "line": 27
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/components/messages/UserMessage.tsx",
+    "line": 30
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/UserMessage.tsx",
+    "line": 39
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/GeminiMessageContent.tsx",
+    "line": 38
+  },
+  {
+    "text": "toggle",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 47
+  },
+  {
+    "text": "exception TypeError: fetch failed sending request",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 236
+  },
+  {
+    "text": "30d",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 271
+  },
+  {
+    "text": "7d",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 271
+  },
+  {
+    "text": "24h",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 271
+  },
+  {
+    "text": "1w",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 271
+  },
+  {
+    "text": "${DEFAULT_MIN_RETENTION}",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 290
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 670
+  },
+  {
+    "text": "tokenBudget",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 670
+  },
+  {
+    "text": "run_shell_command(git)",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 947
+  },
+  {
+    "text": "run_shell_command(npm test)",
+    "file": "./packages/cli/src/config/settingsSchema.ts",
+    "line": 947
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/GeminiMessage.tsx",
+    "line": 34
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/GeminiMessage.tsx",
+    "line": 40
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/messages/ErrorMessage.tsx",
+    "line": 20
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/ErrorMessage.tsx",
+    "line": 25
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx",
+    "line": 94
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx",
+    "line": 109
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx",
+    "line": 134
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx",
+    "line": 135
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/messages/ToolGroupMessage.tsx",
+    "line": 178
+  },
+  {
+    "text": "The 'prompt' field is required.",
+    "file": "./packages/cli/src/services/FileCommandLoader.ts",
+    "line": 49
+  },
+  {
+    "text": "The 'prompt' field must be a string.",
+    "file": "./packages/cli/src/services/FileCommandLoader.ts",
+    "line": 50
+  },
+  {
+    "text": "last wins",
+    "file": "./packages/cli/src/services/FileCommandLoader.ts",
+    "line": 81
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 141
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 142
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 145
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 156
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 157
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 164
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 227
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 235
+  },
+  {
+    "text": "toggle",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 270
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 325
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 326
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/messages/ToolMessage.tsx",
+    "line": 337
+  },
+  {
+    "text": "${command}",
+    "file": "./packages/cli/src/services/prompt-processors/shellProcessor.ts",
+    "line": 131
+  },
+  {
+    "text": "gray",
+    "file": "./packages/cli/src/ui/components/SuggestionsDisplay.tsx",
+    "line": 46
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/SuggestionsDisplay.tsx",
+    "line": 73
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/SuggestionsDisplay.tsx",
+    "line": 93
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/SuggestionsDisplay.tsx",
+    "line": 109
+  },
+  {
+    "text": "gray",
+    "file": "./packages/cli/src/ui/components/SuggestionsDisplay.tsx",
+    "line": 122
+  },
+  {
+    "text": "gray",
+    "file": "./packages/cli/src/ui/components/SuggestionsDisplay.tsx",
+    "line": 124
+  },
+  {
+    "text": "Don't trust",
+    "file": "./packages/cli/src/ui/components/FolderTrustDialog.tsx",
+    "line": 72
+  },
+  {
+    "text": "Don't trust",
+    "file": "./packages/cli/src/ui/components/FolderTrustDialog.tsx",
+    "line": 74
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/FolderTrustDialog.tsx",
+    "line": 79
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/FolderTrustDialog.tsx",
+    "line": 81
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/FolderTrustDialog.tsx",
+    "line": 82
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/FolderTrustDialog.tsx",
+    "line": 88
+  },
+  {
+    "text": "${prompt.name}",
+    "file": "./packages/cli/src/services/McpPromptLoader.ts",
+    "line": 56
+  },
+  {
+    "text": "${prompt.name}",
+    "file": "./packages/cli/src/services/McpPromptLoader.ts",
+    "line": 60
+  },
+  {
+    "text": "value",
+    "file": "./packages/cli/src/services/McpPromptLoader.ts",
+    "line": 62
+  },
+  {
+    "text": "foo",
+    "file": "./packages/cli/src/services/McpPromptLoader.ts",
+    "line": 63
+  },
+  {
+    "text": "foo",
+    "file": "./packages/cli/src/services/McpPromptLoader.ts",
+    "line": 63
+  },
+  {
+    "text": "value",
+    "file": "./packages/cli/src/services/McpPromptLoader.ts",
+    "line": 232
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/HistoryItemDisplay.tsx",
+    "line": 61
+  },
+  {
+    "text": "act(...)",
+    "file": "./packages/cli/test-setup.ts",
+    "line": 62
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/AlternateBufferQuittingDisplay.tsx",
+    "line": 26
+  },
+  {
+    "text": "app-header",
+    "file": "./packages/cli/src/ui/components/AlternateBufferQuittingDisplay.tsx",
+    "line": 31
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 93
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 103
+  },
+  {
+    "text": "cyan",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 103
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 108
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 111
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 116
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 122
+  },
+  {
+    "text": "gray",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 127
+  },
+  {
+    "text": "gray",
+    "file": "./packages/cli/examples/scrollable-list-demo.tsx",
+    "line": 134
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 62
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 90
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 92
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 119
+  },
+  {
+    "text": "API",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 128
+  },
+  {
+    "text": "Requests",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 130
+  },
+  {
+    "text": "Errors",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 134
+  },
+  {
+    "text": "Avg Latency",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 149
+  },
+  {
+    "text": "Tokens",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 159
+  },
+  {
+    "text": "Total",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 161
+  },
+  {
+    "text": "Prompt",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 169
+  },
+  {
+    "text": "Cached",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 175
+  },
+  {
+    "text": "Thoughts",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 189
+  },
+  {
+    "text": "Tool",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 196
+  },
+  {
+    "text": "Output",
+    "file": "./packages/cli/src/ui/components/ModelStatsDisplay.tsx",
+    "line": 202
+  },
+  {
+    "text": "Settings",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 376
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 756
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 758
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 763
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 764
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 847
+  },
+  {
+    "text": "center",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 847
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 890
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/SettingsDialog.tsx",
+    "line": 891
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Help.tsx",
+    "line": 18
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/Help.tsx",
+    "line": 21
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Help.tsx",
+    "line": 70
+  },
+  {
+    "text": "${checkerConfig.name}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 93
+  },
+  {
+    "text": "${checkerConfig.name}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 133
+  },
+  {
+    "text": "${checkerName}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 166
+  },
+  {
+    "text": "${checkerName}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 206
+  },
+  {
+    "text": "decision",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 223
+  },
+  {
+    "text": "${checkerName}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 231
+  },
+  {
+    "text": "${checkerName}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 249
+  },
+  {
+    "text": "${checkerName}",
+    "file": "./packages/core/src/safety/checker-runner.ts",
+    "line": 270
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/safety/registry.ts",
+    "line": 36
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/safety/registry.ts",
+    "line": 44
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/safety/registry.ts",
+    "line": 50
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/safety/registry.ts",
+    "line": 58
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/safety/registry.ts",
+    "line": 67
+  },
+  {
+    "text": "${p}",
+    "file": "./packages/core/src/safety/built-in.ts",
+    "line": 52
+  },
+  {
+    "text": "${argName}",
+    "file": "./packages/core/src/safety/built-in.ts",
+    "line": 52
+  },
+  {
+    "text": "${p}",
+    "file": "./packages/core/src/safety/built-in.ts",
+    "line": 69
+  },
+  {
+    "text": "${argName}",
+    "file": "./packages/core/src/safety/built-in.ts",
+    "line": 69
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/InputPrompt.tsx",
+    "line": 1002
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/InputPrompt.tsx",
+    "line": 1010
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/components/InputPrompt.tsx",
+    "line": 1011
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/InputPrompt.tsx",
+    "line": 1037
+  },
+  {
+    "text": "NONE",
+    "file": "./packages/cli/src/ui/components/IdeTrustChangeDialog.tsx",
+    "line": 31
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/IdeTrustChangeDialog.tsx",
+    "line": 41
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/ShellConfirmationDialog.tsx",
+    "line": 71
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ShellConfirmationDialog.tsx",
+    "line": 73
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ShellConfirmationDialog.tsx",
+    "line": 74
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ShellConfirmationDialog.tsx",
+    "line": 80
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ShellConfirmationDialog.tsx",
+    "line": 88
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ShellConfirmationDialog.tsx",
+    "line": 89
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/ShowMoreLines.tsx",
+    "line": 35
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx",
+    "line": 140
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx",
+    "line": 142
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx",
+    "line": 143
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/MultiFolderTrustDialog.tsx",
+    "line": 149
+  },
+  {
+    "text": "${path}",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 150
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 169
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 172
+  },
+  {
+    "text": "run_shell_command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 174
+  },
+  {
+    "text": "command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 345
+  },
+  {
+    "text": "command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 352
+  },
+  {
+    "text": "command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 431
+  },
+  {
+    "text": "command",
+    "file": "./packages/core/src/policy/toml-loader.ts",
+    "line": 437
+  },
+  {
+    "text": "[Circular]",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 22
+  },
+  {
+    "text": "a",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 41
+  },
+  {
+    "text": "b",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 41
+  },
+  {
+    "text": "a",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 48
+  },
+  {
+    "text": "self",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 48
+  },
+  {
+    "text": "[Circular]",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 48
+  },
+  {
+    "text": "safe",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 57
+  },
+  {
+    "text": "data",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 57
+  },
+  {
+    "text": "[Circular]",
+    "file": "./packages/core/src/policy/stable-stringify.ts",
+    "line": 77
+  },
+  {
+    "text": "Preview",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 172
+  },
+  {
+    "text": "round",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 196
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 198
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 206
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 208
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 209
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 228
+  },
+  {
+    "text": "single",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 240
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 246
+  },
+  {
+    "text": "Hello, ",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 266
+  },
+  {
+    "text": "Hello, {name}!",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 267
+  },
+  {
+    "text": "truncate",
+    "file": "./packages/cli/src/ui/components/ThemeDialog.tsx",
+    "line": 289
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Composer.tsx",
+    "line": 53
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/components/Composer.tsx",
+    "line": 139
+  },
+  {
+    "text": "  Press 'i' for INSERT mode and 'Esc' for NORMAL mode.",
+    "file": "./packages/cli/src/ui/components/Composer.tsx",
+    "line": 174
+  },
+  {
+    "text": "Always Allow",
+    "file": "./packages/core/src/policy/config.ts",
+    "line": 150
+  },
+  {
+    "text": "serverName__toolName",
+    "file": "./packages/core/src/policy/config.ts",
+    "line": 207
+  },
+  {
+    "text": "always allow",
+    "file": "./packages/core/src/policy/config.ts",
+    "line": 249
+  },
+  {
+    "text": "serverName__*",
+    "file": "./packages/core/src/policy/policy-engine.ts",
+    "line": 27
+  },
+  {
+    "text": "serverName__anyTool",
+    "file": "./packages/core/src/policy/policy-engine.ts",
+    "line": 27
+  },
+  {
+    "text": "malicious-server",
+    "file": "./packages/core/src/policy/policy-engine.ts",
+    "line": 32
+  },
+  {
+    "text": "trusted-server",
+    "file": "./packages/core/src/policy/policy-engine.ts",
+    "line": 32
+  },
+  {
+    "text": "trusted-server__malicious",
+    "file": "./packages/core/src/policy/policy-engine.ts",
+    "line": 32
+  },
+  {
+    "text": "1h 5s",
+    "file": "./packages/cli/src/ui/utils/formatters.ts",
+    "line": 19
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/textUtils.ts",
+    "line": 28
+  },
+  {
+    "text": "copy-on-write",
+    "file": "./packages/cli/src/ui/utils/textUtils.ts",
+    "line": 161
+  },
+  {
+    "text": "safe",
+    "file": "./packages/cli/src/ui/utils/markdownUtilities.ts",
+    "line": 12
+  },
+  {
+    "text": "safer",
+    "file": "./packages/cli/src/ui/utils/markdownUtilities.ts",
+    "line": 33
+  },
+  {
+    "text": "${terminal}",
+    "file": "./packages/cli/src/ui/utils/terminalSetup.ts",
+    "line": 350
+  },
+  {
+    "text": "${tempFilePath}",
+    "file": "./packages/cli/src/ui/utils/clipboardUtils.ts",
+    "line": 71
+  },
+  {
+    "text": "success",
+    "file": "./packages/cli/src/ui/utils/clipboardUtils.ts",
+    "line": 74
+  },
+  {
+    "text": "${tempFilePath}",
+    "file": "./packages/cli/src/ui/utils/clipboardUtils.ts",
+    "line": 77
+  },
+  {
+    "text": "error",
+    "file": "./packages/cli/src/ui/utils/clipboardUtils.ts",
+    "line": 79
+  },
+  {
+    "text": "${portStr}",
+    "file": "./packages/core/src/mcp/oauth-provider.ts",
+    "line": 363
+  },
+  {
+    "text": "${serverName}",
+    "file": "./packages/core/src/mcp/oauth-provider.ts",
+    "line": 726
+  },
+  {
+    "text": "${hostname}",
+    "file": "./packages/core/src/mcp/google-auth-provider.ts",
+    "line": 48
+  },
+  {
+    "text": " or ",
+    "file": "./packages/cli/src/ui/utils/InlineMarkdownRenderer.tsx",
+    "line": 14
+  },
+  {
+    "text": "<u>",
+    "file": "./packages/cli/src/ui/utils/InlineMarkdownRenderer.tsx",
+    "line": 17
+  },
+  {
+    "text": "</u>",
+    "file": "./packages/cli/src/ui/utils/InlineMarkdownRenderer.tsx",
+    "line": 18
+  },
+  {
+    "text": "${intent}",
+    "file": "./packages/core/src/fallback/handler.ts",
+    "line": 52
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 56
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 145
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 184
+  },
+  {
+    "text": "ul",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 249
+  },
+  {
+    "text": "ol",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 262
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 278
+  },
+  {
+    "text": "line-eof",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 290
+  },
+  {
+    "text": "generating more",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 336
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 371
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 391
+  },
+  {
+    "text": "row",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 423
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/utils/MarkdownDisplay.tsx",
+    "line": 429
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 196
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 197
+  },
+  {
+    "text": "wrap",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 204
+  },
+  {
+    "text": "top",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 217
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 225
+  },
+  {
+    "text": "${language}",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 231
+  },
+  {
+    "text": "flex-start",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 251
+  },
+  {
+    "text": "flex-end",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 252
+  },
+  {
+    "text": "top",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 266
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/CodeColorizer.tsx",
+    "line": 274
+  },
+  {
+    "text": "ESC",
+    "file": "./packages/cli/src/ui/utils/mouse.ts",
+    "line": 229
+  },
+  {
+    "text": "ESC [",
+    "file": "./packages/cli/src/ui/utils/mouse.ts",
+    "line": 229
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/utils/TableRenderer.tsx",
+    "line": 140
+  },
+  {
+    "text": "best",
+    "file": "./packages/cli/src/ui/utils/updateCheck.ts",
+    "line": 33
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/layouts/ScreenReaderAppLayout.tsx",
+    "line": 25
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/layouts/ScreenReaderAppLayout.tsx",
+    "line": 32
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/layouts/DefaultAppLayout.tsx",
+    "line": 32
+  },
+  {
+    "text": "hidden",
+    "file": "./packages/cli/src/ui/layouts/DefaultAppLayout.tsx",
+    "line": 37
+  },
+  {
+    "text": "column",
+    "file": "./packages/cli/src/ui/layouts/DefaultAppLayout.tsx",
+    "line": 43
+  },
+  {
+    "text": "${extension.name}",
+    "file": "./packages/cli/src/ui/hooks/useExtensionUpdates.ts",
+    "line": 176
+  },
+  {
+    "text": "/extensions list",
+    "file": "./packages/cli/src/ui/hooks/useExtensionUpdates.ts",
+    "line": 197
+  },
+  {
+    "text": "C:\\",
+    "file": "./packages/core/src/utils/paths.ts",
+    "line": 98
+  },
+  {
+    "text": "Worker",
+    "file": "./packages/cli/src/ui/hooks/useAtCompletion.ts",
+    "line": 154
+  },
+  {
+    "text": "${oldPath}",
+    "file": "./packages/core/src/utils/editor.ts",
+    "line": 152
+  },
+  {
+    "text": "${newPath}",
+    "file": "./packages/core/src/utils/editor.ts",
+    "line": 152
+  },
+  {
+    "text": "--wait",
+    "file": "./packages/core/src/utils/editor.ts",
+    "line": 162
+  },
+  {
+    "text": "Proceed",
+    "file": "./packages/cli/src/ui/hooks/slashCommandProcessor.ts",
+    "line": 354
+  },
+  {
+    "text": "${child.raw}",
+    "file": "./packages/core/src/utils/memoryImportProcessor.ts",
+    "line": 171
+  },
+  {
+    "text": "{textToSummarize}",
+    "file": "./packages/core/src/utils/summarizer.ts",
+    "line": 52
+  },
+  {
+    "text": "34.074824224s",
+    "file": "./packages/core/src/utils/googleQuotaErrors.ts",
+    "line": 46
+  },
+  {
+    "text": "60s",
+    "file": "./packages/core/src/utils/googleQuotaErrors.ts",
+    "line": 46
+  },
+  {
+    "text": "900ms",
+    "file": "./packages/core/src/utils/googleQuotaErrors.ts",
+    "line": 46
+  },
+  {
+    "text": "Please retry in X[s|ms]",
+    "file": "./packages/core/src/utils/googleQuotaErrors.ts",
+    "line": 71
+  },
+  {
+    "text": "Request cancelled",
+    "file": "./packages/cli/src/ui/hooks/useGeminiStream.ts",
+    "line": 292
+  },
+  {
+    "text": "statically",
+    "file": "./packages/cli/src/ui/hooks/useGeminiStream.ts",
+    "line": 516
+  },
+  {
+    "text": "The original search failed due to incorrect indentation; the new search corrects the indentation to match the source file.",
+    "file": "./packages/core/src/utils/llm-edit-fixer.ts",
+    "line": 34
+  },
+  {
+    "text": "ReadFileTool",
+    "file": "./packages/core/src/utils/tool-utils.ts",
+    "line": 18
+  },
+  {
+    "text": "ShellTool(git status)",
+    "file": "./packages/core/src/utils/tool-utils.ts",
+    "line": 19
+  },
+  {
+    "text": "${trimmedText}",
+    "file": "./packages/cli/src/ui/hooks/usePromptCompletion.ts",
+    "line": 103
+  },
+  {
+    "text": "${trimmedText}",
+    "file": "./packages/cli/src/ui/hooks/usePromptCompletion.ts",
+    "line": 103
+  },
+  {
+    "text": "Next, I will...",
+    "file": "./packages/core/src/utils/nextSpeakerChecker.ts",
+    "line": 15
+  },
+  {
+    "text": "Now I'll process...",
+    "file": "./packages/core/src/utils/nextSpeakerChecker.ts",
+    "line": 15
+  },
+  {
+    "text": "Moving on to analyze...",
+    "file": "./packages/core/src/utils/nextSpeakerChecker.ts",
+    "line": 15
+  },
+  {
+    "text": "Brief explanation justifying the 'next_speaker' choice based *strictly* on the applicable rule and the content/structure of the preceding turn.",
+    "file": "./packages/core/src/utils/nextSpeakerChecker.ts",
+    "line": 25
+  },
+  {
+    "text": "51820.638305887s",
+    "file": "./packages/core/src/utils/googleErrors.ts",
+    "line": 25
+  },
+  {
+    "text": "file.txt. Next sentence",
+    "file": "./packages/cli/src/ui/hooks/atCommandProcessor.ts",
+    "line": 94
+  },
+  {
+    "text": "@file.txt",
+    "file": "./packages/cli/src/ui/hooks/atCommandProcessor.ts",
+    "line": 169
+  },
+  {
+    "text": "${resolvedPath}",
+    "file": "./packages/core/src/utils/getFolderStructure.ts",
+    "line": 316
+  },
+  {
+    "text": "${resolvedPath}",
+    "file": "./packages/core/src/utils/getFolderStructure.ts",
+    "line": 346
+  },
+  {
+    "text": "not yet checked",
+    "file": "./packages/core/src/utils/systemEncoding.ts",
+    "line": 13
+  },
+  {
+    "text": "checked but failed",
+    "file": "./packages/core/src/utils/systemEncoding.ts",
+    "line": 13
+  },
+  {
+    "text": "${output.trim()}",
+    "file": "./packages/core/src/utils/systemEncoding.ts",
+    "line": 67
+  },
+  {
+    "text": "en_US.UTF-8",
+    "file": "./packages/core/src/utils/systemEncoding.ts",
+    "line": 97
+  },
+  {
+    "text": "UTF-8",
+    "file": "./packages/core/src/utils/systemEncoding.ts",
+    "line": 102
+  },
+  {
+    "text": "${editorType}",
+    "file": "./packages/cli/src/ui/hooks/useEditorSettings.ts",
+    "line": 61
+  },
+  {
+    "text": "${themeName}",
+    "file": "./packages/cli/src/ui/hooks/useThemeCommand.ts",
+    "line": 52
+  },
+  {
+    "text": "${themeName}",
+    "file": "./packages/cli/src/ui/hooks/useThemeCommand.ts",
+    "line": 85
+  },
+  {
+    "text": "${pwdFilePath}",
+    "file": "./packages/cli/src/ui/hooks/shellCommandProcessor.ts",
+    "line": 106
+  },
+  {
+    "text": "build",
+    "file": "./packages/core/src/utils/filesearch/ignore.ts",
+    "line": 81
+  },
+  {
+    "text": "my.assets",
+    "file": "./packages/core/src/utils/filesearch/ignore.ts",
+    "line": 86
+  },
+  {
+    "text": "my.assets/",
+    "file": "./packages/core/src/utils/filesearch/ignore.ts",
+    "line": 94
+  },
+  {
+    "text": "foo",
+    "file": "./packages/core/src/utils/filesearch/result-cache.ts",
+    "line": 40
+  },
+  {
+    "text": "foobar",
+    "file": "./packages/core/src/utils/filesearch/result-cache.ts",
+    "line": 40
+  },
+  {
+    "text": "foo",
+    "file": "./packages/core/src/utils/filesearch/result-cache.ts",
+    "line": 42
+  },
+  {
+    "text": "success",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 129
+  },
+  {
+    "text": "success",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 136
+  },
+  {
+    "text": "' && last === '",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 193
+  },
+  {
+    "text": " && last === ",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 193
+  },
+  {
+    "text": "${arg.replace(/",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 477
+  },
+  {
+    "text": "ls -la /tmp",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 505
+  },
+  {
+    "text": "ls",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 505
+  },
+  {
+    "text": "git status && npm test",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 506
+  },
+  {
+    "text": "git",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 506
+  },
+  {
+    "text": "') && newCommand.endsWith('",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 537
+  },
+  {
+    "text": ") && newCommand.endsWith(",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 538
+  },
+  {
+    "text": "Default Deny",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 561
+  },
+  {
+    "text": "Default Allow",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 567
+  },
+  {
+    "text": "Default Deny",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 576
+  },
+  {
+    "text": "DEFAULT DENY",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 652
+  },
+  {
+    "text": "DEFAULT ALLOW",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 690
+  },
+  {
+    "text": "default allow",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 731
+  },
+  {
+    "text": "default allow",
+    "file": "./packages/core/src/utils/shell-utils.ts",
+    "line": 773
+  },
+  {
+    "text": "subject",
+    "file": "./packages/core/src/utils/thoughtUtils.ts",
+    "line": 18
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 79
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 92
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 95
+  },
+  {
+    "text": "${themePath}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 251
+  },
+  {
+    "text": "${themePath}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 264
+  },
+  {
+    "text": "${themePath}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 270
+  },
+  {
+    "text": "${themePath}",
+    "file": "./packages/cli/src/ui/themes/theme-manager.ts",
+    "line": 291
+  },
+  {
+    "text": "blunt hammer",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 137
+  },
+  {
+    "text": "\\\\\\\\\\\\nconst greeting = \\`Hello \\\\\\\\\\`\\${name}\\\\\\\\\\`\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 405
+  },
+  {
+    "text": "\\nconst greeting = \\`Hello ${'\\\\`'}\\${name}${'\\\\`'}\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 405
+  },
+  {
+    "text": "\\nconst greeting = \\`Hello ${'\\\\`'}\\${name}${'\\\\`'}\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 405
+  },
+  {
+    "text": "\\\\\\\\\\\\nconst greeting = \\`Hello \\\\\\\\\\`\\${name}\\\\\\\\\\`\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 494
+  },
+  {
+    "text": "\\nconst greeting = \\`Hello ${'\\\\`'}\\${name}${'\\\\`'}\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 494
+  },
+  {
+    "text": "\\\\\\\\\\\\nconst greeting = \\`Hello \\\\\\\\\\`\\${name} \\${lastName}\\\\\\\\\\`\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 494
+  },
+  {
+    "text": "\\nconst greeting = \\`Hello ${'\\\\`'}\\${name} \\${lastName}${'\\\\`'}\\`;",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 494
+  },
+  {
+    "text": "Hello\\\\",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 550
+  },
+  {
+    "text": "Hello",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 550
+  },
+  {
+    "text": "\\n",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 562
+  },
+  {
+    "text": "\\t",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 562
+  },
+  {
+    "text": "foo",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 564
+  },
+  {
+    "text": "bar\\\\nbaz",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 564
+  },
+  {
+    "text": "bar\\nbaz",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 564
+  },
+  {
+    "text": "Hello World\\\\",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 565
+  },
+  {
+    "text": "Hello World",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 565
+  },
+  {
+    "text": "Hello\\\\",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 622
+  },
+  {
+    "text": "Hello",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 622
+  },
+  {
+    "text": "\\n",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 629
+  },
+  {
+    "text": "\\t",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 629
+  },
+  {
+    "text": "bar\\\\nbaz",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 631
+  },
+  {
+    "text": "bar\\nbaz",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 631
+  },
+  {
+    "text": "Hello World\\\\",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 632
+  },
+  {
+    "text": "Hello World",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 632
+  },
+  {
+    "text": "\\\\n",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 707
+  },
+  {
+    "text": "\\\\\\n",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 710
+  },
+  {
+    "text": ", match is ",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 716
+  },
+  {
+    "text": "'; // Correctly escaped: ",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 729
+  },
+  {
+    "text": "\\\\\\n",
+    "file": "./packages/core/src/utils/editCorrector.ts",
+    "line": 735
+  },
+  {
+    "text": "${colorValue}",
+    "file": "./packages/cli/src/ui/themes/color-utils.ts",
+    "line": 231
+  },
+  {
+    "text": "how",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 41
+  },
+  {
+    "text": "why.",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 41
+  },
+  {
+    "text": "type",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 49
+  },
+  {
+    "text": "object",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 49
+  },
+  {
+    "text": "properties",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 50
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 51
+  },
+  {
+    "text": "type",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 52
+  },
+  {
+    "text": "string",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 52
+  },
+  {
+    "text": "description",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 53
+  },
+  {
+    "text": "A brief, step-by-step explanation for the model choice, referencing the rubric.",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 53
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 55
+  },
+  {
+    "text": "type",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 56
+  },
+  {
+    "text": "string",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 56
+  },
+  {
+    "text": "enum",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 57
+  },
+  {
+    "text": "${FLASH_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 57
+  },
+  {
+    "text": "${PRO_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 57
+  },
+  {
+    "text": "required",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 60
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 60
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 60
+  },
+  {
+    "text": "How should I architect the data pipeline for this new analytics service?",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 64
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 67
+  },
+  {
+    "text": "The user is asking for high-level architectural design and strategy. This falls under 'Strategic Planning & Conceptual Design'.",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 67
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 68
+  },
+  {
+    "text": "${PRO_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 68
+  },
+  {
+    "text": "list the files in the current directory",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 71
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 74
+  },
+  {
+    "text": "This is a direct command requiring a single tool call (ls). It has Low Operational Complexity (1 step).",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 74
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 75
+  },
+  {
+    "text": "${FLASH_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 75
+  },
+  {
+    "text": "I need to add a new 'email' field to the User schema in 'src/models/user.ts', migrate the database, and update the registration endpoint.",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 78
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 81
+  },
+  {
+    "text": "This request involves multiple coordinated steps across different files and systems. This meets the criteria for High Operational Complexity (4+ steps).",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 81
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 82
+  },
+  {
+    "text": "${PRO_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 82
+  },
+  {
+    "text": "Read the contents of 'package.json'.",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 85
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 88
+  },
+  {
+    "text": "This is a direct command requiring a single read. It has Low Operational Complexity (1 step).",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 88
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 89
+  },
+  {
+    "text": "${FLASH_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 89
+  },
+  {
+    "text": "I'm getting an error 'Cannot read property 'map' of undefined' when I click the save button. Can you fix it?",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 93
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 96
+  },
+  {
+    "text": "The user is reporting an error symptom without a known cause. This requires investigation and falls under 'Deep Debugging'.",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 96
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 97
+  },
+  {
+    "text": "${PRO_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 97
+  },
+  {
+    "text": "What is the best way to rename the variable 'data' to 'userData' in 'src/utils.js'?",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 100
+  },
+  {
+    "text": "reasoning",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 103
+  },
+  {
+    "text": "Although the user uses strategic language ('best way'), the underlying task is a localized edit. The operational complexity is low (1-2 steps).",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 103
+  },
+  {
+    "text": "model_choice",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 104
+  },
+  {
+    "text": "${FLASH_MODEL}",
+    "file": "./packages/core/src/routing/strategies/classifierStrategy.ts",
+    "line": 104
+  },
+  {
+    "text": "${powershellCommand}",
+    "file": "./packages/core/src/ide/process-utils.ts",
+    "line": 40
+  },
+  {
+    "text": "${hookName}",
+    "file": "./packages/core/src/hooks/hookRegistry.ts",
+    "line": 115
+  },
+  {
+    "text": "${hookName}",
+    "file": "./packages/core/src/hooks/hookRegistry.ts",
+    "line": 118
+  },
+  {
+    "text": "${eventName}",
+    "file": "./packages/core/src/hooks/hookRegistry.ts",
+    "line": 168
+  },
+  {
+    "text": "${source}",
+    "file": "./packages/core/src/hooks/hookRegistry.ts",
+    "line": 168
+  },
+  {
+    "text": "SURFACE_NOT_SET",
+    "file": "./packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts",
+    "line": 133
+  },
+  {
+    "text": "Don't like these tips? You can hide them (/settings)...",
+    "file": "./packages/cli/src/ui/constants/tips.ts",
+    "line": 18
+  },
+  {
+    "text": "If you're using an IDE, see the context with Ctrl+G...",
+    "file": "./packages/cli/src/ui/constants/tips.ts",
+    "line": 120
+  },
+  {
+    "text": "Change the CLI's color theme with /theme...",
+    "file": "./packages/cli/src/ui/constants/tips.ts",
+    "line": 157
+  },
+  {
+    "text": "I'm Feeling Lucky",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 8
+  },
+  {
+    "text": "Don't rush perfection (or my code)...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 18
+  },
+  {
+    "text": "Just a sec, I'm debugging reality...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 30
+  },
+  {
+    "text": "Swapping bits... don't tell the bytes...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 40
+  },
+  {
+    "text": "Greasin' the cogs of the machine...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 47
+  },
+  {
+    "text": "Just a moment, I'm in the zone...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 55
+  },
+  {
+    "text": "Just a tick, I'm polishing my wit...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 57
+  },
+  {
+    "text": "Hold tight, I'm crafting a masterpiece...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 58
+  },
+  {
+    "text": "Just a jiffy, I'm debugging the universe...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 59
+  },
+  {
+    "text": "Just a moment, I'm aligning the pixels...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 60
+  },
+  {
+    "text": "Just a sec, I'm optimizing the humor...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 61
+  },
+  {
+    "text": "Just a moment, I'm tuning the algorithms...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 62
+  },
+  {
+    "text": "Don't panic...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 65
+  },
+  {
+    "text": "The cake is not a lie, it's just still loading...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 72
+  },
+  {
+    "text": "Just a moment, I'm finding the right meme...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 74
+  },
+  {
+    "text": "Pressing 'A' to continue...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 75
+  },
+  {
+    "text": "I'm going the distance, I'm going for speed...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 87
+  },
+  {
+    "text": "I've got a good feeling about this...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 89
+  },
+  {
+    "text": "Why don't programmers like nature? It has too many bugs...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 96
+  },
+  {
+    "text": "What can you do with a broken pencil? Nothing, it's pointless...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 99
+  },
+  {
+    "text": "That's not a bug, it's an undocumented feature...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 106
+  },
+  {
+    "text": "I'll be back... with an answer.",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 108
+  },
+  {
+    "text": "I've seen things you people wouldn't believe... like a user who reads loading messages.",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 114
+  },
+  {
+    "text": "What's a computer's favorite snack? Microchips.",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 116
+  },
+  {
+    "text": "Why do Java developers wear glasses? Because they don't C#.",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 117
+  },
+  {
+    "text": "Pretty sure there's a cat walking on the keyboard somewhere...",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 130
+  },
+  {
+    "text": "It's not a bug, it's a feature... of this loading screen.",
+    "file": "./packages/cli/src/ui/constants/wittyPhrases.ts",
+    "line": 132
+  },
+  {
+    "text": "oneof",
+    "file": "./packages/core/src/code_assist/converter.ts",
+    "line": 222
+  },
+  {
+    "text": "${portStr}",
+    "file": "./packages/core/src/code_assist/oauth2.ts",
+    "line": 453
+  },
+  {
+    "text": "Here is the user's editor context as a JSON object. This is for your information only.",
+    "file": "./packages/core/src/core/client.ts",
+    "line": 280
+  },
+  {
+    "text": "Here is a summary of changes in the user's editor context, in JSON format. This is for your information only.",
+    "file": "./packages/core/src/core/client.ts",
+    "line": 390
+  },
+  {
+    "text": "${texts[index]}",
+    "file": "./packages/core/src/core/baseLlmClient.ts",
+    "line": 177
+  },
+  {
+    "text": "${prompt.name}",
+    "file": "./packages/core/src/prompts/prompt-registry.ts",
+    "line": 21
+  },
+  {
+    "text": "${newName}",
+    "file": "./packages/core/src/prompts/prompt-registry.ts",
+    "line": 21
+  },
+  {
+    "text": "${token}",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 61
+  },
+  {
+    "text": "${token}",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 66
+  },
+  {
+    "text": "${this.params.prompt}",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 163
+  },
+  {
+    "text": "${displayPrompt}",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 200
+  },
+  {
+    "text": "${userPrompt}:\\n\\n",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 354
+  },
+  {
+    "text": "Processes content from URL(s), including local and private network addresses (e.g., localhost), embedded in a prompt. Include up to 20 URLs and instructions (e.g., summarize, extract specific data) directly in the 'prompt' parameter.",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 395
+  },
+  {
+    "text": "Summarize https://example.com/article and extract key points from https://another.com/data",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 401
+  },
+  {
+    "text": "http://",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 401
+  },
+  {
+    "text": "https://",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 401
+  },
+  {
+    "text": "example.com",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 401
+  },
+  {
+    "text": "https://example.com",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 401
+  },
+  {
+    "text": "example.com",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 401
+  },
+  {
+    "text": "The 'prompt' parameter cannot be empty and must contain URL(s) and instructions.",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 418
+  },
+  {
+    "text": "The 'prompt' must contain at least one valid URL (starting with http:// or https://).",
+    "file": "./packages/core/src/tools/web-fetch.ts",
+    "line": 428
+  },
+  {
+    "text": " Did you mean 'tool'?",
+    "file": "./packages/core/src/core/coreToolScheduler.ts",
+    "line": 639
+  },
+  {
+    "text": " Did you mean one of: 'tool1', 'tool2'?",
+    "file": "./packages/core/src/core/coreToolScheduler.ts",
+    "line": 639
+  },
+  {
+    "text": "${match.name}",
+    "file": "./packages/core/src/core/coreToolScheduler.ts",
+    "line": 658
+  },
+  {
+    "text": "${reqInfo.name}",
+    "file": "./packages/core/src/core/coreToolScheduler.ts",
+    "line": 763
+  },
+  {
+    "text": "active",
+    "file": "./packages/core/src/core/coreToolScheduler.ts",
+    "line": 833
+  },
+  {
+    "text": "The 'file_path' parameter must be non-empty.",
+    "file": "./packages/core/src/tools/edit.ts",
+    "line": 549
+  },
+  {
+    "text": "${relativePath}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 105
+  },
+  {
+    "text": "*.js",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 142
+  },
+  {
+    "text": "*.{ts,tsx}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 142
+  },
+  {
+    "text": "${searchDirDisplay}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 231
+  },
+  {
+    "text": "${this.params.pattern}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 233
+  },
+  {
+    "text": "${this.params.include}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 233
+  },
+  {
+    "text": "${this.params.pattern}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 255
+  },
+  {
+    "text": "${this.params.include}",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 255
+  },
+  {
+    "text": "grep ...",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 490
+  },
+  {
+    "text": "The pattern to search for. By default, treated as a Rust-flavored regular expression. Use '\\\\b' for precise symbol matching (e.g., '\\\\bMatchMe\\\\b').",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 496
+  },
+  {
+    "text": "Directory or file to search. Directories are searched recursively. Relative paths are resolved against current working directory. Defaults to current working directory ('.') if omitted.",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 501
+  },
+  {
+    "text": "Glob pattern to filter files (e.g., '*.ts', 'src/**'). Recommended for large repositories to reduce noise. Defaults to all files if omitted.",
+    "file": "./packages/core/src/tools/ripGrep.ts",
+    "line": 506
+  },
+  {
+    "text": "valid",
+    "file": "./packages/core/src/core/geminiChat.ts",
+    "line": 8
+  },
+  {
+    "text": "file_path",
+    "file": "./packages/core/src/tools/write-file.ts",
+    "line": 442
+  },
+  {
+    "text": "switch",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 42
+  },
+  {
+    "text": "Okay, I will now...",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 215
+  },
+  {
+    "text": "I have finished the changes...",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 215
+  },
+  {
+    "text": "Should I remember that for you?",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 235
+  },
+  {
+    "text": "why",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 277
+  },
+  {
+    "text": "what",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 277
+  },
+  {
+    "text": " or ",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 314
+  },
+  {
+    "text": "Refactor the authentication service to use a new JWT library.",
+    "file": "./packages/core/src/core/prompts.ts",
+    "line": 368
+  },
+  {
+    "text": "${initialError.raw}",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 422
+  },
+  {
+    "text": "To fix a bug where users can be null...",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 880
+  },
+  {
+    "text": "...in the 'renderUserProfile' function...",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 881
+  },
+  {
+    "text": "...add a null check for the 'user' object...",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 882
+  },
+  {
+    "text": "...so that it displays a loading spinner instead of crashing.",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 883
+  },
+  {
+    "text": "In the 'calculateTotal' function, correct the sales tax calculation by updating the 'taxRate' constant from 0.05 to 0.075 to reflect the new regional tax laws.",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 885
+  },
+  {
+    "text": "Change the text.",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 888
+  },
+  {
+    "text": "Fix the bug.",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 889
+  },
+  {
+    "text": "Replace the line with this new line.",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 890
+  },
+  {
+    "text": "The 'file_path' parameter must be non-empty.",
+    "file": "./packages/core/src/tools/smart-edit.ts",
+    "line": 929
+  },
+  {
+    "text": "www-authenticate",
+    "file": "./packages/core/src/tools/mcp-client.ts",
+    "line": 309
+  },
+  {
+    "text": "${tag}",
+    "file": "./packages/core/src/core/logger.ts",
+    "line": 453
+  },
+  {
+    "text": "Remember that I like pineapple on pizza",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 51
+  },
+  {
+    "text": "Please save this: my cat's name is Whiskers",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 51
+  },
+  {
+    "text": "Should I remember that for you?",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 58
+  },
+  {
+    "text": "My favorite color is blue",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 62
+  },
+  {
+    "text": "My favorite color is blue",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 62
+  },
+  {
+    "text": "${fact}",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 267
+  },
+  {
+    "text": "${fact}",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 280
+  },
+  {
+    "text": "fact",
+    "file": "./packages/core/src/tools/memoryTool.ts",
+    "line": 320
+  },
+  {
+    "text": "interesting",
+    "file": "./packages/core/src/core/recordingContentGenerator.ts",
+    "line": 26
+  },
+  {
+    "text": "ShellTool(wc)",
+    "file": "./packages/core/src/tools/shell.ts",
+    "line": 94
+  },
+  {
+    "text": "${command}",
+    "file": "./packages/core/src/tools/shell.ts",
+    "line": 106
+  },
+  {
+    "text": "${this.params.dir_path}",
+    "file": "./packages/core/src/tools/glob.ts",
+    "line": 127
+  },
+  {
+    "text": "${this.params.pattern}",
+    "file": "./packages/core/src/tools/glob.ts",
+    "line": 195
+  },
+  {
+    "text": "${this.params.pattern}",
+    "file": "./packages/core/src/tools/glob.ts",
+    "line": 227
+  },
+  {
+    "text": "The glob pattern to match against (e.g., '**/*.py', 'docs/*.md').",
+    "file": "./packages/core/src/tools/glob.ts",
+    "line": 276
+  },
+  {
+    "text": "${searchDirAbsolute}",
+    "file": "./packages/core/src/tools/glob.ts",
+    "line": 323
+  },
+  {
+    "text": "The 'pattern' parameter cannot be empty.",
+    "file": "./packages/core/src/tools/glob.ts",
+    "line": 343
+  },
+  {
+    "text": "Optional: For text files, the 0-based line number to start reading from. Requires 'limit' to be set. Use for paginating through large files.",
+    "file": "./packages/core/src/tools/read-file.ts",
+    "line": 167
+  },
+  {
+    "text": "Optional: For text files, maximum number of lines to read. Use with 'offset' to paginate through large files. If omitted, reads the entire file (if feasible, up to a default limit).",
+    "file": "./packages/core/src/tools/read-file.ts",
+    "line": 172
+  },
+  {
+    "text": "The 'file_path' parameter must be non-empty.",
+    "file": "./packages/core/src/tools/read-file.ts",
+    "line": 189
+  },
+  {
+    "text": "*.ts",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 39
+  },
+  {
+    "text": "src/** /*.md",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 39
+  },
+  {
+    "text": "*.log",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 46
+  },
+  {
+    "text": "dist/**",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 46
+  },
+  {
+    "text": "src/**/*.ts",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 459
+  },
+  {
+    "text": "README.md",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 459
+  },
+  {
+    "text": "docs/",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 459
+  },
+  {
+    "text": "**/*.log",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 468
+  },
+  {
+    "text": "temp/",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 468
+  },
+  {
+    "text": "read all files in X directory",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 514
+  },
+  {
+    "text": "show me the content of all Y files",
+    "file": "./packages/core/src/tools/read-many-files.ts",
+    "line": 514
+  },
+  {
+    "text": "fetch",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 62
+  },
+  {
+    "text": "axios",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 62
+  },
+  {
+    "text": "gemini-2.5-flash-image",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 62
+  },
+  {
+    "text": "fancy logo",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 64
+  },
+  {
+    "text": "Download",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 65
+  },
+  {
+    "text": "logo creator,",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 71
+  },
+  {
+    "text": "in_progress",
+    "file": "./packages/core/src/tools/write-todos.ts",
+    "line": 243
+  },
+  {
+    "text": "google-workspace__*",
+    "file": "./packages/core/src/tools/mcp-tool.ts",
+    "line": 78
+  },
+  {
+    "text": "none",
+    "file": "./packages/core/src/config/config.ts",
+    "line": 1075
+  },
+  {
+    "text": "trusted",
+    "file": "./packages/core/src/config/config.ts",
+    "line": 1110
+  },
+  {
+    "text": "${this.params.query}",
+    "file": "./packages/core/src/tools/web-search.ts",
+    "line": 75
+  },
+  {
+    "text": "${this.params.query}",
+    "file": "./packages/core/src/tools/web-search.ts",
+    "line": 99
+  },
+  {
+    "text": "${this.params.query}",
+    "file": "./packages/core/src/tools/web-search.ts",
+    "line": 162
+  },
+  {
+    "text": "${this.params.query}",
+    "file": "./packages/core/src/tools/web-search.ts",
+    "line": 163
+  },
+  {
+    "text": "The 'query' parameter cannot be empty.",
+    "file": "./packages/core/src/tools/web-search.ts",
+    "line": 226
+  },
+  {
+    "text": "chat",
+    "file": "./packages/core/src/config/defaultModelConfigs.ts",
+    "line": 11
+  },
+  {
+    "text": "user-facing",
+    "file": "./packages/core/src/config/defaultModelConfigs.ts",
+    "line": 36
+  },
+  {
+    "text": "*.js",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 42
+  },
+  {
+    "text": "*.{ts,tsx}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 42
+  },
+  {
+    "text": "${relativePath}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 92
+  },
+  {
+    "text": "${searchDirDisplay}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 159
+  },
+  {
+    "text": "${this.params.pattern}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 163
+  },
+  {
+    "text": "${this.params.include}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 163
+  },
+  {
+    "text": "${this.params.pattern}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 184
+  },
+  {
+    "text": "${this.params.include}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 184
+  },
+  {
+    "text": "The regular expression (regex) pattern to search for within file contents (e.g., 'function\\\\s+myFunction', 'import\\\\s+\\\\{.*\\\\}\\\\s+from\\\\s+.*').",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 585
+  },
+  {
+    "text": "Optional: A glob pattern to filter which files are searched (e.g., '*.js', '*.{ts,tsx}', 'src/**'). If omitted, searches all files (respecting potential global ignores).",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 595
+  },
+  {
+    "text": "${relativePath}",
+    "file": "./packages/core/src/tools/grep.ts",
+    "line": 627
+  },
+  {
+    "text": "lite",
+    "file": "./packages/core/src/config/models.ts",
+    "line": 22
+  },
+  {
+    "text": "lite",
+    "file": "./packages/core/src/config/models.ts",
+    "line": 23
+  },
+  {
+    "text": "pro",
+    "file": "./packages/core/src/config/models.ts",
+    "line": 24
+  },
+  {
+    "text": "lite",
+    "file": "./packages/core/src/config/models.ts",
+    "line": 24
+  },
+  {
+    "text": "lite",
+    "file": "./packages/core/src/config/models.ts",
+    "line": 40
+  },
+  {
+    "text": "${config.extension.name}",
+    "file": "./packages/core/src/tools/mcp-client-manager.ts",
+    "line": 154
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/tools/mcp-client-manager.ts",
+    "line": 157
+  },
+  {
+    "text": "${name}",
+    "file": "./packages/core/src/tools/mcp-client-manager.ts",
+    "line": 284
+  },
+  {
+    "text": "${tool.name}",
+    "file": "./packages/core/src/tools/tool-registry.ts",
+    "line": 225
+  },
+  {
+    "text": "tool",
+    "file": "./packages/core/src/tools/tool-registry.ts",
+    "line": 375
+  },
+  {
+    "text": "${discoveryCmd}",
+    "file": "./packages/core/src/tools/tool-registry.ts",
+    "line": 420
+  },
+  {
+    "text": "A summary of the investigation's conclusions and insights for the main agent.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 22
+  },
+  {
+    "text": "what does gettext.translation do with localedir=None?",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 109
+  },
+  {
+    "text": "SummaryOfFindings",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 130
+  },
+  {
+    "text": "The core issue is a race condition in the \\`updateUser\\` function. The function reads the user's state, performs an asynchronous operation, and then writes the state back. If another request modifies the user state during the async operation, that change will be overwritten. The fix requires implementing a transactional read-modify-write pattern, potentially using a database lock or a versioning system.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 130
+  },
+  {
+    "text": "ExplorationTrace",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 131
+  },
+  {
+    "text": "Used \\`grep\\` to search for \\`updateUser\\` to locate the primary function.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 132
+  },
+  {
+    "text": "Read the file \\`src/controllers/userController.js\\` to understand the function's logic.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 133
+  },
+  {
+    "text": "Used \\`ls -R\\` to look for related files, such as services or database models.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 134
+  },
+  {
+    "text": "Read \\`src/services/userService.js\\` and \\`src/models/User.js\\` to understand the data flow and how state is managed.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 135
+  },
+  {
+    "text": "RelevantLocations",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 137
+  },
+  {
+    "text": "FilePath",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 139
+  },
+  {
+    "text": "src/controllers/userController.js",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 139
+  },
+  {
+    "text": "Reasoning",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 140
+  },
+  {
+    "text": "This file contains the \\`updateUser\\` function which has the race condition. It's the entry point for the problematic logic.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 140
+  },
+  {
+    "text": "KeySymbols",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 141
+  },
+  {
+    "text": "updateUser",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 141
+  },
+  {
+    "text": "getUser",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 141
+  },
+  {
+    "text": "saveUser",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 141
+  },
+  {
+    "text": "FilePath",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 144
+  },
+  {
+    "text": "src/services/userService.js",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 144
+  },
+  {
+    "text": "Reasoning",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 145
+  },
+  {
+    "text": "This service is called by the controller and handles the direct interaction with the data layer. Any locking mechanism would likely be implemented here.",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 145
+  },
+  {
+    "text": "KeySymbols",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 146
+  },
+  {
+    "text": "updateUserData",
+    "file": "./packages/core/src/agents/codebase-investigator.ts",
+    "line": 146
+  },
+  {
+    "text": "${aliasName}",
+    "file": "./packages/core/src/services/modelConfigService.ts",
+    "line": 76
+  },
+  {
+    "text": "${context.model}",
+    "file": "./packages/core/src/services/modelConfigService.ts",
+    "line": 194
+  },
+  {
+    "text": "last",
+    "file": "./packages/core/src/agents/executor.ts",
+    "line": 313
+  },
+  {
+    "text": "thought",
+    "file": "./packages/core/src/agents/executor.ts",
+    "line": 622
+  },
+  {
+    "text": "Environment Context",
+    "file": "./packages/core/src/agents/executor.ts",
+    "line": 1003
+  },
+  {
+    "text": "${tool.name}",
+    "file": "./packages/core/src/agents/executor.ts",
+    "line": 1058
+  },
+  {
+    "text": "${agentName}",
+    "file": "./packages/core/src/agents/executor.ts",
+    "line": 1059
+  },
+  {
+    "text": "Get Started!",
+    "file": "./packages/core/src/agents/types.ts",
+    "line": 93
+  },
+  {
+    "text": "report",
+    "file": "./packages/core/src/agents/types.ts",
+    "line": 135
+  },
+  {
+    "text": "answer",
+    "file": "./packages/core/src/agents/types.ts",
+    "line": 135
+  }
+]
