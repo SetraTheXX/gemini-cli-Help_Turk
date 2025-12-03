@@ -7,6 +7,17 @@
 // Export config
 export * from './config/config.js';
 export * from './config/defaultModelConfigs.js';
+export {
+  DEFAULT_GEMINI_MODEL,
+  DEFAULT_GEMINI_MODEL_AUTO,
+  DEFAULT_GEMINI_FLASH_MODEL,
+  DEFAULT_GEMINI_FLASH_LITE_MODEL,
+  DEFAULT_GEMINI_EMBEDDING_MODEL,
+} from './config/models.js';
+export {
+  DEFAULT_TRUNCATE_TOOL_OUTPUT_LINES,
+  DEFAULT_TRUNCATE_TOOL_OUTPUT_THRESHOLD,
+} from './config/config.js';
 export * from './output/types.js';
 export * from './output/json-formatter.js';
 export * from './output/stream-json-formatter.js';
@@ -41,6 +52,7 @@ export * from './code_assist/oauth2.js';
 export * from './code_assist/server.js';
 export * from './code_assist/types.js';
 export * from './core/apiKeyCredentialStorage.js';
+export { detectIdeFromEnv } from './ide/detect-ide.js';
 
 // Export utilities
 export * from './utils/paths.js';
@@ -133,6 +145,24 @@ export { OAuthUtils } from './mcp/oauth-utils.js';
 
 // Export telemetry functions
 export * from './telemetry/index.js';
+export {
+  logExtensionEnable,
+  logExtensionDisable,
+  logExtensionInstallEvent,
+  logExtensionUpdateEvent,
+  logIdeConnection,
+  logModelSlashCommand,
+} from './telemetry/loggers.js';
+export {
+  IdeConnectionEvent,
+  IdeConnectionType,
+  ExtensionInstallEvent,
+  ExtensionDisableEvent,
+  ExtensionEnableEvent,
+  ExtensionUninstallEvent,
+  ExtensionUpdateEvent,
+  ModelSlashCommandEvent,
+} from './telemetry/types.js';
 export { sessionId } from './utils/session.js';
 export * from './utils/browser.js';
 export { Storage } from './config/storage.js';
