@@ -109,19 +109,24 @@
     "recordResponses": "Test için model yanıtlarının kaydedileceği dosya yolu.",
     "promptDeprecation": "Bunun yerine konumsal prompt kullanın. Bu bayrak ileride kaldırılacaktır."
   },
-  "errors": {
-    "promptAndQuery": "Hem konumsal prompt hem de --prompt (-p) bayrağı birlikte kullanılamaz",
-    "promptAndInteractive": "--prompt (-p) ile --prompt-interactive (-i) birlikte kullanılamaz",
-    "resumeNeedsInput": "Bir oturumu sürdürürken --prompt (-p) veya stdin ile bir mesaj vermelisiniz",
-    "yoloAndApproval": "--yolo (-y) ile --approval-mode birlikte kullanılamaz. Bunun yerine --approval-mode=yolo kullanın.",
-    "invalidLocaleValue": "Geçersiz locale değeri: {{value}}",
-    "invalidLocaleMissing": "Geçersiz locale değeri: boş olmayan bir ifade bekleniyordu",
-    "unsupportedLocale": "Desteklenmeyen yerel ayar \"{{value}}\". İngilizce'ye dönülüyor.",
-    "unknown": "Bilinmeyen hata"
-  },
-  "auth": {
-    "loginFailed": "Oturum açılamadı. Mesaj: {{message}}"
-  },
+    "errors": {
+      "promptAndQuery": "Hem konumsal prompt hem de --prompt (-p) bayrağı birlikte kullanılamaz",
+      "promptAndInteractive": "--prompt (-p) ile --prompt-interactive (-i) birlikte kullanılamaz",
+      "resumeNeedsInput": "Bir oturumu sürdürürken --prompt (-p) veya stdin ile bir mesaj vermelisiniz",
+      "yoloAndApproval": "--yolo (-y) ile --approval-mode birlikte kullanılamaz. Bunun yerine --approval-mode=yolo kullanın.",
+      "invalidLocaleValue": "Geçersiz locale değeri: {{value}}",
+      "invalidLocaleMissing": "Geçersiz locale değeri: boş olmayan bir ifade bekleniyordu",
+      "unsupportedLocale": "Desteklenmeyen yerel ayar \"{{value}}\". İngilizce'ye dönülüyor.",
+      "unknown": "Bilinmeyen hata"
+    },
+    "auth": {
+      "loginFailed": "Oturum açılamadı. Mesaj: {{message}}",
+      "authTypeEnforcedMismatch": "Kimlik doğrulama {{enforcedType}} olarak zorunlu, ancak şu anda {{authType}} kullanılıyor.",
+      "existingApiKeyDetected": "Kayıtlı API anahtarı tespit edildi (GEMINI_API_KEY). Kullanmak için \"Gemini API Key\" seçeneğini seçin.",
+      "noAuthMethodSelected": "Herhangi bir kimlik doğrulama yöntemi seçilmedi.",
+      "invalidDefaultAuthType": "GEMINI_DEFAULT_AUTH_TYPE için geçersiz değer: \"{{defaultAuthType}}\". Geçerli değerler: {{allowedValues}}.",
+      "authenticatedVia": "\"{{authType}}\" ile kimlik doğrulandı."
+    },
   "installationInfo": {
     "messages": {
       "localGit": "Yerel bir git kopyasından çalışıyor. Lütfen \"git pull\" ile güncelleyin.",
@@ -253,9 +258,39 @@
         }
       }
     },
-    "loading": {
-      "waitingForConfirmation": "Kullanıcı onayı bekleniyor...",
-      "wittyPhrases": [
+      "extensions": {
+        "list": {
+          "noneInstalled": "Hiç eklenti yüklü değil.",
+          "title": "Yüklü eklentiler:",
+          "status": {
+            "active": "aktif",
+            "disabled": "devre dışı"
+          },
+          "states": {
+            "checking_for_updates": "güncellemeler denetleniyor",
+            "updated_needs_restart": "güncellendi, yeniden başlatma gerekli",
+            "updated": "güncellendi",
+            "updating": "güncelleniyor",
+            "update_available": "güncelleme mevcut",
+            "up_to_date": "güncel",
+            "error": "hata",
+            "not_updatable": "güncellenemiyor",
+            "unknown": "bilinmeyen durum"
+          }
+        }
+      },
+      "updates": {
+        "nightlyAvailable": "Gemini CLI'nin yeni bir sürümü mevcut! {{currentVersion}} → {{latestVersion}}",
+        "stableAvailable": "Gemini CLI güncellemesi mevcut! {{currentVersion}} → {{latestVersion}}",
+        "sandboxBlocked": "Otomatik güncelleme sandbox modunda kullanılamaz.",
+        "autoUpdateFailedWithCommand": "Otomatik güncelleme başarısız. Lütfen manuel güncellemeyi deneyin. (komut: {{command}}, stderr: {{stderr}})",
+        "autoUpdateFailedWithError": "Otomatik güncelleme başarısız. Lütfen manuel güncellemeyi deneyin. (hata: {{error}})",
+        "autoUpdateFailedGeneric": "Otomatik güncelleme başarısız. Lütfen manuel güncellemeyi deneyin.",
+        "autoUpdateSuccess": "Güncelleme başarılı! Yeni sürüm bir sonraki çalıştırmada kullanılacak."
+      },
+      "loading": {
+        "waitingForConfirmation": "Kullanıcı onayı bekleniyor...",
+        "wittyPhrases": [
         "Şansımı deniyorum",
         "Harikalık gönderiliyor... ",
         "Serifleri yeniden boyuyorum...",
@@ -446,7 +481,19 @@
   },
   "logs": {
     "cli": {
-      "promptInteractivePipeError": "Hata: --prompt-interactive bayrağı, girdi stdin üzerinden geliyorsa kullanılamaz."
+      "promptInteractivePipeError": "Hata: --prompt-interactive bayrağı, girdi stdin üzerinden geliyorsa kullanılamaz.",
+      "noInputProvided": "stdin üzerinden bir girdi gelmedi. Veriyi gemini komutuna pipe ederek veya --prompt seçeneğini kullanarak girdi sağlayabilirsiniz.",
+      "stdinTruncated": "Uyarı: stdin girişi {{maxBytes}} bayta kadar kısaltıldı."
+    },
+    "update": {
+      "checkFailed": "Güncelleme denetimi başarısız:",
+      "checkFailedWithError": "Güncelleme denetimi başarısız: {{error}}"
+    },
+    "auth": {
+      "errorAuthenticating": "Kimlik doğrulama hatası:"
+    },
+    "extensions": {
+      "unhandledState": "İşlenemeyen eklenti güncelleme durumu: {{state}}"
     },
     "dns": {
       "invalidResolutionOrder": "Ayarlar'daki dnsResolutionOrder değeri geçersiz: \"{{order}}\". Varsayılan \"{{defaultValue}}\" kullanılacak."

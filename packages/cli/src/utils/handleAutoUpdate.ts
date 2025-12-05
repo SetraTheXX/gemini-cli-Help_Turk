@@ -12,6 +12,8 @@ import type { HistoryItem } from '../ui/types.js';
 import { MessageType } from '../ui/types.js';
 import { spawnWrapper } from './spawnWrapper.js';
 import type { spawn } from 'node:child_process';
+import { uiTranslator } from '../ui/i18n.js';
+import { getErrorMessage } from '@google/gemini-cli-core';
 
 export function handleAutoUpdate(
   info: UpdateObject | null,
@@ -19,13 +21,14 @@ export function handleAutoUpdate(
   projectRoot: string,
   spawnFn: typeof spawn = spawnWrapper,
 ) {
+  const t = uiTranslator;
   if (!info) {
     return;
   }
 
   if (settings.merged.tools?.sandbox || process.env['GEMINI_SANDBOX']) {
     updateEventEmitter.emit('update-info', {
-      message: `${info.message}\nAutomatic update is not available in sandbox mode.`,
+      message: `${info.message}\n${t('ui.updates.sandboxBlocked')}`,
     });
     return;
   }
@@ -77,19 +80,23 @@ export function handleAutoUpdate(
   updateProcess.on('close', (code) => {
     if (code === 0) {
       updateEventEmitter.emit('update-success', {
-        message:
-          'Update successful! The new version will be used on your next run.',
+        message: t('ui.updates.autoUpdateSuccess'),
       });
     } else {
       updateEventEmitter.emit('update-failed', {
-        message: `Automatic update failed. Please try updating manually. (command: ${updateCommand}, stderr: ${errorOutput.trim()})`,
+        message: t('ui.updates.autoUpdateFailedWithCommand', {
+          command: updateCommand,
+          stderr: errorOutput.trim(),
+        }),
       });
     }
   });
 
   updateProcess.on('error', (err) => {
     updateEventEmitter.emit('update-failed', {
-      message: `Automatic update failed. Please try updating manually. (error: ${err.message})`,
+      message: t('ui.updates.autoUpdateFailedWithError', {
+        error: getErrorMessage(err),
+      }),
     });
   });
   return updateProcess;
@@ -122,7 +129,7 @@ export function setUpdateHandler(
     addItem(
       {
         type: MessageType.ERROR,
-        text: `Automatic update failed. Please try updating manually`,
+        text: t('ui.updates.autoUpdateFailedGeneric'),
       },
       Date.now(),
     );
@@ -134,7 +141,7 @@ export function setUpdateHandler(
     addItem(
       {
         type: MessageType.INFO,
-        text: `Update successful! The new version will be used on your next run.`,
+        text: t('ui.updates.autoUpdateSuccess'),
       },
       Date.now(),
     );

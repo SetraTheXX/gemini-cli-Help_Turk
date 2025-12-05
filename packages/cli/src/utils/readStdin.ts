@@ -5,6 +5,10 @@
  */
 
 import { debugLogger } from '@google/gemini-cli-core';
+import { createTranslator } from '../i18n/index.js';
+import { detectLocale } from './locale.js';
+
+const t = createTranslator(detectLocale(process.env, 'en'));
 
 export async function readStdin(): Promise<string> {
   const MAX_STDIN_SIZE = 8 * 1024 * 1024; // 8MB
@@ -33,7 +37,7 @@ export async function readStdin(): Promise<string> {
           const remainingSize = MAX_STDIN_SIZE - totalSize;
           data += chunk.slice(0, remainingSize);
           debugLogger.warn(
-            `Warning: stdin input truncated to ${MAX_STDIN_SIZE} bytes.`,
+            t('logs.cli.stdinTruncated', { maxBytes: MAX_STDIN_SIZE }),
           );
           process.stdin.destroy(); // Stop reading further
           break;

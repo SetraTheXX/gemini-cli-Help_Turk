@@ -109,23 +109,28 @@
     "recordResponses": "Path to a file to record model responses for testing.",
     "promptDeprecation": "Use the positional prompt instead. This flag will be removed in a future version."
   },
-  "errors": {
-    "promptAndQuery": "Cannot use both a positional prompt and the --prompt (-p) flag together",
-    "promptAndInteractive": "Cannot use both --prompt (-p) and --prompt-interactive (-i) together",
-    "resumeNeedsInput": "When resuming a session, you must provide a message via --prompt (-p) or stdin",
-    "yoloAndApproval": "Cannot use both --yolo (-y) and --approval-mode together. Use --approval-mode=yolo instead.",
-    "invalidLocaleValue": "Invalid locale value: {{value}}",
-    "invalidLocaleMissing": "Invalid locale value: expected a non-empty string",
-    "unsupportedLocale": "Unsupported locale \"{{value}}\". Falling back to English.",
-    "unknown": "Unknown error"
-  },
-  "auth": {
-    "loginFailed": "Failed to login. Message: {{message}}"
-  },
-  "installationInfo": {
-    "messages": {
-      "localGit": "Running from a local git clone. Please update with \"git pull\".",
-      "npx": "Running via npx, update not applicable.",
+    "errors": {
+      "promptAndQuery": "Cannot use both a positional prompt and the --prompt (-p) flag together",
+      "promptAndInteractive": "Cannot use both --prompt (-p) and --prompt-interactive (-i) together",
+      "resumeNeedsInput": "When resuming a session, you must provide a message via --prompt (-p) or stdin",
+      "yoloAndApproval": "Cannot use both --yolo (-y) and --approval-mode together. Use --approval-mode=yolo instead.",
+      "invalidLocaleValue": "Invalid locale value: {{value}}",
+      "invalidLocaleMissing": "Invalid locale value: expected a non-empty string",
+      "unsupportedLocale": "Unsupported locale \"{{value}}\". Falling back to English.",
+      "unknown": "Unknown error"
+    },
+    "auth": {
+      "loginFailed": "Failed to login. Message: {{message}}",
+      "authTypeEnforcedMismatch": "Authentication is enforced to be {{enforcedType}}, but you are currently using {{authType}}.",
+      "existingApiKeyDetected": "Existing API key detected (GEMINI_API_KEY). Select \"Gemini API Key\" option to use it.",
+      "noAuthMethodSelected": "No authentication method selected.",
+      "invalidDefaultAuthType": "Invalid value for GEMINI_DEFAULT_AUTH_TYPE: \"{{defaultAuthType}}\". Valid values are: {{allowedValues}}.",
+      "authenticatedVia": "Authenticated via \"{{authType}}\"."
+    },
+    "installationInfo": {
+      "messages": {
+        "localGit": "Running from a local git clone. Please update with \"git pull\".",
+        "npx": "Running via npx, update not applicable.",
       "pnpx": "Running via pnpx, update not applicable.",
       "bunx": "Running via bunx, update not applicable.",
       "homebrew": "Installed via Homebrew. Please update with \"brew upgrade\".",
@@ -253,9 +258,39 @@
         }
       }
     },
-    "loading": {
-      "waitingForConfirmation": "Waiting for user confirmation...",
-      "wittyPhrases": [
+      "extensions": {
+        "list": {
+          "noneInstalled": "No extensions installed.",
+          "title": "Installed extensions:",
+          "status": {
+            "active": "active",
+            "disabled": "disabled"
+          },
+          "states": {
+            "checking_for_updates": "checking for updates",
+            "updated_needs_restart": "updated, needs restart",
+            "updated": "updated",
+            "updating": "updating",
+            "update_available": "update available",
+            "up_to_date": "up to date",
+            "error": "error",
+            "not_updatable": "not updatable",
+            "unknown": "unknown state"
+          }
+        }
+      },
+      "updates": {
+        "nightlyAvailable": "A new version of Gemini CLI is available! {{currentVersion}} → {{latestVersion}}",
+        "stableAvailable": "Gemini CLI update available! {{currentVersion}} → {{latestVersion}}",
+        "sandboxBlocked": "Automatic update is not available in sandbox mode.",
+        "autoUpdateFailedWithCommand": "Automatic update failed. Please try updating manually. (command: {{command}}, stderr: {{stderr}})",
+        "autoUpdateFailedWithError": "Automatic update failed. Please try updating manually. (error: {{error}})",
+        "autoUpdateFailedGeneric": "Automatic update failed. Please try updating manually.",
+        "autoUpdateSuccess": "Update successful! The new version will be used on your next run."
+      },
+      "loading": {
+        "waitingForConfirmation": "Waiting for user confirmation...",
+        "wittyPhrases": [
         "I'm Feeling Lucky",
         "Shipping awesomeness... ",
         "Painting the serifs back on...",
@@ -446,7 +481,19 @@
   },
   "logs": {
     "cli": {
-      "promptInteractivePipeError": "Error: The --prompt-interactive flag cannot be used when input is piped from stdin."
+      "promptInteractivePipeError": "Error: The --prompt-interactive flag cannot be used when input is piped from stdin.",
+      "noInputProvided": "No input provided via stdin. Input can be provided by piping data into gemini or using the --prompt option.",
+      "stdinTruncated": "Warning: stdin input truncated to {{maxBytes}} bytes."
+    },
+    "update": {
+      "checkFailed": "Update check failed:",
+      "checkFailedWithError": "Update check failed: {{error}}"
+    },
+    "auth": {
+      "errorAuthenticating": "Error authenticating:"
+    },
+    "extensions": {
+      "unhandledState": "Unhandled extension update state: {{state}}"
     },
     "dns": {
       "invalidResolutionOrder": "Invalid value for dnsResolutionOrder in settings: \"{{order}}\". Using default \"{{defaultValue}}\"."

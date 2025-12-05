@@ -9,6 +9,7 @@ import { Box, Text } from 'ink';
 import { useUIState } from '../../contexts/UIStateContext.js';
 import { ExtensionUpdateState } from '../../state/extensions.js';
 import { debugLogger, type GeminiCLIExtension } from '@google/gemini-cli-core';
+import { uiTranslator } from '../../i18n.js';
 
 interface ExtensionsList {
   extensions: readonly GeminiCLIExtension[];
@@ -16,23 +17,28 @@ interface ExtensionsList {
 
 export const ExtensionsList: React.FC<ExtensionsList> = ({ extensions }) => {
   const { extensionsUpdateState } = useUIState();
+  const t = uiTranslator;
 
   if (extensions.length === 0) {
-    return <Text>No extensions installed.</Text>;
+    return <Text>{t('ui.extensions.list.noneInstalled')}</Text>;
   }
 
   return (
     <Box flexDirection="column" marginTop={1} marginBottom={1}>
-      <Text>Installed extensions:</Text>
+      <Text>{t('ui.extensions.list.title')}</Text>
       <Box flexDirection="column" paddingLeft={2}>
         {extensions.map((ext) => {
           const state = extensionsUpdateState.get(ext.name);
           const isActive = ext.isActive;
-          const activeString = isActive ? 'active' : 'disabled';
+          const activeString = isActive
+            ? t('ui.extensions.list.status.active')
+            : t('ui.extensions.list.status.disabled');
           const activeColor = isActive ? 'green' : 'grey';
 
           let stateColor = 'gray';
-          const stateText = state || 'unknown state';
+          const stateText = state
+            ? t(`ui.extensions.list.states.${state}`)
+            : t('ui.extensions.list.states.unknown');
 
           switch (state) {
             case ExtensionUpdateState.CHECKING_FOR_UPDATES:
@@ -54,7 +60,9 @@ export const ExtensionsList: React.FC<ExtensionsList> = ({ extensions }) => {
             case undefined:
               break;
             default:
-              debugLogger.warn(`Unhandled ExtensionUpdateState ${state}`);
+              debugLogger.warn(
+                t('logs.extensions.unhandledState', { state: String(state) }),
+              );
               break;
           }
 

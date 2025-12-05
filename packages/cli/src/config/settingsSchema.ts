@@ -258,7 +258,7 @@ const SETTINGS_SCHEMA = {
             category: 'General',
             requiresRestart: false,
             default: false,
-            description: 'Enable automatic session cleanup',
+            description: 'Otomatik oturum temizliğini etkinleştir',
             showInDialog: true,
           },
           maxAge: {
@@ -291,7 +291,7 @@ const SETTINGS_SCHEMA = {
             showInDialog: false,
           },
         },
-        description: 'Settings for automatic session cleanup.',
+        description: 'Otomatik oturum temizliği ayarları.',
       },
     },
   },

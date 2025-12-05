@@ -8,14 +8,14 @@ import type { ExtensionUpdateInfo } from '../../config/extension.js';
 import { checkExhaustive } from '../../utils/checks.js';
 
 export enum ExtensionUpdateState {
-  CHECKING_FOR_UPDATES = 'checking for updates',
-  UPDATED_NEEDS_RESTART = 'updated, needs restart',
+  CHECKING_FOR_UPDATES = 'checking_for_updates',
+  UPDATED_NEEDS_RESTART = 'updated_needs_restart',
   UPDATED = 'updated',
   UPDATING = 'updating',
-  UPDATE_AVAILABLE = 'update available',
-  UP_TO_DATE = 'up to date',
+  UPDATE_AVAILABLE = 'update_available',
+  UP_TO_DATE = 'up_to_date',
   ERROR = 'error',
-  NOT_UPDATABLE = 'not updatable',
+  NOT_UPDATABLE = 'not_updatable',
   UNKNOWN = 'unknown',
 }
 
