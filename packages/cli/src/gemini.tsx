@@ -93,7 +93,10 @@ export function validateDnsResolutionOrder(
   }
   // We don't want to throw here, just warn and use the default.
   debugLogger.warn(
-    `Invalid value for dnsResolutionOrder in settings: "${order}". Using default "${defaultValue}".`,
+    uiTranslator.t('logs.dns.invalidResolutionOrder', {
+      order,
+      defaultValue,
+    }),
   );
   return defaultValue;
 }
@@ -109,7 +112,9 @@ function getNodeMemoryArgs(isDebugMode: boolean): string[] {
   const targetMaxOldSpaceSizeInMB = Math.floor(totalMemoryMB * 0.5);
   if (isDebugMode) {
     debugLogger.debug(
-      `Current heap size ${currentMaxOldSpaceSizeMb.toFixed(2)} MB`,
+      uiTranslator.t('logs.memory.currentHeapSize', {
+        size: currentMaxOldSpaceSizeMb.toFixed(2),
+      }),
     );
   }
 
@@ -120,7 +125,9 @@ function getNodeMemoryArgs(isDebugMode: boolean): string[] {
   if (targetMaxOldSpaceSizeInMB > currentMaxOldSpaceSizeMb) {
     if (isDebugMode) {
       debugLogger.debug(
-        `Need to relaunch with more memory: ${targetMaxOldSpaceSizeInMB.toFixed(2)} MB`,
+        uiTranslator.t('logs.memory.relaunchRequired', {
+          targetSize: targetMaxOldSpaceSizeInMB.toFixed(2),
+        }),
       );
     }
     return [`--max-old-space-size=${targetMaxOldSpaceSizeInMB}`];
@@ -277,7 +284,7 @@ export async function main() {
   // Check for invalid input combinations early to prevent crashes
   if (argv.promptInteractive && !process.stdin.isTTY) {
     debugLogger.error(
-      'Error: The --prompt-interactive flag cannot be used when input is piped from stdin.',
+      uiTranslator.t('logs.cli.promptInteractivePipeError'),
     );
     process.exit(1);
   }
@@ -319,7 +326,9 @@ export async function main() {
       // If the theme is not found during initial load, log a warning and continue.
       // The useThemeCommand hook in AppContainer.tsx will handle opening the dialog.
       debugLogger.warn(
-        `Warning: Theme "${settings.merged.ui?.theme}" not found.`,
+        uiTranslator.t('logs.theme.notFound', {
+          theme: settings.merged.ui?.theme ?? '',
+        }),
       );
     }
   }
