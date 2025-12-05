@@ -125,25 +125,50 @@ Integrate Gemini CLI directly into your GitHub workflows with
 - **Custom Workflows**: Build automated, scheduled and on-demand workflows
   tailored to your team's needs
 
-## 🇹🇷 Turkish Localization Support / Türkçe Dil Desteği
+## 🇹🇷 Gemini CLI: Tam Türkçe Yerelleştirme ve Kurumsal Güvenlik Sürümü
 
-### Summary
-This fork introduces full Turkish localization support to the Gemini CLI, transforming it into a locale-aware application. It establishes a robust `i18n` infrastructure that dynamically detects the user's system locale and serves the appropriate language resources (EN/TR).
+Bu sürüm, Google Gemini CLI aracının **tamamen Türkçeleştirilmiş** ve **mimari olarak güçlendirilmiş** ilk kararlı sürümüdür.
 
-### 🚀 Key Changes
-* **Infrastructure:** Implemented `detectLocale` logic in `config.ts` to respect `LC_ALL`, `LANG`, and system environment variables.
-* **Core & Extensions:** Localized all command factories (Chat, Run, Extensions, MCP) to build translators at runtime.
-* **UI Polish:** Migrated hardcoded strings (Privacy Notices, Witty Loading Phrases, Slash Command Descriptions, Error Messages) to `tr.json` and `en.json` catalogs.
-* **Build Isolation:** Updated `tsconfig.json` to isolate the CLI build scope, ensuring strict type-checking without interference from core package references.
-* **Deployment:** Updated build scripts to ensure `dist/i18n` assets are correctly bundled for distribution.
+### 📋 Yönetici Özeti
+Bu çalışma, statik bir çevirinin ötesine geçerek, CLI mimarisini **runtime injection** ve **dinamik i18n** altyapısına dönüştürmüştür. Proje, Google'ın tedarik zinciri (supply-chain) güvenlik standartlarına uyum sağlayacak şekilde yeniden yapılandırılmıştır.
 
-### 🧪 Verification
-* **Manual Test:** Validate with `LC_ALL=tr_TR npm run start chat` to see Turkish prompts and help output.
-* **Build:** `npm run build` passes successfully in the CLI workspace.
-* **Audit:** Verified that UI components and commands no longer contain hardcoded English strings; all user-facing copy is catalog-driven.
+### ✨ Öne Çıkan Özellikler
 
-### 📸 Screenshots
-If you capture localized CLI output (e.g., "Gemini'ye Hoş Geldiniz" landing prompts or Turkish slash-command menus), drop the images into the `docs/assets/` folder and link them here to showcase the experience.
+#### 1. 🌍 Derinlemesine Yerelleştirme (%100 Coverage)
+* **Kritik Yüzeyler:** Crash banner'lar, DNS/Memory logları, Auth hataları ve Update uyarıları dahil her nokta Türkçeleştirildi.
+* **Witty Loading Phrases:** Yükleme ekranındaki esprili sözler, Türk geliştirici kültürüne uygun olarak uyarlandı.
+* **Dinamik Algılama:** `LC_ALL`, `LANG` değişkenlerini okuyarak sistem diline otomatik adapte olur.
+
+#### 2. 🛡️ Güvenlik ve Mimari
+* **Dependency Pinning:** `@google/gemini-cli-core` sürümü sabitlenerek (pinned) "Upstream Drift" riski sıfırlandı.
+* **Build Isolation:** `tsconfig` izolasyonu ile derleme güvenliği sağlandı.
+* **Supply Chain Security:** CI hattına `npm audit --production` ve **CodeQL** taramaları eklendi.
+
+#### 3. ⚙️ Operasyonel Mükemmellik (DevOps)
+* **Deterministik Build:** `npm ci` zorunluluğu ile her ortamda birebir aynı kurulum garantilendi.
+* **Otomasyon:** Her PR ve Push işleminde Lint, Build, Test ve Güvenlik taramaları otomatik çalışır.
+
+### 📦 Kurulum
+
+```bash
+# Depoyu klonlayın
+git clone https://github.com/SetraTheXX/gemini-cli-Help_Turk.git
+cd gemini-cli-Help_Turk
+
+# Bağımlılıkları kurun (temiz kurulum)
+npm ci
+
+# Build alın
+npm run build
+
+# Global olarak bağlayın
+npm link
+
+# CLI'ı çalıştırın
+gemini --help
+```
+
+> Not: Yerel geliştirme için `LC_ALL=tr_TR.UTF-8 gemini` komutunu çalıştırarak tüm arayüzü Türkçe olarak doğrulayabilirsiniz; desteklenmeyen yerel ayarlarda güvenli şekilde İngilizce'ye düşülür.
 
 ## 🔐 Authentication Options
 
