@@ -141,6 +141,7 @@ This fork introduces full Turkish localization support to the Gemini CLI, transf
 * **Manual Test:** Validate with `LC_ALL=tr_TR npm run start chat` to see Turkish prompts and help output.
 * **Build:** `npm run build` passes successfully in the CLI workspace.
 * **Audit:** Verified that UI components and commands no longer contain hardcoded English strings; all user-facing copy is catalog-driven.
+* **Manual QA:** Ayrıntılı kontrol listesi için [docs/manual-test-plan.md](./docs/manual-test-plan.md) dosyasına bakın; smoke, locale stres, negatif senaryolar, UI/UX ve regresyon adımlarını kapsar.
 
 ### 📸 Screenshots
 If you capture localized CLI output (e.g., "Gemini'ye Hoş Geldiniz" landing prompts or Turkish slash-command menus), drop the images into the `docs/assets/` folder and link them here to showcase the experience.
@@ -376,6 +377,8 @@ for planned features and priorities.
   Report bugs or request features.
 - **[Security Advisories](https://github.com/google-gemini/gemini-cli/security/advisories)** -
   Security updates.
+- **[Manual Test Plan](./docs/manual-test-plan.md)** - Terminal-friendly checklist for locale stress, negative paths, and UI/UX validation.
+- **[Release Status Report](./docs/release-status-report.md)** - Executive summary of i18n, security, and QA posture for the Turkish fork.
 
 ### Uninstall
 
