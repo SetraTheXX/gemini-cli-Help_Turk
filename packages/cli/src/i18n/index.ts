@@ -4,28 +4,42 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import en from './messages/en.json';
-import tr from './messages/tr.json';
+import en from './messages/en.json' with { type: 'json' };
+import tr from './messages/tr.json' with { type: 'json' };
 
-const catalogs = { en, tr } as const;
+type NestedMessageValue = string | string[] | NestedMessages;
+
+interface NestedMessages {
+  [key: string]: NestedMessageValue;
+}
+
+const catalogs = {
+  en: en as NestedMessages,
+  tr: tr as NestedMessages,
+} satisfies Record<'en' | 'tr', NestedMessages>;
 
 export type MessageKey = string;
 
 export type TemplateValues = Record<string, string | number>;
-
-type NestedMessages = Record<string, string | NestedMessages>;
 
 type CatalogKey = keyof typeof catalogs;
 
 function getNestedMessage(
   messages: NestedMessages,
   key: string,
-): string | NestedMessages | undefined {
+): NestedMessageValue | undefined {
   return key
     .split('.')
-    .reduce<
-      string | NestedMessages | undefined
-    >((current, part) => (typeof current === 'object' && current !== null ? current[part] : undefined), messages);
+    .reduce<NestedMessageValue | undefined>((current, part) => {
+      if (
+        Array.isArray(current) ||
+        typeof current !== 'object' ||
+        current === null
+      ) {
+        return undefined;
+      }
+      return (current as NestedMessages)[part];
+    }, messages);
 }
 
 function formatTemplate(template: string, values?: TemplateValues): string {
@@ -99,11 +113,30 @@ export function createTranslator(locale: unknown) {
 
   if (warningKey) {
     // Localized warning for invalid or unsupported locale input
-     
+
     console.warn(translator(warningKey, warningValues));
   }
 
   return translator;
+}
+
+export function getLocalizedArray(
+  locale: unknown,
+  key: string,
+): string[] | undefined {
+  const { catalogKey } = normalizeLocale(locale);
+  const catalog = catalogs[catalogKey];
+  const fallback = catalogs.en;
+
+  const message =
+    getNestedMessage(catalog as NestedMessages, key) ??
+    getNestedMessage(fallback as NestedMessages, key);
+
+  if (Array.isArray(message)) {
+    return message as string[];
+  }
+
+  return undefined;
 }
 
 export type Translator = ReturnType<typeof createTranslator>;

@@ -11,6 +11,7 @@ import { createTransport, debugLogger } from '@google/gemini-cli-core';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { ExtensionStorage } from '../../config/extensions/storage.js';
 import { ExtensionManager } from '../../config/extension-manager.js';
+import { createTranslator } from '../../i18n/index.js';
 
 vi.mock('../../config/settings.js', () => ({
   loadSettings: vi.fn(),
@@ -99,7 +100,7 @@ describe('mcp list command', () => {
   it('should display message when no servers configured', async () => {
     mockedLoadSettings.mockReturnValue({ merged: { mcpServers: {} } });
 
-    await listMcpServers();
+    await listMcpServers(createTranslator('en'));
 
     expect(debugLogger.log).toHaveBeenCalledWith('No MCP servers configured.');
   });
@@ -118,7 +119,7 @@ describe('mcp list command', () => {
     mockClient.connect.mockResolvedValue(undefined);
     mockClient.ping.mockResolvedValue(undefined);
 
-    await listMcpServers();
+    await listMcpServers(createTranslator('en'));
 
     expect(debugLogger.log).toHaveBeenCalledWith('Configured MCP servers:\n');
     expect(debugLogger.log).toHaveBeenCalledWith(
@@ -149,7 +150,7 @@ describe('mcp list command', () => {
 
     mockClient.connect.mockRejectedValue(new Error('Connection failed'));
 
-    await listMcpServers();
+    await listMcpServers(createTranslator('en'));
 
     expect(debugLogger.log).toHaveBeenCalledWith(
       expect.stringContaining(
@@ -175,7 +176,7 @@ describe('mcp list command', () => {
     mockClient.connect.mockResolvedValue(undefined);
     mockClient.ping.mockResolvedValue(undefined);
 
-    await listMcpServers();
+    await listMcpServers(createTranslator('en'));
 
     expect(debugLogger.log).toHaveBeenCalledWith(
       expect.stringContaining(

@@ -5,11 +5,15 @@
  */
 
 import { describe, it, expect, vi } from 'vitest';
-import { mcpCommand } from './mcp.js';
+import { createMcpCommand } from './mcp.js';
 import { type Argv } from 'yargs';
 import yargs from 'yargs';
+import { createTranslator } from '../i18n/index.js';
 
 describe('mcp command', () => {
+  const translator = createTranslator('en');
+  const mcpCommand = createMcpCommand(translator);
+
   it('should have correct command definition', () => {
     expect(mcpCommand.command).toBe('mcp');
     expect(mcpCommand.describe).toBe('Manage MCP servers');

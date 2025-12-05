@@ -12,6 +12,7 @@ import { ExtensionManager } from '../../config/extension-manager.js';
 import { requestConsentNonInteractive } from '../../config/extensions/consent.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
 import { createTranslator, type Translator } from '../../i18n/index.js';
+import { detectLocale } from '../../utils/locale.js';
 
 interface DisableArgs {
   name: string;
@@ -20,7 +21,7 @@ interface DisableArgs {
 
 export async function handleDisable(
   args: DisableArgs,
-  t: Translator = createTranslator('en'),
+  t: Translator = createTranslator(detectLocale(process.env, 'en')),
 ) {
   const workspaceDir = process.cwd();
   const extensionManager = new ExtensionManager({
@@ -96,4 +97,6 @@ export function createDisableCommand(t: Translator): CommandModule {
   };
 }
 
-export const disableCommand = createDisableCommand(createTranslator('en'));
+const defaultTranslator = createTranslator(detectLocale(process.env, 'en'));
+
+export const disableCommand = createDisableCommand(defaultTranslator);

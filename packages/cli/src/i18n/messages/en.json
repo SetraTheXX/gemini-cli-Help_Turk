@@ -2,7 +2,88 @@
   "usage": "Usage: gemini [options] [command]\n\nGemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode",
   "commands": {
     "mainDescription": "Launch Gemini CLI",
-    "queryDescription": "Positional prompt. Defaults to one-shot; use -i/--prompt-interactive for interactive."
+    "queryDescription": "Positional prompt. Defaults to one-shot; use -i/--prompt-interactive for interactive.",
+    "mcp": {
+      "describe": "Manage MCP servers",
+      "demand": "You need at least one command before continuing.",
+      "add": {
+        "describe": "Add a server",
+        "usage": "Usage: gemini mcp add [options] <name> <commandOrUrl> [args...]",
+        "name": "Name of the server",
+        "commandOrUrl": "Command (stdio) or URL (sse, http)",
+        "scope": "Configuration scope (user or project)",
+        "transport": "Transport type (stdio, sse, http)",
+        "env": "Set environment variables (e.g. -e KEY=value)",
+        "header": "Set HTTP headers for SSE and HTTP transports (e.g. -H \"X-Api-Key: abc123\" -H \"Authorization: Bearer abc123\")",
+        "timeout": "Set connection timeout in milliseconds",
+        "trust": "Trust the server (bypass all tool call confirmation prompts)",
+        "description": "Set the description for the server",
+        "includeTools": "A comma-separated list of tools to include",
+        "excludeTools": "A comma-separated list of tools to exclude",
+        "scopeHomeError": "Error: Please use --scope user to edit settings in the home directory.",
+        "alreadyConfigured": "MCP server \"{{name}}\" is already configured within {{scope}} settings.",
+        "updated": "MCP server \"{{name}}\" updated in {{scope}} settings.",
+        "added": "MCP server \"{{name}}\" added to {{scope}} settings. ({{transport}})"
+      },
+      "remove": {
+        "describe": "Remove a server",
+        "usage": "Usage: gemini mcp remove [options] <name>",
+        "name": "Name of the server",
+        "scope": "Configuration scope (user or project)",
+        "notFound": "Server \"{{name}}\" not found in {{scope}} settings.",
+        "removed": "Server \"{{name}}\" removed from {{scope}} settings."
+      },
+      "list": {
+        "describe": "List all configured MCP servers",
+        "noneConfigured": "No MCP servers configured.",
+        "header": "Configured MCP servers:\n",
+        "status": {
+          "connected": "Connected",
+          "connecting": "Connecting",
+          "disconnected": "Disconnected"
+        },
+        "extensionSuffix": " (from {{extension}})"
+      }
+    },
+    "nonInteractive": {
+      "confirmShellExit": "Exiting due to a confirmation prompt requested by the command.",
+      "unsupportedResultExit": "Exiting due to command result that is not supported in non-interactive mode.",
+      "cancelling": "Cancelling...",
+      "atCommandError": "Exiting due to an error processing the @ command."
+    },
+    "chat": {
+      "describe": "Manage conversation history",
+      "listDescription": "List saved conversation checkpoints",
+      "save": {
+        "description": "Save the current conversation as a checkpoint. Usage: /chat save <tag>",
+        "missingTag": "Missing tag. Usage: /chat save <tag>",
+        "overwritePromptPrefix": "A checkpoint with the tag ",
+        "overwritePromptSuffix": " already exists. Do you want to overwrite it?",
+        "noChatClient": "No chat client available to save conversation.",
+        "saved": "Conversation checkpoint saved with tag: {{tag}}.",
+        "noConversation": "No conversation found to save."
+      },
+      "resume": {
+        "description": "Resume a conversation from a checkpoint. Usage: /chat resume <tag>",
+        "missingTag": "Missing tag. Usage: /chat resume <tag>",
+        "notFound": "No saved checkpoint found with tag: {{tag}}.",
+        "authMismatch": "Cannot resume chat. It was saved with a different authentication method ({{authType}}) than the current one ({{currentAuthType}})."
+      },
+      "delete": {
+        "description": "Delete a conversation checkpoint. Usage: /chat delete <tag>",
+        "missingTag": "Missing tag. Usage: /chat delete <tag>",
+        "deleted": "Conversation checkpoint '{{tag}}' has been deleted.",
+        "notFound": "Error: No checkpoint found with tag '{{tag}}'."
+      },
+      "share": {
+        "description": "Share the current conversation to a markdown or json file. Usage: /chat share <file>",
+        "invalidFormat": "Invalid file format. Only .md and .json are supported.",
+        "noChatClient": "No chat client available to share conversation.",
+        "noConversation": "No conversation found to share.",
+        "shared": "Conversation shared to {{filePath}}",
+        "error": "Error sharing conversation: {{error}}"
+      }
+    }
   },
   "options": {
     "model": "Model",
@@ -38,6 +119,24 @@
     "unsupportedLocale": "Unsupported locale \"{{value}}\". Falling back to English.",
     "unknown": "Unknown error"
   },
+  "auth": {
+    "loginFailed": "Failed to login. Message: {{message}}"
+  },
+  "installationInfo": {
+    "messages": {
+      "localGit": "Running from a local git clone. Please update with \"git pull\".",
+      "npx": "Running via npx, update not applicable.",
+      "pnpx": "Running via pnpx, update not applicable.",
+      "bunx": "Running via bunx, update not applicable.",
+      "homebrew": "Installed via Homebrew. Please update with \"brew upgrade\".",
+      "pnpmAuto": "Installed with pnpm. Attempting to automatically update now...",
+      "yarnAuto": "Installed with yarn. Attempting to automatically update now...",
+      "bunAuto": "Installed with bun. Attempting to automatically update now...",
+      "npmAuto": "Installed with npm. Attempting to automatically update now...",
+      "manual": "Please run {{command}} to update",
+      "localInstall": "Locally installed. Please update via your project's package.json."
+    }
+  },
   "extensions": {
     "describe": "Manage Gemini CLI extensions.",
     "demandCommand": "You need at least one command before continuing.",
@@ -68,6 +167,272 @@
       "logs": {
         "success": "Extension \"{{name}}\" successfully disabled for scope \"{{scope}}\"."
       }
+    },
+    "new": {
+      "describe": "Create a new extension from a boilerplate example.",
+      "path": "The path to create the extension in.",
+      "template": "The boilerplate template to use.",
+      "errors": {
+        "pathExists": "Path already exists: {{path}}"
+      },
+      "logs": {
+        "templateCreated": "Successfully created new extension from template \"{{template}}\" at {{path}}.",
+        "created": "Successfully created new extension at {{path}}.",
+        "installHint": "You can install this using \"gemini extensions link {{path}}\" to test it out."
+      }
+    }
+  },
+  "ui": {
+    "exitWarning": {
+      "ctrlCAgain": "Press Ctrl+C again to exit.",
+      "ctrlDAgain": "Press Ctrl+D again to exit."
+    },
+    "screenReader": {
+      "userPrefix": "User: ",
+      "modelPrefix": "Model: ",
+      "loading": "loading",
+      "responding": "responding"
+    },
+    "commands": {
+      "about": {
+        "description": "Show version info",
+        "noSandbox": "no sandbox",
+        "sandboxExec": "sandbox-exec ({{profile}})",
+        "unknownSandbox": "unknown",
+        "unknownModel": "Unknown"
+      },
+      "help": {
+        "description": "Show available slash commands"
+      },
+      "bug": {
+        "description": "Report an issue on GitHub"
+      },
+      "privacy": {
+        "description": "Display the privacy notice"
+      },
+      "theme": {
+        "description": "Change the theme"
+      },
+      "clear": {
+        "description": "Clear the conversation history",
+        "resetting": "Resetting conversation...",
+        "clearing": "Clearing conversation..."
+      },
+      "compress": {
+        "description": "Compress the conversation context",
+        "alreadyCompressing": "Compression already in progress.",
+        "failed": "Unable to compress conversation.",
+        "failedWithReason": "Unable to compress conversation: {{reason}}"
+      },
+      "directory": {
+        "description": "Manage workspace directories",
+        "configUnavailable": "Configuration is not available.",
+        "add": {
+          "description": "Add directories to the workspace",
+          "restrictiveSandbox": "The /directory add command is not supported in restrictive sandbox profiles. Please use --include-directories when starting the session instead.",
+          "missingPath": "Please provide at least one path to add.",
+          "alreadyInWorkspace": "The following directories are already in the workspace:\n- {{directories}}",
+          "untrustedDirectories": "The following directories are explicitly untrusted and cannot be added to a trusted workspace:\n- {{directories}}\nPlease use the permissions command to modify their trust level.",
+          "addError": "Error adding '{{directory}}': {{message}}",
+          "geminiFilesAdded": "Successfully added GEMINI.md files from the following directories if there are:\n- {{directories}}",
+          "refreshError": "Error refreshing memory: {{message}}",
+          "addedDirectories": "Successfully added directories:\n- {{directories}}"
+        },
+        "list": {
+          "description": "List workspace directories",
+          "directories": "Current workspace directories:\n{{directories}}"
+        }
+      }
+    },
+    "loading": {
+      "waitingForConfirmation": "Waiting for user confirmation...",
+      "wittyPhrases": [
+        "I'm Feeling Lucky",
+        "Shipping awesomeness... ",
+        "Painting the serifs back on...",
+        "Navigating the slime mold...",
+        "Consulting the digital spirits...",
+        "Reticulating splines...",
+        "Warming up the AI hamsters...",
+        "Asking the magic conch shell...",
+        "Generating witty retort...",
+        "Polishing the algorithms...",
+        "Don't rush perfection (or my code)...",
+        "Brewing fresh bytes...",
+        "Counting electrons...",
+        "Engaging cognitive processors...",
+        "Checking for syntax errors in the universe...",
+        "One moment, optimizing humor...",
+        "Shuffling punchlines...",
+        "Untangling neural nets...",
+        "Compiling brilliance...",
+        "Loading wit.exe...",
+        "Summoning the cloud of wisdom...",
+        "Preparing a witty response...",
+        "Just a sec, I'm debugging reality...",
+        "Confuzzling the options...",
+        "Tuning the cosmic frequencies...",
+        "Crafting a response worthy of your patience...",
+        "Compiling the 1s and 0s...",
+        "Resolving dependencies... and existential crises...",
+        "Defragmenting memories... both RAM and personal...",
+        "Rebooting the humor module...",
+        "Caching the essentials (mostly cat memes)...",
+        "Optimizing for ludicrous speed",
+        "Swapping bits... don't tell the bytes...",
+        "Garbage collecting... be right back...",
+        "Assembling the interwebs...",
+        "Converting coffee into code...",
+        "Updating the syntax for reality...",
+        "Rewiring the synapses...",
+        "Looking for a misplaced semicolon...",
+        "Greasin' the cogs of the machine...",
+        "Pre-heating the servers...",
+        "Calibrating the flux capacitor...",
+        "Engaging the improbability drive...",
+        "Channeling the Force...",
+        "Aligning the stars for optimal response...",
+        "So say we all...",
+        "Loading the next great idea...",
+        "Just a moment, I'm in the zone...",
+        "Preparing to dazzle you with brilliance...",
+        "Just a tick, I'm polishing my wit...",
+        "Hold tight, I'm crafting a masterpiece...",
+        "Just a jiffy, I'm debugging the universe...",
+        "Just a moment, I'm aligning the pixels...",
+        "Just a sec, I'm optimizing the humor...",
+        "Just a moment, I'm tuning the algorithms...",
+        "Warp speed engaged...",
+        "Mining for more Dilithium crystals...",
+        "Don't panic...",
+        "Following the white rabbit...",
+        "The truth is in here... somewhere...",
+        "Blowing on the cartridge...",
+        "Loading... Do a barrel roll!",
+        "Waiting for the respawn...",
+        "Finishing the Kessel Run in less than 12 parsecs...",
+        "The cake is not a lie, it's just still loading...",
+        "Fiddling with the character creation screen...",
+        "Just a moment, I'm finding the right meme...",
+        "Pressing 'A' to continue...",
+        "Herding digital cats...",
+        "Polishing the pixels...",
+        "Finding a suitable loading screen pun...",
+        "Distracting you with this witty phrase...",
+        "Almost there... probably...",
+        "Our hamsters are working as fast as they can...",
+        "Giving Cloudy a pat on the head...",
+        "Petting the cat...",
+        "Rickrolling my boss...",
+        "Slapping the bass...",
+        "Tasting the snozberries...",
+        "I'm going the distance, I'm going for speed...",
+        "Is this the real life? Is this just fantasy?...",
+        "I've got a good feeling about this...",
+        "Poking the bear...",
+        "Doing research on the latest memes...",
+        "Figuring out how to make this more witty...",
+        "Hmmm... let me think...",
+        "What do you call a fish with no eyes? A fsh...",
+        "Why did the computer go to therapy? It had too many bytes...",
+        "Why don't programmers like nature? It has too many bugs...",
+        "Why do programmers prefer dark mode? Because light attracts bugs...",
+        "Why did the developer go broke? Because they used up all their cache...",
+        "What can you do with a broken pencil? Nothing, it's pointless...",
+        "Applying percussive maintenance...",
+        "Searching for the correct USB orientation...",
+        "Ensuring the magic smoke stays inside the wires...",
+        "Rewriting in Rust for no particular reason...",
+        "Trying to exit Vim...",
+        "Spinning up the hamster wheel...",
+        "That's not a bug, it's an undocumented feature...",
+        "Engage.",
+        "I'll be back... with an answer.",
+        "My other process is a TARDIS...",
+        "Communing with the machine spirit...",
+        "Letting the thoughts marinate...",
+        "Just remembered where I put my keys...",
+        "Pondering the orb...",
+        "I've seen things you people wouldn't believe... like a user who reads loading messages.",
+        "Initiating thoughtful gaze...",
+        "What's a computer's favorite snack? Microchips.",
+        "Why do Java developers wear glasses? Because they don't C#.",
+        "Charging the laser... pew pew!",
+        "Dividing by zero... just kidding!",
+        "Looking for an adult superviso... I mean, processing.",
+        "Making it go beep boop.",
+        "Buffering... because even AIs need a moment.",
+        "Entangling quantum particles for a faster response...",
+        "Polishing the chrome... on the algorithms.",
+        "Are you not entertained? (Working on it!)",
+        "Summoning the code gremlins... to help, of course.",
+        "Just waiting for the dial-up tone to finish...",
+        "Recalibrating the humor-o-meter.",
+        "My other loading screen is even funnier.",
+        "Pretty sure there's a cat walking on the keyboard somewhere...",
+        "Enhancing... Enhancing... Still loading.",
+        "It's not a bug, it's a feature... of this loading screen.",
+        "Have you tried turning it off and on again? (The loading screen, not me.)",
+        "Constructing additional pylons...",
+        "New line? That’s Ctrl+J.",
+        "Releasing the HypnoDrones..."
+      ]
+    },
+    "commands": {
+      "help": {
+        "description": "For help on gemini-cli"
+      },
+      "clear": {
+        "description": "Clear the screen and conversation history",
+        "resetting": "Clearing terminal and resetting chat.",
+        "clearing": "Clearing terminal."
+      },
+      "compress": {
+        "description": "Compresses the context by replacing it with a summary",
+        "alreadyCompressing": "Already compressing, wait for previous request to complete",
+        "failed": "Failed to compress chat history.",
+        "failedWithReason": "Failed to compress chat history: {{reason}}"
+      },
+      "directory": {
+        "description": "Manage workspace directories",
+        "add": {
+          "description": "Add directories to the workspace. Use comma to separate multiple paths"
+        },
+        "list": {
+          "description": "Show all directories in the workspace"
+        }
+      },
+      "bug": {
+        "description": "Submit a bug report"
+      }
+    },
+    "privacy": {
+      "cloudPaid": {
+        "title": "Vertex AI Notice",
+        "noticeIntro": "Service Specific Terms",
+        "noticeMid": "are incorporated into the agreement under which Google has agreed to provide",
+        "platform": "Google Cloud Platform",
+        "noticeRest": "to Customer (the “Agreement”). If the Agreement authorizes the resale or supply of Google Cloud Platform under a Google Cloud partner or reseller program, then except for in the section entitled “Partner-Specific Terms”, all references to Customer in the Service Specific Terms mean Partner or Reseller (as applicable), and all references to Customer Data in the Service Specific Terms mean Partner Data. Capitalized terms used but not defined in the Service Specific Terms have the meaning given to them in the Agreement.",
+        "serviceTermsUrl": "https://cloud.google.com/terms/service-terms",
+        "servicesUrl": "https://cloud.google.com/terms/services",
+        "exitHint": "Press Esc to exit."
+      }
+    },
+    "modelStats": {
+      "noApiCalls": "No API calls have been made in this session.",
+      "title": "Model Stats For Nerds",
+      "metric": "Metric",
+      "apiSection": "API",
+      "requests": "Requests",
+      "errors": "Errors",
+      "avgLatency": "Avg Latency",
+      "tokensSection": "Tokens",
+      "total": "Total",
+      "prompt": "Prompt",
+      "cached": "Cached",
+      "thoughts": "Thoughts",
+      "tool": "Tool",
+      "output": "Output"
     }
   }
 }

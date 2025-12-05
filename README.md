@@ -125,6 +125,26 @@ Integrate Gemini CLI directly into your GitHub workflows with
 - **Custom Workflows**: Build automated, scheduled and on-demand workflows
   tailored to your team's needs
 
+## 🇹🇷 Turkish Localization Support / Türkçe Dil Desteği
+
+### Summary
+This fork introduces full Turkish localization support to the Gemini CLI, transforming it into a locale-aware application. It establishes a robust `i18n` infrastructure that dynamically detects the user's system locale and serves the appropriate language resources (EN/TR).
+
+### 🚀 Key Changes
+* **Infrastructure:** Implemented `detectLocale` logic in `config.ts` to respect `LC_ALL`, `LANG`, and system environment variables.
+* **Core & Extensions:** Localized all command factories (Chat, Run, Extensions, MCP) to build translators at runtime.
+* **UI Polish:** Migrated hardcoded strings (Privacy Notices, Witty Loading Phrases, Slash Command Descriptions, Error Messages) to `tr.json` and `en.json` catalogs.
+* **Build Isolation:** Updated `tsconfig.json` to isolate the CLI build scope, ensuring strict type-checking without interference from core package references.
+* **Deployment:** Updated build scripts to ensure `dist/i18n` assets are correctly bundled for distribution.
+
+### 🧪 Verification
+* **Manual Test:** Validate with `LC_ALL=tr_TR npm run start chat` to see Turkish prompts and help output.
+* **Build:** `npm run build` passes successfully in the CLI workspace.
+* **Audit:** Verified that UI components and commands no longer contain hardcoded English strings; all user-facing copy is catalog-driven.
+
+### 📸 Screenshots
+If you capture localized CLI output (e.g., "Gemini'ye Hoş Geldiniz" landing prompts or Turkish slash-command menus), drop the images into the `docs/assets/` folder and link them here to showcase the experience.
+
 ## 🔐 Authentication Options
 
 Choose the authentication method that best fits your needs:

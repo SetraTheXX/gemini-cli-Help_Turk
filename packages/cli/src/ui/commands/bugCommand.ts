@@ -16,10 +16,11 @@ import { GIT_COMMIT_INFO } from '../../generated/git-commit.js';
 import { formatMemoryUsage } from '../utils/formatters.js';
 import { getCliVersion } from '../../utils/version.js';
 import { IdeClient, sessionId } from '@google/gemini-cli-core';
+import { uiTranslator } from '../i18n.js';
 
 export const bugCommand: SlashCommand = {
   name: 'bug',
-  description: 'Submit a bug report',
+  description: uiTranslator('ui.commands.bug.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context: CommandContext, args?: string): Promise<void> => {
     const bugDescription = (args || '').trim();

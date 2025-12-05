@@ -44,6 +44,8 @@ import {
   handleMaxTurnsExceededError,
 } from './utils/errors.js';
 import { TextOutput } from './ui/utils/textOutput.js';
+import { createTranslator } from './i18n/index.js';
+import { detectLocale } from './utils/locale.js';
 
 interface RunNonInteractiveParams {
   config: Config;
@@ -63,6 +65,7 @@ export async function runNonInteractive({
   resumedSessionData,
 }: RunNonInteractiveParams): Promise<void> {
   return promptIdContext.run(prompt_id, async () => {
+    const t = createTranslator(detectLocale(process.env, 'en'));
     const consolePatcher = new ConsolePatcher({
       stderr: true,
       debugMode: config.getDebugMode(),
@@ -134,7 +137,9 @@ export async function runNonInteractive({
           // Only show message if cancellation takes longer than 200ms
           // This reduces verbosity for fast cancellations
           cancelMessageTimer = setTimeout(() => {
-            process.stderr.write('\nCancelling...\n');
+            process.stderr.write(
+              `\n${t('commands.nonInteractive.cancelling')}\n`,
+            );
           }, 200);
 
           abortController.abort();
@@ -217,6 +222,7 @@ export async function runNonInteractive({
           abortController,
           config,
           settings,
+          t,
         );
         // If a slash command is found and returns a prompt, use it.
         // Otherwise, slashCommandResult fall through to the default prompt
@@ -240,7 +246,7 @@ export async function runNonInteractive({
           // An error occurred during @include processing (e.g., file not found).
           // The error message is already logged by handleAtCommand.
           throw new FatalInputError(
-            'Exiting due to an error processing the @ command.',
+            t('commands.nonInteractive.atCommandError'),
           );
         }
         query = processedQuery as Part[];

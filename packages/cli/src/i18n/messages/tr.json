@@ -2,7 +2,88 @@
   "usage": "Kullanım: gemini [seçenekler] [komut]\n\nGemini CLI - Etkileşimli CLI başlatır, etkileşimsiz çalıştırmak için -p/--prompt kullanın",
   "commands": {
     "mainDescription": "Gemini CLI'yi başlat",
-    "queryDescription": "Konumsal prompt. Varsayılan tek seferlik çalıştırır; etkileşimli mod için -i/--prompt-interactive kullanın."
+    "queryDescription": "Konumsal prompt. Varsayılan tek seferlik çalıştırır; etkileşimli mod için -i/--prompt-interactive kullanın.",
+    "mcp": {
+      "describe": "MCP sunucularını yönet",
+      "demand": "Devam etmek için en az bir komut belirtmelisiniz.",
+      "add": {
+        "describe": "Sunucu ekle",
+        "usage": "Kullanım: gemini mcp add [seçenekler] <name> <commandOrUrl> [args...]",
+        "name": "Sunucunun adı",
+        "commandOrUrl": "Komut (stdio) veya URL (sse, http)",
+        "scope": "Yapılandırma kapsamı (user veya project)",
+        "transport": "Taşıma türü (stdio, sse, http)",
+        "env": "Ortam değişkenlerini ayarla (örn. -e KEY=value)",
+        "header": "SSE ve HTTP için HTTP başlıkları ayarla (örn. -H \"X-Api-Key: abc123\" -H \"Authorization: Bearer abc123\")",
+        "timeout": "Bağlantı zaman aşımını milisaniye cinsinden ayarla",
+        "trust": "Sunucuya güven (tüm araç çağrısı onaylarını atla)",
+        "description": "Sunucu açıklamasını ayarla",
+        "includeTools": "Dahil edilecek araçların virgülle ayrılmış listesi",
+        "excludeTools": "Hariç tutulacak araçların virgülle ayrılmış listesi",
+        "scopeHomeError": "Hata: Ev dizinindeki ayarları düzenlemek için lütfen --scope user kullanın.",
+        "alreadyConfigured": "\"{{name}}\" MCP sunucusu {{scope}} ayarlarında zaten yapılandırılmış.",
+        "updated": "\"{{name}}\" MCP sunucusu {{scope}} ayarlarında güncellendi.",
+        "added": "\"{{name}}\" MCP sunucusu {{scope}} ayarlarına eklendi. ({{transport}})"
+      },
+      "remove": {
+        "describe": "Sunucu kaldır",
+        "usage": "Kullanım: gemini mcp remove [seçenekler] <name>",
+        "name": "Sunucunun adı",
+        "scope": "Yapılandırma kapsamı (user veya project)",
+        "notFound": "\"{{name}}\" sunucusu {{scope}} ayarlarında bulunamadı.",
+        "removed": "\"{{name}}\" sunucusu {{scope}} ayarlarından kaldırıldı."
+      },
+      "list": {
+        "describe": "Yapılandırılmış tüm MCP sunucularını listele",
+        "noneConfigured": "Yapılandırılmış MCP sunucusu yok.",
+        "header": "Yapılandırılmış MCP sunucuları:\n",
+        "status": {
+          "connected": "Bağlı",
+          "connecting": "Bağlanıyor",
+          "disconnected": "Bağlı değil"
+        },
+        "extensionSuffix": " ({{extension}} eklentisinden)"
+      }
+    },
+    "nonInteractive": {
+      "confirmShellExit": "Komut tarafından istenen bir onay istemi nedeniyle çıkılıyor.",
+      "unsupportedResultExit": "Etkileşimsiz modda desteklenmeyen bir komut sonucu nedeniyle çıkılıyor.",
+      "cancelling": "İptal ediliyor...",
+      "atCommandError": "'@' komutu işlenirken oluşan bir hata nedeniyle çıkılıyor."
+    },
+    "chat": {
+      "describe": "Konuşma geçmişini yönet",
+      "listDescription": "Kaydedilmiş konuşma kontrol noktalarını listele",
+      "save": {
+        "description": "Geçerli konuşmayı bir kontrol noktası olarak kaydet. Kullanım: /chat save <etiket>",
+        "missingTag": "Etiket eksik. Kullanım: /chat save <etiket>",
+        "overwritePromptPrefix": "Şu etiketle bir kontrol noktası zaten var: ",
+        "overwritePromptSuffix": " Üzerine yazmak ister misin?",
+        "noChatClient": "Konuşmayı kaydetmek için uygun bir sohbet istemcisi yok.",
+        "saved": "Konuşma kontrol noktası şu etiketle kaydedildi: {{tag}}.",
+        "noConversation": "Kaydedilecek konuşma bulunamadı."
+      },
+      "resume": {
+        "description": "Bir kontrol noktasından konuşmayı sürdür. Kullanım: /chat resume <etiket>",
+        "missingTag": "Etiket eksik. Kullanım: /chat resume <etiket>",
+        "notFound": "{{tag}} etiketli bir kontrol noktası bulunamadı.",
+        "authMismatch": "Sohbet devam ettirilemedi. Kaydedilirken kullanılan kimlik doğrulama yöntemi ({{authType}}) şu anki yöntemden ({{currentAuthType}}) farklı."
+      },
+      "delete": {
+        "description": "Bir konuşma kontrol noktasını sil. Kullanım: /chat delete <etiket>",
+        "missingTag": "Etiket eksik. Kullanım: /chat delete <etiket>",
+        "deleted": "'{{tag}}' etiketli konuşma kontrol noktası silindi.",
+        "notFound": "Hata: '{{tag}}' etiketli bir kontrol noktası bulunamadı."
+      },
+      "share": {
+        "description": "Geçerli konuşmayı bir markdown ya da json dosyasına aktar. Kullanım: /chat share <dosya>",
+        "invalidFormat": "Geçersiz dosya formatı. Yalnızca .md ve .json destekleniyor.",
+        "noChatClient": "Konuşmayı paylaşmak için uygun bir sohbet istemcisi yok.",
+        "noConversation": "Paylaşılacak konuşma bulunamadı.",
+        "shared": "Konuşma {{filePath}} konumuna aktarıldı",
+        "error": "Konuşma paylaşılırken hata: {{error}}"
+      }
+    }
   },
   "options": {
     "model": "Model",
@@ -38,6 +119,24 @@
     "unsupportedLocale": "Desteklenmeyen yerel ayar \"{{value}}\". İngilizce'ye dönülüyor.",
     "unknown": "Bilinmeyen hata"
   },
+  "auth": {
+    "loginFailed": "Oturum açılamadı. Mesaj: {{message}}"
+  },
+  "installationInfo": {
+    "messages": {
+      "localGit": "Yerel bir git kopyasından çalışıyor. Lütfen \"git pull\" ile güncelleyin.",
+      "npx": "npx ile çalışıyor, güncelleme uygulanabilir değil.",
+      "pnpx": "pnpx ile çalışıyor, güncelleme uygulanabilir değil.",
+      "bunx": "bunx ile çalışıyor, güncelleme uygulanabilir değil.",
+      "homebrew": "Homebrew ile kuruldu. Lütfen \"brew upgrade\" ile güncelleyin.",
+      "pnpmAuto": "pnpm ile kuruldu. Şimdi otomatik güncellemeyi deniyor...",
+      "yarnAuto": "yarn ile kuruldu. Şimdi otomatik güncellemeyi deniyor...",
+      "bunAuto": "bun ile kuruldu. Şimdi otomatik güncellemeyi deniyor...",
+      "npmAuto": "npm ile kuruldu. Şimdi otomatik güncellemeyi deniyor...",
+      "manual": "Güncellemek için {{command}} komutunu çalıştırın",
+      "localInstall": "Yerel kurulum. Lütfen projenizin package.json'ı üzerinden güncelleyin."
+    }
+  },
   "extensions": {
     "describe": "Gemini CLI eklentilerini yönet.",
     "demandCommand": "Devam etmeden önce en az bir komut belirtmelisiniz.",
@@ -68,6 +167,272 @@
       "logs": {
         "success": "\"{{name}}\" eklentisi \"{{scope}}\" kapsamında devre dışı bırakıldı."
       }
+    },
+    "new": {
+      "describe": "Hazır bir örnekten yeni bir eklenti oluştur.",
+      "path": "Eklentinin oluşturulacağı yol.",
+      "template": "Kullanılacak hazır şablon.",
+      "errors": {
+        "pathExists": "Yol zaten var: {{path}}"
+      },
+      "logs": {
+        "templateCreated": "\"{{template}}\" şablonundan {{path}} konumunda yeni eklenti oluşturuldu.",
+        "created": "{{path}} konumunda yeni bir eklenti oluşturuldu.",
+        "installHint": "\"gemini extensions link {{path}}\" komutuyla yükleyip test edebilirsiniz."
+      }
+    }
+  },
+  "ui": {
+    "exitWarning": {
+      "ctrlCAgain": "Çıkmak için Ctrl+C'ye tekrar basın.",
+      "ctrlDAgain": "Çıkmak için Ctrl+D'ye tekrar basın."
+    },
+    "screenReader": {
+      "userPrefix": "Kullanıcı: ",
+      "modelPrefix": "Model: ",
+      "loading": "yükleniyor",
+      "responding": "yanıtlıyor"
+    },
+    "commands": {
+      "about": {
+        "description": "Sürüm bilgisini göster",
+        "noSandbox": "sandbox yok",
+        "sandboxExec": "sandbox-exec ({{profile}})",
+        "unknownSandbox": "bilinmiyor",
+        "unknownModel": "Bilinmiyor"
+      },
+      "help": {
+        "description": "Kullanılabilir slash komutlarını göster"
+      },
+      "bug": {
+        "description": "GitHub'da hata bildir"
+      },
+      "privacy": {
+        "description": "Gizlilik bildirimini göster"
+      },
+      "theme": {
+        "description": "Temayı değiştir"
+      },
+      "clear": {
+        "description": "Konuşma geçmişini temizle",
+        "resetting": "Sohbet sıfırlanıyor...",
+        "clearing": "Sohbet temizleniyor..."
+      },
+      "compress": {
+        "description": "Konuşma bağlamını sıkıştır",
+        "alreadyCompressing": "Sıkıştırma zaten devam ediyor.",
+        "failed": "Konuşma sıkıştırılamadı.",
+        "failedWithReason": "Konuşma sıkıştırılamadı: {{reason}}"
+      },
+      "directory": {
+        "description": "Çalışma dizinlerini yönet",
+        "configUnavailable": "Yapılandırma kullanılamıyor.",
+        "add": {
+          "description": "Çalışma alanına dizin ekle",
+          "restrictiveSandbox": "Restriktif sandbox profillerinde /directory add desteklenmiyor. Bunun yerine oturumu başlatırken --include-directories kullanın.",
+          "missingPath": "Lütfen eklemek için en az bir yol belirtin.",
+          "alreadyInWorkspace": "Aşağıdaki dizinler zaten çalışma alanında:\n- {{directories}}",
+          "untrustedDirectories": "Aşağıdaki dizinler açıkça güvensiz ve güvenilen çalışma alanına eklenemez:\n- {{directories}}\nGüven düzeyini değiştirmek için permissions komutunu kullanın.",
+          "addError": "'{{directory}}' eklenirken hata: {{message}}",
+          "geminiFilesAdded": "Varsa şu dizinlerdeki GEMINI.md dosyaları eklendi:\n- {{directories}}",
+          "refreshError": "Bellek yenilenirken hata: {{message}}",
+          "addedDirectories": "Başarıyla eklenen dizinler:\n- {{directories}}"
+        },
+        "list": {
+          "description": "Çalışma alanı dizinlerini listele",
+          "directories": "Geçerli çalışma alanı dizinleri:\n{{directories}}"
+        }
+      }
+    },
+    "loading": {
+      "waitingForConfirmation": "Kullanıcı onayı bekleniyor...",
+      "wittyPhrases": [
+        "Şansımı deniyorum",
+        "Harikalık gönderiliyor... ",
+        "Serifleri yeniden boyuyorum...",
+        "Balçık mantar labirentinde yol alıyorum...",
+        "Dijital ruhlara danışıyorum...",
+        "Izgara eğrilerini yeniden örüyorum...",
+        "Yapay zeka hamsterlarını ısıtıyorum...",
+        "Sihirli denizkabuğuna soruyorum...",
+        "Nükteli cevabı üretiyorum...",
+        "Algoritmaları cilalıyorum...",
+        "Mükemmelliği aceleye getirmeyelim (kodu da) ...",
+        "Taze baytlar demleniyor...",
+        "Elektron sayıyorum...",
+        "Bilişsel işlemciler devreye alınıyor...",
+        "Evrenin sözdizimini hatalara karşı tarıyorum...",
+        "Bir saniye, espriyi optimize ediyorum...",
+        "Noktaları karıştırıyorum...",
+        "Sinir ağlarını çözüyorum...",
+        "Parlaklık derleniyor...",
+        "wit.exe yükleniyor...",
+        "Bilgelik bulutu çağrılıyor...",
+        "Nükteli bir yanıt hazırlanıyor...",
+        "Bir saniye, gerçekliği hata ayıklıyorum...",
+        "Seçenekleri güzelce karıştırıyorum...",
+        "Kozmik frekansları ayarlıyorum...",
+        "Sabırlarına layık bir yanıt üretiyorum...",
+        "1'ler ve 0'lar derleniyor...",
+        "Bağımlılıklar... ve varoluş krizleri çözülüyor...",
+        "Bellekleri birleştiriyorum... RAM de kişisel olan da...",
+        "Espri modülü yeniden başlatılıyor...",
+        "Gerekliler önbelleğe alınıyor (çoğu kedi mimi)...",
+        "Aşırı hız için optimize ediliyor",
+        "Bit değiş tokuşu yapıyorum... byte'lara söyleme...",
+        "Çöp toplanıyor... hemen geliyorum...",
+        "İnterweb'leri monte ediyorum...",
+        "Kahveyi koda dönüştürüyorum...",
+        "Gerçekliğin sözdizimi güncelleniyor...",
+        "Sinapsları yeniden kabloluyorum...",
+        "Kaybolmuş noktalı virgülü arıyorum...",
+        "Makinenin dişlilerini yağlıyorum...",
+        "Sunucular önceden ısıtılıyor...",
+        "Akı kapasitörü kalibre ediliyor...",
+        "Olasılık dışı motor devreye alınıyor...",
+        "Gücü topluyorum...",
+        "Mükemmel yanıt için yıldızları hizalıyorum...",
+        "Hepimiz böyle diyoruz...",
+        "Bir sonraki harika fikir yükleniyor...",
+        "Bir dakika, tam odaktayım...",
+        "Seni parlaklığımla etkilemeye hazırlanıyorum...",
+        "Bir dakika, espritüel tarafımı parlatıyorum...",
+        "Sıkı tutun, bir başyapıt hazırlıyorum...",
+        "Bir an, evrenin hatalarını ayıklıyorum...",
+        "Bir saniye, pikselleri hizalıyorum...",
+        "Bir saniye, espriyi optimize ediyorum...",
+        "Bir saniye, algoritmaları ayarlıyorum...",
+        "Işık hızı devrede...",
+        "Daha fazla Dilithium kristali kazıyorum...",
+        "Panik yok...",
+        "Beyaz tavşanı takip ediyorum...",
+        "Gerçek burada... bir yerlerde...",
+        "Kartuşa üflüyorum...",
+        "Yükleniyor... Barrell roll yap!",
+        "Yeniden doğmayı bekliyorum...",
+        "Kessel Rotası'nı 12 parsekten kısa sürede bitiriyorum...",
+        "Pasta yalan değil, sadece hâlâ yükleniyor...",
+        "Karakter oluşturma ekranında oyalanıyorum...",
+        "Bir saniye, doğru mimi arıyorum...",
+        "Devam etmek için 'A'ya basıyorum...",
+        "Dijital kedileri toparlıyorum...",
+        "Pikselleri cilalıyorum...",
+        "Uygun bir yükleme ekranı kelime oyunu arıyorum...",
+        "Bu esprili cümleyle seni oyalıyorum...",
+        "Neredeyse bitti... galiba...",
+        "Hamsterlarımız ellerinden geleni yapıyor...",
+        "Cloudy'nin başını okşuyorum...",
+        "Kediyi seviyorum...",
+        "Patronu Rickroll'luyorum...",
+        "Bası tokatlıyorum...",
+        "Snozberries tadıyorum...",
+        "Menzile gidiyorum, hıza oynuyorum...",
+        "Bu gerçek mi? Yoksa sadece bir hayal mi?...",
+        "Bundan iyi bir his alıyorum...",
+        "Ayıyı dürtüyorum...",
+        "En yeni mem'ler üzerine araştırma yapıyorum...",
+        "Bunu nasıl daha esprili yaparım diye düşünüyorum...",
+        "Hmmm... düşüneyim...",
+        "Gözü olmayan balığa ne denir? Fş...",
+        "Bilgisayar neden terapiye gitti? Fazla baytı vardı da ondan...",
+        "Programcılar neden doğayı sevmez? Çok fazla bug var da ondan...",
+        "Programcılar neden karanlık modu sever? Çünkü ışık böcek çeker...",
+        "Geliştirici neden iflas etti? Tüm cache'ini harcadı da ondan...",
+        "Kırık bir kalemle ne yaparsın? Hiçbir şey, çünkü ucu yok...",
+        "Vurarak bakım uyguluyorum...",
+        "Doğru USB yönünü arıyorum...",
+        "Sihirli dumanın kabloların içinde kalmasını sağlıyorum...",
+        "Hiçbir sebep yokken Rust ile yeniden yazıyorum...",
+        "Vim'den çıkmaya çalışıyorum...",
+        "Hamster tekerini çeviriyorum...",
+        "O bir bug değil, belgelenmemiş bir özellik...",
+        "Başlat.",
+        "Geri döneceğim... hem de bir yanıtla.",
+        "Diğer sürecim bir TARDIS...",
+        "Makine ruhuyla konuşuyorum...",
+        "Düşüncelerin demlenmesini bekliyorum...",
+        "Anahtarları nereye koyduğumu hatırladım...",
+        "Küre üzerine düşünüyorum...",
+        "Sizin inanmayacağınız şeyler gördüm... mesela yükleme mesajlarını okuyan bir kullanıcı.",
+        "Düşünceli bakış modunu başlatıyorum...",
+        "Bilgisayarın en sevdiği atıştırmalık ne? Mikroçip.",
+        "Java geliştiricileri neden gözlük takar? Çünkü C# göremezler.",
+        "Lazeri şarj ediyorum... püf püf!",
+        "Sıfıra bölüyorum... şaka şaka!",
+        "Bir yetişkin gözetmen arıyor... yani, işlem yapıyorum.",
+        "Aleti bip bop yaptırıyorum.",
+        "Ara belleğe alınıyor... çünkü yapay zekâların bile bir dakikaya ihtiyacı var.",
+        "Daha hızlı yanıt için kuantum parçacıklarını dolaştırıyorum...",
+        "Kromu parlatıyorum... algoritmaların üstünde.",
+        "Eğlenmiyor musun? (Üzerinde çalışıyorum!)",
+        "Kod gremlinlerini çağırıyorum... tabii yardım etmeleri için.",
+        "Çevirmeli bağlantı sesinin bitmesini bekliyorum...",
+        "Espri-metresini yeniden kalibre ediyorum.",
+        "Diğer yükleme ekranım daha da komik.",
+        "Klavyenin üzerinde yürüyen bir kedi olduğuna eminim...",
+        "Geliştiriyorum... Geliştiriyorum... Hâlâ yükleniyor.",
+        "Bu bir bug değil, bu yükleme ekranının özelliği.",
+        "Kapayıp açmayı denedin mi? (Yükleme ekranını, beni değil.)",
+        "Ekstra pilonlar inşa ediliyor...",
+        "Yeni satır mı? Ctrl+J.",
+        "Hipno-Drone'ları salıyorum..."
+      ]
+    },
+    "commands": {
+      "help": {
+        "description": "gemini-cli için yardım"
+      },
+      "clear": {
+        "description": "Ekranı ve sohbet geçmişini temizle",
+        "resetting": "Terminal temizleniyor ve sohbet sıfırlanıyor.",
+        "clearing": "Terminal temizleniyor."
+      },
+      "compress": {
+        "description": "Bağlamı özetle değiştirerek sıkıştırır",
+        "alreadyCompressing": "Sıkıştırma zaten sürüyor, lütfen önceki isteğin bitmesini bekleyin",
+        "failed": "Sohbet geçmişi sıkıştırılamadı.",
+        "failedWithReason": "Sohbet geçmişi sıkıştırılamadı: {{reason}}"
+      },
+      "directory": {
+        "description": "Çalışma alanı dizinlerini yönet",
+        "add": {
+          "description": "Dizinleri çalışma alanına ekle. Birden çok yol için virgül kullanın"
+        },
+        "list": {
+          "description": "Çalışma alanındaki tüm dizinleri göster"
+        }
+      },
+      "bug": {
+        "description": "Hata raporu gönder"
+      }
+    },
+    "privacy": {
+      "cloudPaid": {
+        "title": "Vertex AI Bildirimi",
+        "noticeIntro": "Hizmete Özel Şartlar",
+        "noticeMid": "Google'ın Müşteriye",
+        "platform": "Google Cloud Platformu",
+        "noticeRest": "sunmayı kabul ettiği sözleşmeye (“Sözleşme”) dahil edilmiştir. Sözleşme, Google Cloud iş ortağı veya bayi programı kapsamında Google Cloud Platformun yeniden satılmasına veya sağlanmasına yetki veriyorsa “İş ortağına Özel Şartlar” bölümü dışında Hizmete Özel Şartlar'daki müşteri referansları İş Ortağı veya Bayi anlamına gelir ve Müşteri Verileri referansları İş Ortağı Verisi anlamına gelir. Hizmete Özel Şartlarda tanımlanmayan büyük harfli terimler Sözleşmedeki anlamlarına sahiptir.",
+        "serviceTermsUrl": "https://cloud.google.com/terms/service-terms",
+        "servicesUrl": "https://cloud.google.com/terms/services",
+        "exitHint": "Çıkmak için Esc tuşuna basın."
+      }
+    },
+    "modelStats": {
+      "noApiCalls": "Bu oturumda herhangi bir API çağrısı yapılmadı.",
+      "title": "Meraklılar için Model İstatistikleri",
+      "metric": "Ölçüm",
+      "apiSection": "API",
+      "requests": "İstekler",
+      "errors": "Hatalar",
+      "avgLatency": "Ort. Gecikme",
+      "tokensSection": "Tokenlar",
+      "total": "Toplam",
+      "prompt": "Prompt",
+      "cached": "Önbellek",
+      "thoughts": "Düşünceler",
+      "tool": "Araç",
+      "output": "Çıktı"
     }
   }
 }

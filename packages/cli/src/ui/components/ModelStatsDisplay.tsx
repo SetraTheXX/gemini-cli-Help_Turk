@@ -15,6 +15,7 @@ import {
 } from '../utils/computeStats.js';
 import type { ModelMetrics } from '../contexts/SessionContext.js';
 import { useSessionStats } from '../contexts/SessionContext.js';
+import { uiTranslator } from '../i18n.js';
 
 const METRIC_COL_WIDTH = 28;
 const MODEL_COL_WIDTH = 22;
@@ -50,6 +51,7 @@ const StatRow: React.FC<StatRowProps> = ({
 );
 
 export const ModelStatsDisplay: React.FC = () => {
+  const t = uiTranslator;
   const { stats } = useSessionStats();
   const { models } = stats.metrics;
   const activeModels = Object.entries(models).filter(
@@ -64,9 +66,7 @@ export const ModelStatsDisplay: React.FC = () => {
         paddingY={1}
         paddingX={2}
       >
-        <Text color={theme.text.primary}>
-          No API calls have been made in this session.
-        </Text>
+        <Text color={theme.text.primary}>{t('ui.modelStats.noApiCalls')}</Text>
       </Box>
     );
   }
@@ -94,7 +94,7 @@ export const ModelStatsDisplay: React.FC = () => {
       paddingX={2}
     >
       <Text bold color={theme.text.accent}>
-        Model Stats For Nerds
+        {t('ui.modelStats.title')}
       </Text>
       <Box height={1} />
 
@@ -102,7 +102,7 @@ export const ModelStatsDisplay: React.FC = () => {
       <Box>
         <Box width={METRIC_COL_WIDTH}>
           <Text bold color={theme.text.primary}>
-            Metric
+            {t('ui.modelStats.metric')}
           </Text>
         </Box>
         {modelNames.map((name) => (
@@ -125,13 +125,13 @@ export const ModelStatsDisplay: React.FC = () => {
       />
 
       {/* API Section */}
-      <StatRow title="API" values={[]} isSection />
+      <StatRow title={t('ui.modelStats.apiSection')} values={[]} isSection />
       <StatRow
-        title="Requests"
+        title={t('ui.modelStats.requests')}
         values={getModelValues((m) => m.api.totalRequests.toLocaleString())}
       />
       <StatRow
-        title="Errors"
+        title={t('ui.modelStats.errors')}
         values={getModelValues((m) => {
           const errorRate = calculateErrorRate(m);
           return (
@@ -146,7 +146,7 @@ export const ModelStatsDisplay: React.FC = () => {
         })}
       />
       <StatRow
-        title="Avg Latency"
+        title={t('ui.modelStats.avgLatency')}
         values={getModelValues((m) => {
           const avgLatency = calculateAverageLatency(m);
           return formatDuration(avgLatency);
@@ -156,9 +156,9 @@ export const ModelStatsDisplay: React.FC = () => {
       <Box height={1} />
 
       {/* Tokens Section */}
-      <StatRow title="Tokens" values={[]} isSection />
+      <StatRow title={t('ui.modelStats.tokensSection')} values={[]} isSection />
       <StatRow
-        title="Total"
+        title={t('ui.modelStats.total')}
         values={getModelValues((m) => (
           <Text color={theme.status.warning}>
             {m.tokens.total.toLocaleString()}
@@ -166,13 +166,13 @@ export const ModelStatsDisplay: React.FC = () => {
         ))}
       />
       <StatRow
-        title="Prompt"
+        title={t('ui.modelStats.prompt')}
         isSubtle
         values={getModelValues((m) => m.tokens.prompt.toLocaleString())}
       />
       {hasCached && (
         <StatRow
-          title="Cached"
+          title={t('ui.modelStats.cached')}
           isSubtle
           values={getModelValues((m) => {
             const cacheHitRate = calculateCacheHitRate(m);
@@ -186,20 +186,20 @@ export const ModelStatsDisplay: React.FC = () => {
       )}
       {hasThoughts && (
         <StatRow
-          title="Thoughts"
+          title={t('ui.modelStats.thoughts')}
           isSubtle
           values={getModelValues((m) => m.tokens.thoughts.toLocaleString())}
         />
       )}
       {hasTool && (
         <StatRow
-          title="Tool"
+          title={t('ui.modelStats.tool')}
           isSubtle
           values={getModelValues((m) => m.tokens.tool.toLocaleString())}
         />
       )}
       <StatRow
-        title="Output"
+        title={t('ui.modelStats.output')}
         isSubtle
         values={getModelValues((m) => m.tokens.candidates.toLocaleString())}
       />

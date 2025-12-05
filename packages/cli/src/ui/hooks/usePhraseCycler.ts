@@ -7,8 +7,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { INFORMATIVE_TIPS } from '../constants/tips.js';
 import { WITTY_LOADING_PHRASES } from '../constants/wittyPhrases.js';
+import { uiTranslator } from '../i18n.js';
 
 export const PHRASE_CHANGE_INTERVAL_MS = 15000;
+const WAITING_FOR_CONFIRMATION = uiTranslator(
+  'ui.loading.waitingForConfirmation',
+);
 
 /**
  * Custom hook to manage cycling through loading phrases.
@@ -34,7 +38,7 @@ export const usePhraseCycler = (
 
   useEffect(() => {
     if (isWaiting) {
-      setCurrentLoadingPhrase('Waiting for user confirmation...');
+      setCurrentLoadingPhrase(WAITING_FOR_CONFIRMATION);
       if (phraseIntervalRef.current) {
         clearInterval(phraseIntervalRef.current);
         phraseIntervalRef.current = null;

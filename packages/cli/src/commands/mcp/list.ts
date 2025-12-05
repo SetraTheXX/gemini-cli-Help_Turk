@@ -17,6 +17,7 @@ import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { ExtensionManager } from '../../config/extension-manager.js';
 import { requestConsentNonInteractive } from '../../config/extensions/consent.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
+import type { Translator } from '../../i18n/index.js';
 
 const COLOR_GREEN = '\u001b[32m';
 const COLOR_YELLOW = '\u001b[33m';
@@ -90,16 +91,16 @@ async function getServerStatus(
   return await testMCPConnection(serverName, server);
 }
 
-export async function listMcpServers(): Promise<void> {
+export async function listMcpServers(t: Translator): Promise<void> {
   const mcpServers = await getMcpServersFromConfig();
   const serverNames = Object.keys(mcpServers);
 
   if (serverNames.length === 0) {
-    debugLogger.log('No MCP servers configured.');
+    debugLogger.log(t('commands.mcp.list.noneConfigured'));
     return;
   }
 
-  debugLogger.log('Configured MCP servers:\n');
+  debugLogger.log(t('commands.mcp.list.header'));
 
   for (const serverName of serverNames) {
     const server = mcpServers[serverName];
@@ -111,22 +112,26 @@ export async function listMcpServers(): Promise<void> {
     switch (status) {
       case MCPServerStatus.CONNECTED:
         statusIndicator = COLOR_GREEN + '✓' + RESET_COLOR;
-        statusText = 'Connected';
+        statusText = t('commands.mcp.list.status.connected');
         break;
       case MCPServerStatus.CONNECTING:
         statusIndicator = COLOR_YELLOW + '…' + RESET_COLOR;
-        statusText = 'Connecting';
+        statusText = t('commands.mcp.list.status.connecting');
         break;
       case MCPServerStatus.DISCONNECTED:
       default:
         statusIndicator = COLOR_RED + '✗' + RESET_COLOR;
-        statusText = 'Disconnected';
+        statusText = t('commands.mcp.list.status.disconnected');
         break;
     }
 
     let serverInfo =
       serverName +
-      (server.extension?.name ? ` (from ${server.extension.name})` : '') +
+      (server.extension?.name
+        ? t('commands.mcp.list.extensionSuffix', {
+            extension: server.extension.name,
+          })
+        : '') +
       ': ';
     if (server.httpUrl) {
       serverInfo += `${server.httpUrl} (http)`;
@@ -140,10 +145,10 @@ export async function listMcpServers(): Promise<void> {
   }
 }
 
-export const listCommand: CommandModule = {
+export const createListCommand = (t: Translator): CommandModule => ({
   command: 'list',
-  describe: 'List all configured MCP servers',
+  describe: t('commands.mcp.list.describe'),
   handler: async () => {
-    await listMcpServers();
+    await listMcpServers(t);
   },
-};
+});

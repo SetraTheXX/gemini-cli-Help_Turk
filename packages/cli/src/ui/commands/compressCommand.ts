@@ -8,11 +8,12 @@ import type { HistoryItemCompression } from '../types.js';
 import { MessageType } from '../types.js';
 import type { SlashCommand } from './types.js';
 import { CommandKind } from './types.js';
+import { uiTranslator } from '../i18n.js';
 
 export const compressCommand: SlashCommand = {
   name: 'compress',
   altNames: ['summarize'],
-  description: 'Compresses the context by replacing it with a summary',
+  description: uiTranslator('ui.commands.compress.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context) => {
     const { ui } = context;
@@ -20,7 +21,7 @@ export const compressCommand: SlashCommand = {
       ui.addItem(
         {
           type: MessageType.ERROR,
-          text: 'Already compressing, wait for previous request to complete',
+          text: uiTranslator('ui.commands.compress.alreadyCompressing'),
         },
         Date.now(),
       );
@@ -60,7 +61,7 @@ export const compressCommand: SlashCommand = {
         ui.addItem(
           {
             type: MessageType.ERROR,
-            text: 'Failed to compress chat history.',
+            text: uiTranslator('ui.commands.compress.failed'),
           },
           Date.now(),
         );
@@ -69,9 +70,9 @@ export const compressCommand: SlashCommand = {
       ui.addItem(
         {
           type: MessageType.ERROR,
-          text: `Failed to compress chat history: ${
-            e instanceof Error ? e.message : String(e)
-          }`,
+          text: uiTranslator('ui.commands.compress.failedWithReason', {
+            reason: e instanceof Error ? e.message : String(e),
+          }),
         },
         Date.now(),
       );

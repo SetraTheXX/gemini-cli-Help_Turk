@@ -9,6 +9,8 @@ import { join, dirname, basename } from 'node:path';
 import type { CommandModule } from 'yargs';
 import { fileURLToPath } from 'node:url';
 import { debugLogger } from '@google/gemini-cli-core';
+import { createTranslator, type Translator } from '../../i18n/index.js';
+import { detectLocale } from '../../utils/locale.js';
 
 interface NewArgs {
   path: string;
@@ -29,15 +31,15 @@ async function pathExists(path: string) {
   }
 }
 
-async function createDirectory(path: string) {
+async function createDirectory(path: string, t: Translator) {
   if (await pathExists(path)) {
-    throw new Error(`Path already exists: ${path}`);
+    throw new Error(t('extensions.new.errors.pathExists', { path }));
   }
   await mkdir(path, { recursive: true });
 }
 
-async function copyDirectory(template: string, path: string) {
-  await createDirectory(path);
+async function copyDirectory(template: string, path: string, t: Translator) {
+  await createDirectory(path, t);
 
   const examplePath = join(EXAMPLES_PATH, template);
   const entries = await readdir(examplePath, { withFileTypes: true });
@@ -48,14 +50,20 @@ async function copyDirectory(template: string, path: string) {
   }
 }
 
-async function handleNew(args: NewArgs) {
+async function handleNew(
+  args: NewArgs,
+  t: Translator = createTranslator(detectLocale(process.env, 'en')),
+) {
   if (args.template) {
-    await copyDirectory(args.template, args.path);
+    await copyDirectory(args.template, args.path, t);
     debugLogger.log(
-      `Successfully created new extension from template "${args.template}" at ${args.path}.`,
+      t('extensions.new.logs.templateCreated', {
+        template: args.template,
+        path: args.path,
+      }),
     );
   } else {
-    await createDirectory(args.path);
+    await createDirectory(args.path, t);
     const extensionName = basename(args.path);
     const manifest = {
       name: extensionName,
@@ -65,11 +73,13 @@ async function handleNew(args: NewArgs) {
       join(args.path, 'gemini-extension.json'),
       JSON.stringify(manifest, null, 2),
     );
-    debugLogger.log(`Successfully created new extension at ${args.path}.`);
+    debugLogger.log(
+      t('extensions.new.logs.created', {
+        path: args.path,
+      }),
+    );
   }
-  debugLogger.log(
-    `You can install this using "gemini extensions link ${args.path}" to test it out.`,
-  );
+  debugLogger.log(t('extensions.new.logs.installHint', { path: args.path }));
 }
 
 async function getBoilerplateChoices() {
@@ -79,26 +89,35 @@ async function getBoilerplateChoices() {
     .map((entry) => entry.name);
 }
 
-export const newCommand: CommandModule = {
-  command: 'new <path> [template]',
-  describe: 'Create a new extension from a boilerplate example.',
-  builder: async (yargs) => {
-    const choices = await getBoilerplateChoices();
-    return yargs
-      .positional('path', {
-        describe: 'The path to create the extension in.',
-        type: 'string',
-      })
-      .positional('template', {
-        describe: 'The boilerplate template to use.',
-        type: 'string',
-        choices,
-      });
-  },
-  handler: async (args) => {
-    await handleNew({
-      path: args['path'] as string,
-      template: args['template'] as string | undefined,
-    });
-  },
-};
+export function createNewCommand(t: Translator): CommandModule {
+  return {
+    command: 'new <path> [template]',
+    describe: t('extensions.new.describe'),
+    builder: async (yargs) => {
+      const choices = await getBoilerplateChoices();
+      return yargs
+        .positional('path', {
+          describe: t('extensions.new.path'),
+          type: 'string',
+        })
+        .positional('template', {
+          describe: t('extensions.new.template'),
+          type: 'string',
+          choices,
+        });
+    },
+    handler: async (args) => {
+      await handleNew(
+        {
+          path: args['path'] as string,
+          template: args['template'] as string | undefined,
+        },
+        t,
+      );
+    },
+  };
+}
+
+const defaultTranslator = createTranslator(detectLocale(process.env, 'en'));
+
+export const newCommand = createNewCommand(defaultTranslator);

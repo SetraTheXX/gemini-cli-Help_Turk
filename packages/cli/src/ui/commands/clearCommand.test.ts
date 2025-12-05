@@ -9,6 +9,7 @@ import { vi, describe, it, expect, beforeEach } from 'vitest';
 import { clearCommand } from './clearCommand.js';
 import { type CommandContext } from './types.js';
 import { createMockCommandContext } from '../../test-utils/mockCommandContext.js';
+import { uiTranslator } from '../i18n.js';
 
 // Mock the telemetry service
 vi.mock('@google/gemini-cli-core', async () => {
@@ -52,7 +53,7 @@ describe('clearCommand', () => {
     await clearCommand.action(mockContext, '');
 
     expect(mockContext.ui.setDebugMessage).toHaveBeenCalledWith(
-      'Clearing terminal and resetting chat.',
+      uiTranslator('ui.commands.clear.resetting'),
     );
     expect(mockContext.ui.setDebugMessage).toHaveBeenCalledTimes(1);
 
@@ -90,7 +91,7 @@ describe('clearCommand', () => {
     await clearCommand.action(nullConfigContext, '');
 
     expect(nullConfigContext.ui.setDebugMessage).toHaveBeenCalledWith(
-      'Clearing terminal.',
+      uiTranslator('ui.commands.clear.clearing'),
     );
     expect(mockResetChat).not.toHaveBeenCalled();
     expect(uiTelemetryService.setLastPromptTokenCount).toHaveBeenCalledWith(0);
