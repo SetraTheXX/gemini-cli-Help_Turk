@@ -77,6 +77,7 @@ import { disableMouseEvents, enableMouseEvents } from './ui/utils/mouse.js';
 import { ScrollProvider } from './ui/contexts/ScrollProvider.js';
 import ansiEscapes from 'ansi-escapes';
 import { isAlternateBufferEnabled } from './ui/hooks/useAlternateBuffer.js';
+import { uiTranslator } from './ui/i18n.js';
 
 const SLOW_RENDER_MS = 200;
 
@@ -131,17 +132,26 @@ function getNodeMemoryArgs(isDebugMode: boolean): string[] {
 export function setupUnhandledRejectionHandler() {
   let unhandledRejectionOccurred = false;
   process.on('unhandledRejection', (reason, _promise) => {
-    const errorMessage = `=========================================
-This is an unexpected error. Please file a bug report using the /bug tool.
-CRITICAL: Unhandled Promise Rejection!
-=========================================
-Reason: ${reason}${
+    const reasonText =
+      reason === undefined
+        ? uiTranslator.t('ui.crash.unknownReason')
+        : reason instanceof Error && reason.message
+          ? reason.message
+          : String(reason);
+    const stackText =
       reason instanceof Error && reason.stack
-        ? `
-Stack trace:
-${reason.stack}`
-        : ''
-    }`;
+        ? `\n${uiTranslator.t('ui.crash.stackHeader')}\n${reason.stack}`
+        : '';
+
+    const errorMessage =
+      [
+        uiTranslator.t('ui.crash.separator'),
+        uiTranslator.t('ui.crash.unexpected'),
+        uiTranslator.t('ui.crash.fileBug'),
+        uiTranslator.t('ui.crash.critical'),
+        uiTranslator.t('ui.crash.separator'),
+        uiTranslator.t('ui.crash.reason', { reason: reasonText }),
+      ].join('\n') + stackText;
     appEvents.emit(AppEvent.LogError, errorMessage);
     if (!unhandledRejectionOccurred) {
       unhandledRejectionOccurred = true;

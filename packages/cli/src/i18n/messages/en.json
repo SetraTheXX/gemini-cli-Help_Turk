@@ -193,6 +193,15 @@
       "loading": "loading",
       "responding": "responding"
     },
+    "crash": {
+      "separator": "=========================================",
+      "unexpected": "This is an unexpected error.",
+      "fileBug": "Please file a bug report using the /bug tool.",
+      "critical": "CRITICAL: Unhandled Promise Rejection!",
+      "reason": "Reason: {{reason}}",
+      "stackHeader": "Stack trace:",
+      "unknownReason": "Unknown reason"
+    },
     "commands": {
       "about": {
         "description": "Show version info",

@@ -193,6 +193,15 @@
       "loading": "yükleniyor",
       "responding": "yanıtlıyor"
     },
+    "crash": {
+      "separator": "=========================================",
+      "unexpected": "Bu beklenmedik bir hata.",
+      "fileBug": "Lütfen /bug aracıyla bir hata raporu oluşturun.",
+      "critical": "KRİTİK: Yakalanmamış Promise Reddedilmesi!",
+      "reason": "Neden: {{reason}}",
+      "stackHeader": "Yığın izi:",
+      "unknownReason": "Bilinmeyen neden"
+    },
     "commands": {
       "about": {
         "description": "Sürüm bilgisini göster",
