@@ -8,12 +8,14 @@
 import type { CommandModule } from 'yargs';
 import { loadSettings, SettingScope } from '../../config/settings.js';
 import { debugLogger } from '@google/gemini-cli-core';
+import type { Translator } from '../../i18n/index.js';
 
 async function removeMcpServer(
   name: string,
   options: {
     scope: string;
   },
+  t: Translator,
 ) {
   const { scope } = options;
   const settingsScope =
@@ -24,7 +26,7 @@ async function removeMcpServer(
   const mcpServers = existingSettings.mcpServers || {};
 
   if (!mcpServers[name]) {
-    debugLogger.log(`Server "${name}" not found in ${scope} settings.`);
+    debugLogger.log(t('commands.mcp.remove.notFound', { name, scope }));
     return;
   }
 
@@ -32,30 +34,34 @@ async function removeMcpServer(
 
   settings.setValue(settingsScope, 'mcpServers', mcpServers);
 
-  debugLogger.log(`Server "${name}" removed from ${scope} settings.`);
+  debugLogger.log(t('commands.mcp.remove.removed', { name, scope }));
 }
 
-export const removeCommand: CommandModule = {
+export const createRemoveCommand = (t: Translator): CommandModule => ({
   command: 'remove <name>',
-  describe: 'Remove a server',
+  describe: t('commands.mcp.remove.describe'),
   builder: (yargs) =>
     yargs
-      .usage('Usage: gemini mcp remove [options] <name>')
+      .usage(t('commands.mcp.remove.usage'))
       .positional('name', {
-        describe: 'Name of the server',
+        describe: t('commands.mcp.remove.name'),
         type: 'string',
         demandOption: true,
       })
       .option('scope', {
         alias: 's',
-        describe: 'Configuration scope (user or project)',
+        describe: t('commands.mcp.remove.scope'),
         type: 'string',
         default: 'project',
         choices: ['user', 'project'],
       }),
   handler: async (argv) => {
-    await removeMcpServer(argv['name'] as string, {
-      scope: argv['scope'] as string,
-    });
+    await removeMcpServer(
+      argv['name'] as string,
+      {
+        scope: argv['scope'] as string,
+      },
+      t,
+    );
   },
-};
+});

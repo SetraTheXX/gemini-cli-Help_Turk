@@ -57,6 +57,12 @@ copyFilesRecursive(sourceDir, targetDir);
 // Copy example extensions into the bundle.
 const packageName = path.basename(process.cwd());
 if (packageName === 'cli') {
+  const localeSource = path.join(sourceDir, 'i18n', 'messages');
+  const localeTarget = path.join('dist', 'i18n', 'messages');
+  if (fs.existsSync(localeSource)) {
+    fs.cpSync(localeSource, localeTarget, { recursive: true });
+  }
+
   const examplesSource = path.join(
     sourceDir,
     'commands',

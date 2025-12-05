@@ -11,8 +11,12 @@ import { useLoadingIndicator } from './useLoadingIndicator.js';
 import { StreamingState } from '../types.js';
 import { PHRASE_CHANGE_INTERVAL_MS } from './usePhraseCycler.js';
 import { WITTY_LOADING_PHRASES } from '../constants/wittyPhrases.js';
+import { uiTranslator } from '../i18n.js';
 
 describe('useLoadingIndicator', () => {
+  const waitingForConfirmation = uiTranslator(
+    'ui.loading.waitingForConfirmation',
+  );
   beforeEach(() => {
     vi.useFakeTimers();
   });
@@ -90,9 +94,7 @@ describe('useLoadingIndicator', () => {
       rerender({ streamingState: StreamingState.WaitingForConfirmation });
     });
 
-    expect(result.current.currentLoadingPhrase).toBe(
-      'Waiting for user confirmation...',
-    );
+    expect(result.current.currentLoadingPhrase).toBe(waitingForConfirmation);
     expect(result.current.elapsedTime).toBe(60); // Elapsed time should be retained
 
     // Timer should not advance further
@@ -117,9 +119,7 @@ describe('useLoadingIndicator', () => {
       rerender({ streamingState: StreamingState.WaitingForConfirmation });
     });
     expect(result.current.elapsedTime).toBe(5);
-    expect(result.current.currentLoadingPhrase).toBe(
-      'Waiting for user confirmation...',
-    );
+    expect(result.current.currentLoadingPhrase).toBe(waitingForConfirmation);
 
     act(() => {
       rerender({ streamingState: StreamingState.Responding });

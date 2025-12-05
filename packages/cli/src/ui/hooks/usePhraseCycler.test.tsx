@@ -14,6 +14,7 @@ import {
 } from './usePhraseCycler.js';
 import { INFORMATIVE_TIPS } from '../constants/tips.js';
 import { WITTY_LOADING_PHRASES } from '../constants/wittyPhrases.js';
+import { uiTranslator } from '../i18n.js';
 
 // Test component to consume the hook
 const TestComponent = ({
@@ -30,6 +31,9 @@ const TestComponent = ({
 };
 
 describe('usePhraseCycler', () => {
+  const waitingForConfirmation = uiTranslator(
+    'ui.loading.waitingForConfirmation',
+  );
   beforeEach(() => {
     vi.useFakeTimers();
   });
@@ -54,7 +58,7 @@ describe('usePhraseCycler', () => {
     await act(async () => {
       await vi.advanceTimersByTimeAsync(0);
     });
-    expect(lastFrame()).toBe('Waiting for user confirmation...');
+    expect(lastFrame()).toBe(waitingForConfirmation);
   });
 
   it('should not cycle phrases if isActive is false and not waiting', async () => {
@@ -273,7 +277,7 @@ describe('usePhraseCycler', () => {
     await act(async () => {
       await vi.advanceTimersByTimeAsync(0);
     });
-    expect(lastFrame()).toBe('Waiting for user confirmation...');
+    expect(lastFrame()).toBe(waitingForConfirmation);
 
     // Go back to active cycling - should pick a phrase based on the logic (witty due to mock)
     rerender(<TestComponent isActive={true} isWaiting={false} />);

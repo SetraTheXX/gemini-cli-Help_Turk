@@ -24,6 +24,7 @@ import type {
 } from '../types.js';
 import { MessageType } from '../types.js';
 import type { Content } from '@google/genai';
+import { uiTranslator } from '../i18n.js';
 
 const getSavedChatTags = async (
   context: CommandContext,
@@ -66,7 +67,7 @@ const getSavedChatTags = async (
 
 const listCommand: SlashCommand = {
   name: 'list',
-  description: 'List saved conversation checkpoints',
+  description: uiTranslator('commands.chat.listDescription'),
   kind: CommandKind.BUILT_IN,
   action: async (context): Promise<void> => {
     const chatDetails = await getSavedChatTags(context, false);
@@ -82,8 +83,7 @@ const listCommand: SlashCommand = {
 
 const saveCommand: SlashCommand = {
   name: 'save',
-  description:
-    'Save the current conversation as a checkpoint. Usage: /chat save <tag>',
+  description: uiTranslator('commands.chat.save.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context, args): Promise<SlashCommandActionReturn | void> => {
     const tag = args.trim();
@@ -91,7 +91,7 @@ const saveCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: 'Missing tag. Usage: /chat save <tag>',
+        content: uiTranslator('commands.chat.save.missingTag'),
       };
     }
 
@@ -106,9 +106,9 @@ const saveCommand: SlashCommand = {
           prompt: React.createElement(
             Text,
             null,
-            'A checkpoint with the tag ',
+            uiTranslator('commands.chat.save.overwritePromptPrefix'),
             React.createElement(Text, { color: theme.text.accent }, tag),
-            ' already exists. Do you want to overwrite it?',
+            uiTranslator('commands.chat.save.overwritePromptSuffix'),
           ),
           originalInvocation: {
             raw: context.invocation?.raw || `/chat save ${tag}`,
@@ -122,7 +122,7 @@ const saveCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: 'No chat client available to save conversation.',
+        content: uiTranslator('commands.chat.save.noChatClient'),
       };
     }
 
@@ -133,15 +133,15 @@ const saveCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'info',
-        content: `Conversation checkpoint saved with tag: ${decodeTagName(
-          tag,
-        )}.`,
+        content: uiTranslator('commands.chat.save.saved', {
+          tag: decodeTagName(tag),
+        }),
       };
     } else {
       return {
         type: 'message',
         messageType: 'info',
-        content: 'No conversation found to save.',
+        content: uiTranslator('commands.chat.save.noConversation'),
       };
     }
   },
@@ -150,8 +150,7 @@ const saveCommand: SlashCommand = {
 const resumeCommand: SlashCommand = {
   name: 'resume',
   altNames: ['load'],
-  description:
-    'Resume a conversation from a checkpoint. Usage: /chat resume <tag>',
+  description: uiTranslator('commands.chat.resume.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context, args) => {
     const tag = args.trim();
@@ -159,7 +158,7 @@ const resumeCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: 'Missing tag. Usage: /chat resume <tag>',
+        content: uiTranslator('commands.chat.resume.missingTag'),
       };
     }
 
@@ -172,7 +171,9 @@ const resumeCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'info',
-        content: `No saved checkpoint found with tag: ${decodeTagName(tag)}.`,
+        content: uiTranslator('commands.chat.resume.notFound', {
+          tag: decodeTagName(tag),
+        }),
       };
     }
 
@@ -185,7 +186,10 @@ const resumeCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: `Cannot resume chat. It was saved with a different authentication method (${checkpoint.authType}) than the current one (${currentAuthType}).`,
+        content: uiTranslator('commands.chat.resume.authMismatch', {
+          authType: checkpoint.authType,
+          currentAuthType,
+        }),
       };
     }
 
@@ -234,7 +238,7 @@ const resumeCommand: SlashCommand = {
 
 const deleteCommand: SlashCommand = {
   name: 'delete',
-  description: 'Delete a conversation checkpoint. Usage: /chat delete <tag>',
+  description: uiTranslator('commands.chat.delete.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context, args): Promise<MessageActionReturn> => {
     const tag = args.trim();
@@ -242,7 +246,7 @@ const deleteCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: 'Missing tag. Usage: /chat delete <tag>',
+        content: uiTranslator('commands.chat.delete.missingTag'),
       };
     }
 
@@ -254,13 +258,17 @@ const deleteCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'info',
-        content: `Conversation checkpoint '${decodeTagName(tag)}' has been deleted.`,
+        content: uiTranslator('commands.chat.delete.deleted', {
+          tag: decodeTagName(tag),
+        }),
       };
     } else {
       return {
         type: 'message',
         messageType: 'error',
-        content: `Error: No checkpoint found with tag '${decodeTagName(tag)}'.`,
+        content: uiTranslator('commands.chat.delete.notFound', {
+          tag: decodeTagName(tag),
+        }),
       };
     }
   },
@@ -306,8 +314,7 @@ export function serializeHistoryToMarkdown(history: Content[]): string {
 
 const shareCommand: SlashCommand = {
   name: 'share',
-  description:
-    'Share the current conversation to a markdown or json file. Usage: /chat share <file>',
+  description: uiTranslator('commands.chat.share.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context, args): Promise<MessageActionReturn> => {
     let filePathArg = args.trim();
@@ -321,7 +328,7 @@ const shareCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: 'Invalid file format. Only .md and .json are supported.',
+        content: uiTranslator('commands.chat.share.invalidFormat'),
       };
     }
 
@@ -330,7 +337,7 @@ const shareCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'error',
-        content: 'No chat client available to share conversation.',
+        content: uiTranslator('commands.chat.share.noChatClient'),
       };
     }
 
@@ -343,7 +350,7 @@ const shareCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'info',
-        content: 'No conversation found to share.',
+        content: uiTranslator('commands.chat.share.noConversation'),
       };
     }
 
@@ -359,14 +366,16 @@ const shareCommand: SlashCommand = {
       return {
         type: 'message',
         messageType: 'info',
-        content: `Conversation shared to ${filePath}`,
+        content: uiTranslator('commands.chat.share.shared', { filePath }),
       };
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : String(err);
       return {
         type: 'message',
         messageType: 'error',
-        content: `Error sharing conversation: ${errorMessage}`,
+        content: uiTranslator('commands.chat.share.error', {
+          error: errorMessage,
+        }),
       };
     }
   },
@@ -374,7 +383,7 @@ const shareCommand: SlashCommand = {
 
 export const chatCommand: SlashCommand = {
   name: 'chat',
-  description: 'Manage conversation history',
+  description: uiTranslator('commands.chat.describe'),
   kind: CommandKind.BUILT_IN,
   subCommands: [
     listCommand,

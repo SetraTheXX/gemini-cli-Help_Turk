@@ -18,6 +18,7 @@ import { ExtensionManager } from '../../config/extension-manager.js';
 import { loadSettings } from '../../config/settings.js';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
 import { createTranslator, type Translator } from '../../i18n/index.js';
+import { detectLocale } from '../../utils/locale.js';
 import { getErrorMessage } from '../../utils/errors.js';
 
 interface InstallArgs {
@@ -30,7 +31,7 @@ interface InstallArgs {
 
 export async function handleInstall(
   args: InstallArgs,
-  t: Translator = createTranslator('en'),
+  t: Translator = createTranslator(detectLocale(process.env, 'en')),
 ) {
   try {
     let installMetadata: ExtensionInstallMetadata;
@@ -139,4 +140,6 @@ export function createInstallCommand(t: Translator): CommandModule {
   };
 }
 
-export const installCommand = createInstallCommand(createTranslator('en'));
+const defaultTranslator = createTranslator(detectLocale(process.env, 'en'));
+
+export const installCommand = createInstallCommand(defaultTranslator);

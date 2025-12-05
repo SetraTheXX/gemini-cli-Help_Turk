@@ -10,6 +10,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import * as childProcess from 'node:child_process';
 import { isGitRepository, debugLogger } from '@google/gemini-cli-core';
+import { createTranslator } from '../i18n/index.js';
 
 vi.mock('@google/gemini-cli-core', () => ({
   isGitRepository: vi.fn(),
@@ -42,6 +43,7 @@ const mockedIsGitRepository = vi.mocked(isGitRepository);
 const mockedRealPathSync = vi.mocked(fs.realpathSync);
 const mockedExistsSync = vi.mocked(fs.existsSync);
 const mockedExecSync = vi.mocked(childProcess.execSync);
+const t = createTranslator('en');
 
 describe('getInstallationInfo', () => {
   const projectRoot = '/path/to/project';
@@ -60,7 +62,7 @@ describe('getInstallationInfo', () => {
 
   it('should return UNKNOWN when cliPath is not available', () => {
     process.argv[1] = '';
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
     expect(info.packageManager).toBe(PackageManager.UNKNOWN);
   });
 
@@ -71,7 +73,7 @@ describe('getInstallationInfo', () => {
       throw error;
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.UNKNOWN);
     expect(debugLogger.log).toHaveBeenCalledWith(error);
@@ -84,13 +86,11 @@ describe('getInstallationInfo', () => {
     );
     mockedIsGitRepository.mockReturnValue(true);
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.UNKNOWN);
     expect(info.isGlobal).toBe(false);
-    expect(info.updateMessage).toBe(
-      'Running from a local git clone. Please update with "git pull".',
-    );
+    expect(info.updateMessage).toBe(t('installationInfo.messages.localGit'));
   });
 
   it('should detect running via npx', () => {
@@ -98,11 +98,11 @@ describe('getInstallationInfo', () => {
     process.argv[1] = npxPath;
     mockedRealPathSync.mockReturnValue(npxPath);
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.NPX);
     expect(info.isGlobal).toBe(false);
-    expect(info.updateMessage).toBe('Running via npx, update not applicable.');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.npx'));
   });
 
   it('should detect running via pnpx', () => {
@@ -110,11 +110,11 @@ describe('getInstallationInfo', () => {
     process.argv[1] = pnpxPath;
     mockedRealPathSync.mockReturnValue(pnpxPath);
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.PNPX);
     expect(info.isGlobal).toBe(false);
-    expect(info.updateMessage).toBe('Running via pnpx, update not applicable.');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.pnpx'));
   });
 
   it('should detect running via bunx', () => {
@@ -125,11 +125,11 @@ describe('getInstallationInfo', () => {
       throw new Error('Command failed');
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.BUNX);
     expect(info.isGlobal).toBe(false);
-    expect(info.updateMessage).toBe('Running via bunx, update not applicable.');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.bunx'));
   });
 
   it('should detect Homebrew installation via execSync', () => {
@@ -141,7 +141,7 @@ describe('getInstallationInfo', () => {
     mockedRealPathSync.mockReturnValue(cliPath);
     mockedExecSync.mockReturnValue(Buffer.from('gemini-cli')); // Simulate successful command
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(mockedExecSync).toHaveBeenCalledWith(
       'brew list -1 | grep -q "^gemini-cli$"',
@@ -149,7 +149,7 @@ describe('getInstallationInfo', () => {
     );
     expect(info.packageManager).toBe(PackageManager.HOMEBREW);
     expect(info.isGlobal).toBe(true);
-    expect(info.updateMessage).toContain('brew upgrade');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.homebrew'));
   });
 
   it('should fall through if brew command fails', () => {
@@ -163,7 +163,7 @@ describe('getInstallationInfo', () => {
       throw new Error('Command failed');
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(mockedExecSync).toHaveBeenCalledWith(
       'brew list -1 | grep -q "^gemini-cli$"',
@@ -182,14 +182,18 @@ describe('getInstallationInfo', () => {
       throw new Error('Command failed');
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
     expect(info.packageManager).toBe(PackageManager.PNPM);
     expect(info.isGlobal).toBe(true);
     expect(info.updateCommand).toBe('pnpm add -g @google/gemini-cli@latest');
-    expect(info.updateMessage).toContain('Attempting to automatically update');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.pnpmAuto'));
 
-    const infoDisabled = getInstallationInfo(projectRoot, true);
-    expect(infoDisabled.updateMessage).toContain('Please run pnpm add');
+    const infoDisabled = getInstallationInfo(projectRoot, true, t);
+    expect(infoDisabled.updateMessage).toBe(
+      t('installationInfo.messages.manual', {
+        command: 'pnpm add -g @google/gemini-cli@latest',
+      }),
+    );
   });
 
   it('should detect global yarn installation', () => {
@@ -200,16 +204,20 @@ describe('getInstallationInfo', () => {
       throw new Error('Command failed');
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
     expect(info.packageManager).toBe(PackageManager.YARN);
     expect(info.isGlobal).toBe(true);
     expect(info.updateCommand).toBe(
       'yarn global add @google/gemini-cli@latest',
     );
-    expect(info.updateMessage).toContain('Attempting to automatically update');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.yarnAuto'));
 
-    const infoDisabled = getInstallationInfo(projectRoot, true);
-    expect(infoDisabled.updateMessage).toContain('Please run yarn global add');
+    const infoDisabled = getInstallationInfo(projectRoot, true, t);
+    expect(infoDisabled.updateMessage).toBe(
+      t('installationInfo.messages.manual', {
+        command: 'yarn global add @google/gemini-cli@latest',
+      }),
+    );
   });
 
   it('should detect global bun installation', () => {
@@ -220,14 +228,18 @@ describe('getInstallationInfo', () => {
       throw new Error('Command failed');
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
     expect(info.packageManager).toBe(PackageManager.BUN);
     expect(info.isGlobal).toBe(true);
     expect(info.updateCommand).toBe('bun add -g @google/gemini-cli@latest');
-    expect(info.updateMessage).toContain('Attempting to automatically update');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.bunAuto'));
 
-    const infoDisabled = getInstallationInfo(projectRoot, true);
-    expect(infoDisabled.updateMessage).toContain('Please run bun add');
+    const infoDisabled = getInstallationInfo(projectRoot, true, t);
+    expect(infoDisabled.updateMessage).toBe(
+      t('installationInfo.messages.manual', {
+        command: 'bun add -g @google/gemini-cli@latest',
+      }),
+    );
   });
 
   it('should detect local installation and identify yarn from lockfile', () => {
@@ -241,11 +253,13 @@ describe('getInstallationInfo', () => {
       (p) => p === path.join(projectRoot, 'yarn.lock'),
     );
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.YARN);
     expect(info.isGlobal).toBe(false);
-    expect(info.updateMessage).toContain('Locally installed');
+    expect(info.updateMessage).toBe(
+      t('installationInfo.messages.localInstall'),
+    );
   });
 
   it('should detect local installation and identify pnpm from lockfile', () => {
@@ -259,7 +273,7 @@ describe('getInstallationInfo', () => {
       (p) => p === path.join(projectRoot, 'pnpm-lock.yaml'),
     );
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.PNPM);
     expect(info.isGlobal).toBe(false);
@@ -276,7 +290,7 @@ describe('getInstallationInfo', () => {
       (p) => p === path.join(projectRoot, 'bun.lockb'),
     );
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.BUN);
     expect(info.isGlobal).toBe(false);
@@ -291,7 +305,7 @@ describe('getInstallationInfo', () => {
     });
     mockedExistsSync.mockReturnValue(false); // No lockfiles
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
 
     expect(info.packageManager).toBe(PackageManager.NPM);
     expect(info.isGlobal).toBe(false);
@@ -305,13 +319,17 @@ describe('getInstallationInfo', () => {
       throw new Error('Command failed');
     });
 
-    const info = getInstallationInfo(projectRoot, false);
+    const info = getInstallationInfo(projectRoot, false, t);
     expect(info.packageManager).toBe(PackageManager.NPM);
     expect(info.isGlobal).toBe(true);
     expect(info.updateCommand).toBe('npm install -g @google/gemini-cli@latest');
-    expect(info.updateMessage).toContain('Attempting to automatically update');
+    expect(info.updateMessage).toBe(t('installationInfo.messages.npmAuto'));
 
-    const infoDisabled = getInstallationInfo(projectRoot, true);
-    expect(infoDisabled.updateMessage).toContain('Please run npm install');
+    const infoDisabled = getInstallationInfo(projectRoot, true, t);
+    expect(infoDisabled.updateMessage).toBe(
+      t('installationInfo.messages.manual', {
+        command: 'npm install -g @google/gemini-cli@latest',
+      }),
+    );
   });
 });

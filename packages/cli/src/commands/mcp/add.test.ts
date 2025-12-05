@@ -6,8 +6,9 @@
 
 import { describe, it, expect, vi, type Mock } from 'vitest';
 import yargs, { type Argv } from 'yargs';
-import { addCommand } from './add.js';
+import { createAddCommand } from './add.js';
 import { loadSettings, SettingScope } from '../../config/settings.js';
+import { createTranslator } from '../../i18n/index.js';
 
 vi.mock('fs/promises', () => ({
   readFile: vi.fn(),
@@ -41,7 +42,9 @@ describe('mcp add command', () => {
 
   beforeEach(() => {
     vi.resetAllMocks();
-    const yargsInstance = yargs([]).command(addCommand);
+    const yargsInstance = yargs([]).command(
+      createAddCommand(createTranslator('en')),
+    );
     parser = yargsInstance;
     mockSetValue = vi.fn();
     mockConsoleError = vi.fn();

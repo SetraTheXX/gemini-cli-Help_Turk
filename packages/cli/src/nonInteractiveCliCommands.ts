@@ -19,6 +19,8 @@ import type { CommandContext } from './ui/commands/types.js';
 import { createNonInteractiveUI } from './ui/noninteractive/nonInteractiveUi.js';
 import type { LoadedSettings } from './config/settings.js';
 import type { SessionStatsState } from './ui/contexts/SessionContext.js';
+import { createTranslator, type Translator } from './i18n/index.js';
+import { detectLocale } from './utils/locale.js';
 
 /**
  * Processes a slash command in a non-interactive environment.
@@ -33,6 +35,7 @@ export const handleSlashCommand = async (
   abortController: AbortController,
   config: Config,
   settings: LoadedSettings,
+  t: Translator = createTranslator(detectLocale(process.env, 'en')),
 ): Promise<PartListUnion | undefined> => {
   const trimmed = rawQuery.trim();
   if (!trimmed.startsWith('/')) {
@@ -93,11 +96,11 @@ export const handleSlashCommand = async (
             // This ensures that if a command *does* request confirmation (e.g.
             // in the future with more granular permissions), it's handled appropriately.
             throw new FatalInputError(
-              'Exiting due to a confirmation prompt requested by the command.',
+              t('commands.nonInteractive.confirmShellExit'),
             );
           default:
             throw new FatalInputError(
-              'Exiting due to command result that is not supported in non-interactive mode.',
+              t('commands.nonInteractive.unsupportedResultExit'),
             );
         }
       }

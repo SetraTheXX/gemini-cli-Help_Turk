@@ -9,6 +9,8 @@ import {
   type Config,
   getErrorMessage,
 } from '@google/gemini-cli-core';
+import { createTranslator } from '../i18n/index.js';
+import { detectLocale } from '../utils/locale.js';
 
 /**
  * Handles the initial authentication flow.
@@ -19,6 +21,7 @@ import {
 export async function performInitialAuth(
   config: Config,
   authType: AuthType | undefined,
+  t = createTranslator(detectLocale(process.env, 'en')),
 ): Promise<string | null> {
   if (!authType) {
     return null;
@@ -29,7 +32,7 @@ export async function performInitialAuth(
     // The console.log is intentionally left out here.
     // We can add a dedicated startup message later if needed.
   } catch (e) {
-    return `Failed to login. Message: ${getErrorMessage(e)}`;
+    return t('auth.loginFailed', { message: getErrorMessage(e) });
   }
 
   return null;

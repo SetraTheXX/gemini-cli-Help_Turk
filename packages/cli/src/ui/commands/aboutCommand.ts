@@ -10,22 +10,27 @@ import { CommandKind } from './types.js';
 import process from 'node:process';
 import { MessageType, type HistoryItemAbout } from '../types.js';
 import { IdeClient } from '@google/gemini-cli-core';
+import { uiTranslator } from '../i18n.js';
 
 export const aboutCommand: SlashCommand = {
   name: 'about',
-  description: 'Show version info',
+  description: uiTranslator('ui.commands.about.description'),
   kind: CommandKind.BUILT_IN,
   action: async (context) => {
     const osVersion = process.platform;
-    let sandboxEnv = 'no sandbox';
+    let sandboxEnv = uiTranslator('ui.commands.about.noSandbox');
     if (process.env['SANDBOX'] && process.env['SANDBOX'] !== 'sandbox-exec') {
       sandboxEnv = process.env['SANDBOX'];
     } else if (process.env['SANDBOX'] === 'sandbox-exec') {
-      sandboxEnv = `sandbox-exec (${
-        process.env['SEATBELT_PROFILE'] || 'unknown'
-      })`;
+      sandboxEnv = uiTranslator('ui.commands.about.sandboxExec', {
+        profile:
+          process.env['SEATBELT_PROFILE'] ||
+          uiTranslator('ui.commands.about.unknownSandbox'),
+      });
     }
-    const modelVersion = context.services.config?.getModel() || 'Unknown';
+    const modelVersion =
+      context.services.config?.getModel() ||
+      uiTranslator('ui.commands.about.unknownModel');
     const cliVersion = await getCliVersion();
     const selectedAuthType =
       context.services.settings.merged.security?.auth?.selectedType || '';

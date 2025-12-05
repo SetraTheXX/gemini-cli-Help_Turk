@@ -15,6 +15,7 @@ import { linkCommand } from './extensions/link.js';
 import { newCommand } from './extensions/new.js';
 import { validateCommand } from './extensions/validate.js';
 import { createTranslator, type Translator } from '../i18n/index.js';
+import { detectLocale } from '../utils/locale.js';
 
 export function createExtensionsCommand(t: Translator): CommandModule {
   return {
@@ -42,5 +43,5 @@ export function createExtensionsCommand(t: Translator): CommandModule {
 }
 
 export const extensionsCommand = createExtensionsCommand(
-  createTranslator('en'),
+  createTranslator(detectLocale(process.env, 'en')),
 );
