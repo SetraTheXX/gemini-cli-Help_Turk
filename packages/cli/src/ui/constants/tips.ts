@@ -65,7 +65,7 @@ export const INFORMATIVE_TIPS = [
   'Choose whether to log prompt content (settings.json)...',
   'Enable AI-powered prompt completion while typing (/settings)...',
   'Enable debug logging of keystrokes to the console (/settings)...',
-  'Enable automatic session cleanup of old conversations (/settings)...',
+  'Eski konuşmalar için otomatik oturum temizlemeyi etkinleştir (/settings)...',
   'Show Gemini CLI status in the terminal window title (/settings)...',
   'Use the entire width of the terminal for output (/settings)...',
   'Enable screen reader mode for better accessibility (/settings)...',

@@ -12,6 +12,7 @@ import type { UpdateObject } from '../ui/utils/updateCheck.js';
 import type { LoadedSettings } from '../config/settings.js';
 import EventEmitter from 'node:events';
 import { handleAutoUpdate } from './handleAutoUpdate.js';
+import { uiTranslator } from '../ui/i18n.js';
 
 vi.mock('./installationInfo.js', async () => {
   const actual = await vi.importActual('./installationInfo.js');
@@ -44,6 +45,7 @@ const mockGetInstallationInfo = vi.mocked(getInstallationInfo);
 const mockUpdateEventEmitter = vi.mocked(updateEventEmitter);
 
 describe('handleAutoUpdate', () => {
+  const t = uiTranslator;
   let mockSpawn: Mock;
   let mockUpdateInfo: UpdateObject;
   let mockSettings: LoadedSettings;
@@ -59,7 +61,10 @@ describe('handleAutoUpdate', () => {
         type: 'major',
         name: '@google/gemini-cli',
       },
-      message: 'An update is available!',
+      message: t('ui.updates.stableAvailable', {
+        currentVersion: '1.0.0',
+        latestVersion: '2.0.0',
+      }),
     };
 
     mockSettings = {
@@ -106,7 +111,9 @@ describe('handleAutoUpdate', () => {
     mockSettings.merged.general!.disableAutoUpdate = true;
     mockGetInstallationInfo.mockReturnValue({
       updateCommand: 'npm i -g @google/gemini-cli@latest',
-      updateMessage: 'Please update manually.',
+      updateMessage: t('installationInfo.messages.manual', {
+        command: 'npm i -g @google/gemini-cli@latest',
+      }),
       isGlobal: true,
       packageManager: PackageManager.NPM,
     });
@@ -117,7 +124,9 @@ describe('handleAutoUpdate', () => {
     expect(mockUpdateEventEmitter.emit).toHaveBeenCalledWith(
       'update-received',
       {
-        message: 'An update is available!\nPlease update manually.',
+        message: `${mockUpdateInfo.message}\n${t('installationInfo.messages.manual', {
+          command: 'npm i -g @google/gemini-cli@latest',
+        })}`,
       },
     );
     expect(mockSpawn).not.toHaveBeenCalled();
@@ -143,7 +152,9 @@ describe('handleAutoUpdate', () => {
   it('should emit "update-received" but not update if no update command is found', () => {
     mockGetInstallationInfo.mockReturnValue({
       updateCommand: undefined,
-      updateMessage: 'Cannot determine update command.',
+      updateMessage: t('installationInfo.messages.manual', {
+        command: 'npm i -g @google/gemini-cli@latest',
+      }),
       isGlobal: false,
       packageManager: PackageManager.NPM,
     });
@@ -154,7 +165,9 @@ describe('handleAutoUpdate', () => {
     expect(mockUpdateEventEmitter.emit).toHaveBeenCalledWith(
       'update-received',
       {
-        message: 'An update is available!\nCannot determine update command.',
+        message: `${mockUpdateInfo.message}\n${t('installationInfo.messages.manual', {
+          command: 'npm i -g @google/gemini-cli@latest',
+        })}`,
       },
     );
     expect(mockSpawn).not.toHaveBeenCalled();
@@ -174,7 +187,7 @@ describe('handleAutoUpdate', () => {
     expect(mockUpdateEventEmitter.emit).toHaveBeenCalledWith(
       'update-received',
       {
-        message: 'An update is available!\nThis is an additional message.',
+        message: `${mockUpdateInfo.message}\nThis is an additional message.`,
       },
     );
   });
@@ -217,8 +230,10 @@ describe('handleAutoUpdate', () => {
     });
 
     expect(mockUpdateEventEmitter.emit).toHaveBeenCalledWith('update-failed', {
-      message:
-        'Automatic update failed. Please try updating manually. (command: npm i -g @google/gemini-cli@2.0.0, stderr: An error occurred)',
+      message: t('ui.updates.autoUpdateFailedWithCommand', {
+        command: 'npm i -g @google/gemini-cli@2.0.0',
+        stderr: 'An error occurred',
+      }),
     });
   });
 
@@ -241,8 +256,9 @@ describe('handleAutoUpdate', () => {
     });
 
     expect(mockUpdateEventEmitter.emit).toHaveBeenCalledWith('update-failed', {
-      message:
-        'Automatic update failed. Please try updating manually. (error: Spawn error)',
+      message: t('ui.updates.autoUpdateFailedWithError', {
+        error: 'Spawn error',
+      }),
     });
   });
 
@@ -291,8 +307,7 @@ describe('handleAutoUpdate', () => {
     });
 
     expect(mockUpdateEventEmitter.emit).toHaveBeenCalledWith('update-success', {
-      message:
-        'Update successful! The new version will be used on your next run.',
+      message: t('ui.updates.autoUpdateSuccess'),
     });
   });
 });

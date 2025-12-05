@@ -6,10 +6,15 @@
 
 import latestVersion from 'latest-version';
 import semver from 'semver';
-import { getPackageJson, debugLogger } from '@google/gemini-cli-core';
+import {
+  getPackageJson,
+  debugLogger,
+  getErrorMessage,
+} from '@google/gemini-cli-core';
 import type { LoadedSettings } from '../../config/settings.js';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { uiTranslator } from '../i18n.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -50,6 +55,7 @@ function getBestAvailableUpdate(
 export async function checkForUpdates(
   settings: LoadedSettings,
 ): Promise<UpdateObject | null> {
+  const t = uiTranslator;
   try {
     if (settings.merged.general?.disableUpdateNag) {
       return null;
@@ -75,7 +81,10 @@ export async function checkForUpdates(
       const bestUpdate = getBestAvailableUpdate(nightlyUpdate, latestUpdate);
 
       if (bestUpdate && semver.gt(bestUpdate, currentVersion)) {
-        const message = `A new version of Gemini CLI is available! ${currentVersion} → ${bestUpdate}`;
+        const message = t('ui.updates.nightlyAvailable', {
+          currentVersion,
+          latestVersion: bestUpdate,
+        });
         const type = semver.diff(bestUpdate, currentVersion) || undefined;
         return {
           message,
@@ -91,7 +100,10 @@ export async function checkForUpdates(
       const latestUpdate = await latestVersion(name);
 
       if (latestUpdate && semver.gt(latestUpdate, currentVersion)) {
-        const message = `Gemini CLI update available! ${currentVersion} → ${latestUpdate}`;
+        const message = t('ui.updates.stableAvailable', {
+          currentVersion,
+          latestVersion,
+        });
         const type = semver.diff(latestUpdate, currentVersion) || undefined;
         return {
           message,
@@ -107,7 +119,11 @@ export async function checkForUpdates(
 
     return null;
   } catch (e) {
-    debugLogger.warn('Failed to check for updates: ' + e);
+    debugLogger.warn(
+      t('logs.update.checkFailedWithError', {
+        error: getErrorMessage(e),
+      }),
+    );
     return null;
   }
 }

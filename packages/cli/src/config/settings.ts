@@ -206,7 +206,7 @@ export interface AccessibilitySettings {
 }
 
 export interface SessionRetentionSettings {
-  /** Enable automatic session cleanup */
+  /** Otomatik oturum temizliğini etkinleştir */
   enabled?: boolean;
 
   /** Maximum age of sessions to keep (e.g., "30d", "7d", "24h", "1w") */

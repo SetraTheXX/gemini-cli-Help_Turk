@@ -256,7 +256,7 @@ export async function startInteractiveUI(
     .catch((err) => {
       // Silently ignore update check errors.
       if (config.getDebugMode()) {
-        debugLogger.warn('Update check failed:', err);
+        debugLogger.warn(uiTranslator.t('logs.update.checkFailed'), err);
       }
     });
 
@@ -369,7 +369,10 @@ export async function main() {
             settings.merged.security.auth.selectedType,
           );
         } catch (err) {
-          debugLogger.error('Error authenticating:', err);
+          debugLogger.error(
+            uiTranslator.t('logs.auth.errorAuthenticating'),
+            err,
+          );
           process.exit(1);
         }
       }
@@ -539,7 +542,7 @@ export async function main() {
     }
     if (!input) {
       debugLogger.error(
-        `No input provided via stdin. Input can be provided by piping data into gemini or using the --prompt option.`,
+        uiTranslator.t('logs.cli.noInputProvided'),
       );
       process.exit(1);
     }
