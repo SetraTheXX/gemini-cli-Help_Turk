@@ -1,7 +1,7 @@
 {
   "name": "@google/gemini-cli",
   "version": "0.17.0-nightly.20251116.e650a4ee5",
-  "description": "Gemini CLI",
+  "description": "Gemini CLI - Turkish localized fork (Türkçe yerelleştirilmiş sürüm)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/google-gemini/gemini-cli.git"
@@ -11,6 +11,13 @@
   "bin": {
     "gemini": "dist/index.js"
   },
+  "keywords": [
+    "gemini",
+    "cli",
+    "turkish",
+    "türkçe",
+    "i18n"
+  ],
   "scripts": {
     "build": "node ../../scripts/build_package.js",
     "start": "node dist/index.js",
@@ -19,7 +26,8 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "test:ci": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "security-check": "npm audit --production"
   },
   "files": [
     "dist"

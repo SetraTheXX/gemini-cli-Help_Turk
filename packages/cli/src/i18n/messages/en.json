@@ -443,5 +443,20 @@
       "tool": "Tool",
       "output": "Output"
     }
+  },
+  "logs": {
+    "cli": {
+      "promptInteractivePipeError": "Error: The --prompt-interactive flag cannot be used when input is piped from stdin."
+    },
+    "dns": {
+      "invalidResolutionOrder": "Invalid value for dnsResolutionOrder in settings: \"{{order}}\". Using default \"{{defaultValue}}\"."
+    },
+    "theme": {
+      "notFound": "Warning: Theme \"{{theme}}\" not found."
+    },
+    "memory": {
+      "currentHeapSize": "Current heap size {{size}} MB",
+      "relaunchRequired": "Need to relaunch with more memory: {{targetSize}} MB"
+    }
   }
 }

@@ -443,5 +443,20 @@
       "tool": "Araç",
       "output": "Çıktı"
     }
+  },
+  "logs": {
+    "cli": {
+      "promptInteractivePipeError": "Hata: --prompt-interactive bayrağı, girdi stdin üzerinden geliyorsa kullanılamaz."
+    },
+    "dns": {
+      "invalidResolutionOrder": "Ayarlar'daki dnsResolutionOrder değeri geçersiz: \"{{order}}\". Varsayılan \"{{defaultValue}}\" kullanılacak."
+    },
+    "theme": {
+      "notFound": "Uyarı: \"{{theme}}\" teması bulunamadı."
+    },
+    "memory": {
+      "currentHeapSize": "Mevcut yığın sınırı {{size}} MB",
+      "relaunchRequired": "Daha fazla bellekle yeniden başlatmak gerekiyor: {{targetSize}} MB"
+    }
   }
 }
