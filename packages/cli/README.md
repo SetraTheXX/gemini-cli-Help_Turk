@@ -4,39 +4,47 @@
 [![CodeQL](https://github.com/SetraTheXX/gemini-cli-Help_Turk/actions/workflows/codeql.yml/badge.svg)](https://github.com/SetraTheXX/gemini-cli-Help_Turk/actions/workflows/codeql.yml)
 [![License](https://img.shields.io/github/license/SetraTheXX/gemini-cli-Help_Turk)](../../LICENSE)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Language](https://img.shields.io/badge/Dil-T%C3%BCrk%C3%A7e-red)
 
-## Giriş
-Bu depo, Google Gemini CLI'nin tamamen Türkçeleştirilmiş bir forkudur. Komut satırı deneyimi, yükleme cümleleri, loglar, hata mesajları ve crash banner'lar dahil %100 Türkçedir. Sistem dili ne olursa olsun otomatik algılar ve Türkçe/İngilizce arasında güvenli şekilde geçiş yapar.
+Google Gemini CLI'nin Türkçe'ye tam uyarlanmış sürümüdür. Komut satırı deneyimi, yükleme mesajları, hata çıktıları ve crash ekranları dahil tamamı yerelleştirilmiş, kurumsal güvenlik ve dağıtım süreçleriyle uyumlu hale getirilmiştir.
+
+## İçindekiler
+- [Özellikler](#özellikler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Neden Core Sürümü Sabitlendi?](#neden-core-sürümü-sabitlendi)
+- [Güvenlik Önlemleri](#güvenlik-önlemleri)
+- [Katkılar ve Lisans](#katkılar-ve-lisans)
 
 ## Özellikler
-- 🇹🇷 **Tam Türkçe Arayüz**: UI, komut çıktıları, hata mesajları, witty yükleme metinleri ve sistem logları çeviri altyapısından gelir.
-- 🛡️ **Kurumsal Güvenlik**: Bağımlılıklar pinlenmiştir; `npm ci` ve `npm run security-check` ile tedarik zinciri kontrolleri CI'da zorunlu kılınır.
-- 🚀 **Dinamik Dil Algılama**: `LC_ALL`/`LANG` gibi ortam değişkenlerinden dili saptar, desteklenmeyen durumlarda İngilizceye güvenli biçimde döner.
-- 🧭 **Yalıtılmış Mimari**: Çekirdek paket sürümü sabitlenir ve build sırasında core referansları izole edilerek kararlılık sağlanır.
+- 🇹🇷 **Tam Türkçe Arayüz**: UI, komut çıktıları, hata mesajları, witty yükleme metinleri ve sistem logları çeviri katmanlarından beslenir.
+- 🛡️ **Kurumsal Güvenlik**: Bağımlılıklar pinlenmiştir; CI'da `npm ci`, `npm run security-check` ve CodeQL adımları zorunludur.
+- 🚀 **Dinamik Dil Algılama**: `LC_ALL`/`LANG` ortam değişkenlerinden dili saptar; desteklenmeyen durumlarda güvenle İngilizceye döner.
+- 🧭 **Yalıtılmış Mimari**: Çekirdek paket sürümü sabitlenir; build sırasında core referansları izole edilerek kararlılık sağlanır.
 
 ## Kurulum
-Globale kurulum veya geliştirme için aşağıdaki adımları kullanabilirsiniz:
+Aşağıdaki adımlar geliştirici ortamı ve global kurulum için önerilir:
 
 ```bash
 # Depoyu klonlayın
 git clone https://github.com/SetraTheXX/gemini-cli-Help_Turk.git
 cd gemini-cli-Help_Turk/packages/cli
 
-# Temiz bağımlılık kurulumu
+# Temiz ve deterministik bağımlılık kurulumu
 npm ci
 
-# Dağıtıma hazırlama
+# Derleme
 npm run build
 
-# Global bağlantı (geliştirici ortamı)
+# Geliştirici ortamında global bağlantı
 npm link
 ```
 
-Yalnızca global kurulum yapmak isterseniz build sonrası `npm install -g .` kullanabilirsiniz.
+Sadece global kurulum yapmak isterseniz derlemeden sonra `npm install -g .` komutunu uygulayabilirsiniz.
 
 ## Kullanım
 ```bash
-# Yardım
+# Yardım menüsü
 gemini --help
 
 # Sohbet başlatma
@@ -46,12 +54,15 @@ gemini chat
 gemini --version
 ```
 
-Locale, sistem ortamına göre otomatik belirlenir; desteklenmeyen veya eksik tanımda CLI İngilizceye düşer.
+CLI, sistem dilini otomatik algılar; desteklenmeyen bir locale tespit edilirse güvenli şekilde İngilizceye geri döner.
 
-## Mimari ve Güvenlik Notu
-- **Sürüm Pinleme**: `@google/gemini-cli-core` sabit sürümle gelir; beklenmedik yükseltmeler engellenir.
-- **İzolasyon**: Build konfigurasyonu, çekirdeğe gereksiz referansları kaldırarak CLI kodunu yalıtır.
-- **CI Kapıları**: GitHub Actions, `npm ci`, lint, build, kapsamlı testler, `security-check` ve CodeQL taramasını otomatik çalıştırır.
+## Neden Core Sürümü Sabitlendi?
+`@google/gemini-cli-core` bağımlılığı sürpriz yükseltmelerle davranış değişmemesi için sabit sürümle pinlenmiştir. Bu sayede aynı CLI çıktıları ve protokol sözleşmeleri her ortamda tutarlı kalır; depolara yayılan bağımlılık drift'i engellenir.
+
+## Güvenlik Önlemleri
+- **Tedarik Zinciri Tarama**: CI iş akışları `npm run security-check` (npm audit) ve CodeQL'i otomatik çalıştırır.
+- **Deterministik Kurulum**: `npm ci` kullanılır; lockfile harici bağımlılığa izin verilmez.
+- **İzolasyon**: Build adımları çekirdeğe gereksiz referansları temizleyerek çalışma zamanında saldırı yüzeyini azaltır.
 
 ## Katkılar ve Lisans
-Bu proje Google'ın Gemini CLI çalışmasının Türkçe'ye uyarlanmış bir çatallamasıdır. Katkılar PR ve issue şablonları üzerinden memnuniyetle karşılanır. Lisans: [Apache 2.0](../../LICENSE).
+Katkılar PR ve issue şablonları üzerinden memnuniyetle karşılanır. Lisans: [Apache 2.0](../../LICENSE).
